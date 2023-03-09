@@ -1,6 +1,8 @@
 import React from "react";
 import "../App.css";
 import { motion, useAnimationControls } from "framer-motion";
+import Spanish from "../texts/Spanish";
+import English from "../texts/English";
 
 function Nav() {
   const controls = useAnimationControls();
@@ -24,7 +26,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          Home
+          {Spanish.Item1}
         </motion.li>
         <motion.li
           whileHover={() => {
@@ -42,12 +44,12 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          About
+          {Spanish.Item2}
         </motion.li>
         <motion.li
           whileHover={() => {
             controls.start({
-              x: 165,
+              x: 180,
               opacity: 1,
               transition: { duration: 0.3 },
             });
@@ -60,12 +62,12 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          Work
+          {Spanish.Item3}
         </motion.li>
         <motion.li
           whileHover={() => {
             controls.start({
-              x: 253,
+              x: 285,
               opacity: 1,
               transition: { duration: 0.3 },
             });
@@ -78,7 +80,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          Contact
+          {Spanish.Item4}
         </motion.li>
       </ul>
       <motion.div

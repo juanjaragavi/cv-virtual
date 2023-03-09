@@ -1,12 +1,11 @@
 import React from "react";
-import { Button } from "@mantine/core";
 import { motion } from "framer-motion";
 import { X } from "tabler-icons-react";
 import CloseButton from "./CloseButton";
+import Spanish from "../texts/Spanish";
 
 function SpeechBubble() {
   const [visible, setVisible] = React.useState(true);
-  const [hoverEvent, setHoverEvent] = React.useState(true);
 
   return (
     <motion.main
@@ -28,14 +27,14 @@ function SpeechBubble() {
       }}
     >
       <div className="cuadro-grande-speech-bubble">
-        <h3 className="titulo-dudas">¿Dudas? ¿Deseas saber más?</h3>
-        <h4 className="invitacion-dudas">¡Chatea conmigo Ahora!</h4>
+        <h3 className="titulo-dudas">{Spanish.TituloWhatsApp}</h3>
+        <h4 className="invitacion-dudas">{Spanish.CTAWhatsApp}</h4>
       </div>
       <div className="flecha-speech-bubble"></div>
       <CloseButton
         onClick={() => setVisible(!visible)}
-        className="boton-cerrar-speech-bubble"
-        buttonText={visible ? <X size={30} color="#333" /> : <X size={30} color="#FFF" />}
+        className="boton-cerrar-speech-bubble transiciones"
+        buttonText={visible ? <X size={30} /> : <X size={30} />}
       />
     </motion.main>
   );

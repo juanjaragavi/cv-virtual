@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import IconButton from "../media/IconButton";
+import Spanish from "../texts/Spanish";
 import { ArrowDownCircle } from 'tabler-icons-react';
 
 function Hero() {
@@ -28,7 +29,7 @@ function Hero() {
               delay: 0.1,
             }}
           >
-            Hola, soy
+            {Spanish.Saludo}
           </motion.h2>
           <motion.h1
             className="nombre transiciones"
@@ -43,7 +44,7 @@ function Hero() {
               delay: 0.5,
             }}
           >
-            Juan Jaramillo
+            {Spanish.Nombre}
           </motion.h1>
           <motion.h4
             className="roles"
@@ -61,8 +62,7 @@ function Hero() {
               delay: 0.1,
             }}
           >
-            Desarrollador Fullstack · Diseñador UI/UX · Marketing Digital ·
-            Social Media · Mobile
+            {Spanish.Tagline}
           </motion.h4>
           <motion.div
             initial={{
@@ -82,7 +82,7 @@ function Hero() {
             <IconButton
               onClick={LinkGitHub}
               rightIcon={<ArrowDownCircle size={32} />}
-              buttonText="CONOCE MÁS"
+              buttonText={Spanish.BotonConoceMas}
             />
           </motion.div>
         </article>
