@@ -1,0 +1,42 @@
+{
+    "Item1": {
+        "title": "Inicio"
+    },
+    "Item2": {
+        "title": "Acerca"
+    },
+    "Item3": {
+        "title": "Trabajos"
+    },
+    "Item4": {
+        "title": "Contacto"
+    },
+
+
+    "Saludo": {
+        "title": "Hola, soy"
+    },
+    "Nombre": {
+        "title": "Juan Jaramillo"
+    },
+    "Tagline": {
+        "title": "Desarrollador Fullstack · Diseñador UI/UX · Marketing Digital · Social Media · Mobile"
+    },
+    "BotonConoceMas": {
+        "title": "CONOCE MÁS"
+    },
+
+
+    "TituloWhatsApp": {
+        "title": "¿Dudas? ¿Deseas saber más?"
+    },
+    "CTAWhatsApp": {
+        "title": "¡Chatea conmigo Ahora!"
+    },
+    "English": {
+        "title": "INGLÉS"
+    },
+    "Spanish": {
+        "title": "ESPAÑOL"
+    }
+}

@@ -1,10 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import IconButton from "../media/IconButton";
-import Spanish from "../texts/Spanish";
-import { CircleCheck } from 'tabler-icons-react';
+import { CircleCheck } from "tabler-icons-react";
+import { useTranslation } from "react-i18next";
 
 function Hero() {
+  const { t } = useTranslation("common");
   const LinkGitHub = () => {
     window.open("https://github.com/juanjaragavi/", "_blank");
   };
@@ -29,7 +30,7 @@ function Hero() {
               delay: 0.1,
             }}
           >
-            {Spanish.Saludo}
+            {t("Saludo.title", { framework: "React" })}
           </motion.h2>
           <motion.h1
             className="nombre transiciones"
@@ -44,7 +45,7 @@ function Hero() {
               delay: 0.5,
             }}
           >
-            {Spanish.Nombre}
+            {t("Nombre.title", { framework: "React" })}
           </motion.h1>
           <motion.h4
             className="roles"
@@ -62,7 +63,7 @@ function Hero() {
               delay: 0.1,
             }}
           >
-            {Spanish.Tagline}
+            {t("Tagline.title", { framework: "React" })}
           </motion.h4>
           <motion.div
             initial={{
@@ -82,7 +83,7 @@ function Hero() {
             <IconButton
               onClick={LinkGitHub}
               rightIcon={<CircleCheck size={24} />}
-              buttonText={Spanish.BotonConoceMas}
+              buttonText={t("BotonConoceMas.title", { framework: "React" })}
             />
           </motion.div>
         </article>

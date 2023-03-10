@@ -1,9 +1,10 @@
 import React from "react";
 import "../App.css";
 import { motion, useAnimationControls } from "framer-motion";
-import Spanish from "../texts/Spanish";
+import { useTranslation } from "react-i18next";
 
 function Nav() {
+  const { t } = useTranslation("common");
 
   const controls = useAnimationControls();
 
@@ -26,7 +27,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          {Spanish.Item1}
+          {t("Item1.title", { framework: "React" })}
         </motion.li>
         <motion.li
           whileHover={() => {
@@ -44,7 +45,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          {Spanish.Item2}
+          {t("Item2.title", { framework: "React" })}
         </motion.li>
         <motion.li
           whileHover={() => {
@@ -62,7 +63,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          {Spanish.Item3}
+          {t("Item3.title", { framework: "React" })}
         </motion.li>
         <motion.li
           whileHover={() => {
@@ -80,7 +81,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          {Spanish.Item4}
+          {t("Item4.title", { framework: "React" })}
         </motion.li>
       </ul>
       <motion.div
