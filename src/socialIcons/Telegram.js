@@ -11,7 +11,7 @@ function Telegram() {
       xmlns="http://www.w3.org/2000/svg"
       fill="#4492D4"
       whileHover={{
-        fill: "#D35580"
+        fill: "rgb(236, 72, 153)"
       }}
       transition={{ duration: 0.3 }}
     >

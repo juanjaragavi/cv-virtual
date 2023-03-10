@@ -16,7 +16,7 @@ function CloseButton(props) {
           paddingLeft: rem(24),
           paddingRight: rem(24),
           "&:not([data-disabled])": theme.fn.hover({
-            backgroundColor: "#D35580"
+            backgroundColor: "rgb(236, 72, 153)"
           }),
         },
       })}

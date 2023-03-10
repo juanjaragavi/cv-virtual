@@ -10,7 +10,7 @@ function LinkedIn() {
       height="32"
       fill="#3270A9"
       whileHover={{
-        fill: "#D35580",
+        fill: "rgb(236, 72, 153)",
       }}
       transition={{ duration: 0.3 }}
     >

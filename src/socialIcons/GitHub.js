@@ -10,7 +10,7 @@ function GitHub() {
       viewBox="0 0 24 24"
       fill="#803AA5"
       whileHover={{
-        fill: "#D35580"
+        fill: "rgb(236, 72, 153)"
       }}
       transition={{ duration: 0.3 }}
     >

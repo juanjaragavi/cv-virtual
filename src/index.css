@@ -107,10 +107,10 @@
     @apply fixed bottom-24 right-9 font-league-spartan;
   }
   .cuadro-grande-speech-bubble {
-    @apply relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl; 
+    @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl; 
   }
   .flecha-speech-bubble {
-    @apply -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
+    @apply drop-shadow-lg -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
   }
   .titulo-dudas {
     @apply text-gray-900 font-league-spartan text-[1.65rem];
@@ -119,7 +119,7 @@
     @apply text-gray-900 font-league-spartan text-3xl font-bold -mt-2;
   }
   .boton-cerrar-speech-bubble {
-    @apply bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
+    @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
   }
 
   /* -----  FIN MENÚ FIJO  ----- */

@@ -1,6 +1,5 @@
 import { Switch, Group } from "@mantine/core";
-import { FaMoon, FaSun } from "react-icons/fa";
-import { IconContext } from "react-icons";
+import { SunLow, Moon } from "tabler-icons-react";
 
 function ThemeSwitcher() {
   const changeDarkMode = () => {
@@ -14,20 +13,8 @@ function ThemeSwitcher() {
         className="switch transiciones"
         size="xl"
         color="pink"
-        onLabel={
-          <IconContext.Provider
-            value={{ color: "white", className: "text-xl" }}
-          >
-            <FaSun />
-          </IconContext.Provider>
-        }
-        offLabel={
-          <IconContext.Provider
-            value={{ color: "#D35580", className: "text-xl" }}
-          >
-            <FaMoon />
-          </IconContext.Provider>
-        }
+        onLabel={<SunLow size={28} />}
+        offLabel={<Moon size={26} color="rgb(236, 72, 153)" />}
       />
     </Group>
   );

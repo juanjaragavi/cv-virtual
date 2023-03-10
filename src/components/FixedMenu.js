@@ -45,13 +45,13 @@ function FixedMenu() {
           whileHover={{ scale: 1.2 }}
           transition={{ duration: 0.2 }}
         >
-          <li onClick={LinkGitHub} className="svg-sociales transiciones ml-2">
+          <li onClick={LinkLinkedIn} className="svg-sociales transiciones ml-2">
             <LinkedIn />
           </li>
-          <li onClick={LinkTelegram} className="svg-sociales transiciones">
+          <li onClick={LinkGitHub} className="svg-sociales transiciones">
             <GitHub />
           </li>
-          <li onClick={LinkLinkedIn} className="svg-sociales transiciones mr-2">
+          <li onClick={LinkTelegram} className="svg-sociales transiciones mr-2">
             <Telegram />
           </li>
         </motion.ul>

@@ -20,7 +20,7 @@ function IconButton(props) {
           paddingRight: rem(24),
           "&:not([data-disabled])": theme.fn.hover({
             backgroundColor: "transparent",
-            color: "#D35580",
+            color: "rgb(236, 72, 153)",
           }),
         },
         leftIcon: {
