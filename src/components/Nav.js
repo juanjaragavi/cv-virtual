@@ -4,6 +4,7 @@ import { motion, useAnimationControls } from "framer-motion";
 import Spanish from "../texts/Spanish";
 
 function Nav() {
+
   const controls = useAnimationControls();
 
   return (
@@ -25,7 +26,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-        {Spanish.Item1}
+          {Spanish.Item1}
         </motion.li>
         <motion.li
           whileHover={() => {

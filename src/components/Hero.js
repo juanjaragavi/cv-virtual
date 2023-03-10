@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import IconButton from "../media/IconButton";
 import Spanish from "../texts/Spanish";
@@ -81,7 +81,7 @@ function Hero() {
           >
             <IconButton
               onClick={LinkGitHub}
-              rightIcon={<CircleCheck size={32} />}
+              rightIcon={<CircleCheck size={24} />}
               buttonText={Spanish.BotonConoceMas}
             />
           </motion.div>

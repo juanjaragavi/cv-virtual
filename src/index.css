@@ -3,123 +3,169 @@
 @tailwind utilities;
 
 @layer components {
-  /* -----  ESTILOS GENERALES  ----- */
 
-  * body {
-    @apply dark:bg-gray-900 dark:text-white font-league-spartan;
-  }
+/* ------------>>>>>>>  ESTILOS GENERALES  <<<<<<<------------ */
 
-  .App {
-    @apply dark:bg-gray-900 dark:text-white w-[100%] font-league-spartan;
-  }
+    /* -----  BASE  ----- */
 
-  /* -----  FIN ESTILOS GENERALES  ----- */
+    * body {
+      @apply dark:bg-gray-900 dark:text-white font-league-spartan;
+    }
 
-  /* -----  TRANSICIONES  ----- */
+    .App {
+      @apply dark:bg-gray-900 dark:text-white w-[100%] font-league-spartan;
+    }
 
-  .transiciones {
-    @apply transition-all duration-300 ease-in-out;
-  }
+    /* -----  FIN BASE  ----- */
 
-  /* -----  FIN TRANSICIONES  ----- */
+    /* -----  TRANSICIONES  ----- */
 
-  /* -----  HEADER  ----- */
+    .transiciones {
+      @apply transition-all duration-300 ease-in-out;
+    }
 
-  .header {
-    @apply sticky top-0 left-0 flex justify-items-center justify-between px-8 bg-transparent z-10;
-  }
+    /* -----  FIN TRANSICIONES  ----- */
 
-  /* -----  FIN HEADER  ----- */
+    /* -----  HEADER  ----- */
 
-  /* -----  NAV PRINCIPAL  ----- */
+    .header {
+      @apply sticky top-0 left-0 flex justify-items-center justify-between px-8 bg-transparent z-10;
+    }
 
-  .nav-principal {
-    @apply opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
-  }
-  .contenedor-menu {
-    @apply text-lg font-bold font-league-spartan flex px-5 space-x-5 align-middle py-1.5;
-  }
-  .botones-menu {
-    @apply text-white dark:text-gray-900 px-2 cursor-pointer dark:hover:text-white z-10;
-  }
-  .fondo-botones-menu {
-    @apply border-2 border-gray-800 dark:border-white rounded-full bg-pink-500 w-24 h-10 -mt-10;
-  }
+    /* -----  FIN HEADER  ----- */
 
-  /* -----  FIN NAV PRINCIPAL  ----- */
+    /* -----  NAV PRINCIPAL  ----- */
 
-  /* -----  SWITCH  ----- */
+    .nav-principal {
+      @apply opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
+    }
+    .contenedor-menu {
+      @apply text-lg font-bold font-league-spartan flex px-5 space-x-5 align-middle py-1.5;
+    }
+    .botones-menu {
+      @apply text-white dark:text-gray-900 px-2 cursor-pointer dark:hover:text-white z-10;
+    }
+    .fondo-botones-menu {
+      @apply border-2 border-gray-800 dark:border-white rounded-full bg-pink-500 w-24 h-10 -mt-10;
+    }
 
-  .switch {
-    @apply rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#8F57CD] dark:ring-offset-[#2B195B];
-  }
+    /* -----  FIN NAV PRINCIPAL  ----- */
 
-  /* -----  FIN SWITCH  ----- */
+    /* -----  SWITCH  ----- */
 
-  /* -----  HERO  ----- */
+    .switch {
+      @apply rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#8F57CD] dark:ring-offset-[#2B195B];
+    }
 
-  .contenedor-hero {
-    @apply flex bg-light dark:bg-dark bg-cover bg-center fixed top-0 left-0 w-full h-screen;
-  }
-  .contenedor-saludo-nombre {
-    @apply grid justify-items-end items-center w-[100%];
-  }
-  .saludo {
-    @apply pl-20 font-league-spartan dark:text-white font-bold text-6xl 2xl:text-8xl;
-  }
-  .nombre {
-    @apply -mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 pl-20 w-full font-league-spartan font-bold text-8xl 2xl:text-9xl;
-  }
-  .roles {
-    @apply max-w-2xl 2xl:max-w-4xl pl-20 font-league-spartan dark:text-white font-light text-3xl 2xl:text-5xl;
-  }
-  .foto-juan-jaramillo {
-    @apply -ml-32 2xl:-ml-36 h-screen w-auto;
-  }
-  .boton-conoce-mas {
-    @apply mr-6 float-right mt-8 pt-1 border-gray-900 text-gray-900 dark:text-white font-league-spartan text-2xl border dark:border-white dark:hover:border-pink-500 hover:border-pink-500 transiciones;
-  }
+    /* -----  FIN SWITCH  ----- */
 
-  /* -----  FIN HERO  ----- */
+    /* -----  HERO  ----- */
 
-  /* -----  MENÚ FIJO  ----- */
+    .contenedor-hero {
+      @apply flex bg-light dark:bg-dark bg-cover bg-center fixed top-0 left-0 w-full h-screen;
+    }
+    .contenedor-saludo-nombre {
+      @apply grid justify-items-end items-center w-[100%];
+    }
+    .saludo {
+      @apply pl-20 font-league-spartan dark:text-white font-bold text-6xl 2xl:text-8xl;
+    }
+    .nombre {
+      @apply -mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 pl-20 w-full font-league-spartan font-bold text-8xl 2xl:text-9xl;
+    }
+    .roles {
+      @apply max-w-2xl 2xl:max-w-4xl pl-20 font-league-spartan dark:text-white font-light text-3xl 2xl:text-5xl;
+    }
+    .foto-juan-jaramillo {
+      @apply -ml-32 2xl:-ml-36 h-screen w-auto;
+    }
+    .boton-conoce-mas {
+      @apply mr-6 float-right mt-8 pt-1 border-gray-900 text-gray-900 dark:text-white font-league-spartan font-medium border-2 text-2xl dark:border-white dark:hover:border-pink-500 hover:border-pink-500 transiciones;
+    }
 
-  .contenedor-menu-fijo {
-    @apply w-[100%] h-auto flex justify-between fixed bottom-0 left-0 p-6 bg-transparent;
-  }
-  .contenedor-menu-sociales {
-    @apply flex justify-start max-h-10;
-  }
-  .menu-sociales {
-    @apply cursor-pointer rounded-full p-1 flex justify-items-center justify-between border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500;
-  }
-  .svg-sociales {
-    @apply px-2.5 hover:text-pink-500;
-  }
-  .contenedor-boton-whatsapp {
-    @apply pb-20 -mb-24 pt-3 w-16 justify-end mr-3 rounded-t-full border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500;
-  }
-  .img-whatsapp {
-    @apply mx-3;
-  }
-  .contenedor-speech-bubble {
-    @apply fixed bottom-24 right-9 font-league-spartan;
-  }
-  .cuadro-grande-speech-bubble {
-    @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl;
-  }
-  .flecha-speech-bubble {
-    @apply drop-shadow-lg -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
-  }
-  .titulo-dudas {
-    @apply text-gray-900 font-league-spartan text-[1.65rem];
-  }
-  .invitacion-dudas {
-    @apply text-gray-900 font-league-spartan text-3xl font-bold -mt-2;
-  }
-  .boton-cerrar-speech-bubble {
-    @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
-  }
+    /* -----  FIN HERO  ----- */
 
-  /* -----  FIN MENÚ FIJO  ----- */
+    /* -----  MENÚ FIJO  ----- */
+
+    .contenedor-menu-fijo {
+      @apply w-[100%] h-auto flex justify-between fixed bottom-0 left-0 p-6 bg-transparent;
+    }
+    .contenedor-menu-sociales {
+      @apply flex justify-start max-h-10;
+    }
+    .menu-sociales {
+      @apply cursor-pointer rounded-full p-1 flex justify-items-center justify-between border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500;
+    }
+    .svg-sociales {
+      @apply px-2.5 hover:text-pink-500;
+    }
+    .contenedor-boton-whatsapp {
+      @apply pb-20 -mb-24 pt-3 w-16 justify-end mr-3 rounded-t-full border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500;
+    }
+    .img-whatsapp {
+      @apply mx-3;
+    }
+    .contenedor-speech-bubble {
+      @apply fixed bottom-24 right-9 font-league-spartan;
+    }
+    .cuadro-grande-speech-bubble {
+      @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl;
+    }
+    .flecha-speech-bubble {
+      @apply drop-shadow-lg -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
+    }
+    .titulo-dudas {
+      @apply text-gray-900 font-league-spartan text-[1.65rem];
+    }
+    .invitacion-dudas {
+      @apply text-gray-900 font-league-spartan text-3xl font-bold -mt-2;
+    }
+    .boton-cerrar-speech-bubble {
+      @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
+    }
+    .contenedor-language-switcher {
+      @apply fixed left-0 top-[50%] bg-pink-500;
+    }
+    .language-switcher-spanish {
+      @apply;
+    }
+    .language-switcher-english {
+      @apply;
+    }
+
+    /* -----  FIN MENÚ FIJO  ----- */
+
+    /* -----  FOOTER  ----- */
+
+    .footer {
+      @apply;
+
+    }
+    /* -----  FIN FOOTER  ----- */
+
+/* ------------>>>>>>>  ESTILOS PÁGINAS INTERNAS  <<<<<<<------------ */
+
+    /* -----  PÁGINA ABOUT  ----- */
+    
+    .contenedor-componente-about {
+      @apply;
+    }
+
+    /* -----  FIN PÁGINA ABOUT  ----- */
+    
+    /* -----  PÁGINA WORK  ----- */
+
+    .contenedor-componente-work {
+      @apply;
+    }
+
+    /* -----  FIN PÁGINA WORK  ----- */
+
+    /* -----  PÁGINA CONTACT  ----- */
+
+    .contenedor-componente-contact {
+      @apply;
+    }
+    
+    /* -----  FIN PÁGINA CONTACT  ----- */
 }

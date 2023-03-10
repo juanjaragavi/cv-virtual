@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import GitHub from "../socialIcons/GitHub";
 import Telegram from "../socialIcons/Telegram";
 import LinkedIn from "../socialIcons/LinkedIn";
 import WhatsApp from "../socialIcons/WhatsApp";
 import SpeechBubble from "../media/SpeechBubble";
+import LangSwitcherButtons from "../media/LangSwitcherButtons";
 
 function FixedMenu() {
   const LinkGitHub = () => {
@@ -23,7 +24,7 @@ function FixedMenu() {
   };
 
   return (
-    <motion.div
+    <motion.main
       className="contenedor-menu-fijo"
       initial={{
         y: 50,
@@ -73,7 +74,8 @@ function FixedMenu() {
         <WhatsApp />
       </motion.div>
       <SpeechBubble />
-    </motion.div>
+      <LangSwitcherButtons />
+    </motion.main>
   );
 }
 
