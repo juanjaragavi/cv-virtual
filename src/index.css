@@ -37,7 +37,7 @@
     /* -----  NAV PRINCIPAL  ----- */
 
     .nav-principal {
-      @apply opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
+      @apply z-50 opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
     }
     .contenedor-menu {
       @apply text-lg font-bold font-league-spartan flex px-5 space-x-5 align-middle py-1.5;
@@ -88,7 +88,7 @@
     /* -----  MENÚ FIJO  ----- */
 
     .contenedor-menu-fijo {
-      @apply w-[100%] h-auto flex justify-between fixed bottom-0 left-0 p-6 bg-transparent;
+      @apply z-50 w-[100%] h-auto flex justify-between fixed bottom-0 left-0 p-6 bg-transparent;
     }
     .contenedor-menu-sociales {
       @apply flex justify-start max-h-10;
@@ -124,7 +124,7 @@
       @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
     }
     .contenedor-language-switcher {
-      @apply fixed left-0 top-[50%];
+      @apply z-50 fixed left-0 top-[50%];
     }
     .language-switcher-spanish {
       @apply text-lg cursor-pointer flex font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
