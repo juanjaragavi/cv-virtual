@@ -13,6 +13,8 @@ module.exports = {
       backgroundImage: {
         'dark': "url('./assets/fondo-hero-dark-1440.jpg')",
         'light': "url('./assets/fondo-hero-light-1440.jpg')",
+        'logodark': "url('./assets/logo-juan-jaramillo.png')",
+        'logolight': "url('./assets/logo-juan-jaramillo-light.png')",
       },
     },
   },
