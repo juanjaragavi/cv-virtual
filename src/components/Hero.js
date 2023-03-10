@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import IconButton from "../media/IconButton";
 import Spanish from "../texts/Spanish";
-import { ArrowDownCircle } from 'tabler-icons-react';
+import { CircleCheck } from 'tabler-icons-react';
 
 function Hero() {
   const LinkGitHub = () => {
@@ -81,7 +81,7 @@ function Hero() {
           >
             <IconButton
               onClick={LinkGitHub}
-              rightIcon={<ArrowDownCircle size={32} />}
+              rightIcon={<CircleCheck size={32} />}
               buttonText={Spanish.BotonConoceMas}
             />
           </motion.div>

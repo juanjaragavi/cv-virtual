@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-
   /* -----  ESTILOS GENERALES  ----- */
 
   * body {
@@ -17,12 +16,12 @@
   /* -----  FIN ESTILOS GENERALES  ----- */
 
   /* -----  TRANSICIONES  ----- */
-  
+
   .transiciones {
     @apply transition-all duration-300 ease-in-out;
   }
 
-  /* -----  FIN TRANSICIONES  ----- */ 
+  /* -----  FIN TRANSICIONES  ----- */
 
   /* -----  HEADER  ----- */
 
@@ -45,7 +44,7 @@
   }
   .fondo-botones-menu {
     @apply border-2 border-gray-800 dark:border-white rounded-full bg-pink-500 w-24 h-10 -mt-10;
-  } 
+  }
 
   /* -----  FIN NAV PRINCIPAL  ----- */
 
@@ -60,16 +59,16 @@
   /* -----  HERO  ----- */
 
   .contenedor-hero {
-    @apply flex bg-light dark:bg-dark bg-cover bg-center fixed top-0 left-0 w-full h-screen; 
+    @apply flex bg-light dark:bg-dark bg-cover bg-center fixed top-0 left-0 w-full h-screen;
   }
   .contenedor-saludo-nombre {
-    @apply grid justify-items-end items-center w-[100%]; 
+    @apply grid justify-items-end items-center w-[100%];
   }
   .saludo {
     @apply pl-20 font-league-spartan dark:text-white font-bold text-6xl 2xl:text-8xl;
   }
   .nombre {
-    @apply -mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 pl-20 w-full font-league-spartan font-bold text-8xl 2xl:text-9xl; 
+    @apply -mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 pl-20 w-full font-league-spartan font-bold text-8xl 2xl:text-9xl;
   }
   .roles {
     @apply max-w-2xl 2xl:max-w-4xl pl-20 font-league-spartan dark:text-white font-light text-3xl 2xl:text-5xl;
@@ -107,7 +106,7 @@
     @apply fixed bottom-24 right-9 font-league-spartan;
   }
   .cuadro-grande-speech-bubble {
-    @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl; 
+    @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl;
   }
   .flecha-speech-bubble {
     @apply drop-shadow-lg -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
@@ -123,6 +122,4 @@
   }
 
   /* -----  FIN MENÚ FIJO  ----- */
-
-
 }
