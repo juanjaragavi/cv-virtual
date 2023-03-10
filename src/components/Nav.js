@@ -2,7 +2,6 @@ import React from "react";
 import "../App.css";
 import { motion, useAnimationControls } from "framer-motion";
 import Spanish from "../texts/Spanish";
-import English from "../texts/English";
 
 function Nav() {
   const controls = useAnimationControls();
@@ -26,7 +25,7 @@ function Nav() {
           }}
           className="botones-menu transiciones"
         >
-          {Spanish.Item1}
+        {Spanish.Item1}
         </motion.li>
         <motion.li
           whileHover={() => {

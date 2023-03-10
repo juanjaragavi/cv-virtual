@@ -11,7 +11,8 @@ module.exports = {
         'league-spartan': ['"League Spartan"', 'sans-serif'],
       },
       backgroundImage: {
-        'hero': "url('./assets/fondo-hero-dark-1440.jpg')",
+        'dark': "url('./assets/fondo-hero-dark-1440.jpg')",
+        'light': "url('./assets/fondo-hero-light-1440.jpg')",
       },
     },
   },

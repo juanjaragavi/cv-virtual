@@ -8,7 +8,7 @@ function LinkedIn() {
       viewBox="0 0 30 30"
       width="32"
       height="32"
-      fill="white"
+      fill="#3270A9"
       whileHover={{
         fill: "#D35580",
       }}
