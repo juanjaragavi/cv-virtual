@@ -35,7 +35,7 @@
   /* -----  NAV PRINCIPAL  ----- */
 
   .nav-principal {
-    @apply opacity-95 dark:opacity-80 bg-gray-800 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
+    @apply opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
   }
   .contenedor-menu {
     @apply text-lg font-bold font-league-spartan flex px-5 space-x-5 align-middle py-1.5;
@@ -44,7 +44,7 @@
     @apply text-white dark:text-gray-900 px-2 cursor-pointer dark:hover:text-white z-10;
   }
   .fondo-botones-menu {
-    @apply border-2 border-gray-900 dark:border-white rounded-full bg-pink-500 w-24 h-10 -mt-10;
+    @apply border-2 border-gray-800 dark:border-white rounded-full bg-pink-500 w-24 h-10 -mt-10;
   } 
 
   /* -----  FIN NAV PRINCIPAL  ----- */

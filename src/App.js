@@ -1,5 +1,4 @@
 import React from "react";
-import { motion, useAnimationControls } from "framer-motion";
 
 function App() {
 
