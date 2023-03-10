@@ -46,7 +46,7 @@
       @apply text-white dark:text-gray-900 px-2 cursor-pointer dark:hover:text-white z-10;
     }
     .fondo-botones-menu {
-      @apply border-2 border-gray-800 dark:border-white rounded-full bg-pink-500 w-24 h-10 -mt-10;
+      @apply border-2 border-gray-800 dark:border-white rounded-full bg-[#FF00A1] w-24 h-10 -mt-10;
     }
 
     /* -----  FIN NAV PRINCIPAL  ----- */
@@ -124,13 +124,13 @@
       @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
     }
     .contenedor-language-switcher {
-      @apply fixed left-0 top-[50%] bg-pink-500;
+      @apply fixed left-0 top-[50%];
     }
     .language-switcher-spanish {
-      @apply;
+      @apply text-lg cursor-pointer flex font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
     }
     .language-switcher-english {
-      @apply;
+      @apply text-lg cursor-pointer flex font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
     }
 
     /* -----  FIN MENÚ FIJO  ----- */
@@ -166,6 +166,6 @@
     .contenedor-componente-contact {
       @apply;
     }
-    
+
     /* -----  FIN PÁGINA CONTACT  ----- */
 }

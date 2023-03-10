@@ -18,6 +18,8 @@ const English = {
 
     TituloWhatsApp: 'Questions? Want to Know More?',
     CTAWhatsApp: 'Chat with me Now!',
+    English: 'English',
+    Spanish: 'Spanish',
 }
 
 export default English;

@@ -5,7 +5,6 @@ import Telegram from "../socialIcons/Telegram";
 import LinkedIn from "../socialIcons/LinkedIn";
 import WhatsApp from "../socialIcons/WhatsApp";
 import SpeechBubble from "../media/SpeechBubble";
-import LangSwitcherButtons from "../media/LangSwitcherButtons";
 
 function FixedMenu() {
   const LinkGitHub = () => {
@@ -74,7 +73,6 @@ function FixedMenu() {
         <WhatsApp />
       </motion.div>
       <SpeechBubble />
-      <LangSwitcherButtons />
     </motion.main>
   );
 }
