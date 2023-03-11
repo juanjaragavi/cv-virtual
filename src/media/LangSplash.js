@@ -9,8 +9,6 @@ function LangSplash(props) {
   const {
     onClickEnSplash,
     onClickEsSplash,
-    onFocusEnClose,
-    onFocusEsClose,
     animate} = props;
   const { t } = useTranslation("common");
   return (
@@ -62,7 +60,6 @@ function LangSplash(props) {
             }
             buttonText="ENGLISH"
             onClick={onClickEnSplash}
-            onFocus={onFocusEnClose}
           />
           <IconButton
             className="mt-4 mr-0 boton-conoce-mas basis-1/2"
@@ -76,7 +73,6 @@ function LangSplash(props) {
             }
             buttonText="ESPAÑOL"
             onClick={onClickEsSplash}
-            onFocus={onFocusEsClose}
           />
         </div>
       </motion.div>

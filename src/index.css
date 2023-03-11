@@ -32,7 +32,7 @@
       @apply bg-logolight dark:bg-logodark bg-cover w-[12rem] h-[2.5rem];
     }
     .switch-selector-tema {
-      @apply ml-24 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#CDB2DB] dark:ring-offset-[#2B195B];
+      @apply ml-32 2xl:ml-56 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#CDB2DB] dark:ring-offset-[#2B195B];
     }
     .titulo-selecciona-idioma {
       @apply mt-5 text-center text-[1.35rem] font-league-spartan text-gray-900 dark:text-white;

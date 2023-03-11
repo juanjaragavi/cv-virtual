@@ -16,9 +16,8 @@ function App() {
     <MantineProvider withGlobalStyles withNormalizeCSS>
       <LangSplash
         animate={langSelect}
-        onClickEnSplash={() => i18n.changeLanguage("en")}
-        onClickEsSplash={() => i18n.changeLanguage("es")}
-        onFocusEnClose={() => {
+        onClickEnSplash={() => {
+          i18n.changeLanguage("en");
           langSelect.start({
             opacity: 0,
             display: "none",
@@ -30,7 +29,8 @@ function App() {
             },
           });
         }}
-        onFocusEsClose={() => {
+        onClickEsSplash={() => {
+          i18n.changeLanguage("es");
           langSelect.start({
             opacity: 0,
             display: "none",
