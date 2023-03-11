@@ -101,8 +101,9 @@ function Hero() {
           duration: 1,
           delay: 0.5,
         }}
-        alt="Juan Jaramillo de medio perfil y en ropa informal."
+        alt={t("AltFotoJJ.title", { framework: "React" })}
         src={require("../assets/juan-jaramillo-cv-virtual.png")}
+        title={t("AltFotoJJ.title", { framework: "React" })}
       />
     </div>
   );

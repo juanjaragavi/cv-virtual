@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { X } from "tabler-icons-react";
 import CloseButton from "./CloseButton";
-import Spanish from "../texts/Spanish";
 import { useTranslation } from "react-i18next";
 
 function SpeechBubble() {

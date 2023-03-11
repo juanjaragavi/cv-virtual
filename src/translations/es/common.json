@@ -38,5 +38,16 @@
     },
     "Spanish": {
         "title": "ESPAÑOL"
+    },
+    
+
+    "AltFotoJJ": {
+        "title": "Juan Jaramillo de medio perfil y en ropa informal."
+    },
+    "AltEnLang": {
+        "title": "Bandera de Reino Unido en el cambiador de Idiomas."
+    },
+    "AltEsLang": {
+        "title": "Bandera de España en el cambiador de Idiomas."
     }
 }

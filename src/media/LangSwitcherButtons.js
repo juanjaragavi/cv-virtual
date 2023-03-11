@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function LangSwitcherButtons(props) {
-    const { buttonTextEs, buttonTextEn, onClickEs, onClickEn } = props;  
+  const { t } = useTranslation("common");
+  const { buttonTextEs, buttonTextEn, onClickEs, onClickEn } = props;
 
   return (
     <motion.main
@@ -35,9 +37,10 @@ function LangSwitcherButtons(props) {
       >
         <p>{buttonTextEn}</p>
         <img
-          className="rounded-full w-5 h-5 ml-2 mt-0.5"
-          alt="Bandera de Reino Unido en el cambiador de Idiomas."
+          className="icono-language-switcher"
+          alt={t("AltEnLang.title", { framework: "React" })}
           src={require("../assets/uk.png")}
+          title={t("AltEnLang.title", { framework: "React" })}
         />
       </motion.div>
       <motion.div
@@ -56,9 +59,10 @@ function LangSwitcherButtons(props) {
       >
         <p>{buttonTextEs}</p>
         <img
-          className="rounded-full w-5 h-5 ml-1 mt-0.5"
-          alt="Bandera de España en el cambiador de Idiomas."
+          className="icono-language-switcher"
+          alt={t("AltEsLang.title", { framework: "React" })}
           src={require("../assets/spain.png")}
+          title={t("AltEsLang.title", { framework: "React" })}
         />
       </motion.div>
     </motion.main>
