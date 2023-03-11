@@ -11,15 +11,13 @@ function LangSplash(props) {
     onClickEsSplash,
     onFocusEnClose,
     onFocusEsClose,
-    animate
-  } = props;
+    animate} = props;
   const { t } = useTranslation("common");
   return (
     <motion.main
       className="contenedor-selector-idiomas"
       initial={{
         opacity: 1,
-        scale: 1,
       }}
       animate={animate}
     >

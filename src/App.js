@@ -21,7 +21,7 @@ function App() {
         onFocusEnClose={() => {
           langSelect.start({
             opacity: 0,
-            scale: 0,
+            display: "none",
             transition: {
               duration: 0.8,
               type: "tween",
@@ -33,7 +33,7 @@ function App() {
         onFocusEsClose={() => {
           langSelect.start({
             opacity: 0,
-            scale: 0,
+            display: "none",
             transition: {
               duration: 0.8,
               type: "tween",

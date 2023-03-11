@@ -5,6 +5,7 @@ import LogoJJ from "./LogoJJ";
 import { motion } from "framer-motion";
 
 function Header() {
+
   return (
     <motion.header
       className="header"
