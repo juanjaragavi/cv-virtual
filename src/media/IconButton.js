@@ -2,10 +2,11 @@ import React from "react";
 import { Button, rem } from "@mantine/core";
 
 function IconButton(props) {
-  const { rightIcon, leftIcon, buttonText, onClick, className } = props;
+  const { rightIcon, leftIcon, buttonText, onClick, className, onFocus } = props;
 
   return (
     <Button
+      onFocus={onFocus}
       onClick={onClick}
       className={className}
       variant="outline"

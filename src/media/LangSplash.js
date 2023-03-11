@@ -1,11 +1,12 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimationControls } from "framer-motion";
 import LogoJJ from "../components/LogoJJ";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 
 function LangSplash(props) {
+  const langSelect = useAnimationControls();
   const { onClickEnSplash, onClickEsSplash } = props;
   const { t } = useTranslation("common");
   return (
@@ -13,24 +14,26 @@ function LangSplash(props) {
       className="contenedor-selector-idiomas"
       initial={{
         opacity: 1,
+        scale: 1,
       }}
+      animate={langSelect}
     >
-      <motion.div 
+      <motion.div
         className="subcontenedor-selector-idiomas"
         initial={{
-            scale: 0,
-            opacity: 0,
-          }}
-          animate={{
-            scale: 1,
-            opacity: 1,
-          }}
-          transition={{
-            type: "tween",
-            ease: "easeOut",
-            duration: 0.8,
-            delay: 1,
-          }}
+          scale: 0,
+          opacity: 0,
+        }}
+        animate={{
+          scale: 1,
+          opacity: 1,
+        }}
+        transition={{
+          type: "tween",
+          ease: "easeOut",
+          duration: 0.8,
+          delay: 0.5,
+        }}
       >
         <div className="flex space-between">
           <LogoJJ className="LogoJJSelectorIdiomas" />
@@ -56,6 +59,18 @@ function LangSplash(props) {
             }
             buttonText="ENGLISH"
             onClick={onClickEnSplash}
+            onFocus={() => {
+              langSelect.start({
+                opacity: 0,
+                scale: 0,
+                transition: {
+                  duration: 0.8,
+                  type: "tween",
+                  ease: "easeOut",
+                  delay: 0.5,
+                },
+              });
+            }}
           />
           <IconButton
             className="mt-4 mr-0 boton-conoce-mas basis-1/2"
@@ -69,6 +84,18 @@ function LangSplash(props) {
             }
             buttonText="ESPAÑOL"
             onClick={onClickEsSplash}
+            onFocus={() => {
+              langSelect.start({
+                opacity: 0,
+                scale: 0,
+                transition: {
+                  duration: 0.8,
+                  type: "tween",
+                  ease: "easeOut",
+                  delay: 0.5,
+                },
+              });
+            }}
           />
         </div>
       </motion.div>
