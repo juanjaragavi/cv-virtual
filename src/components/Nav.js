@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import { motion, useAnimationControls } from "framer-motion";
 import { useTranslation } from "react-i18next";
 

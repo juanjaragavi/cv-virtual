@@ -5,12 +5,17 @@ import FixedMenu from "./components/FixedMenu";
 import { MantineProvider } from "@mantine/core";
 import LangSwitcherButtons from "./media/LangSwitcherButtons";
 import { useTranslation } from "react-i18next";
+import LangSplash from "./media/LangSplash";
 
 function App() {
   const [t, i18n] = useTranslation("common");
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
+      <LangSplash
+        onClickEnSplash={() => i18n.changeLanguage('en')}
+        onClickEsSplash={() => i18n.changeLanguage('es')}
+      />
       <Header />
       <Hero />
       <LangSwitcherButtons

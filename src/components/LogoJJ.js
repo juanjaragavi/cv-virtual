@@ -1,8 +1,9 @@
 import React from "react";
 
-function LogoJJ() {
+function LogoJJ(props) {
+  const { className } = props;
   return (
-    <main className="FondoLogoJJ"></main>  
+    <main className={className}></main>  
 
   );
 }

@@ -1,7 +1,8 @@
 import { MantineProvider, Switch, Group } from "@mantine/core";
 import { SunLow, Moon } from "tabler-icons-react";
 
-function ThemeSwitcher() {
+function ThemeSwitcher(props) {
+  const { className } = props;
   const changeDarkMode = () => {
     document.documentElement.classList.toggle("dark");
   };
@@ -28,7 +29,7 @@ function ThemeSwitcher() {
       <Group position="center">
         <Switch
           onChange={changeDarkMode}
-          className="switch transiciones"
+          className={className}
           styles={() => ({
             root: {
               border: 0,

@@ -11,15 +11,34 @@
     * body {
       @apply dark:bg-gray-900 dark:text-white font-league-spartan;
     }
-
     .App {
       @apply dark:bg-gray-900 dark:text-white w-[100%] font-league-spartan;
     }
-    .FondoLogoJJ {
+    .LogoJJ {
       @apply bg-logolight dark:bg-logodark bg-cover mt-5 w-[12rem] h-[2.5rem];
     }
 
     /* -----  FIN BASE  ----- */
+
+    /* -----  SPLASH SELECTOR DE IDIOMAS  ----- */
+
+    .contenedor-selector-idiomas {
+      @apply z-[999] grid w-screen h-screen place-items-center absolute top-0 left-0 backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10;
+    }
+    .subcontenedor-selector-idiomas {
+      @apply pt-10 pb-10 pl-5 pr-5 border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500 rounded-3xl w-4/12 backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-40 bg-opacity-20; 
+    }
+    .LogoJJSelectorIdiomas {
+      @apply bg-logolight dark:bg-logodark bg-cover w-[12rem] h-[2.5rem];
+    }
+    .switch-selector-tema {
+      @apply ml-24 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#CDB2DB] dark:ring-offset-[#2B195B];
+    }
+    .titulo-selecciona-idioma {
+      @apply mt-5 text-center text-[1.35rem] font-league-spartan text-gray-900 dark:text-white;
+    }
+
+    /* -----  FIN SPLASH SELECTOR DE IDIOMAS  ----- */
 
     /* -----  TRANSICIONES  ----- */
 
@@ -102,42 +121,51 @@
     .svg-sociales {
       @apply px-2.5 hover:text-pink-500;
     }
-    .contenedor-boton-whatsapp {
-      @apply pb-20 -mb-24 pt-3 w-16 justify-end mr-3 rounded-t-full border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500;
-    }
-    .img-whatsapp {
-      @apply mx-3;
-    }
-    .contenedor-speech-bubble {
-      @apply fixed bottom-24 right-9 font-league-spartan;
-    }
-    .cuadro-grande-speech-bubble {
-      @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl;
-    }
-    .flecha-speech-bubble {
-      @apply drop-shadow-lg -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
-    }
-    .titulo-dudas {
-      @apply text-gray-900 font-league-spartan text-[1.65rem];
-    }
-    .invitacion-dudas {
-      @apply text-gray-900 font-league-spartan text-3xl font-bold -mt-2;
-    }
-    .boton-cerrar-speech-bubble {
-      @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
-    }
-    .contenedor-language-switcher {
-      @apply z-50 fixed left-0 top-[50%];
-    }
-    .language-switcher-spanish {
-      @apply text-lg cursor-pointer flex flex-row-reverse font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
-    }
-    .language-switcher-english {
-      @apply text-lg cursor-pointer flex flex-row-reverse font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
-    }
-    .icono-language-switcher {
-      @apply rounded-full w-5 h-5 ml-2 mt-0.5;
-    }
+
+      /* -----  WHATSAPP  ----- */
+
+      .contenedor-boton-whatsapp {
+        @apply pb-20 -mb-24 pt-3 w-16 justify-end mr-3 rounded-t-full border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500;
+      }
+      .img-whatsapp {
+        @apply mx-3;
+      }
+
+      /* -----  SPEECH BUBBLE  ----- */
+
+      .contenedor-speech-bubble {
+        @apply fixed bottom-24 right-9 font-league-spartan;
+      }
+      .cuadro-grande-speech-bubble {
+        @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl;
+      }
+      .flecha-speech-bubble {
+        @apply drop-shadow-lg -z-10 absolute bg-gray-100 w-5 h-9 rotate-45 -mt-6 right-5;
+      }
+      .titulo-dudas {
+        @apply text-gray-900 font-league-spartan text-[1.65rem];
+      }
+      .invitacion-dudas {
+        @apply text-gray-900 font-league-spartan text-3xl font-bold -mt-2;
+      }
+      .boton-cerrar-speech-bubble {
+        @apply drop-shadow-lg bottom-[4.8rem] absolute font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full px-[0.1em] right-[14em] text-2xl;
+      }
+
+      /* -----  LANGUAGE SWITCHER  ----- */
+
+      .contenedor-language-switcher {
+        @apply z-50 fixed left-0 top-[50%];
+      }
+      .language-switcher-spanish {
+        @apply text-lg cursor-pointer flex flex-row-reverse font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
+      }
+      .language-switcher-english {
+        @apply text-lg cursor-pointer flex flex-row-reverse font-league-spartan font-medium rounded-full border pr-2 pl-10 pt-1 border-gray-900 dark:border-white dark:text-white hover:border-pink-500 hover:text-pink-500 dark:hover:border-pink-500 dark:hover:text-pink-500;
+      }
+      .icono-language-switcher {
+        @apply rounded-full w-5 h-5 ml-2 mt-0.5;
+      }
 
     /* -----  FIN MENÚ FIJO  ----- */
 

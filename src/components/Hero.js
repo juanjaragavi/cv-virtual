@@ -84,6 +84,7 @@ function Hero() {
               onClick={LinkGitHub}
               rightIcon={<CircleCheck size={24} />}
               buttonText={t("BotonConoceMas.title", { framework: "React" })}
+              className="boton-conoce-mas"
             />
           </motion.div>
         </article>
