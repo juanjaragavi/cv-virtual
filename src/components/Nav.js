@@ -11,9 +11,10 @@ function Nav() {
     <nav className="nav-principal transiciones">
       <ul className="contenedor-menu">
         <motion.li
+          className="botones-menu transiciones"
           whileHover={() => {
             controls.start({
-              x: 2,
+              x: 12,
               opacity: 1,
               transition: { duration: 0.3 },
             });
@@ -24,14 +25,14 @@ function Nav() {
               transition: { duration: 0.3 },
             });
           }}
-          className="botones-menu transiciones"
         >
           {t("Item1.title", { framework: "React" })}
         </motion.li>
         <motion.li
+          className="botones-menu transiciones"
           whileHover={() => {
             controls.start({
-              x: 84,
+              x: 124,
               opacity: 1,
               transition: { duration: 0.3 },
             });
@@ -42,14 +43,14 @@ function Nav() {
               transition: { duration: 0.3 },
             });
           }}
-          className="botones-menu transiciones"
         >
           {t("Item2.title", { framework: "React" })}
         </motion.li>
         <motion.li
+          className="botones-menu transiciones"
           whileHover={() => {
             controls.start({
-              x: 180,
+              x: 235,
               opacity: 1,
               transition: { duration: 0.3 },
             });
@@ -60,14 +61,14 @@ function Nav() {
               transition: { duration: 0.3 },
             });
           }}
-          className="botones-menu transiciones"
         >
           {t("Item3.title", { framework: "React" })}
         </motion.li>
         <motion.li
+          className="botones-menu transiciones"
           whileHover={() => {
             controls.start({
-              x: 285,
+              x: 348,
               opacity: 1,
               transition: { duration: 0.3 },
             });
@@ -78,15 +79,14 @@ function Nav() {
               transition: { duration: 0.3 },
             });
           }}
-          className="botones-menu transiciones"
         >
           {t("Item4.title", { framework: "React" })}
         </motion.li>
       </ul>
       <motion.div
+        className="fondo-botones-menu"
         animate={controls}
         initial={{ opacity: 0 }}
-        className="fondo-botones-menu"
       ></motion.div>
     </nav>
   );

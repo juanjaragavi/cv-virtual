@@ -17,12 +17,13 @@ function LangSplash(props) {
       transition={{
         type: "tween",
         ease: "easeOut",
-        duration: 0.5,
+        duration: 0.3,
         delay: 0.5,
       }}
     >
       <motion.div
-        className="subcontenedor-selector-idiomas"
+      drag
+        className="subcontenedor-selector-idiomas cursor-move"
         initial={{
           scale: 0,
           opacity: 0,
@@ -34,7 +35,7 @@ function LangSplash(props) {
         transition={{
           type: "spring",
           duration: 1,
-          delay: 1.5,
+          delay: 2,
         }}
       >
         <div className="flex space-between">
