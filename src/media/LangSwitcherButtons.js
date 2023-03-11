@@ -35,13 +35,13 @@ function LangSwitcherButtons(props) {
           duration: 0.3,
         }}
       >
-        <p>{buttonTextEn}</p>
         <img
           className="icono-language-switcher"
           alt={t("AltEnLang.title", { framework: "React" })}
           src={require("../assets/uk.png")}
           title={t("AltEnLang.title", { framework: "React" })}
         />
+        <p>{buttonTextEn}</p>
       </motion.div>
       <motion.div
         onClick={onClickEs}
@@ -57,13 +57,13 @@ function LangSwitcherButtons(props) {
           duration: 0.3,
         }}
       >
-        <p>{buttonTextEs}</p>
         <img
           className="icono-language-switcher"
           alt={t("AltEsLang.title", { framework: "React" })}
           src={require("../assets/spain.png")}
           title={t("AltEsLang.title", { framework: "React" })}
         />
+        <p>{buttonTextEs}</p>
       </motion.div>
     </motion.main>
   );
