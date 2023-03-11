@@ -23,7 +23,7 @@
     /* -----  SPLASH SELECTOR DE IDIOMAS  ----- */
 
     .contenedor-selector-idiomas {
-      @apply z-[999] grid w-screen h-screen place-items-center absolute top-0 left-0 backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-30 bg-opacity-10;
+      @apply z-[999] grid w-screen h-screen place-items-center absolute top-0 left-0 bg-transparent dark:bg-transparent;
     }
     .subcontenedor-selector-idiomas {
       @apply pt-10 pb-10 pl-5 pr-5 border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500 rounded-3xl w-4/12 backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-40 bg-opacity-20; 
@@ -36,6 +36,9 @@
     }
     .titulo-selecciona-idioma {
       @apply mt-5 text-center text-[1.35rem] font-league-spartan text-gray-900 dark:text-white;
+    }
+    .contenedor-botones-idioma {
+      @apply mt-0 flex flex-row;
     }
 
     /* -----  FIN SPLASH SELECTOR DE IDIOMAS  ----- */

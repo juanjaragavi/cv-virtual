@@ -19,27 +19,13 @@ function App() {
         onClickEnSplash={() => {
           i18n.changeLanguage("en");
           langSelect.start({
-            opacity: 0,
-            display: "none",
-            transition: {
-              duration: 0.8,
-              type: "tween",
-              ease: "easeOut",
-              delay: 0.5,
-            },
+            scale: 0,
           });
         }}
         onClickEsSplash={() => {
           i18n.changeLanguage("es");
           langSelect.start({
-            opacity: 0,
-            display: "none",
-            transition: {
-              duration: 0.8,
-              type: "tween",
-              ease: "easeOut",
-              delay: 0.5,
-            },
+            scale: 0,
           });
         }}
       />

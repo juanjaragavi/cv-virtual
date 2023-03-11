@@ -5,12 +5,11 @@ import LogoJJ from "./LogoJJ";
 import { motion } from "framer-motion";
 
 function Header() {
-
   return (
     <motion.header
       className="header"
       initial={{
-        y:-50,
+        y: -50,
         opacity: 0,
       }}
       animate={{

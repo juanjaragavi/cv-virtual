@@ -6,18 +6,20 @@ import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 
 function LangSplash(props) {
-  const {
-    onClickEnSplash,
-    onClickEsSplash,
-    animate} = props;
+  const { onClickEnSplash, onClickEsSplash, animate } = props;
   const { t } = useTranslation("common");
   return (
     <motion.main
+      layout
       className="contenedor-selector-idiomas"
-      initial={{
-        opacity: 1,
-      }}
+      initial={{ scale: 1 }}
       animate={animate}
+      transition={{
+        type: "tween",
+        ease: "easeOut",
+        duration: 0.5,
+        delay: 0.5,
+      }}
     >
       <motion.div
         className="subcontenedor-selector-idiomas"
@@ -30,10 +32,9 @@ function LangSplash(props) {
           opacity: 1,
         }}
         transition={{
-          type: "tween",
-          ease: "easeOut",
-          duration: 0.8,
-          delay: 0.5,
+          type: "spring",
+          duration: 1,
+          delay: 1.5,
         }}
       >
         <div className="flex space-between">
@@ -47,9 +48,9 @@ function LangSplash(props) {
             Select a Language / Selecciona un Idioma
           </h2>
         </div>
-        <div className="mt-0 flex flex-row space-between">
+        <div className="contenedor-botones-idioma">
           <IconButton
-            className="mt-4 boton-conoce-mas basis-1/2"
+            className="boton-conoce-mas mt-4 basis-1/2"
             leftIcon={
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
@@ -62,7 +63,7 @@ function LangSplash(props) {
             onClick={onClickEnSplash}
           />
           <IconButton
-            className="mt-4 mr-0 boton-conoce-mas basis-1/2"
+            className="boton-conoce-mas mt-4 mr-0 basis-1/2"
             leftIcon={
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
