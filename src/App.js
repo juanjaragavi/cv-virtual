@@ -7,6 +7,7 @@ import LangSwitcherButtons from "./media/LangSwitcherButtons";
 import { useAnimationControls } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LangSplash from "./media/LangSplash";
+import HeaderMovil from "./components/HeaderMovil";
 
 function App() {
   const langSelect = useAnimationControls();
@@ -14,6 +15,8 @@ function App() {
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
+      <Header />
+      <HeaderMovil />
       <LangSplash
         animate={langSelect}
         onClickEnSplash={() => {
@@ -29,7 +32,6 @@ function App() {
           });
         }}
       />
-      <Header />
       <Hero />
       <LangSwitcherButtons
         onClickEn={() => i18n.changeLanguage("en")}

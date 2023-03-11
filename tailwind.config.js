@@ -15,6 +15,7 @@ module.exports = {
         'light': "url('./assets/fondo-hero-light-1440.jpg')",
         'logodark': "url('./assets/logo-juan-jaramillo.png')",
         'logolight': "url('./assets/logo-juan-jaramillo-light.png')",
+        'fondomovillight': "url('./assets/fondo-hero-light-1440.jpg')",
       },
     },
   },

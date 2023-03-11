@@ -84,6 +84,7 @@ function Nav() {
         </motion.li>
       </ul>
       <motion.div
+        layout
         className="fondo-botones-menu"
         animate={controls}
         initial={{ opacity: 0 }}

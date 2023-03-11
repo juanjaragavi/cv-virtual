@@ -1,9 +1,12 @@
 {
+    "Menu": {
+        "title": "Menú de Navegación"
+    },
     "Item1": {
         "title": "Inicio"
     },
     "Item2": {
-        "title": "Acerca"
+        "title": "Conóceme"
     },
     "Item3": {
         "title": "Trabajos"

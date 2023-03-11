@@ -1,4 +1,7 @@
 {
+    "Menu": {
+        "title": "Navigation Menu"
+    },
     "Item1": {
         "title": "Home"
     },
