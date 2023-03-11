@@ -1,13 +1,18 @@
 import React from "react";
-import { motion, useAnimationControls } from "framer-motion";
+import { motion } from "framer-motion";
 import LogoJJ from "../components/LogoJJ";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 
 function LangSplash(props) {
-  const langSelect = useAnimationControls();
-  const { onClickEnSplash, onClickEsSplash } = props;
+  const {
+    onClickEnSplash,
+    onClickEsSplash,
+    onFocusEnClose,
+    onFocusEsClose,
+    animate
+  } = props;
   const { t } = useTranslation("common");
   return (
     <motion.main
@@ -16,7 +21,7 @@ function LangSplash(props) {
         opacity: 1,
         scale: 1,
       }}
-      animate={langSelect}
+      animate={animate}
     >
       <motion.div
         className="subcontenedor-selector-idiomas"
@@ -59,18 +64,7 @@ function LangSplash(props) {
             }
             buttonText="ENGLISH"
             onClick={onClickEnSplash}
-            onFocus={() => {
-              langSelect.start({
-                opacity: 0,
-                scale: 0,
-                transition: {
-                  duration: 0.8,
-                  type: "tween",
-                  ease: "easeOut",
-                  delay: 0.5,
-                },
-              });
-            }}
+            onFocus={onFocusEnClose}
           />
           <IconButton
             className="mt-4 mr-0 boton-conoce-mas basis-1/2"
@@ -84,18 +78,7 @@ function LangSplash(props) {
             }
             buttonText="ESPAÑOL"
             onClick={onClickEsSplash}
-            onFocus={() => {
-              langSelect.start({
-                opacity: 0,
-                scale: 0,
-                transition: {
-                  duration: 0.8,
-                  type: "tween",
-                  ease: "easeOut",
-                  delay: 0.5,
-                },
-              });
-            }}
+            onFocus={onFocusEsClose}
           />
         </div>
       </motion.div>

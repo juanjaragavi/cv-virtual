@@ -4,25 +4,52 @@ import Header from "./components/Header";
 import FixedMenu from "./components/FixedMenu";
 import { MantineProvider } from "@mantine/core";
 import LangSwitcherButtons from "./media/LangSwitcherButtons";
+import { useAnimationControls } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import LangSplash from "./media/LangSplash";
 
 function App() {
+  const langSelect = useAnimationControls();
   const [t, i18n] = useTranslation("common");
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>
       <LangSplash
-        onClickEnSplash={() => i18n.changeLanguage('en')}
-        onClickEsSplash={() => i18n.changeLanguage('es')}
+        animate={langSelect}
+        onClickEnSplash={() => i18n.changeLanguage("en")}
+        onClickEsSplash={() => i18n.changeLanguage("es")}
+        onFocusEnClose={() => {
+          langSelect.start({
+            opacity: 0,
+            scale: 0,
+            transition: {
+              duration: 0.8,
+              type: "tween",
+              ease: "easeOut",
+              delay: 0.5,
+            },
+          });
+        }}
+        onFocusEsClose={() => {
+          langSelect.start({
+            opacity: 0,
+            scale: 0,
+            transition: {
+              duration: 0.8,
+              type: "tween",
+              ease: "easeOut",
+              delay: 0.5,
+            },
+          });
+        }}
       />
       <Header />
       <Hero />
       <LangSwitcherButtons
-        onClickEn={() => i18n.changeLanguage('en')}
-        onClickEs={() => i18n.changeLanguage('es')}
-        buttonTextEn={t('English.title', {framework:'React'})}
-        buttonTextEs={t('Spanish.title', {framework:'React'})}
+        onClickEn={() => i18n.changeLanguage("en")}
+        onClickEs={() => i18n.changeLanguage("es")}
+        buttonTextEn={t("English.title", { framework: "React" })}
+        buttonTextEs={t("Spanish.title", { framework: "React" })}
       />
       <FixedMenu />
     </MantineProvider>
