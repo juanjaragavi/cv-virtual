@@ -68,7 +68,7 @@ function NavMovil() {
         </motion.div>
       </motion.button>
       <motion.ul
-        className="contenedor-desplegable-menu-movil"
+        className="contenedor-desplegable-menu-movil fondo-translucido"
         variants={{
           open: {
             clipPath: "inset(0% 0% 0% 0% round 10px)",

@@ -23,7 +23,7 @@ function LangSplash(props) {
     >
       <motion.div
       drag
-        className="subcontenedor-selector-idiomas cursor-move"
+        className="subcontenedor-selector-idiomas cursor-move fondo-translucido"
         initial={{
           scale: 0,
           opacity: 0,
