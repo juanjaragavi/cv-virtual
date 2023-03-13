@@ -4,10 +4,14 @@ import { X } from "tabler-icons-react";
 import CloseButton from "./CloseButton";
 import { useTranslation } from "react-i18next";
 
-function SpeechBubble() {
+const variants = {
+  x5: { x: -5 },
+  x12: { x: -12 },
+};
+
+function SpeechBubble({ move }) {
   const { t } = useTranslation("common");
   const [visible, setVisible] = React.useState(true);
-  const [move, setMove] = React.useState("");
 
   return (
     <motion.main
@@ -29,21 +33,20 @@ function SpeechBubble() {
       }}
     >
       <div className="cuadro-grande-speech-bubble">
-        <h3
-          className="titulo-dudas cursor-pointer"
-          onClick={() => setMove(true)}
-        >
+        <h3 className="titulo-dudas cursor-pointer">
           {t("TituloWhatsApp.title", { framework: "React" })}
         </h3>
-        <h4
-          className="invitacion-dudas cursor-pointer"
-          onClick={() => setMove(!true)}
-        >
+        <h4 className="invitacion-dudas cursor-pointer">
           {t("CTAWhatsApp.title", { framework: "React" })}
         </h4>
       </div>
       <div className="flecha-speech-bubble"></div>
-      <motion.div style={{ x: move ? -12 : -5 }}>
+      <motion.div
+        initial={"x12"}
+        variants={variants}
+        animate={move}
+        transition={{ duration: 0 }}
+      >
         <CloseButton
           onClick={() => setVisible(!visible)}
           className="boton-cerrar-speech-bubble transiciones"

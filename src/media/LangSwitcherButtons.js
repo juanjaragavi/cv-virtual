@@ -2,7 +2,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-function LangSwitcherButtons({ moveSpanish, moveEnglish }) {
+export default function LangSwitcherButtons({ setMove }) {
+  const onButtonClick = (mode) => {
+    setMove(mode);
+  };
   const [t, i18n] = useTranslation("common");
 
   return (
@@ -23,7 +26,7 @@ function LangSwitcherButtons({ moveSpanish, moveEnglish }) {
       <motion.div
         onClick={() => {
           i18n.changeLanguage("en");
-          moveEnglish();
+          onButtonClick("x12");
         }}
         className="transiciones my-2 language-switcher-english"
         initial={{
@@ -50,7 +53,7 @@ function LangSwitcherButtons({ moveSpanish, moveEnglish }) {
       <motion.div
         onClick={() => {
           i18n.changeLanguage("es");
-          moveSpanish();
+          onButtonClick("x5");
         }}
         className="transiciones language-switcher-spanish"
         initial={{
@@ -77,4 +80,3 @@ function LangSwitcherButtons({ moveSpanish, moveEnglish }) {
     </motion.main>
   );
 }
-export default LangSwitcherButtons;
