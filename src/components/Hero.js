@@ -3,84 +3,90 @@ import { motion } from "framer-motion";
 import IconButton from "../media/IconButton";
 import { useTranslation } from "react-i18next";
 
-function Hero() {
+const variants = {
+  active: { y: 0, opacity: 1, scale: 1 },
+  inactive: { opacity: 0 },
+  initial: { opacity: 0 },
+  initials: { opacity: 0, scale: 0.8 },
+  initial50: { y: 50, opacity: 0 },
+  initialm50: { y: -50, opacity: 0 },
+};
+
+function Hero({ startAnimations }) {
   const { t } = useTranslation("common");
   const LinkGitHub = () => {
     window.open("https://github.com/juanjaragavi/cv-virtual", "_blank");
   };
 
   return (
-    <div className="contenedor-hero">
-      <div className="contenedor-saludo-nombre">
-        <article>
+    <motion.main
+      className="contenedor-hero"
+      initial="initial"
+      variants={variants}
+      animate={startAnimations}
+      transition={{
+        type: "tween",
+        duration: 0.5,
+        delay: 0.3,
+      }}
+    >
+      <article className="contenedor-saludo-nombre">
+        <section>
           <motion.h2
             className="saludo"
-            initial={{
-              y: 50,
-              opacity: 0,
-            }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
+            initial="initialm50"
+            variants={variants}
+            animate={startAnimations}
             transition={{
               type: "tween",
-              duration: 1,
-              delay: 0.1,
+              duration: 0.5,
+              delay: 0.3,
+              ease: "easeOut"
             }}
           >
             {t("Saludo.title", { framework: "React" })}
           </motion.h2>
           <motion.h1
             className="nombre transiciones"
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: 1,
-            }}
+            initial="initials"
+            variants={variants}
+            animate={startAnimations}
             transition={{
-              duration: 1.5,
+              type: "tween",
+              duration: 0.5,
               delay: 0.5,
+              ease: "easeOut"
             }}
           >
             {t("Nombre.title", { framework: "React" })}
           </motion.h1>
           <motion.h4
-            className="roles sm:text-justify"
-            initial={{
-              y: -50,
-              opacity: 0,
-            }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
+          className="roles sm:text-justify"
+          initial="initialm50"
+            variants={variants}
+            animate={startAnimations}
             transition={{
               type: "tween",
-              duration: 1,
-              delay: 0.1,
+              duration: 0.8,
+              delay: 1,
+              ease: "easeOut"
             }}
           >
             {t("Tagline.title", { framework: "React" })}
           </motion.h4>
           <motion.div
-            initial={{
-              y: 50,
-              opacity: 0,
-            }}
-            animate={{
-              y: 0,
-              opacity: 1,
-            }}
-            transition={{
-              type: "tween",
-              duration: 1,
-              delay: 1,
-            }}
+          initial="initial50"
+          variants={variants}
+          animate={startAnimations}
+          transition={{
+            type: "tween",
+            duration: 0.5,
+            delay: 1.8,
+            ease: "easeOut"
+          }}
           >
             <IconButton
-              className="boton-conoce-mas invisible sm:visible z-50 hover:scale-105"
+              className="boton-conoce-mas transiciones invisible sm:visible z-50 hover:scale-105"
               onClick={LinkGitHub}
               rightIcon={
                 <svg
@@ -103,26 +109,24 @@ function Hero() {
               buttonText={t("BotonConoceMas.title", { framework: "React" })}
             />
           </motion.div>
-        </article>
-      </div>
+        </section>
+      </article>
       <motion.img
-        className="foto-juan-jaramillo transiciones"
-        initial={{
-          opacity: 0,
-        }}
-        animate={{
-          opacity: 1,
-        }}
+        className="foto-juan-jaramillo"
+        initial="initial50"
+        variants={variants}
+        animate={startAnimations}
         transition={{
           type: "tween",
-          duration: 1,
-          delay: 0.5,
+          duration: 0.5,
+          delay: 0.9,
+          ease: "easeOut"
         }}
         alt={t("AltFotoJJ.title", { framework: "React" })}
         src={require("../assets/juan-jaramillo-cv-virtual.png")}
         title={t("AltFotoJJ.title", { framework: "React" })}
       />
-    </div>
+    </motion.main>
   );
 }
 export default Hero;

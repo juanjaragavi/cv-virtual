@@ -9,18 +9,21 @@ import HeaderMovil from "./components/HeaderMovil";
 import LangSwitcherButtons from "./media/LangSwitcherButtons";
 
 function App() {
-  const [move, setMove] = useState("x12");
+  const [move, setMove] = useState("x5");
+  const [startAnimations, setStartAnimations] = useState("inactive");
 
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
-      <Header />
-      <HeaderMovil />
-      <LangSplash />
-      <Hero />
-      <LangSwitcherButtons setMove={setMove} />
-      <SpeechBubble move={move} />
-      <FixedMenu />
-    </MantineProvider>
+    <div className="App">
+      <MantineProvider withGlobalStyles withNormalizeCSS>
+        <Header />
+        <HeaderMovil />
+        <LangSplash setStartAnimations={setStartAnimations} />
+        <Hero startAnimations={startAnimations} />
+        <LangSwitcherButtons setMove={setMove} />
+        <SpeechBubble move={move} />
+        <FixedMenu />
+      </MantineProvider>
+    </div>
   );
 }
 

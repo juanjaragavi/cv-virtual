@@ -6,7 +6,10 @@ import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 import { useAnimationControls } from "framer-motion";
 
-function LangSplash() {
+function LangSplash( {setStartAnimations} ) {
+  const onButtonClick = (mode) => {
+    setStartAnimations(mode);
+  };
   const langSelect = useAnimationControls();
   const [t, i18n] = useTranslation("common");
   return (
@@ -36,7 +39,7 @@ function LangSplash() {
         transition={{
           type: "spring",
           duration: 1,
-          delay: 2,
+          delay: 0,
         }}
       >
         <div className="flex space-between">
@@ -64,6 +67,7 @@ function LangSplash() {
             buttonText="ENGLISH"
             onClick={() => {
               i18n.changeLanguage("en");
+              onButtonClick("active");
               langSelect.start({
                 scale: 0,
               });
@@ -82,6 +86,7 @@ function LangSplash() {
             buttonText="ESPAÑOL"
             onClick={() => {
               i18n.changeLanguage("es");
+              onButtonClick("active");
               langSelect.start({
                 scale: 0,
               });

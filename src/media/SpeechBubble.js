@@ -33,10 +33,10 @@ function SpeechBubble({ move }) {
       }}
     >
       <div className="cuadro-grande-speech-bubble">
-        <h3 className="titulo-dudas cursor-pointer">
+        <h3 className="titulo-dudas">
           {t("TituloWhatsApp.title", { framework: "React" })}
         </h3>
-        <h4 className="invitacion-dudas cursor-pointer">
+        <h4 className="invitacion-dudas">
           {t("CTAWhatsApp.title", { framework: "React" })}
         </h4>
       </div>

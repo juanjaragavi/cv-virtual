@@ -35,7 +35,7 @@ function FixedMenu() {
       transition={{
         type: "tween",
         duration: 0.5,
-        delay: 0,
+        delay: 0.5,
       }}
     >
       <nav className="contenedor-menu-sociales">
