@@ -6,9 +6,10 @@ import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 import { useAnimationControls } from "framer-motion";
 
-function LangSplash( {setStartAnimations} ) {
+function LangSplash({setStartAnimations, setAnimateHeader}) {
   const onButtonClick = (mode) => {
     setStartAnimations(mode);
+    setAnimateHeader(mode);
   };
   const langSelect = useAnimationControls();
   const [t, i18n] = useTranslation("common");
@@ -43,7 +44,7 @@ function LangSplash( {setStartAnimations} ) {
         }}
       >
         <div className="flex space-between">
-          <LogoJJ className="logo-jj-lang-selector" />
+          <LogoJJ className="logo-jj-lang-selector transiciones" />
           <div className="basis-1/2">
             <ThemeSwitcher className="switch-selector-tema transiciones mr-5" />
           </div>

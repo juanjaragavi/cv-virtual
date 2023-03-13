@@ -148,7 +148,7 @@
       @apply md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 font-league-spartan dark:text-white font-bold text-[2.5rem] sm:text-2xl md:text-6xl xl:text-6xl 2xl:text-7xl;
     }
     .nombre {
-      @apply p-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 -mt-3.5 lg:-mt-1.5 xl:-mt-1 2xl:-mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 w-full font-league-spartan font-bold text-5xl sm:text-7xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl hover:scale-105 cursor-none;
+      @apply p-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 -mt-3.5 lg:-mt-1.5 xl:-mt-1 2xl:-mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 w-full font-league-spartan font-bold text-5xl sm:text-7xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl cursor-none;
     }
     .roles {
       @apply px-4 sm:px-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 max-w-2xl 2xl:max-w-4xl font-league-spartan dark:text-white font-light text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
@@ -262,10 +262,6 @@
     /* -----  FIN PÁGINA WORK  ----- */
 
     /* -----  PÁGINA CONTACT  ----- */
-
-    .contenedor-componente-contact {
-      @apply;
-    }
 
     /* -----  FIN PÁGINA CONTACT  ----- */
 }
