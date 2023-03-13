@@ -18,12 +18,21 @@ function HeaderMovil({ animateHeaderMovil }) {
       transition={{
         type: "tween",
         duration: 0.5,
-        delay: 2,
+        delay: 1.5,
       }}
     >
       <LogoJJ className="logo-jj" />
-
-      <NavMovil />
+      <motion.div
+        initial="initial"
+        animate="active"
+        transition={{
+          type: "tween",
+          duration: 0.5,
+          delay: 3,
+        }}
+        >
+        <NavMovil />
+      </motion.div>
     </motion.header>
   );
 }

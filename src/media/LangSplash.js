@@ -54,11 +54,9 @@ function LangSplash({
           delay: 0,
         }}
       >
-        <div className="flex space-between">
+        <div className="contenedor-logo-y-switcher-selector-idiomas">
           <LogoJJ className="logo-jj-lang-selector transiciones" />
-          <div className="basis-1/2">
-            <ThemeSwitcher className="switch-selector-tema transiciones mr-5" />
-          </div>
+          <ThemeSwitcher className="switch-selector-tema transiciones" />
         </div>
         <div>
           <h2 className="titulo-selecciona-idioma">
