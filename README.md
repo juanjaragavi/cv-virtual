@@ -14,4 +14,5 @@ Feel free to check my [LinkedIn Profile](https://www.linkedin.com/in/juan-jarami
 
 ## Thanks for Watching! 🙋🏻‍♂️
 
+[![A mushroom-head robot](/assets/images/codey.jpg 'Codey the Codecademy mascot')](https://codecademy.com)
 
