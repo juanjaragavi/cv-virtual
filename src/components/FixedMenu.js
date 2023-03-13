@@ -5,7 +5,13 @@ import Telegram from "../socialIcons/Telegram";
 import LinkedIn from "../socialIcons/LinkedIn";
 import WhatsApp from "../socialIcons/WhatsApp";
 
-function FixedMenu() {
+const variants = {
+  active: { y: 0, opacity: 1 },
+  initial: { y: 50, opacity: 0 },
+  initial100: { y: 100, opacity: 0 },
+};
+
+function FixedMenu({ animateFixedMenu }) {
   const LinkGitHub = () => {
     window.open("https://github.com/juanjaragavi/cv-virtual", "_blank");
   };
@@ -24,24 +30,18 @@ function FixedMenu() {
   return (
     <motion.main
       className="contenedor-menu-fijo"
-      initial={{
-        y: 50,
-        opacity: 0,
-      }}
-      animate={{
-        y: 0,
-        opacity: 1,
-      }}
+      variants={variants}
+      initial="initial"
+      animate={animateFixedMenu}
       transition={{
         type: "tween",
         duration: 0.5,
-        delay: 0.5,
+        delay: 0.2,
       }}
     >
       <nav className="contenedor-menu-sociales">
-        <motion.ul
+        <ul
           className="menu-sociales transiciones hover:scale-105"
-          transition={{ duration: 0.2 }}
         >
           <li onClick={LinkLinkedIn} className="svg-sociales transiciones ml-2">
             <LinkedIn />
@@ -55,20 +55,17 @@ function FixedMenu() {
           >
             <Telegram />
           </li>
-        </motion.ul>
+        </ul>
       </nav>
       <motion.div
         className="contenedor-boton-whatsapp"
-        initial={{
-          y: 100,
-        }}
-        animate={{
-          y: 0,
-        }}
+        variants={variants}
+        initial="initial100"
+        animate={animateFixedMenu}
         transition={{
           type: "spring",
           duration: 1,
-          delay: 2,
+          delay: 1.5,
         }}
       >
         <WhatsApp />

@@ -5,11 +5,11 @@ import CloseButton from "./CloseButton";
 import { useTranslation } from "react-i18next";
 
 const variants = {
-  x5: { x: -5 },
-  x12: { x: -12 },
+  initial: { scale: 0, opacity: 0 },
+  active: { scale: 1, opacity: 1 },
 };
 
-function SpeechBubble({ move }) {
+function SpeechBubble({ move, animateBubble }) {
   const { t } = useTranslation("common");
   const [visible, setVisible] = React.useState(true);
 
@@ -17,19 +17,14 @@ function SpeechBubble({ move }) {
     <motion.main
       style={{ display: visible ? "block" : "none" }}
       className="contenedor-speech-bubble"
-      initial={{
-        scale: 0,
-        opacity: 0,
-      }}
-      animate={{
-        scale: 1,
-        opacity: 1,
-      }}
+      initial="initial"
+      variants={variants}
+      animate={animateBubble}
       transition={{
         type: "spring",
         ease: "easeOut",
         duration: 0.8,
-        delay: 2.5,
+        delay: 2,
       }}
     >
       <div className="cuadro-grande-speech-bubble">

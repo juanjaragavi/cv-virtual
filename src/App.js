@@ -10,8 +10,11 @@ import LangSwitcherButtons from "./media/LangSwitcherButtons";
 
 function App() {
   const [move, setMove] = useState("x5");
-  const [startAnimations, setStartAnimations] = useState("inactive");
   const [animateHeader, setAnimateHeader] = useState("inactive");
+  const [animateBubble, setAnimateBubble] = useState("inactive");
+  const [animateSwitcher, setAnimateSwitcher] = useState("inactive");
+  const [startAnimations, setStartAnimations] = useState("inactive");
+  const [animateFixedMenu, setAnimateFixedMenu] = useState("inactive");
 
   return (
     <div className="App">
@@ -19,13 +22,22 @@ function App() {
         <Header animateHeader={animateHeader} />
         <HeaderMovil/>
         <LangSplash
-          setStartAnimations={setStartAnimations}
           setAnimateHeader={setAnimateHeader}
+          setAnimateBubble={setAnimateBubble}
+          setStartAnimations={setStartAnimations}
+          setAnimateSwitcher={setAnimateSwitcher}
+          setAnimateFixedMenu={setAnimateFixedMenu}
         />
         <Hero startAnimations={startAnimations} />
-        <LangSwitcherButtons setMove={setMove} />
-        <SpeechBubble move={move} />
-        <FixedMenu />
+        <LangSwitcherButtons
+          setMove={setMove} 
+          animateSwitcher={animateSwitcher}
+        />
+        <SpeechBubble
+          move={move}
+          animateBubble={animateBubble} 
+        />
+        <FixedMenu animateFixedMenu={animateFixedMenu} />
       </MantineProvider>
     </div>
   );

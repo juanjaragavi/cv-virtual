@@ -6,10 +6,13 @@ import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 import { useAnimationControls } from "framer-motion";
 
-function LangSplash({setStartAnimations, setAnimateHeader}) {
+function LangSplash({ setStartAnimations, setAnimateHeader, setAnimateFixedMenu, setAnimateBubble, setAnimateSwitcher }) {
   const onButtonClick = (mode) => {
+    setAnimateFixedMenu(mode);
     setStartAnimations(mode);
+    setAnimateBubble(mode);
     setAnimateHeader(mode);
+    setAnimateSwitcher(mode);
   };
   const langSelect = useAnimationControls();
   const [t, i18n] = useTranslation("common");

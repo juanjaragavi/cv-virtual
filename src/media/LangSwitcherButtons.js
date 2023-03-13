@@ -2,7 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-export default function LangSwitcherButtons({ setMove }) {
+const variants = {
+  initial: { x: -200 },
+  active: { x: 0 },
+};
+
+export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
   const onButtonClick = (mode) => {
     setMove(mode);
   };
@@ -11,12 +16,9 @@ export default function LangSwitcherButtons({ setMove }) {
   return (
     <motion.main
       className="contenedor-language-switcher"
-      initial={{
-        x: -200,
-      }}
-      animate={{
-        x: 0,
-      }}
+      animate={animateSwitcher}
+      initial="initial"
+      variants={variants}
       transition={{
         type: "tween",
         duration: 1,
