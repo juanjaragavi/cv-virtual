@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 function Hero() {
   const { t } = useTranslation("common");
   const LinkGitHub = () => {
-    window.open("https://github.com/juanjaragavi/", "_blank");
+    window.open("https://github.com/juanjaragavi/cv-virtual", "_blank");
   };
 
   return (

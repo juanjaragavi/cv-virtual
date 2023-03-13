@@ -7,7 +7,7 @@ import WhatsApp from "../socialIcons/WhatsApp";
 
 function FixedMenu() {
   const LinkGitHub = () => {
-    window.open("https://github.com/juanjaragavi/", "_blank");
+    window.open("https://github.com/juanjaragavi/cv-virtual", "_blank");
   };
 
   const LinkTelegram = () => {
