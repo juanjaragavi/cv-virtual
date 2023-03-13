@@ -191,7 +191,7 @@
         @apply text-right text-gray-900 font-league-spartan text-xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-3xl font-bold -mt-1 xl:mt-0 2xl:mt-0;
       }
       .boton-cerrar-speech-bubble {
-        @apply absolute bottom-16 right-60 sm:bottom-[4.8rem] sm:right-[14em] px-[0.1em] sm:text-2xl drop-shadow-lg font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full;
+        @apply absolute bottom-16 right-[13] sm:bottom-[4.8rem] sm:right-[14em] px-[0.1em] sm:text-2xl drop-shadow-lg font-league-spartan font-bold text-pink-500 bg-gray-100 hover:text-white rounded-full;
       }
 
       /* -----  LANGUAGE SWITCHER  ----- */

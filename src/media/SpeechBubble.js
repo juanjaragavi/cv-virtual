@@ -42,7 +42,6 @@ function SpeechBubble({ move }) {
       </div>
       <div className="flecha-speech-bubble"></div>
       <motion.div
-        initial={"x12"}
         variants={variants}
         animate={move}
         transition={{ duration: 0 }}
