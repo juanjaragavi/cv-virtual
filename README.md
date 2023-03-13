@@ -10,4 +10,8 @@ UX & UI Design Lead • Backend & Frontend Developer • Web & App Developer •
 
 ## 👀 Want to learn more?
 
-Feel free to check my [LinkedIn Profile](https://www.linkedin.com/in/juan-jaramillo-tradebog/) (it won't too shabby if you follow me 😉) or add me to [WhatsApp](https://wa.link/anay7y), so we can have a Chat.
+Feel free to check my [LinkedIn Profile](https://www.linkedin.com/in/juan-jaramillo-tradebog/) (it won't too shabby if you follow me 😉), or add me to [WhatsApp](https://wa.link/anay7y), so we can have a Chat. 
+
+## Thanks for Watching! 🙋🏻‍♂️
+
+
