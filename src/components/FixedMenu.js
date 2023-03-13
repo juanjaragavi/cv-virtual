@@ -40,9 +40,7 @@ function FixedMenu({ animateFixedMenu }) {
       }}
     >
       <nav className="contenedor-menu-sociales">
-        <ul
-          className="menu-sociales transiciones hover:scale-105"
-        >
+        <ul className="menu-sociales transiciones hover:scale-105">
           <li onClick={LinkLinkedIn} className="svg-sociales transiciones ml-2">
             <LinkedIn />
           </li>
@@ -57,7 +55,7 @@ function FixedMenu({ animateFixedMenu }) {
           </li>
         </ul>
       </nav>
-      <motion.div
+      <motion.section
         className="contenedor-boton-whatsapp"
         variants={variants}
         initial="initial100"
@@ -69,7 +67,7 @@ function FixedMenu({ animateFixedMenu }) {
         }}
       >
         <WhatsApp />
-      </motion.div>
+      </motion.section>
     </motion.main>
   );
 }

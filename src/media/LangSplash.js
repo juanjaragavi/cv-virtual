@@ -1,17 +1,17 @@
 import React from "react";
+import IconButton from "./IconButton";
 import { motion } from "framer-motion";
 import LogoJJ from "../components/LogoJJ";
-import ThemeSwitcher from "../components/ThemeSwitcher";
-import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
 import { useAnimationControls } from "framer-motion";
+import ThemeSwitcher from "../components/ThemeSwitcher";
 
 function LangSplash({
-  setStartAnimations,
   setAnimateHeader,
-  setAnimateFixedMenu,
   setAnimateBubble,
+  setStartAnimations,
   setAnimateSwitcher,
+  setAnimateFixedMenu,
   setAnimateHeaderMovil,
 }) {
   const onButtonClick = (mode) => {

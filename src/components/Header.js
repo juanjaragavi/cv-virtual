@@ -1,8 +1,8 @@
-import React from "react";
 import Nav from "./Nav";
-import ThemeSwitcher from "./ThemeSwitcher";
+import React from "react";
 import LogoJJ from "./LogoJJ";
 import { motion } from "framer-motion";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const variants = {
   active: { y:0, opacity: 1 },

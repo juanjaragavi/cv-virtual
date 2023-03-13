@@ -1,7 +1,7 @@
 import React from "react";
 import LogoJJ from "./LogoJJ";
-import { motion } from "framer-motion";
 import NavMovil from "./NavMovil";
+import { motion } from "framer-motion";
 
 const variants = {
   initial: { y: -50, opacity: 0 },
@@ -22,17 +22,7 @@ function HeaderMovil({ animateHeaderMovil }) {
       }}
     >
       <LogoJJ className="logo-jj" />
-      <motion.div
-        initial="initial"
-        animate="active"
-        transition={{
-          type: "tween",
-          duration: 0.5,
-          delay: 3,
-        }}
-        >
-        <NavMovil />
-      </motion.div>
+      <NavMovil />
     </motion.header>
   );
 }
