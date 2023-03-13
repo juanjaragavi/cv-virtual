@@ -1,4 +1,8 @@
-import { MantineProvider, Switch, Group } from "@mantine/core";
+import {
+  MantineProvider,
+  Switch,
+  Group,
+} from "@mantine/core";
 import { SunLow, Moon } from "tabler-icons-react";
 
 function ThemeSwitcher(props) {
@@ -30,11 +34,6 @@ function ThemeSwitcher(props) {
         <Switch
           onChange={changeDarkMode}
           className={className}
-          styles={() => ({
-            root: {
-              border: 0,
-            },
-          })}
           size="xl"
           color="bright-pink"
           onLabel={<SunLow size={28} />}

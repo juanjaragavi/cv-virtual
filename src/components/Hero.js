@@ -47,7 +47,7 @@ function Hero() {
             {t("Nombre.title", { framework: "React" })}
           </motion.h1>
           <motion.h4
-            className="roles"
+            className="roles sm:text-justify"
             initial={{
               y: -50,
               opacity: 0,
@@ -80,7 +80,7 @@ function Hero() {
             }}
           >
             <IconButton
-              className="boton-conoce-mas invisible sm:visible"
+              className="boton-conoce-mas invisible sm:visible z-50 hover:scale-105"
               onClick={LinkGitHub}
               rightIcon={
                 <svg

@@ -1,9 +1,7 @@
 import React from "react";
 import { Button, rem } from "@mantine/core";
 
-function CloseButton(props) {
-  const { buttonText, onClick, className } = props;
-
+function CloseButton({ buttonText, onClick, className }) {
   return (
     <Button
       onClick={onClick}
@@ -16,7 +14,7 @@ function CloseButton(props) {
           paddingLeft: rem(24),
           paddingRight: rem(24),
           "&:not([data-disabled])": theme.fn.hover({
-            backgroundColor: "rgb(236, 72, 153)"
+            backgroundColor: "rgb(236, 72, 153)",
           }),
         },
       })}

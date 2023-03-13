@@ -4,7 +4,6 @@ import GitHub from "../socialIcons/GitHub";
 import Telegram from "../socialIcons/Telegram";
 import LinkedIn from "../socialIcons/LinkedIn";
 import WhatsApp from "../socialIcons/WhatsApp";
-import SpeechBubble from "../media/SpeechBubble";
 
 function FixedMenu() {
   const LinkGitHub = () => {
@@ -41,8 +40,7 @@ function FixedMenu() {
     >
       <nav className="contenedor-menu-sociales">
         <motion.ul
-          className="menu-sociales transiciones"
-          whileHover={{ scale: 1.2 }}
+          className="menu-sociales transiciones hover:scale-105"
           transition={{ duration: 0.2 }}
         >
           <li onClick={LinkLinkedIn} className="svg-sociales transiciones ml-2">
@@ -51,7 +49,10 @@ function FixedMenu() {
           <li onClick={LinkGitHub} className="svg-sociales transiciones">
             <GitHub />
           </li>
-          <li onClick={LinkTelegram} className="svg-sociales transiciones mr-2">
+          <li
+            onClick={LinkTelegram}
+            className="svg-sociales transiciones mr-2.5"
+          >
             <Telegram />
           </li>
         </motion.ul>
@@ -72,7 +73,6 @@ function FixedMenu() {
       >
         <WhatsApp />
       </motion.div>
-      <SpeechBubble />
     </motion.main>
   );
 }

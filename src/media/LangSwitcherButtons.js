@@ -2,9 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
-function LangSwitcherButtons(props) {
-  const { t } = useTranslation("common");
-  const { buttonTextEs, buttonTextEn, onClickEs, onClickEn } = props;
+function LangSwitcherButtons({ moveSpanish, moveEnglish }) {
+  const [t, i18n] = useTranslation("common");
 
   return (
     <motion.main
@@ -17,12 +16,15 @@ function LangSwitcherButtons(props) {
       }}
       transition={{
         type: "tween",
-        duration: 0.5,
+        duration: 1,
         delay: 0,
       }}
     >
       <motion.div
-        onClick={onClickEn}
+        onClick={() => {
+          i18n.changeLanguage("en");
+          moveEnglish();
+        }}
         className="transiciones my-2 language-switcher-english"
         initial={{
           x: -112,
@@ -32,7 +34,9 @@ function LangSwitcherButtons(props) {
         }}
         transition={{
           type: "tween",
-          duration: 0.3,
+          duration: 0,
+          delay: 0,
+          ease: "easeInOut",
         }}
       >
         <img
@@ -41,10 +45,13 @@ function LangSwitcherButtons(props) {
           src={require("../assets/uk.png")}
           title={t("AltEnLang.title", { framework: "React" })}
         />
-        <p>{buttonTextEn}</p>
+        <p>{t("English.title", { framework: "React" })}</p>
       </motion.div>
       <motion.div
-        onClick={onClickEs}
+        onClick={() => {
+          i18n.changeLanguage("es");
+          moveSpanish();
+        }}
         className="transiciones language-switcher-spanish"
         initial={{
           x: -112,
@@ -54,7 +61,9 @@ function LangSwitcherButtons(props) {
         }}
         transition={{
           type: "tween",
-          duration: 0.3,
+          duration: 0,
+          delay: 0,
+          ease: "easeInOut",
         }}
       >
         <img
@@ -63,7 +72,7 @@ function LangSwitcherButtons(props) {
           src={require("../assets/spain.png")}
           title={t("AltEsLang.title", { framework: "React" })}
         />
-        <p>{buttonTextEs}</p>
+        <p>{t("Spanish.title", { framework: "React" })}</p>
       </motion.div>
     </motion.main>
   );

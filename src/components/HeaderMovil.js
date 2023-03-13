@@ -22,6 +22,7 @@ function HeaderMovil() {
       }}
     >
       <LogoJJ className="LogoJJ" />
+
       <NavMovil />
     </motion.header>
   );

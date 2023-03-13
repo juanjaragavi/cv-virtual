@@ -4,25 +4,26 @@ import LogoJJ from "../components/LogoJJ";
 import ThemeSwitcher from "../components/ThemeSwitcher";
 import IconButton from "./IconButton";
 import { useTranslation } from "react-i18next";
+import { useAnimationControls } from "framer-motion";
 
-function LangSplash(props) {
-  const { onClickEnSplash, onClickEsSplash, animate } = props;
-  const { t } = useTranslation("common");
+function LangSplash() {
+  const langSelect = useAnimationControls();
+  const [t, i18n] = useTranslation("common");
   return (
     <motion.main
       layout
       className="contenedor-selector-idiomas"
       initial={{ scale: 1 }}
-      animate={animate}
+      animate={langSelect}
       transition={{
         type: "tween",
         ease: "easeOut",
         duration: 0.3,
-        delay: 0.5,
+        delay: 0.3,
       }}
     >
       <motion.div
-      drag
+        drag
         className="subcontenedor-selector-idiomas cursor-move fondo-translucido"
         initial={{
           scale: 0,
@@ -41,7 +42,7 @@ function LangSplash(props) {
         <div className="flex space-between">
           <LogoJJ className="LogoJJSelectorIdiomas" />
           <div className="basis-1/2">
-            <ThemeSwitcher className="switch-selector-tema transiciones" />
+            <ThemeSwitcher className="switch-selector-tema transiciones mr-5" />
           </div>
         </div>
         <div>
@@ -51,7 +52,7 @@ function LangSplash(props) {
         </div>
         <div className="contenedor-botones-idioma">
           <IconButton
-            className="boton-conoce-mas boton-idioma transiciones text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm"
+            className="boton-conoce-mas boton-idioma transiciones text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm hover:scale-105"
             leftIcon={
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
@@ -61,10 +62,15 @@ function LangSplash(props) {
               />
             }
             buttonText="ENGLISH"
-            onClick={onClickEnSplash}
+            onClick={() => {
+              i18n.changeLanguage("en");
+              langSelect.start({
+                scale: 0,
+              });
+            }}
           />
           <IconButton
-            className="boton-conoce-mas boton-idioma transiciones text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm"
+            className="boton-conoce-mas boton-idioma transiciones text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm hover:scale-105"
             leftIcon={
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
@@ -74,7 +80,12 @@ function LangSplash(props) {
               />
             }
             buttonText="ESPAÑOL"
-            onClick={onClickEsSplash}
+            onClick={() => {
+              i18n.changeLanguage("es");
+              langSelect.start({
+                scale: 0,
+              });
+            }}
           />
         </div>
       </motion.div>

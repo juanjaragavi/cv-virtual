@@ -22,7 +22,7 @@ function Header() {
         delay: 0,
       }}
     >
-      <LogoJJ className="LogoJJ" />
+      <LogoJJ className="LogoJJ transiciones" />
       <Nav />
       <ThemeSwitcher className="switch transiciones" />
     </motion.header>

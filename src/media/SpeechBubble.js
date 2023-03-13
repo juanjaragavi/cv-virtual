@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 function SpeechBubble() {
   const { t } = useTranslation("common");
   const [visible, setVisible] = React.useState(true);
+  const [move, setMove] = React.useState("");
 
   return (
     <motion.main
@@ -28,15 +29,27 @@ function SpeechBubble() {
       }}
     >
       <div className="cuadro-grande-speech-bubble">
-        <h3 className="titulo-dudas">{t("TituloWhatsApp.title", { framework: "React" })}</h3>
-        <h4 className="invitacion-dudas">{t("CTAWhatsApp.title", { framework: "React" })}</h4>
+        <h3
+          className="titulo-dudas cursor-pointer"
+          onClick={() => setMove(true)}
+        >
+          {t("TituloWhatsApp.title", { framework: "React" })}
+        </h3>
+        <h4
+          className="invitacion-dudas cursor-pointer"
+          onClick={() => setMove(!true)}
+        >
+          {t("CTAWhatsApp.title", { framework: "React" })}
+        </h4>
       </div>
       <div className="flecha-speech-bubble"></div>
-      <CloseButton
-        onClick={() => setVisible(!visible)}
-        className="boton-cerrar-speech-bubble transiciones"
-        buttonText={visible ? <X size={30} /> : <X size={30} />}
-      />
+      <motion.div style={{ x: move ? -12 : -5 }}>
+        <CloseButton
+          onClick={() => setVisible(!visible)}
+          className="boton-cerrar-speech-bubble transiciones"
+          buttonText={visible ? <X size={30} /> : <X size={30} />}
+        />
+      </motion.div>
     </motion.main>
   );
 }

@@ -1,8 +1,7 @@
 import React from "react";
 import { Button, rem } from "@mantine/core";
 
-function IconButton(props) {
-  const { rightIcon, leftIcon, buttonText, onClick, className, onFocus } = props;
+function IconButton({ rightIcon, leftIcon, buttonText, onClick, className, onFocus }) {
 
   return (
     <Button
