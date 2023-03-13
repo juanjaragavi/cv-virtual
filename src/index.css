@@ -8,14 +8,11 @@
 
     /* -----  BASE  ----- */
 
-    * body {
-      @apply dark:bg-gray-900 dark:text-white font-league-spartan;
+    :root * body {
+      @apply text-gray-900 dark:text-white font-league-spartan;
     }
-    .App {
-      @apply dark:bg-gray-900 dark:text-white w-[100%] font-league-spartan;
-    }
-    .LogoJJ {
-      @apply mt-5 w-44 h-[2.4rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 cursor-pointer hover:-hue-rotate-60;
+    .logo-jj {
+      @apply mt-5 transiciones bg-cover bg-logolight dark:bg-logodark relative w-44 h-[2.3rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 cursor-pointer hover:-hue-rotate-60;
     }
     .spartan {
       @apply font-league-spartan;
@@ -46,14 +43,14 @@
     .subcontenedor-selector-idiomas {
       @apply sm:w-1/2 md:w-2/5 2xl:w-1/3 pt-10 pb-10 pl-5 pr-5 border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500 rounded-3xl; 
     }
-    .LogoJJSelectorIdiomas {
-      @apply ml-4 w-40 h-[2rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24;
+    .logo-jj-lang-selector {
+      @apply transiciones bg-cover bg-logolight dark:bg-logodark relative ml-4 w-40 h-[2rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 hover:-hue-rotate-60;
     }
     .switch-selector-tema {
-      @apply ml-14 sm:ml-0 md:ml-16 lg:ml-28 xl:ml-[13rem] 2xl:ml-[14rem] rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#CDB2DB] dark:ring-offset-[#2B195B];
+      @apply ml-14 sm:ml-0 md:ml-16 lg:ml-28 xl:ml-[13rem] 2xl:ml-[9rem] rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#CDB2DB] dark:ring-offset-[#2B195B];
     }
     .titulo-selecciona-idioma {
-      @apply mt-5 text-center sm:text-sm md:text-lg xl:text-2xl 2xl:text-3xl font-league-spartan text-gray-900 dark:text-white;
+      @apply mt-5 text-center sm:text-sm md:text-lg xl:text-2xl 2xl:text-2xl font-league-spartan text-gray-900 dark:text-white;
     }
     .contenedor-botones-idioma {
       @apply mt-0 flex flex-row;

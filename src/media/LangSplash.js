@@ -40,7 +40,7 @@ function LangSplash() {
         }}
       >
         <div className="flex space-between">
-          <LogoJJ className="LogoJJSelectorIdiomas" />
+          <LogoJJ className="logo-jj-lang-selector" />
           <div className="basis-1/2">
             <ThemeSwitcher className="switch-selector-tema transiciones mr-5" />
           </div>
