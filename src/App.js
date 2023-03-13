@@ -15,28 +15,27 @@ function App() {
   const [animateSwitcher, setAnimateSwitcher] = useState("inactive");
   const [startAnimations, setStartAnimations] = useState("inactive");
   const [animateFixedMenu, setAnimateFixedMenu] = useState("inactive");
+  const [animateHeaderMovil, setAnimateHeaderMovil] = useState("inactive");
 
   return (
     <div className="App">
       <MantineProvider withGlobalStyles withNormalizeCSS>
         <Header animateHeader={animateHeader} />
-        <HeaderMovil/>
+        <HeaderMovil animateHeaderMovil={animateHeaderMovil} />
         <LangSplash
           setAnimateHeader={setAnimateHeader}
           setAnimateBubble={setAnimateBubble}
           setStartAnimations={setStartAnimations}
           setAnimateSwitcher={setAnimateSwitcher}
           setAnimateFixedMenu={setAnimateFixedMenu}
+          setAnimateHeaderMovil={setAnimateHeaderMovil}
         />
         <Hero startAnimations={startAnimations} />
         <LangSwitcherButtons
-          setMove={setMove} 
+          setMove={setMove}
           animateSwitcher={animateSwitcher}
         />
-        <SpeechBubble
-          move={move}
-          animateBubble={animateBubble} 
-        />
+        <SpeechBubble move={move} animateBubble={animateBubble} />
         <FixedMenu animateFixedMenu={animateFixedMenu} />
       </MantineProvider>
     </div>

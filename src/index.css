@@ -65,7 +65,7 @@
       @apply sm:w-1/2 md:w-2/5 2xl:w-1/3 pt-10 pb-10 pl-5 pr-5 border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500 rounded-3xl; 
     }
     .logo-jj-lang-selector {
-      @apply bg-cover bg-logolight dark:bg-logodark relative ml-4 w-40 h-[2.2rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 hover:-hue-rotate-60;
+      @apply bg-cover bg-logolight dark:bg-logodark relative ml-4 w-40 h-[2.1rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 hover:-hue-rotate-60;
     }
     .switch-selector-tema {
       @apply ml-14 sm:ml-0 md:ml-16 lg:ml-28 xl:ml-[13rem] 2xl:ml-[9rem] rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#CDB2DB] dark:ring-offset-[#2B195B];
