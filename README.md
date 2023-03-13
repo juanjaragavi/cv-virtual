@@ -6,7 +6,7 @@ I am a Frontend & Backend Developer who is currently based in Bogotá, Colombia.
 
 UX & UI Design Lead • Backend & Frontend Developer • Web & App Developer • Specialist in Digital Marketing • 16 Years of Experience in Digital & Tech.
 
-[![This is Juan Jaramillo Virtual CV : Fullstack Developer · UI/UX Designer · Digital Marketing · Social Media · Mobile]([https://lh3.google.com/u/0/d/1LgAHw2Uh_mrUBw0zGxsZehU_YfYDNJFb=w2732-h1536-iv1 'This is Juan Jaramillo Virtual CV : Fullstack Developer · UI/UX Designer · Digital Marketing · Social Media · Mobile')](https://www.linkedin.com/in/juan-jaramillo-tradebog/) 
+[![This is Juan Jaramillo Virtual CV : Fullstack Developer · UI/UX Designer · Digital Marketing · Social Media · Mobile]([https://user-images.githubusercontent.com/125833402/224641661-cfcadcb6-4fdc-4936-b265-e32e064f1c91.jpg 'This is Juan Jaramillo Virtual CV : Fullstack Developer · UI/UX Designer · Digital Marketing · Social Media · Mobile')](https://www.linkedin.com/in/juan-jaramillo-tradebog/) 
 
 ## 👀 Want to learn more?
 
