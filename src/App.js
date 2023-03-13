@@ -9,7 +9,7 @@ import HeaderMovil from "./components/HeaderMovil";
 import LangSwitcherButtons from "./media/LangSwitcherButtons";
 
 function App() {
-  const [move, setMove] = useState('x12')
+  const [move, setMove] = useState("x12");
 
   return (
     <MantineProvider withGlobalStyles withNormalizeCSS>

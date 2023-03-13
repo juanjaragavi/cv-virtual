@@ -21,7 +21,7 @@ function HeaderMovil() {
         delay: 0,
       }}
     >
-      <LogoJJ className="LogoJJ" />
+      <LogoJJ className="logo-jj" />
 
       <NavMovil />
     </motion.header>
