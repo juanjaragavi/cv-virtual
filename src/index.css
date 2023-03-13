@@ -58,6 +58,9 @@
     .boton-idioma {
       @apply mt-4 basis-1/2 mr-2 hover:text-pink-500; 
     }
+    .estilos-interactivos-botones {
+      @apply text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm hover:scale-105; 
+    }
 
     /* -----  FIN SPLASH SELECTOR DE IDIOMAS  ----- */
 

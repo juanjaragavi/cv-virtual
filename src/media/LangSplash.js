@@ -52,7 +52,7 @@ function LangSplash() {
         </div>
         <div className="contenedor-botones-idioma">
           <IconButton
-            className="boton-conoce-mas boton-idioma transiciones text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm hover:scale-105"
+            className="boton-conoce-mas boton-idioma transiciones estilos-interactivos-botones"
             leftIcon={
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
@@ -70,7 +70,7 @@ function LangSplash() {
             }}
           />
           <IconButton
-            className="boton-conoce-mas boton-idioma transiciones text-sm 2xl:text-2xl xl:text-xl lg:text-xl md:text-lg sm:text-sm hover:scale-105"
+            className="boton-conoce-mas boton-idioma transiciones estilos-interactivos-botones"
             leftIcon={
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
