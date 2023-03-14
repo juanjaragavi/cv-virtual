@@ -8,11 +8,23 @@
 
     /* -----  BASE  ----- */
 
+    html {
+      @apply font-league-spartan text-gray-900 dark:text-white;
+    }
     .App {
-      @apply fixed top-0 left-0 w-screen h-screen bg-fondomovillight dark:bg-dark sm:bg-light sm:dark:bg-dark sm:bg-cover sm:bg-center font-league-spartan text-gray-900 dark:text-white;
+      @apply fixed top-0 left-0 w-screen h-screen bg-fondomovillight dark:bg-dark sm:bg-light sm:dark:bg-dark sm:bg-cover sm:bg-center;
     }
     a {
-      @apply text-gray-900 dark:text-white hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 underline underline-offset-2 hover:underline font-medium hover:font-medium transition-all duration-300 ease-in-out;
+      @apply text-pink-500 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
+    }
+    a.link-con-flecha {
+      @apply text-pink-500 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 after:content-['_↗'] underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
+    }
+    p.parrafo {
+      @apply my-3 leading-6 flow-root text-left whitespace-normal font-league-spartan dark:font-light font-normal text-lg text-gray-900 dark:text-white;
+    }
+    h1.titulo-1 {
+      @apply;
     }
     .logo-jj {
       @apply mt-5 bg-cover bg-logolight dark:bg-logodark relative w-44 h-[2.3rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 cursor-pointer hover:-hue-rotate-60;
@@ -45,10 +57,13 @@
     /* -----  COLORES ESPECIALES Y EFECTOS  ----- */
 
     .fondo-translucido {
-      @apply backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-40 sm:bg-opacity-20 bg-opacity-40;
+      @apply backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-60 sm:bg-opacity-20 bg-opacity-90;
     }
     .titulo-degradado {
       @apply text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500;
+    }
+    .borde-redondeado {
+      @apply border border-gray-900 dark:border-white rounded-3xl;
     }
 }
 
@@ -91,10 +106,10 @@
     /* -----  HEADER  ----- */
 
     .header {
-      @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-10;
+      @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-50;
     }
     .header-movil {
-      @apply pt-2 grid w-screen h-5 place-items-center visible sm:invisible md:invisible lg:invisible xl:invisible sticky top-0 bg-transparent z-10;
+      @apply absolute pt-2 grid w-screen h-5 place-items-center visible sm:invisible md:invisible lg:invisible xl:invisible top-0 bg-transparent z-50;
     }
 
     /* -----  FIN HEADER  ----- */
@@ -242,8 +257,12 @@
 
     /* -----  ESTILOS GENERALES INTERNAS  ----- */
 
+    .placeholder-internas {
+      @apply px-3 py-4 flex items-center justify-center w-screen;
+    }
+    
     .contenedor-internas {
-      @apply flex items-start space-x-2.5 p-5 text-gray-900 dark:text-white border border-gray-900 dark:border-white rounded-3xl;
+      @apply static flex flex-row items-start space-x-3 p-5 text-gray-900 dark:text-white border border-gray-900 dark:border-white rounded-3xl;
     }
 
     /* -----  FIN ESTILOS GENERALES INTERNAS  ----- */
