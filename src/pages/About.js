@@ -1,60 +1,48 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import AvatarJJ from "../media/AvatarJJ";
 
 function About() {
+  const { t } = useTranslation("common");
   return (
-    <main className="absolute left-[8%] grid place-items-stretch w-screen">
-      <article className="w-5/6 h-11/12 overflow-auto backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-40 sm:bg-opacity-40 bg-opacity-40 spartan contenedor-internas">
-        <div className="p-5 text-gray-900 dark:text-white border border-gray-900 dark:border-white rounded-3xl flex-none w-1/2">
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Cras lacinia
-            luctus quisque enim, mattis ligula. Sem sollicitudin cras aliquet
-            morbi dignissim ullamcorper. Velit quis maecenas quisque adipiscing
-            sem id lobortis. Est tempor id curae rutrum venenatis vitae aenean
-            lacus. Consectetur ac condimentum malesuada ipsum habitasse eros
-            dapibus suscipit. Tellus eros parturient quisque non dignissim
-            aenean mattis taciti.
-          </p>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Cras lacinia
-            luctus quisque enim, mattis ligula. Sem sollicitudin cras aliquet
-            morbi dignissim ullamcorper. Velit quis maecenas quisque adipiscing
-            sem id lobortis. Est tempor id curae rutrum venenatis vitae aenean
-            lacus. Consectetur ac condimentum malesuada ipsum habitasse eros
-            dapibus suscipit. Tellus eros parturient quisque non dignissim
-            aenean mattis taciti.
-          </p>
-        </div>
-        <div className="p-5 text-gray-900 dark:text-white border border-gray-900 dark:border-white rounded-3xl flex-none w-1/2">
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Cras lacinia
-            luctus quisque enim, mattis ligula. Sem sollicitudin cras aliquet
-            morbi dignissim ullamcorper. Velit quis maecenas quisque adipiscing
-            sem id lobortis. Est tempor id curae rutrum venenatis vitae aenean
-            lacus. Consectetur ac condimentum malesuada ipsum habitasse eros
-            dapibus suscipit. Tellus eros parturient quisque non dignissim
-            aenean mattis taciti.
-          </p>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Cras lacinia
-            luctus quisque enim, mattis ligula. Sem sollicitudin cras aliquet
-            morbi dignissim ullamcorper. Velit quis maecenas quisque adipiscing
-            sem id lobortis. Est tempor id curae rutrum venenatis vitae aenean
-            lacus. Consectetur ac condimentum malesuada ipsum habitasse eros
-            dapibus suscipit. Tellus eros parturient quisque non dignissim
-            aenean mattis taciti.
-          </p>
-          <p>
-            Lorem ipsum odor amet, consectetuer adipiscing elit. Cras lacinia
-            luctus quisque enim, mattis ligula. Sem sollicitudin cras aliquet
-            morbi dignissim ullamcorper. Velit quis maecenas quisque adipiscing
-            sem id lobortis. Est tempor id curae rutrum venenatis vitae aenean
-            lacus. Consectetur ac condimentum malesuada ipsum habitasse eros
-            dapibus suscipit. Tellus eros parturient quisque non dignissim
-            aenean mattis taciti.
-          </p>
-        </div>
-      </article>
-    </main>
+    <section className="contenedor-internas mt-20 sm:mt-0 fondo-translucido w-[80%]">
+      <div className="order-first  bmy-2 sm:basis-1/2 px-5 py-3 text-leftorde-redondeado">
+        <p className="flow-root parrafo">
+          Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus
+          et malesuada{" "}
+          <a href="/" className="link-con-flecha">
+            fames ac turpis egestas.
+          </a>{" "}
+          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+          amet, ante. Donec eu libero sit amet quam <a href="/">mi vitae</a>{" "}
+          est. Mauris placerat eleifend leo.
+        </p>
+      </div>
+      <div className="order-last my-2 sm:basis-1/2 px-5 py-3 text-justify borde-redondeado">
+        <p className="parrafo">
+          Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus
+          et malesuada{" "}
+          <a href="/" className="link-con-flecha">
+            fames ac turpis egestas.
+          </a>{" "}
+          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+          amet, ante. Donec eu libero sit amet quam <a href="/">mi vitae</a>{" "}
+          est. Mauris placerat eleifend leo.
+        </p>
+        <p className="parrafo">
+          Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus
+          et malesuada{" "}
+          <a href="/" className="link-con-flecha">
+            fames ac turpis egestas.
+          </a>{" "}
+          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+          amet, ante. Donec eu libero sit amet quam <a href="/">mi vitae</a>{" "}
+          est. Mauris placerat eleifend leo.
+        </p>
+      </div>
+      <div className=""></div>
+    </section>
   );
 }
 
