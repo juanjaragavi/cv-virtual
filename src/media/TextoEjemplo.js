@@ -1,9 +1,12 @@
 import React from "react";
 import AvatarJJ from "../media/AvatarJJ";
 
-function TextoEjemplo() {
+function TextoEjemplo({ style }) {
     return (
-        <p className="parrafo">
+        <p
+            className="parrafo"
+            style={style}
+        >
             Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus et
             malesuada{" "}
             <a href="/" className="link-con-flecha">

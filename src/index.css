@@ -21,10 +21,22 @@
       @apply text-pink-800 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 after:content-['_↗'] underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
     }
     p.parrafo {
-      @apply leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal text-lg text-left text-gray-900 dark:text-white;
+      @apply leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal text-xl text-left text-gray-900 dark:text-white;
     }
     h1.titulo-1 {
-      @apply;
+      @apply spartan-bold text-8xl text-center leading-[5.5rem];
+    }
+    h2.titulo-2 {
+      @apply spartan-bold text-6xl text-center leading-10;
+    }
+    h3.titulo-3 {
+      @apply spartan-bold text-4xl text-center leading-9;
+    }
+    h4.titulo-4 {
+      @apply spartan text-2xl text-center leading-7;
+    }
+    .color-texto-primario {
+      @apply dark:text-white text-gray-900; 
     }
     .logo-jj {
       @apply mt-5 bg-cover bg-logolight dark:bg-logodark relative w-44 h-[2.3rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 cursor-pointer hover:-hue-rotate-60;
@@ -42,7 +54,7 @@
       @apply font-league-spartan font-medium;
     }
     .spartan-regular {
-      @apply font-league-spartan;
+      @apply font-league-spartan font-normal;
     }
     .spartan-light {
       @apply font-league-spartan font-light;
@@ -60,10 +72,13 @@
       @apply backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-60 sm:bg-opacity-20 bg-opacity-90;
     }
     .titulo-degradado {
-      @apply text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500;
+      @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500;
     }
     .borde-redondeado {
       @apply border border-gray-900 dark:border-white rounded-3xl;
+    }
+    .decoracion-texto-destacado {
+      @apply underline decoration-4 decoration-pink-500 underline-offset-4;
     }
 }
 
@@ -258,7 +273,7 @@
     /* -----  ESTILOS GENERALES INTERNAS  ----- */
 
     .placeholder-internas {
-      @apply flex items-center justify-center w-screen;
+      @apply flex justify-center w-screen;
     }
     .contenedor-internas {
       @apply static max-h-80 sm:h-[37rem] sm:max-h-[44rem] w-[80%] 2xl:h-[100%] 2xl:mt-[3%] 2xl:w-[65%] overflow-auto text-gray-900 dark:text-white;
@@ -267,10 +282,10 @@
       @apply m-1 p-3 grid place-items-center;
     }
     .contenedor-columnas {
-      @apply flex flex-col sm:flex-row items-center;
+      @apply w-full flex justify-center items-center;
     }
     .columna {
-      @apply flex flex-col p-3 m-1; 
+      @apply w-full p-3 m-1; 
     } 
     .img-con-borde-internas {
       @apply m-1 ring-1 ring-gray-900 dark:ring-white hover:ring-4 rounded-3xl;
