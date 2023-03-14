@@ -15,13 +15,13 @@
       @apply fixed top-0 left-0 w-screen h-screen bg-fondomovillight dark:bg-dark sm:bg-light sm:dark:bg-dark sm:bg-cover sm:bg-center;
     }
     a {
-      @apply text-pink-500 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
+      @apply text-pink-800 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
     }
     a.link-con-flecha {
-      @apply text-pink-500 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 after:content-['_↗'] underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
+      @apply text-pink-800 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 after:content-['_↗'] underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
     }
     p.parrafo {
-      @apply my-3 leading-6 flow-root text-left whitespace-normal font-league-spartan dark:font-light font-normal text-lg text-gray-900 dark:text-white;
+      @apply leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal text-lg text-left text-gray-900 dark:text-white;
     }
     h1.titulo-1 {
       @apply;
@@ -207,7 +207,7 @@
       /* -----  SPEECH BUBBLE  ----- */
 
       .contenedor-speech-bubble {
-        @apply fixed bottom-24 right-9 font-league-spartan;
+        @apply fixed bottom-24 right-9 font-league-spartan z-50;
       }
       .cuadro-grande-speech-bubble {
         @apply drop-shadow-lg relative bg-gray-100 text-gray-900 px-5 py-3 rounded-xl;
@@ -258,11 +258,25 @@
     /* -----  ESTILOS GENERALES INTERNAS  ----- */
 
     .placeholder-internas {
-      @apply px-3 py-4 flex items-center justify-center w-screen;
+      @apply flex items-center justify-center w-screen;
     }
-    
     .contenedor-internas {
-      @apply static max-h-80 sm:max-h-[70%] overflow-auto flex flex-col sm:flex-row items-start sm:space-x-3 p-5 text-gray-900 dark:text-white border border-gray-900 dark:border-white rounded-3xl;
+      @apply static max-h-80 sm:h-[37rem] sm:max-h-[44rem] w-[80%] 2xl:h-[100%] 2xl:mt-[3%] 2xl:w-[65%] overflow-auto text-gray-900 dark:text-white;
+    }
+    .una-columna-interna {
+      @apply m-1 p-3 grid place-items-center;
+    }
+    .contenedor-columnas {
+      @apply flex flex-col sm:flex-row items-center;
+    }
+    .columna {
+      @apply flex flex-col p-3 m-1; 
+    } 
+    .img-con-borde-internas {
+      @apply m-1 ring-1 ring-gray-900 dark:ring-white hover:ring-4 rounded-3xl;
+    }
+    .img-sin-borde-internas {
+      @apply m-1 rounded-3xl;
     }
 
     /* -----  FIN ESTILOS GENERALES INTERNAS  ----- */

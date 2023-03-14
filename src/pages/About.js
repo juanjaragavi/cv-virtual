@@ -1,48 +1,68 @@
 import React from "react";
-import { motion } from "framer-motion";
+import FotoSinBorde from "../media/FotoSinBorde";
+import FotoBorde from "../media/FotoBorde";
 import { useTranslation } from "react-i18next";
-import AvatarJJ from "../media/AvatarJJ";
+import TextoEjemplo from "../media/TextoEjemplo";
+import ContInternas from "../layouts/ContInternas";
+import Columna from "../layouts/Columna";
+import ContColumnas from "../layouts/ContColumnas";
+import Seccion from "../layouts/Seccion";
 
 function About() {
+  const primeraColumna = { order: -9999, border: 0, flexBasis: "50%" };
+  const segundaColumna = { order: 9999, flexBasis: "50%", border: 0 };
+  const paddingInterno = { padding: "1em" };
+  const tresColumnas = { flexBasis: "33.333333%" }
+
   const { t } = useTranslation("common");
   return (
-    <section className="contenedor-internas mt-20 sm:mt-0 fondo-translucido w-[80%]">
-      <div className="order-first  bmy-2 sm:basis-1/2 px-5 py-3 text-leftorde-redondeado">
-        <p className="flow-root parrafo">
-          Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus
-          et malesuada{" "}
-          <a href="/" className="link-con-flecha">
-            fames ac turpis egestas.
-          </a>{" "}
-          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-          amet, ante. Donec eu libero sit amet quam <a href="/">mi vitae</a>{" "}
-          est. Mauris placerat eleifend leo.
-        </p>
-      </div>
-      <div className="order-last my-2 sm:basis-1/2 px-5 py-3 text-justify borde-redondeado">
-        <p className="parrafo">
-          Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus
-          et malesuada{" "}
-          <a href="/" className="link-con-flecha">
-            fames ac turpis egestas.
-          </a>{" "}
-          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-          amet, ante. Donec eu libero sit amet quam <a href="/">mi vitae</a>{" "}
-          est. Mauris placerat eleifend leo.
-        </p>
-        <p className="parrafo">
-          Pellentesque habitant morbi tristique <AvatarJJ /> senectus et netus
-          et malesuada{" "}
-          <a href="/" className="link-con-flecha">
-            fames ac turpis egestas.
-          </a>{" "}
-          Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
-          amet, ante. Donec eu libero sit amet quam <a href="/">mi vitae</a>{" "}
-          est. Mauris placerat eleifend leo.
-        </p>
-      </div>
-      <div className=""></div>
-    </section>
+    <ContInternas style={paddingInterno}>
+      <ContColumnas>
+        <Columna style={primeraColumna}>
+          <FotoBorde
+            src={require("../assets/ejemplo-eliminar.jpg")}
+            title={t("AltFotoInternas.title", { framework: "React" })}
+            alt={t("AltFotoInternas.title", { framework: "React" })}
+          />
+        </Columna>
+        <Columna style={segundaColumna}>
+          <TextoEjemplo />
+        </Columna>
+      </ContColumnas>
+      <Seccion>
+        <TextoEjemplo />
+        <FotoSinBorde
+            src={require("../assets/logo-juan-jaramillo.png")}
+            title={t("AltFotoInternas.title", { framework: "React" })}
+            alt={t("AltFotoInternas.title", { framework: "React" })}
+          />
+      </Seccion>
+      <ContColumnas>
+        <Columna style={tresColumnas}>
+          <TextoEjemplo />
+          <FotoBorde
+            src={require("../assets/ejemplo-eliminar.jpg")}
+            title={t("AltFotoInternas.title", { framework: "React" })}
+            alt={t("AltFotoInternas.title", { framework: "React" })}
+          />
+        </Columna>
+        <Columna style={tresColumnas}>
+          <TextoEjemplo />
+          <FotoBorde
+            src={require("../assets/ejemplo-eliminar.jpg")}
+            title={t("AltFotoInternas.title", { framework: "React" })}
+            alt={t("AltFotoInternas.title", { framework: "React" })}
+          />
+        </Columna>
+        <Columna style={tresColumnas}>
+        <FotoBorde
+            src={require("../assets/ejemplo-eliminar.jpg")}
+            title={t("AltFotoInternas.title", { framework: "React" })}
+            alt={t("AltFotoInternas.title", { framework: "React" })}
+          />
+        </Columna>
+      </ContColumnas>
+    </ContInternas>
   );
 }
 

@@ -11,7 +11,7 @@ function AvatarJJ() {
                 title={t("AltAvatarJJ.title", { framework: "React" })}
                 class="self-center w-5 h-5 rounded-full mx-1 mb-0.5"
             />{" "}
-            <span className="spartan-bold text-pink-500">Juan Jaramillo</span>
+            <span className="spartan-bold text-pink-800 dark:text-pink-500">Juan Jaramillo</span>
         </span>
     );
 }
