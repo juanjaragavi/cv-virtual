@@ -123,6 +123,9 @@
 
     /* -----  HEADER  ----- */
 
+    .contenedor-header {
+      @apply relative w-screen h-auto z-20; 
+    }
     .header {
       @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-50;
     }

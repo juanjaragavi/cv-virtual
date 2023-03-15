@@ -8,6 +8,7 @@ import FotoSinBorde from "../media/FotoSinBorde";
 import TextoEjemplo from "../media/TextoEjemplo";
 import ContInternas from "../layouts/ContInternas";
 import ContColumnas from "../layouts/ContColumnas";
+import LogosFlotantes from "../media/LogosFlotantes";
 
 function About() {
   const sinBorde = { border: 0 };
@@ -35,7 +36,8 @@ function About() {
     <ContInternas>
       <ContColumnas>
         <Columna style={primeraColumna}>
-          <FotoBorde
+          <LogosFlotantes />
+          <FotoSinBorde
             src={require("../assets/ejemplo-eliminar.jpg")}
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}

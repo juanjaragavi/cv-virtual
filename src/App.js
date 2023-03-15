@@ -9,7 +9,6 @@ import HeaderMovil from "./components/HeaderMovil";
 import LangSwitcherButtons from "./media/LangSwitcherButtons";
 
 function App() {
-  const [move, setMove] = useState("x5");
   const [animateHeader, setAnimateHeader] = useState("inactive");
   const [animateBubble, setAnimateBubble] = useState("inactive");
   const [animateSwitcher, setAnimateSwitcher] = useState("inactive");
@@ -32,10 +31,9 @@ function App() {
         />
         <Hero startAnimations={startAnimations} />
         <LangSwitcherButtons
-          setMove={setMove}
           animateSwitcher={animateSwitcher}
         />
-        <SpeechBubble move={move} animateBubble={animateBubble} />
+        <SpeechBubble animateBubble={animateBubble} />
         <FixedMenu animateFixedMenu={animateFixedMenu} />
       </MantineProvider>
     </div>

@@ -14,7 +14,7 @@ const variants = {
 function Header({ animateHeader }) {
   const controls = useAnimationControls();
   return (
-    <main className="relative w-screen h-auto z-20">
+    <main className="contenedor-header">
       <motion.header
         className="header"
         initial="initial"
@@ -44,7 +44,7 @@ function Header({ animateHeader }) {
         />
         <Nav />
         <Work
-          className='cursor-pointer'
+          className="cursor-pointer"
           onClick={() => {
             controls.start({
               opacity: 1,
@@ -69,10 +69,6 @@ function Header({ animateHeader }) {
           x: 1300,
         }}
         animate={controls}
-        exit={{
-          opacity: 0,
-          x: 1300,
-        }}
       >
         <About />
       </motion.article>
