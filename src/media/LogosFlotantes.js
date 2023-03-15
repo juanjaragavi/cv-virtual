@@ -1,10 +1,10 @@
-import "./index.css";
+import React from "react";
 import { motion } from "framer-motion";
 
 function LogosFlotantes() {
   return (
-    <main className="container">
-      <article className="column">
+    <main className="contenedor-logos-flotantes">
+      <article className="subcontenedor-logos-flotantes">
         <motion.svg
           fill="#ffffff"
           className="google-about"
@@ -109,7 +109,7 @@ function LogosFlotantes() {
         </motion.svg>
       </article>
 
-      <article className="column">
+      <article className="subcontenedor-logos-flotantes">
         <motion.svg
           className="framer-about"
           fill="#ffffff"
