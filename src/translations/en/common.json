@@ -61,5 +61,12 @@
     },
     "AltFotoInternas": {
         "title": "Example Photo."
+    },
+
+    "DerechosReservados": {
+        "title": "All rights reserved"
+    },
+    "EmailJJ": {
+        "title": "Send Juan Jaramillo an Email."
     }
 }

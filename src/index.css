@@ -21,19 +21,19 @@
       @apply text-pink-800 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 after:content-['_↗'] underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
     }
     p.parrafo {
-      @apply leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal text-xl text-left text-gray-900 dark:text-white;
+      @apply pl-2 pb-0.5 leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal text-xl text-left text-gray-900 dark:text-white;
     }
     h1.titulo-1 {
       @apply spartan-bold text-8xl text-center leading-[5.5rem];
     }
     h2.titulo-2 {
-      @apply spartan-bold text-6xl text-center leading-10;
+      @apply spartan-bold text-6xl text-center leading-[4rem];
     }
     h3.titulo-3 {
       @apply spartan-bold text-4xl text-center leading-9;
     }
     h4.titulo-4 {
-      @apply spartan text-2xl text-center leading-7;
+      @apply spartan text-2xl text-center leading-6;
     }
     .color-texto-primario {
       @apply dark:text-white text-gray-900; 
@@ -77,8 +77,11 @@
     .borde-redondeado {
       @apply border border-gray-900 dark:border-white rounded-3xl;
     }
-    .decoracion-texto-destacado {
+    .decoracion-titulo-destacado {
       @apply underline decoration-4 decoration-pink-500 underline-offset-4;
+    }
+    .decoracion-texto-destacado {
+      @apply underline decoration-2 decoration-pink-500 underline-offset-4;
     }
 }
 
@@ -259,9 +262,8 @@
 
     /* -----  FOOTER  ----- */
 
-    .footer {
-      @apply;
-
+    .footer-general {
+      @apply font-league-spartan text-center text-lg border border-gray-900 dark:border-white rounded-3xl m-2 p-3 grid place-items-center;
     }
     /* -----  FIN FOOTER  ----- */
   }
@@ -276,7 +278,7 @@
       @apply flex justify-center w-screen;
     }
     .contenedor-internas {
-      @apply static max-h-80 sm:h-[37rem] sm:max-h-[44rem] w-[80%] 2xl:h-[100%] 2xl:mt-[3%] 2xl:w-[65%] overflow-auto text-gray-900 dark:text-white;
+      @apply p-2.5 static max-h-80 sm:h-[37rem] sm:max-h-[44rem] w-[80%] 2xl:h-[100%] 2xl:mt-[3%] 2xl:w-[65%] overflow-auto text-gray-900 dark:text-white;
     }
     .una-columna-interna {
       @apply m-1 p-3 grid place-items-center;
@@ -285,7 +287,7 @@
       @apply w-full flex justify-center items-center;
     }
     .columna {
-      @apply w-full p-3 m-1; 
+      @apply w-full pl-3 pr-5 pb-2 pt-3 m-1; 
     } 
     .img-con-borde-internas {
       @apply m-1 ring-1 ring-gray-900 dark:ring-white hover:ring-4 rounded-3xl;
@@ -313,6 +315,10 @@
     /* -----  FIN PÁGINA WORK  ----- */
 
     /* -----  PÁGINA CONTACT  ----- */
+
+    .contenedor-componente-work {
+      @apply;
+    }
 
     /* -----  FIN PÁGINA CONTACT  ----- */
 }
