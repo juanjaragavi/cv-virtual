@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion, useAnimationControls } from "framer-motion";
 
 function Nav() {
+  
   const { t } = useTranslation("common");
   const controls = useAnimationControls();
 

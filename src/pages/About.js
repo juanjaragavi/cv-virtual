@@ -11,23 +11,23 @@ import ContColumnas from "../layouts/ContColumnas";
 
 function About() {
   const sinBorde = { border: 0 };
+  const tresColumnasBorde = { flexBasis: "33.333333%" };
   const sinBordeMarginTop = { border: 0, marginTop: 30 };
   const tresColumnas = { flexBasis: "33.333333%", border: 0 };
-  const tresColumnasBorde = { flexBasis: "33.333333%" };
   const segundaColumna = { order: 9999, flexBasis: "50%", border: 0 };
   const primeraColumna = { order: -9999, border: 0, flexBasis: "50%" };
   const textoCentrado = {
-    textAlign: "center",
+    marginTop: 10,
     paddingleft: 20,
     paddingRight: 20,
-    marginTop: 10,
+    textAlign: "center",
   };
   const textoNegrilla = { fontWeight: 700 };
   const paddingLados = {
-    paddingLeft: "25%",
-    paddingRight: "25%",
     marginTop: 50,
     marginBottom: 50,
+    paddingLeft: "25%",
+    paddingRight: "25%",
   };
 
   const { t } = useTranslation("common");
@@ -42,12 +42,12 @@ function About() {
           />
         </Columna>
         <Columna style={segundaColumna}>
-          <h3 className="titulo-3">Desde 2007,</h3>
-          <h1 className="titulo-1 titulo-degradado -mt-2 -mb-3">
-            Obsesionado
-          </h1>
+          <h3 className="titulo-3 mr-1.5">
+            Desde<span className="pl-7"></span>2007,
+          </h3>
+          <h1 className="titulo-1 titulo-degradado -mt-7 -mb-3">Obsesionado</h1>
           <h3 className="titulo-3 decoracion-titulo-destacado">
-            con la Tecnología y el Marketing
+            con la Tecnología y el Marketing.
           </h3>
           <TextoEjemplo style={textoCentrado} />
         </Columna>

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Work() {
+function Work({ onClick, className }) {
 
   return (
-    <div>Work</div>
+    <div className={className} onClick={onClick}>Work</div>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
 
-function LogoJJ({ className }) {
-  return <main className={className}> </main>;
+function LogoJJ({ className, onClick }) {
+  return <main onClick={onClick} className={className}> </main>;
 }
 
 export default LogoJJ;

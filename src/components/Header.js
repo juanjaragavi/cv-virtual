@@ -1,9 +1,10 @@
 import Nav from "./Nav";
-import React from "react";
 import LogoJJ from "./LogoJJ";
-import { motion } from "framer-motion";
-import ThemeSwitcher from "./ThemeSwitcher";
+import Work from "../pages/Work";
 import About from "../pages/About";
+import { motion, useAnimationControls } from "framer-motion";
+import React from "react";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const variants = {
   active: { y: 0, opacity: 1 },
@@ -11,6 +12,7 @@ const variants = {
 };
 
 function Header({ animateHeader }) {
+  const controls = useAnimationControls();
   return (
     <main className="relative w-screen h-auto z-20">
       <motion.header
@@ -21,16 +23,59 @@ function Header({ animateHeader }) {
         transition={{
           type: "tween",
           duration: 0.5,
-          delay: 0.2,
+          delay: 0.3,
         }}
       >
-        <LogoJJ className="logo-jj transiciones" />
+        <LogoJJ
+          className="logo-jj transiciones"
+          onClick={() => {
+            controls.start({
+              opacity: 0,
+              x: -1300,
+              transition: {
+                type: "spring",
+                damping: 10,
+                mass: 0.75,
+                stiffness: 100,
+                delay: 0,
+              },
+            });
+          }}
+        />
         <Nav />
+        <Work
+          className='cursor-pointer'
+          onClick={() => {
+            controls.start({
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                damping: 10,
+                mass: 0.75,
+                stiffness: 100,
+                delay: 0.3,
+              },
+            });
+          }}
+        />
         <ThemeSwitcher className="switch transiciones" />
       </motion.header>
-      <article className="placeholder-internas">
+      <motion.article
+        layout
+        className="placeholder-internas"
+        initial={{
+          opacity: 0,
+          x: 1300,
+        }}
+        animate={controls}
+        exit={{
+          opacity: 0,
+          x: 1300,
+        }}
+      >
         <About />
-      </article>
+      </motion.article>
     </main>
   );
 }
