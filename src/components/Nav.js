@@ -2,16 +2,19 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion, useAnimationControls } from "framer-motion";
 
-function Nav() {
-  
+function Nav({ setMoveItems }) {
   const { t } = useTranslation("common");
   const controls = useAnimationControls();
+  const onButtonClick = (mode) => {
+    setMoveItems(mode);
+  };
 
   return (
     <main>
       <nav className="nav-principal transiciones">
         <ul className="contenedor-menu">
           <motion.li
+            onClick={() => onButtonClick("home")}
             className="botones-menu transiciones"
             whileHover={() => {
               controls.start({
@@ -30,6 +33,7 @@ function Nav() {
             {t("Item1.title", { framework: "React" })}
           </motion.li>
           <motion.li
+            onClick={() => onButtonClick("about")}
             className="botones-menu transiciones"
             whileHover={() => {
               controls.start({
@@ -48,6 +52,7 @@ function Nav() {
             {t("Item2.title", { framework: "React" })}
           </motion.li>
           <motion.li
+            onClick={() => onButtonClick("work")}
             className="botones-menu transiciones"
             whileHover={() => {
               controls.start({
@@ -66,6 +71,7 @@ function Nav() {
             {t("Item3.title", { framework: "React" })}
           </motion.li>
           <motion.li
+            onClick={() => onButtonClick("contact")}
             className="botones-menu transiciones"
             whileHover={() => {
               controls.start({

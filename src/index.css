@@ -278,10 +278,10 @@
     /* -----  ESTILOS GENERALES INTERNAS  ----- */
 
     .placeholder-internas {
-      @apply flex justify-center w-screen;
+      @apply flex justify-center w-[300%];
     }
     .contenedor-internas {
-      @apply p-2.5 static max-h-80 sm:h-[37rem] sm:max-h-[44rem] w-[80%] 2xl:h-[100%] 2xl:mt-[3%] 2xl:w-[65%] overflow-auto text-gray-900 dark:text-white;
+      @apply mx-[3.5%] p-2.5 static max-h-80 sm:h-[37rem] sm:max-h-[44rem] w-[80%] 2xl:h-[100%] 2xl:mt-[1.5%] 2xl:w-[65%] overflow-auto text-gray-900 dark:text-white;
     }
     .una-columna-interna {
       @apply m-1 p-3 grid place-items-center;
