@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Columna from "../layouts/Columna";
 import Seccion from "../layouts/Seccion";
 import Footer from "../components/Footer";
@@ -12,6 +13,7 @@ import LogosFlotantes from "../media/LogosFlotantes";
 
 function About() {
   const sinBorde = { border: 0 };
+  const fotoRedonda = { borderRadius: "9999px" };
   const tresColumnasBorde = { flexBasis: "33.333333%" };
   const sinBordeMarginTop = { border: 0, marginTop: 30 };
   const tresColumnas = { flexBasis: "33.333333%", border: 0 };
@@ -32,6 +34,7 @@ function About() {
   };
 
   const { t } = useTranslation("common");
+
   return (
     <ContInternas>
       <ContColumnas>
@@ -56,17 +59,46 @@ function About() {
       </ContColumnas>
       <ContColumnas>
         <Columna style={sinBordeMarginTop}>
-          <p className="text-center">Títulos</p>
           <h1 className="titulo-1 titulo-degradado">Título 1</h1>
-          <h2 className="titulo-2 color-texto-primario">Título 2</h2>
+          <motion.h2
+            className="titulo-2 color-texto-primario"
+            initial={{ y: -15, opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                type: "spring",
+                damping: 10,
+                mass: 0.75,
+                stiffness: 100,
+                delay: 0.5,
+              },
+            }}
+          >
+            Título 2
+          </motion.h2>
           <h3 className="titulo-3 color-texto-primario">Título 3</h3>
-          <h4 className="titulo-4 color-texto-primario">
+          <motion.h4
+            className="titulo-4 color-texto-primario"
+            initial={{ x: -30, opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                type: "spring",
+                damping: 10,
+                mass: 0.75,
+                stiffness: 100,
+                delay: 0.5,
+              },
+            }}
+          >
             <span style={textoNegrilla}>Título 4:</span> Este es, quizás, el
             único título que puede ser largo y de más de un renglón. Esto es,
             porque este puede ser un tipo de título que simplemente reemplace a
             un párrafo, pero con un texto un poco más destacado, o para
             infiltrar títulos entre el texto.
-          </h4>
+          </motion.h4>
         </Columna>
       </ContColumnas>
       <ContColumnas>
@@ -79,11 +111,27 @@ function About() {
           <TextoEjemplo style={textoCentrado} />
         </Columna>
         <Columna style={segundaColumna}>
-          <FotoBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
-            title={t("AltFotoInternas.title", { framework: "React" })}
-            alt={t("AltFotoInternas.title", { framework: "React" })}
-          />
+          <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+              x: -25,
+              transition: {
+                type: "spring",
+                damping: 10,
+                mass: 0.75,
+                stiffness: 50,
+                delay: 1,
+              },
+            }}
+          >
+            <FotoBorde
+              style={fotoRedonda}
+              src={require("../assets/ejemplo-eliminar.jpg")}
+              title={t("AltFotoInternas.title", { framework: "React" })}
+              alt={t("AltFotoInternas.title", { framework: "React" })}
+            />
+          </motion.div>
         </Columna>
       </ContColumnas>
       <Seccion style={sinBorde}>
