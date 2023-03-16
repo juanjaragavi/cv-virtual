@@ -5,6 +5,7 @@ import { motion, useAnimationControls } from "framer-motion";
 function Nav({ setMoveItems }) {
   const { t } = useTranslation("common");
   const controls = useAnimationControls();
+
   const onButtonClick = (mode) => {
     setMoveItems(mode);
   };
@@ -91,10 +92,9 @@ function Nav({ setMoveItems }) {
           </motion.li>
         </ul>
         <motion.div
-          layout
           className="fondo-botones-menu"
           animate={controls}
-          initial={{ opacity: 0 }}
+          initial={{ x: 12, opacity: 0 }}
         ></motion.div>
       </nav>
     </main>

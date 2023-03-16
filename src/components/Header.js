@@ -1,21 +1,61 @@
 import Nav from "./Nav";
-import React, { useState } from "react";
 import LogoJJ from "./LogoJJ";
 import Work from "../pages/Work";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import ThemeSwitcher from "./ThemeSwitcher";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const variants = {
   active: { y: 0, opacity: 1 },
   initial: { y: -50, opacity: 0 },
 };
 const variantsInternas = {
-  home: { opacity: 0, x: 1300 },
-  about: { opacity: 1, x: 0 },
-  work: { opacity: 1, x: -1368 },
-  contact: { opacity: 1, x: -2736 }
+  home: {
+    opacity: 0,
+    x: 1300,
+    transition: {
+      type: "spring",
+      damping: 10,
+      mass: 0.75,
+      stiffness: 100,
+      delay: 0.1,
+    },
+  },
+  about: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      damping: 10,
+      mass: 0.75,
+      stiffness: 100,
+      delay: 0.1,
+    },
+  },
+  work: {
+    opacity: 1,
+    x: -1368,
+    transition: {
+      type: "spring",
+      damping: 10,
+      mass: 0.75,
+      stiffness: 100,
+      delay: 0.1,
+    },
+  },
+  contact: {
+    opacity: 1,
+    x: -2736,
+    transition: {
+      type: "spring",
+      damping: 10,
+      mass: 0.75,
+      stiffness: 100,
+      delay: 0.1,
+    },
+  },
 };
 
 function Header({ animateHeader }) {
