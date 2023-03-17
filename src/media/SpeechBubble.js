@@ -1,8 +1,8 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import { X } from "tabler-icons-react";
 import CloseButton from "./CloseButton";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 const variants = {
   initial: { scale: 0, opacity: 0 },
@@ -43,8 +43,7 @@ function SpeechBubble({ animateBubble }) {
             </h4>
           </div>
           <div className="flecha-speech-bubble"></div>
-          <div
-          >
+          <div>
             <CloseButton
               onClick={() => setVisible(!visible)}
               className="boton-cerrar-speech-bubble transiciones"
