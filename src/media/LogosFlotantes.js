@@ -108,7 +108,9 @@ function LogosFlotantes() {
         </motion.svg>
         <motion.svg
           className="facebook-about dark-svg"
-          viewBox="0 0 24 24"
+          viewBox="0 0 30 30"
+          stroke-linecap="round"
+          stroke-linejoin="round"
           animate={{
             y: [3, 6, -3, 6, 3],
             x: [6, -5, -3, 5, 6],

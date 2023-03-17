@@ -43,17 +43,11 @@ function Footer() {
           <a
             href={EmailJJ}
             onClick={EmailJJ}
-            className="group hover:cursor-pointer text-xl"
+            className="group hover:cursor-pointer text-xl transiciones"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="icon icon-tabler icon-tabler-mail stroke-pink-500 inline pb-0.5 mr-1 group-hover:scale-110 transiciones"
-              width="24"
-              height="24"
+              className="icono-email-footer group-hover:scale-110 transiciones"
               viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
             >

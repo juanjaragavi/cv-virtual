@@ -271,6 +271,10 @@
     .footer-general {
       @apply font-league-spartan text-center text-lg border border-gray-900 dark:border-white rounded-3xl m-2 p-3 grid place-items-center;
     }
+    .icono-email-footer {
+      @apply w-[24px] h-[24px] stroke-2 stroke-pink-500 inline pb-0.5 mr-1;
+    }
+
     /* -----  FIN FOOTER  ----- */
   }
 
@@ -322,7 +326,7 @@
       @apply w-[60px] h-[60px] mt-[10px];
     }
     .facebook-about {
-      @apply w-[70px] h-[70px]
+      @apply w-[80px] h-[80px]
     }
     .flutter-about {
       @apply w-[80px] h-[80px] mt-[20px];
