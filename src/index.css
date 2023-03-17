@@ -316,16 +316,16 @@
       @apply w-[60px] h-[60px] mt-[20px] mb-[5px];
     }
     .react-about {
-      @apply w-[120px] h-[120px];
+      @apply w-[100px] h-[100px];
     }
     .github-about {
       @apply w-[60px] h-[60px] mt-[10px];
     }
     .facebook-about {
-      @apply w-[80px] h-[80px]
+      @apply w-[70px] h-[70px]
     }
     .flutter-about {
-      @apply w-[100px] h-[100px] mt-[20px];
+      @apply w-[80px] h-[80px] mt-[20px];
     }
     .vue-about {
       @apply w-[50px] h-[50px] mt-[5px];
@@ -337,7 +337,7 @@
       @apply w-[80px] h-[80px] mt-[15px];
     }
     .figma-about {
-      @apply w-[40px] h-[40px] mt-[25px] ml-[10px];
+      @apply w-[60px] h-[60px] mt-[25px] ml-[10px];
     }
     .tailwind-about {
       @apply w-[60px] h-[60px] mt-[15px];
