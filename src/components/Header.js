@@ -36,7 +36,7 @@ const variantsInternas = {
   },
   work: {
     opacity: 1,
-    x: -1368,
+    x: "-34%",
     transition: {
       type: "spring",
       damping: 10,
@@ -47,7 +47,7 @@ const variantsInternas = {
   },
   contact: {
     opacity: 1,
-    x: -2736,
+    x: "-67%",
     transition: {
       type: "spring",
       damping: 10,

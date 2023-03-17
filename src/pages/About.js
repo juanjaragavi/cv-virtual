@@ -41,7 +41,7 @@ function About() {
         <Columna style={primeraColumna}>
           <LogosFlotantes />
           <FotoSinBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
+            src={require("../assets/ejemplo-eliminar.png")}
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />

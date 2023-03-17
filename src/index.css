@@ -41,6 +41,9 @@
     .logo-jj {
       @apply mt-5 bg-cover bg-logolight dark:bg-logodark relative w-44 h-[2.3rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24 hover:scale-105 cursor-pointer hover:-hue-rotate-60;
     }
+    .dark-svg {
+      @apply dark:fill-white fill-gray-900;
+    }
 
     /* -----  TIPOGRAFÍAS  ----- */
 
