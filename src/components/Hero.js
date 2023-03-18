@@ -43,7 +43,7 @@ function Hero({ startAnimations }) {
             {t("Saludo.title", { framework: "React" })}
           </motion.h2>
           <motion.h1
-            className="nombre transiciones"
+            className="nombre bg-clip-text text-transparent bg-gradient-to-r from-violet-500 via-orange-500 to-pink-500"
             initial="initials"
             variants={variants}
             animate={startAnimations}

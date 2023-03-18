@@ -77,6 +77,9 @@
     .titulo-degradado {
       @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500;
     }
+    .titulo-degradado-nombre {
+      @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500;
+    }
     .borde-redondeado {
       @apply border border-gray-900 dark:border-white rounded-3xl;
     }
@@ -190,7 +193,7 @@
       @apply md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 font-league-spartan dark:text-white font-bold text-[2.5rem] sm:text-2xl md:text-6xl xl:text-6xl 2xl:text-7xl;
     }
     .nombre {
-      @apply p-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 -mt-3.5 lg:-mt-1.5 xl:-mt-1 2xl:-mt-1 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 hover:from-violet-500 hover:to-orange-500 w-full font-league-spartan font-bold text-5xl sm:text-7xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl cursor-none;
+      @apply p-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 -mt-3.5 lg:-mt-1.5 xl:-mt-1 2xl:-mt-1 w-full font-league-spartan font-bold text-5xl sm:text-7xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl cursor-none;
     }
     .roles {
       @apply px-4 sm:px-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 max-w-2xl 2xl:max-w-4xl font-league-spartan dark:text-white font-light text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
@@ -199,7 +202,7 @@
       @apply md:relative fixed bottom-0 m-0 p-0 sm:ml-0 md:-ml-20 lg:-ml-24 xl:-ml-28 2xl:-ml-28 sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen h-auto w-auto ;
     }
     .boton-conoce-mas {
-      @apply md:float-right lg:float-right xl:float-right 2xl:float-right md:mr-6 lg:mr-4 xl:mr-4 2xl:mr-4 mt-3 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 pt-1 text-lg sm:text-lg md:text-xl lg:text-xl 2xl:text-2xl border sm:border border-gray-900 text-gray-900 dark:text-white font-league-spartan font-medium dark:border-white dark:hover:border-pink-500 hover:border-pink-500;
+      @apply sm:mx-3 md:mx-3 lg:mx-2 xl:mx-2 2xl:mx-2 mt-3 sm:mt-3 md:mt-4 lg:mt-4 xl:mt-4 2xl:mt-4 pt-1 text-lg sm:text-lg md:text-xl lg:text-xl 2xl:text-2xl border sm:border border-gray-900 text-gray-900 dark:text-white font-league-spartan font-medium dark:border-white dark:hover:border-pink-500 hover:border-pink-500;
     }
 
     /* -----  FIN HERO  ----- */
@@ -272,7 +275,7 @@
       @apply font-league-spartan text-center text-lg border border-gray-900 dark:border-white rounded-3xl m-2 p-3 grid place-items-center;
     }
     .icono-email-footer {
-      @apply w-[24px] h-[24px] stroke-2 stroke-pink-500 inline pb-0.5 mr-1;
+      @apply fill-none w-[24px] h-[24px] stroke-2 stroke-pink-900 dark:stroke-pink-500 inline pb-0.5 mr-1;
     }
 
     /* -----  FIN FOOTER  ----- */
@@ -345,6 +348,9 @@
     }
     .tailwind-about {
       @apply w-[60px] h-[60px] mt-[15px];
+    }
+    .degradado-titulo-interactivo {
+      @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500;
     }
 
     /* -----  FIN PÁGINA ABOUT  ----- */
