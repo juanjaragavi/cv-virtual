@@ -68,5 +68,15 @@
     },
     "EmailJJ": {
         "title": "Send Juan Jaramillo an Email."
+    },
+
+    "TituloContacto": {
+        "title": "Fill out the following"
+    },
+    "SubituloContacto": {
+        "title": "Form."
+    },
+    "TaglineContacto": {
+        "title": "I will reach back to you ASAP."
     }
 }

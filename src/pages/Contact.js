@@ -8,12 +8,12 @@ function Contact() {
   return (
     <div className="contenedor-internas">
       <div className="contenedor-componente-contacto fondo-translucido borde-redondeado">
-        <h3 className="mt-7 spartan-bold text-4xl text-center leading-7">
-          Diligencia el siguiente
+        <h3 className="spartan-bold titulo-contacto">
+          {t("TituloContacto.title", { framework: "React" })}
         </h3>
-        <h2 className="titulo-2 titulo-degradado -mt-2 -mb-3">Formulario.</h2>
-        <h4 className="mb-4 titulo-4">
-          Te responderé en breve.
+        <h2 className="titulo-2 titulo-degradado -mt-2 -mb-3">{t("SubituloContacto.title", { framework: "React" })}</h2>
+        <h4 className="titulo-4 mb-4">
+        {t("TaglineContacto.title", { framework: "React" })}
         </h4>
         <FormularioContacto />
         <Footer />

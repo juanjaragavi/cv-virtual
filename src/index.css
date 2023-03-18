@@ -368,6 +368,9 @@
     .contenedor-componente-contacto {
       @apply static overflow-auto float-left w-[70%] max-h-72 sm:h-[35rem] sm:max-h-[42rem] 2xl:h-[100%] items-center justify-center p-3;
     }
+    .titulo-contacto {
+      @apply mt-7 text-4xl text-center leading-7;
+    }
 
       /* -----  FORMULARIO DE CONTACTO  ----- */
 

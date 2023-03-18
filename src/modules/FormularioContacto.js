@@ -1,8 +1,10 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 import { number } from "yup";
+import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 
 function FormularioContacto() {
+    const { t } = useTranslation("common");
     const {
         register,
         formState: { errors },

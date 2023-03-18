@@ -68,5 +68,15 @@
     } ,
     "EmailJJ": {
         "title": "Envíale un correo a Juan Jaramillo."
+    },
+
+    "TituloContacto": {
+        "title": "Diligencia el siguiente"
+    },
+    "SubituloContacto": {
+        "title": "Formulario."
+    },
+    "TaglineContacto": {
+        "title": "Te responderé en breve."
     }
 }
