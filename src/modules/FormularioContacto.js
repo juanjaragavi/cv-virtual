@@ -43,7 +43,7 @@ function FormularioContacto() {
                 }}
             >
                 <ConfirmResetForm
-                className="z-[999] grid w-[70%] h-screen place-items-center absolute -mt-[4rem] top-0 left-[6.9rem] bg-transparent dark:bg-transparent"
+                className="contenedor-conf-reset-formulario-contacto"
                 onClickAccept={handleConfirmClick}
                 onClickCancel={handleCancelClick}
                 />

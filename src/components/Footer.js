@@ -46,7 +46,7 @@ function Footer() {
             className="group hover:cursor-pointer text-xl transiciones"
           >
             <svg
-              className="icono-email-footer group-hover:scale-110 transiciones"
+              className="icono-email-footer group-hover:scale-110 group-hover:stroke-pink-500 transiciones"
               viewBox="0 0 24 24"
               stroke-linecap="round"
               stroke-linejoin="round"

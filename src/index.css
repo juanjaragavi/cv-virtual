@@ -405,7 +405,7 @@
         @apply w-full p-3 -mt-2 mb-0 text-center;
       }
       .campo-formulario-contacto {
-        @apply w-full mt-0 mb-0 placeholder:text-white hover:placeholder:text-pink-500 text-xl bg-transparent pl-4 pt-3 pb-3 rounded-full border border-slate-300 hover:border-pink-500 hover:text-pink-500 hover:scale-105 focus:text-pink-500 focus:border-pink-500 focus:scale-105;
+        @apply w-full mt-0 mb-0 dark:placeholder:text-white placeholder:text-gray-900 hover:placeholder:text-pink-500 dark:hover:placeholder:text-pink-500 text-xl bg-transparent pl-4 pt-3 pb-3 rounded-full border dark:border-white border-gray-900 hover:border-pink-500 dark:hover:border-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 focus:text-pink-500 dark:focus:text-pink-500 focus:border-pink-500 dark:focus:border-pink-500 focus:scale-105;
       }
       .texto-error-formulario-contacto {
         @apply text-red-500 mt-3 -mb-3 text-center;
@@ -418,6 +418,34 @@
       }
       .boton-restablecer-formulario-contacto {
         @apply my-3 pt-3 pb-2 hover:text-red-500 hover:border-red-500 cursor-pointer;
+      }
+
+      /* -----  VENTANA DE CONFIRMACIÓN RESET FORMULARIO  ----- */
+
+      .contenedor-reset-formulario-contacto {
+        @apply pt-10 pb-10 pl-5 pr-5 border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500 rounded-3xl cursor-move backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-60 sm:bg-opacity-90 bg-opacity-90;
+      }
+
+      .contenedor-conf-reset-formulario-contacto {
+        @apply z-[999] grid w-[70%] h-screen place-items-center absolute -mt-[4rem] top-0 left-[6.9rem] bg-transparent dark:bg-transparent;
+      }
+      .titulo-importante-reset-formulario-contacto {
+        @apply ml-5 -mt-1 titulo-2 dark:text-yellow-500 text-red-500;
+      }
+      .icono-importante-reset-formulario-contacto {
+        @apply w-[55px] h-[55px] stroke-2 fill-none dark:stroke-yellow-500 stroke-red-500;
+      }
+      .btn-aceptar-reset-formulario-contacto {
+        @apply text-gray-900 dark:text-white hover:text-green-500 dark:hover:text-green-500 dark:border-white border-gray-900 hover:border-green-500 dark:hover:border-green-500 mt-4 basis-1/2 mr-2;
+      }
+      .icono-aceptar-reset-formulario-contacto {
+        @apply stroke-gray-900 dark:stroke-white group-hover:stroke-green-500 fill-none stroke-2 w-[24px] h-[24px] mb-1.5 ml-0 -mr-2;
+      }
+      .btn-cancelar-reset-formulario-contacto {
+        @apply text-gray-900 dark:text-white hover:text-red-500 dark:hover:text-red-500 dark:border-white border-gray-900 hover:border-red-500 dark:hover:border-red-500 mt-4 basis-1/2 mr-2;
+      }
+      .icono-cancelar-reset-formulario-contacto {
+        @apply stroke-gray-900 dark:stroke-white group-hover:stroke-red-500 fill-none stroke-2 w-[24px] h-[24px] mb-1.5 ml-0 -mr-2;
       }
 
 

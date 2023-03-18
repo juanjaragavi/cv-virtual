@@ -21,7 +21,7 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
     >
       <motion.div
         drag
-        className="pt-10 pb-10 pl-5 pr-5 border border-gray-900 dark:border-white hover:border-pink-500 dark:hover:border-pink-500 rounded-3xl cursor-move fondo-translucido"
+        className="contenedor-reset-formulario-contacto"
         initial={{
           scale: 0,
           opacity: 0,
@@ -37,9 +37,9 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
         }}
       >
         <div className="contenedor-logo-y-switcher-selector-idiomas">
-          <h2 className="ml-5 -mt-1 titulo-2 text-yellow-500">{t("TituloImportanteConfirmResetForm.title", { framework: "React" })}</h2>
+          <h2 className="titulo-importante-reset-formulario-contacto">{t("TituloImportanteConfirmResetForm.title", { framework: "React" })}</h2>
           <svg
-            className="w-[55px] h-[55px] stroke-2 fill-none stroke-yellow-500"
+            className="icono-importante-reset-formulario-contacto"
             viewBox="0 0 24 24"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -60,10 +60,10 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
         </div>
         <div className="contenedor-botones-idioma">
           <ConfResetBtn
-            className="group spartan-medium text-white hover:text-green-500 border-white hover:border-green-500 mt-4 basis-1/2 mr-2 transiciones estilos-interactivos-botones"
+            className="group btn-aceptar-reset-formulario-contacto transiciones spartan-medium estilos-interactivos-botones"
             leftIcon={
               <svg
-                className="stroke-white group-hover:stroke-green-500 fill-none stroke-2 w-[24px] h-[24px] mb-1.5 ml-0 -mr-2 transiciones icono-language-switcher"
+                className="icono-aceptar-reset-formulario-contacto transiciones icono-language-switcher"
                 viewBox="0 0 24 24"
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -82,17 +82,11 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
             }}
           />
           <ConfResetBtn
-            className="group spartan-medium text-white hover:text-red-500 border-white hover:border-red-500 mt-4 basis-1/2 mr-2 transiciones estilos-interactivos-botones"
+            className="group spartan-medium btn-cancelar-reset-formulario-contacto transiciones estilos-interactivos-botones"
             leftIcon={
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="stroke-white group-hover:stroke-red-500 fill-none stroke-2 w-[24px] h-[24px] mb-1.5 ml-0 -mr-2 transiciones icono-language-switcher"
-                width="24"
-                height="24"
+                className="icono-cancelar-reset-formulario-contacto transiciones icono-language-switcher"
                 viewBox="0 0 24 24"
-                stroke-width="2"
-                stroke="currentColor"
-                fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               >
