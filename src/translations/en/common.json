@@ -78,5 +78,32 @@
     },
     "TaglineContacto": {
         "title": "I will reach back to you ASAP."
+    },
+    "CampoReqFormContacto": {
+        "title": "This field is required."
+    },
+    "MaxCharFormContacto": {
+        "title": "The maximum number of characters allowed is 10."
+    },
+    "MinCharFormContacto": {
+        "title": "The minimum number of characters allowed is 10."
+    },
+    "BtnEnviarFormContacto": {
+        "title": "SEND"
+    },
+    "BtnResetFormContacto": {
+        "title": "RESET"
+    },
+    "NombresFormContacto": {
+        "title": "Name"
+    },
+    "ApellidosFormContacto": {
+        "title": "Last Name"
+    },
+    "EmailFormContacto": {
+        "title": "Email"
+    },
+    "TelefonoFormContacto": {
+        "title": "Phone"
     }
 }

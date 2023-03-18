@@ -288,7 +288,7 @@
     /* -----  ESTILOS GENERALES INTERNAS  ----- */
 
     .placeholder-internas {
-      @apply flex justify-center w-[300%];
+      @apply flex items-center justify-center w-[300%];
     }
     .contenedor-internas {
       @apply mx-[3.5%] p-2.5 static w-[80%] 2xl:w-[65%] max-h-80 sm:h-[37rem] sm:max-h-[44rem] 2xl:h-[100%] 2xl:mt-[1.5%] overflow-auto text-gray-900 dark:text-white;

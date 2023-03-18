@@ -25,11 +25,11 @@ function FormularioContacto() {
                 type="text"
                 name="nombres"
                 id="nombres"
-                placeholder="Nombres"
+                placeholder={t("NombresFormContacto.title", { framework: "React" })}
             />
             {errors.apellidos?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                Este campo es requerido.
+                {t("CampoReqFormContacto.title", { framework: "React" })}
                 </p>
             )}
             </div>
@@ -42,11 +42,11 @@ function FormularioContacto() {
                 type="text"
                 name="apellidos"
                 id="apellidos"
-                placeholder="Apellidos"
+                placeholder={t("ApellidosFormContacto.title", { framework: "React" })}
             />
             {errors.apellidos?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                Este campo es requerido.
+                {t("CampoReqFormContacto.title", { framework: "React" })}
                 </p>
             )}
             </div>
@@ -60,16 +60,16 @@ function FormularioContacto() {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Correo Electrónico"
+                placeholder={t("EmailFormContacto.title", { framework: "React" })}
             />
             {errors.email?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                Este campo es requerido.
+                {t("CampoReqFormContacto.title", { framework: "React" })}
                 </p>
             )}
             {errors.email?.type === "pattern" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                Ingresa un correo electrónico válido.
+                {t("CampoReqFormContacto.title", { framework: "React" })}
                 </p>
             )}
             </div>
@@ -85,21 +85,21 @@ function FormularioContacto() {
                 type="number"
                 name="telefono"
                 id="telefono"
-                placeholder="Teléfono"
+                placeholder={t("TelefonoFormContacto.title", { framework: "React" })}
             />
             {errors.telefono?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                Este campo es requerido.
+                {t("CampoReqFormContacto.title", { framework: "React" })}
                 </p>
             )}
             {errors.telefono?.type === "minLength" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                El número mínimo de caracteres permitido es 10.
+                {t("MinCharFormContacto.title", { framework: "React" })}
                 </p>
             )}
             {errors.telefono?.type === "maxLength" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
-                El número máximo de caracteres permitido es 10.
+                {t("MaxCharFormContacto.title", { framework: "React" })}
                 </p>
             )}
             </div>
@@ -107,12 +107,12 @@ function FormularioContacto() {
             <input
                 className="spartan-medium boton-enviar-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
                 type="submit"
-                value="ENVIAR"
+                value={t("BtnEnviarFormContacto.title", { framework: "React" })}
             />
             <input
                 className="spartan-medium boton-restablecer-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
                 type="reset"
-                value="RESTABLECER"
+                value={t("BtnResetFormContacto.title", { framework: "React" })}
             />
             </div>
         </form>
