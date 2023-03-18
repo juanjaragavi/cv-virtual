@@ -9,11 +9,11 @@ function Contact() {
     <div className="contenedor-internas">
       <div className="contenedor-componente-contacto fondo-translucido borde-redondeado">
         <h3 className="mt-7 spartan-bold text-4xl text-center leading-7">
-          Desde 2007,
+          Diligencia el siguiente
         </h3>
-        <h2 className="titulo-2 titulo-degradado -mt-2 -mb-3">Obsesionado</h2>
-        <h4 className="titulo-4 decoracion-texto-destacado">
-          con la Tecnología y el Marketing
+        <h2 className="titulo-2 titulo-degradado -mt-2 -mb-3">Formulario.</h2>
+        <h4 className="mb-4 titulo-4">
+          Te responderé en breve.
         </h4>
         <FormularioContacto />
         <Footer />
