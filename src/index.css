@@ -411,7 +411,7 @@
         @apply text-red-500 mt-3 -mb-3 text-center;
       }
       .contenedor-botones-formulario-contacto {
-        @apply flex space-x-3 px-2;
+        @apply flex space-x-1 px-2;
       }
       .boton-enviar-formulario-contacto {
         @apply my-3 pt-3 pb-2 hover:text-green-500 hover:border-green-500 cursor-pointer;

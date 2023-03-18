@@ -18,7 +18,7 @@ function Contact() {
         <h3 className="spartan-bold titulo-contacto">
           {t("TituloContacto.title", { framework: "React" })}
         </h3>
-        <h2 className="titulo-2 titulo-degradado -mt-1 -mb-3">{t("SubituloContacto.title", { framework: "React" })}</h2>
+        <h2 className="animate-pulse titulo-2 titulo-degradado -mt-1 -mb-3">{t("SubituloContacto.title", { framework: "React" })}</h2>
         <h4 className="titulo-4 mb-6">
         {t("TaglineContacto.title", { framework: "React" })}
         </h4>

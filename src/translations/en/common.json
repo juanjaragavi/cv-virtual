@@ -42,6 +42,21 @@
     "Spanish": {
         "title": "SPANISH"
     },
+    "BtnConfirmResetForm": {
+        "title": "ACCEPT"
+    },
+    "BtnCancelResetForm": {
+        "title": "CANCEL"
+    },
+    "TitleConfirmResetForm": {
+        "title": "Are you sure to reset this Form?"
+    },
+    "SubTitleConfirmResetForm": {
+        "title": "This action cannot be undone."
+    },
+    "TituloImportanteConfirmResetForm": {
+        "title": "Heads Up"
+    },
     
 
     "AltFotoJJ": {

@@ -42,6 +42,21 @@
     "Spanish": {
         "title": "ESPAÑOL"
     },
+    "BtnConfirmResetForm": {
+        "title": "ACEPTAR"
+    },
+    "BtnCancelResetForm": {
+        "title": "CANCELAR"
+    },
+    "TitleConfirmResetForm": {
+        "title": "¿Seguro deseas restablecer el Formulario?"
+    },
+    "SubTitleConfirmResetForm": {
+        "title": "Esta acción no se puede deshacer."
+    },
+    "TituloImportanteConfirmResetForm": {
+        "title": "Importante"
+    },
     
 
     "AltFotoJJ": {

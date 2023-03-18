@@ -1,7 +1,9 @@
-import React from "react";
 import { number } from "yup";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
+import ConfirmResetForm from "../media/ConfirmResetForm";
+import { motion, AnimatePresence } from "framer-motion";
 
 function FormularioContacto() {
     const { t } = useTranslation("common");
@@ -10,12 +12,45 @@ function FormularioContacto() {
         formState: { errors },
         handleSubmit,
     } = useForm();
+    const [confirmarReset, setConfirmarReset] = useState(false);
+    const handleResetClick = () => {
+        setConfirmarReset(true);
+    };
 
+    const handleConfirmClick = () => {
+        document.querySelector("form").reset();
+        setConfirmarReset(false);
+    };
+
+    const handleCancelClick = () => {
+        setConfirmarReset(false);
+    };
     const onSubmit = (data) => console.log(data);
 
     return (
         <div className="contenedor-formulario-contacto">
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <AnimatePresence>
+            {confirmarReset && (
+            <motion.div
+                exit={{
+                opacity: 0,
+                transition: {
+                    type: "tween",
+                    ease: "easeInOut",
+                    duration: 0.3,
+                    delay: 0.3,
+                },
+                }}
+            >
+                <ConfirmResetForm
+                className="z-[999] grid w-[70%] h-screen place-items-center absolute -mt-[4rem] top-0 left-[6.9rem] bg-transparent dark:bg-transparent"
+                onClickAccept={handleConfirmClick}
+                onClickCancel={handleCancelClick}
+                />
+            </motion.div>
+            )}
+        </AnimatePresence>
+        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)}>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
@@ -42,7 +77,9 @@ function FormularioContacto() {
                 type="text"
                 name="apellidos"
                 id="apellidos"
-                placeholder={t("ApellidosFormContacto.title", { framework: "React" })}
+                placeholder={t("ApellidosFormContacto.title", {
+                framework: "React",
+                })}
             />
             {errors.apellidos?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
@@ -85,7 +122,9 @@ function FormularioContacto() {
                 type="number"
                 name="telefono"
                 id="telefono"
-                placeholder={t("TelefonoFormContacto.title", { framework: "React" })}
+                placeholder={t("TelefonoFormContacto.title", {
+                framework: "React",
+                })}
             />
             {errors.telefono?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
@@ -104,16 +143,19 @@ function FormularioContacto() {
             )}
             </div>
             <div className="contenedor-botones-formulario-contacto">
-            <input
+            <button
                 className="spartan-medium boton-enviar-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
                 type="submit"
-                value={t("BtnEnviarFormContacto.title", { framework: "React" })}
-            />
-            <input
+            >
+                {t("BtnEnviarFormContacto.title", { framework: "React" })}
+            </button>
+            <button
                 className="spartan-medium boton-restablecer-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
-                type="reset"
-                value={t("BtnResetFormContacto.title", { framework: "React" })}
-            />
+                type="button"
+                onClick={handleResetClick}
+            >
+                {t("BtnResetFormContacto.title", { framework: "React" })}
+            </button>
             </div>
         </form>
         </div>
