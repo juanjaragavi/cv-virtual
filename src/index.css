@@ -355,7 +355,27 @@
 
       /* -----  POPOVER CONTACTO  ----- */
 
-
+      .contenedor-popover-contacto {
+        @apply -ml-5 -mt-3 w-5/6 max-w-sm;
+      }
+      .trigger-popover-contacto {
+        @apply mx-4 w-full rounded-full px-20 py-3 inline-flex items-center;
+      }
+      .panel-popover-contacto {
+        @apply hover:border-pink-500  absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-3 sm:px-0 lg:max-w-3xl;
+      }
+      .contenedor-botones-popover-contacto {
+        @apply relative grid gap-8 p-7 lg:grid-cols-3;
+      }
+      .boton-popover-contacto {
+        @apply -my-3 flex items-center justify-center rounded-full px-3 py-1 hover:border hover:border-pink-500 hover:no-underline;
+      }
+      .icono-boton-popover-contacto {
+        @apply flex h-16 w-16 shrink-0 items-center justify-center text-gray-900 dark:text-white sm:h-8 sm:w-8;
+      }
+      .texto-boton-popover-contacto {
+        @apply text-lg text-gray-900 dark:text-white;
+      }
 
     /* -----  FIN PÁGINA ABOUT  ----- */
 
@@ -370,7 +390,7 @@
     /* -----  PÁGINA CONTACT  ----- */
 
     .contenedor-componente-contacto {
-      @apply static overflow-auto float-left w-[70%] max-h-72 sm:h-[35rem] sm:max-h-[42rem] 2xl:h-[100%] items-center justify-center p-3;
+      @apply static overflow-auto float-left w-[70%] max-h-72 sm:h-[35rem] sm:max-h-[42rem] 2xl:h-[100%] items-center justify-center py-3 pt-8;
     }
     .titulo-contacto {
       @apply mt-7 text-4xl text-center leading-7;

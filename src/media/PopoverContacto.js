@@ -27,14 +27,14 @@ const solutions = [
 
 function PopoverContacto() {
   return (
-    <div className="-ml-5 -mt-3 w-5/6 max-w-sm">
+    <div className="contenedor-popover-contacto">
       <Popover className="relative">
         {({ open }) => (
           <>
             <Popover.Button
               className={`
                                 ${open ? "" : "text-opacity-90"}
-                                group mx-4 w-full rounded-full px-20 py-3 inline-flex items-center boton-conoce-mas boton-idioma transiciones estilos-interactivos-botones`}
+                                group trigger-popover-contacto boton-conoce-mas boton-idioma transiciones estilos-interactivos-botones`}
             >
               <span className="group-hover:text-pink-500 pt-1 text-center spartan-medium transiciones">
                 PONTE EN CONTACTO
@@ -62,24 +62,24 @@ function PopoverContacto() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="borde-redondeado hover:border-pink-500 transiciones absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-3 sm:px-0 lg:max-w-3xl">
+              <Popover.Panel className="borde-redondeado transiciones panel-popover-contacto">
                 <div className="overflow-hidden">
-                  <div className="relative grid gap-8 p-7 lg:grid-cols-3">
+                  <div className="contenedor-botones-popover-contacto">
                     {solutions.map((item) => (
                       <a
                         key={item.name}
                         href={item.href}
                         target={item.target}
-                        className="group -my-3 flex items-center justify-center rounded-full px-3 py-1 hover:border hover:border-pink-500 hover:no-underline transiciones"
+                        className="group boton-popover-contacto transiciones"
                       >
-                        <div className="flex h-16 w-16 shrink-0 items-center justify-center text-gray-900 dark:text-white sm:h-8 sm:w-8 transiciones">
+                        <div className="icono-boton-popover-contacto transiciones">
                           <item.icon
                             className="group-hover:stroke-pink-500"
                             aria-hidden="true"
                           />
                         </div>
                         <div className="ml-1 pt-1">
-                          <p className="group-hover:text-pink-500 spartan-medium text-lg text-gray-900 dark:text-white transiciones">
+                          <p className="group-hover:text-pink-500 spartan-medium texto-boton-popover-contacto transiciones">
                             {item.name}
                           </p>
                         </div>
