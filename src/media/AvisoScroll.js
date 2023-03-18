@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const transition = {
   duration: 1,
@@ -10,6 +11,7 @@ const transition = {
 };
 
 function AvisoScroll() {
+  const { t } = useTranslation("common");
   return (
     <motion.div
       className="group contenedor-aviso-haz-scroll"
@@ -40,7 +42,7 @@ function AvisoScroll() {
         </motion.svg>
       </div>
       <p className="group-hover:text-pink-500 dark:group-hover:text-pink-500 texto-aviso-haz-scroll">
-        HAZ SCROLL
+        {t("AvisoScroll.title", { framework: "React" })}
       </p>
       <div className="group-hover:border-pink-500 dark:group-hover:border-pink-500 contenedor-flecha-aviso-haz-scroll">
         <svg
