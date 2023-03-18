@@ -15,7 +15,7 @@ function Hero({ startAnimations }) {
   const { t } = useTranslation("common");
 
   return (
-    <motion.main
+    <motion.div
       className="contenedor-hero"
       initial="initial"
       variants={variants}
@@ -26,8 +26,8 @@ function Hero({ startAnimations }) {
         delay: 0.3,
       }}
     >
-      <article className="contenedor-saludo-nombre">
-        <section>
+      <div className="contenedor-saludo-nombre">
+        <div>
           <motion.h2
             className="saludo"
             initial="initialm50"
@@ -82,8 +82,8 @@ function Hero({ startAnimations }) {
           }}
           >
           </motion.div>
-        </section>
-      </article>
+        </div>
+      </div>
       <motion.img
         className="foto-juan-jaramillo"
         initial="initial50"
@@ -99,7 +99,7 @@ function Hero({ startAnimations }) {
         src={require("../assets/juan-jaramillo-cv-virtual.png")}
         title={t("AltFotoJJ.title", { framework: "React" })}
       />
-    </motion.main>
+    </motion.div>
   );
 }
 export default Hero;

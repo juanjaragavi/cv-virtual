@@ -25,7 +25,7 @@ function LangSplash({
   const langSelect = useAnimationControls();
   const [t, i18n] = useTranslation("common");
   return (
-    <motion.main
+    <motion.div
       layout
       className="contenedor-selector-idiomas"
       initial={{ scale: 1 }}
@@ -104,7 +104,7 @@ function LangSplash({
           />
         </div>
       </motion.div>
-    </motion.main>
+    </motion.div>
   );
 }
 

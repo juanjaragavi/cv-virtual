@@ -28,7 +28,7 @@ function FixedMenu({ animateFixedMenu }) {
   };
 
   return (
-    <motion.main
+    <motion.div
       className="contenedor-menu-fijo"
       variants={variants}
       initial="initial"
@@ -55,7 +55,7 @@ function FixedMenu({ animateFixedMenu }) {
           </li>
         </ul>
       </nav>
-      <motion.section
+      <motion.div
         className="contenedor-boton-whatsapp"
         variants={variants}
         initial="initial100"
@@ -67,8 +67,8 @@ function FixedMenu({ animateFixedMenu }) {
         }}
       >
         <WhatsApp />
-      </motion.section>
-    </motion.main>
+      </motion.div>
+    </motion.div>
   );
 }
 

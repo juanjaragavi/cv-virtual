@@ -14,7 +14,7 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
   const [t, i18n] = useTranslation("common");
 
   return (
-    <motion.main
+    <motion.div
       className="contenedor-language-switcher"
       animate={animateSwitcher}
       initial="initial"
@@ -79,6 +79,6 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
         />
         <p>{t("Spanish.title", { framework: "React" })}</p>
       </motion.div>
-    </motion.main>
+    </motion.div>
   );
 }

@@ -357,9 +357,34 @@
     
     /* -----  PÁGINA WORK  ----- */
 
-    .contenedor-componente-work {
-      @apply;
+    .contenedor-componente-contacto {
+      @apply float-left w-[70%] items-center justify-center p-3;
     }
+
+      /* -----  FORMULARIO DE CONTACTO  ----- */
+
+      .contenedor-formulario-contacto {
+        @apply my-5 px-40 w-full h-auto min-h-min;
+      }
+      .contenedor-campo-formulario-contacto {
+        @apply w-full p-3 text-center;
+      }
+      .campo-formulario-contacto {
+        @apply w-full placeholder:text-white hover:placeholder:text-pink-500 text-xl bg-transparent pl-4 pt-3 pb-3 rounded-full border border-slate-300 hover:border-pink-500 hover:text-pink-500 hover:scale-105 focus:text-pink-500 focus:border-pink-500 focus:scale-105;
+      }
+      .texto-error-formulario-contacto {
+        @apply text-red-500 mt-3 -mb-3 text-center;
+      }
+      .contenedor-botones-formulario-contacto {
+        @apply flex space-x-3 px-2;
+      }
+      .boton-enviar-formulario-contacto {
+        @apply my-3 pt-3 pb-2 hover:text-green-500 hover:border-green-500 cursor-pointer;
+      }
+      .boton-restablecer-formulario-contacto {
+        @apply my-3 pt-3 pb-2 hover:text-red-500 hover:border-red-500 cursor-pointer;
+      }
+
 
     /* -----  FIN PÁGINA WORK  ----- */
 

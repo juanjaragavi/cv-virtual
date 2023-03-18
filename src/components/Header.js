@@ -64,8 +64,8 @@ function Header({ animateHeader }) {
     setMoveItems(mode);
   };
   return (
-    <main className="contenedor-header">
-      <motion.header
+    <header className="contenedor-header">
+      <motion.div
         className="header"
         initial="initial"
         variants={variants}
@@ -82,8 +82,8 @@ function Header({ animateHeader }) {
         />
         <Nav setMoveItems={setMoveItems} />
         <ThemeSwitcher className="switch transiciones" />
-      </motion.header>
-      <motion.article
+      </motion.div>
+      <motion.div
         layout
         className="placeholder-internas"
         initial="home"
@@ -93,8 +93,8 @@ function Header({ animateHeader }) {
         <About />
         <Work />
         <Contact />
-      </motion.article>
-    </main>
+      </motion.div>
+    </header>
   );
 }
 

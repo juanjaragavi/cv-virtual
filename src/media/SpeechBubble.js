@@ -16,7 +16,7 @@ function SpeechBubble({ animateBubble }) {
   return (
     <AnimatePresence>
       {visible && (
-        <motion.main
+        <motion.div
           style={{ display: visible ? "block" : "none" }}
           className="contenedor-speech-bubble"
           initial="initial"
@@ -50,7 +50,7 @@ function SpeechBubble({ animateBubble }) {
               buttonText={visible ? <X size={30} /> : <X size={30} />}
             />
           </div>
-        </motion.main>
+        </motion.div>
       )}
     </AnimatePresence>
   );

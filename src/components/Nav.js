@@ -11,7 +11,7 @@ function Nav({ setMoveItems }) {
   };
 
   return (
-    <main>
+    <div>
       <nav className="nav-principal transiciones">
         <ul className="contenedor-menu">
           <motion.li
@@ -97,7 +97,7 @@ function Nav({ setMoveItems }) {
           initial={{ x: 12, opacity: 0 }}
         ></motion.div>
       </nav>
-    </main>
+    </div>
   );
 }
 

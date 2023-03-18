@@ -17,7 +17,7 @@ function App() {
   const [animateHeaderMovil, setAnimateHeaderMovil] = useState("inactive");
 
   return (
-    <div className="App">
+    <main className="App">
       <MantineProvider withGlobalStyles withNormalizeCSS>
         <Header animateHeader={animateHeader} />
         <HeaderMovil animateHeaderMovil={animateHeaderMovil} />
@@ -36,7 +36,7 @@ function App() {
         <SpeechBubble animateBubble={animateBubble} />
         <FixedMenu animateFixedMenu={animateFixedMenu} />
       </MantineProvider>
-    </div>
+    </main>
   );
 }
 
