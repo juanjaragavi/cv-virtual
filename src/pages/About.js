@@ -4,6 +4,7 @@ import Columna from "../layouts/Columna";
 import Seccion from "../layouts/Seccion";
 import Footer from "../components/Footer";
 import FotoBorde from "../media/FotoBorde";
+import AvisoScroll from "../media/AvisoScroll";
 import { useTranslation } from "react-i18next";
 import FotoSinBorde from "../media/FotoSinBorde";
 import TextoEjemplo from "../media/TextoEjemplo";
@@ -70,6 +71,7 @@ function About() {
             con la Tecnología y el Marketing.
           </h3>
           <TextoEjemplo style={textoCentrado} />
+          <AvisoScroll />
         </Columna>
       </ContColumnas>
       <ContColumnas>

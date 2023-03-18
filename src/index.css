@@ -353,6 +353,27 @@
       @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500;
     }
 
+      /* -----  AVISO "HAZ SCROLL"  ----- */
+
+      .contenedor-aviso-haz-scroll {
+        @apply grid place-items-center mt-5;
+      }
+      .contenedor-mouse-aviso-haz-scroll {
+        @apply px-1.5 pt-2 w-10 h-10 border-t border-l border-r border-gray-900 dark:border-white rounded-t-full;
+      }
+      .mouse-aviso-haz-scroll {
+        @apply w-[26px] h-[26px] stroke-gray-900 dark:stroke-white fill-none dark:fill-none; 
+      }
+      .contenedor-flecha-aviso-haz-scroll {
+        @apply px-1.5 pt-1 w-10 h-10 border-b border-l border-r border-gray-900 dark:border-white rounded-b-full;
+      }
+      .flecha-aviso-haz-scroll {
+        @apply w-[26px] h-[26px] stroke-gray-900 dark:stroke-white fill-none dark:fill-none; 
+      }
+      .texto-aviso-haz-scroll {
+        @apply text-gray-900 dark:text-white spartan-medium text-sm my-0.5
+      }
+
       /* -----  POPOVER CONTACTO  ----- */
 
       .contenedor-popover-contacto {
