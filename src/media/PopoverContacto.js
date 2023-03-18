@@ -73,14 +73,14 @@ const solutions = [
                             target={item.target}
                             className="group -my-3 flex items-center justify-center rounded-full px-3 py-1 hover:border hover:border-pink-500 hover:no-underline transiciones"
                         >
-                            <div className="flex h-16 w-16 shrink-0 items-center justify-center text-white sm:h-8 sm:w-8 transiciones">
+                            <div className="flex h-16 w-16 shrink-0 items-center justify-center text-gray-900 dark:text-white sm:h-8 sm:w-8 transiciones">
                             <item.icon
                                 className="group-hover:stroke-pink-500"
                                 aria-hidden="true"
                             />
                             </div>
                             <div className="ml-1 pt-1">
-                            <p className="group-hover:text-pink-500 spartan-medium text-lg text-white transiciones">
+                            <p className="group-hover:text-pink-500 spartan-medium text-lg text-gray-900 dark:text-white transiciones">
                                 {item.name}
                             </p>
                             </div>
