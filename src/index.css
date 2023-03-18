@@ -353,6 +353,10 @@
       @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500;
     }
 
+      /* -----  POPOVER CONTACTO  ----- */
+
+
+
     /* -----  FIN PÁGINA ABOUT  ----- */
 
     /* -----  PÁGINA WORK  ----- */
@@ -378,10 +382,10 @@
         @apply mb-5 px-40 w-full h-auto min-h-min;
       }
       .contenedor-campo-formulario-contacto {
-        @apply w-full p-3 text-center;
+        @apply w-full p-3 -mt-2 mb-0 text-center;
       }
       .campo-formulario-contacto {
-        @apply w-full placeholder:text-white hover:placeholder:text-pink-500 text-xl bg-transparent pl-4 pt-3 pb-3 rounded-full border border-slate-300 hover:border-pink-500 hover:text-pink-500 hover:scale-105 focus:text-pink-500 focus:border-pink-500 focus:scale-105;
+        @apply w-full mt-0 mb-0 placeholder:text-white hover:placeholder:text-pink-500 text-xl bg-transparent pl-4 pt-3 pb-3 rounded-full border border-slate-300 hover:border-pink-500 hover:text-pink-500 hover:scale-105 focus:text-pink-500 focus:border-pink-500 focus:scale-105;
       }
       .texto-error-formulario-contacto {
         @apply text-red-500 mt-3 -mb-3 text-center;
