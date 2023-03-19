@@ -25,12 +25,12 @@ function AvisoScroll() {
         },
       }}
     >
-      <div className="group-hover:border-pink-500 dark:group-hover:border-pink-500 contenedor-mouse-aviso-haz-scroll transiciones">
+      <div className="group-hover:border-pink-500 dark:group-hover:border-pink-500 contenedor-mouse-aviso-haz-scroll">
         <motion.svg
-          className="group-hover:stroke-pink-500 dark:group-hover:stroke-pink-500 mouse-aviso-haz-scroll transiciones"
+          className="group-hover:stroke-pink-500 dark:group-hover:stroke-pink-500 mouse-aviso-haz-scroll"
           transition={transition}
           animate={{
-            y: [25, -25, 25],
+            y: [3, -3, 3],
           }}
           viewBox="0 0 24 24"
           stroke-linecap="round"
@@ -46,7 +46,7 @@ function AvisoScroll() {
       </p>
       <div className="group-hover:border-pink-500 dark:group-hover:border-pink-500 contenedor-flecha-aviso-haz-scroll">
         <svg
-          className="group-hover:stroke-pink-500 dark:group-hover:stroke-pink-500 flecha-aviso-haz-scroll transiciones"
+          className="group-hover:stroke-pink-500 dark:group-hover:stroke-pink-500 flecha-aviso-haz-scroll"
           viewBox="0 0 24 24"
           stroke-linecap="round"
           stroke-linejoin="round"
