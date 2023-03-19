@@ -70,7 +70,7 @@ function LangSplash({
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
                 alt={t("AltEnLang.title", { framework: "React" })}
-                src={require("../assets/uk.png")}
+                src='https://juanjaramillo.s3.amazonaws.com/assets/uk.png'
                 title={t("AltEnLang.title", { framework: "React" })}
               />
             }
@@ -89,7 +89,7 @@ function LangSplash({
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
                 alt={t("AltEsLang.title", { framework: "React" })}
-                src={require("../assets/spain.png")}
+                src='https://juanjaramillo.s3.amazonaws.com/assets/spain.png'
                 title={t("AltEsLang.title", { framework: "React" })}
               />
             }

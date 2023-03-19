@@ -57,7 +57,7 @@ function About() {
         <Columna style={primeraColumna}>
           <LogosFlotantes />
           <FotoSinBorde
-            src={require(`../assets/ejemplo-eliminar.png`)}
+            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.png'
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
@@ -159,7 +159,7 @@ function About() {
           >
             <FotoBorde
               style={fotoRedonda}
-              src={require(`../assets/ejemplo-eliminar.jpg`)}
+              src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
               title={t("AltFotoInternas.title", { framework: "React" })}
               alt={t("AltFotoInternas.title", { framework: "React" })}
             />

@@ -38,7 +38,7 @@ function Work() {
         <Columna style={primeraColumna}>
           <LogosFlotantes />
           <FotoSinBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
+            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
@@ -80,7 +80,7 @@ function Work() {
         </Columna>
         <Columna style={segundaColumna}>
           <FotoBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
+            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
@@ -90,7 +90,7 @@ function Work() {
         <TextoEjemplo />
         <FotoSinBorde
           style={paddingLados}
-          src={require("../assets/logo-juan-jaramillo.png")}
+          src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
           title={t("AltFotoInternas.title", { framework: "React" })}
           alt={t("AltFotoInternas.title", { framework: "React" })}
         />
@@ -99,7 +99,7 @@ function Work() {
         <Columna style={tresColumnasBorde}>
           <TextoEjemplo />
           <FotoBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
+            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
@@ -107,14 +107,14 @@ function Work() {
         <Columna style={tresColumnas}>
           <TextoEjemplo />
           <FotoSinBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
+            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
         </Columna>
         <Columna style={tresColumnas}>
           <FotoBorde
-            src={require("../assets/ejemplo-eliminar.jpg")}
+            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />

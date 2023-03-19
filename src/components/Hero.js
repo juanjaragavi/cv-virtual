@@ -96,7 +96,7 @@ function Hero({ startAnimations }) {
           ease: "easeOut"
         }}
         alt={t("AltFotoJJ.title", { framework: "React" })}
-        src={require("../assets/juan-jaramillo-cv-virtual.png")}
+        src='https://juanjaramillo.s3.amazonaws.com/assets/juan-jaramillo-cv-virtual.png'
         title={t("AltFotoJJ.title", { framework: "React" })}
       />
     </motion.div>
