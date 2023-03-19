@@ -448,7 +448,7 @@
       }
 
       .contenedor-conf-reset-formulario-contacto {
-        @apply z-[999] grid w-[70%] h-screen place-items-center absolute -mt-[4rem] top-0 left-[6.9rem] bg-transparent dark:bg-transparent;
+        @apply z-[999] grid w-[70%] h-screen place-items-center absolute -mt-[4rem] top-0 left-[15%] bg-transparent dark:bg-transparent;
       }
       .titulo-importante-reset-formulario-contacto {
         @apply ml-5 -mt-1 titulo-2 dark:text-yellow-500 text-red-500;

@@ -14,7 +14,6 @@ function WhatsApp() {
     >
       <motion.svg
         className="img-whatsapp hover:scale-110 transiciones"
-        xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 50 50"
         width="40"
         height="40"

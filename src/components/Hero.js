@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import AWSUrl from "../media/AWSUrl";
 
 const variants = {
   active: { y: 0, opacity: 1, scale: 1 },
@@ -96,7 +97,7 @@ function Hero({ startAnimations }) {
           ease: "easeOut"
         }}
         alt={t("AltFotoJJ.title", { framework: "React" })}
-        src='https://juanjaramillo.s3.amazonaws.com/assets/juan-jaramillo-cv-virtual.png'
+        src={AWSUrl.URL+'juan-jaramillo-cv-virtual.png'}
         title={t("AltFotoJJ.title", { framework: "React" })}
       />
     </motion.div>

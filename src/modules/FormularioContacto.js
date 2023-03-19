@@ -2,8 +2,8 @@ import { number } from "yup";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
-import ConfirmResetForm from "../media/ConfirmResetForm";
 import { motion, AnimatePresence } from "framer-motion";
+import ConfirmResetForm from "../media/ConfirmResetForm";
 
 function FormularioContacto() {
     const { t } = useTranslation("common");

@@ -1,4 +1,5 @@
 import React from "react";
+import AWSUrl from "./AWSUrl";
 import IconButton from "./IconButton";
 import { motion } from "framer-motion";
 import LogoJJ from "../components/LogoJJ";
@@ -70,7 +71,7 @@ function LangSplash({
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
                 alt={t("AltEnLang.title", { framework: "React" })}
-                src='https://juanjaramillo.s3.amazonaws.com/assets/uk.png'
+                src={AWSUrl.URL + "uk.png"}
                 title={t("AltEnLang.title", { framework: "React" })}
               />
             }
@@ -89,7 +90,7 @@ function LangSplash({
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
                 alt={t("AltEsLang.title", { framework: "React" })}
-                src='https://juanjaramillo.s3.amazonaws.com/assets/spain.png'
+                src={AWSUrl.URL + "spain.png"}
                 title={t("AltEsLang.title", { framework: "React" })}
               />
             }

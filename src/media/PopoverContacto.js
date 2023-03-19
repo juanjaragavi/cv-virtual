@@ -3,6 +3,7 @@ import { Popover, Transition } from "@headlessui/react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 import { IconBrandTelegram } from "@tabler/icons-react";
+import { useTranslation } from "react-i18next";
 
 const solutions = [
   {
@@ -26,6 +27,7 @@ const solutions = [
 ];
 
 function PopoverContacto() {
+  const { t } = useTranslation("common");
   return (
     <div className="contenedor-popover-contacto">
       <Popover className="relative">
@@ -37,7 +39,7 @@ function PopoverContacto() {
                                 group trigger-popover-contacto boton-conoce-mas boton-idioma transiciones estilos-interactivos-botones`}
             >
               <span className="group-hover:text-pink-500 pt-1 text-center spartan-medium transiciones">
-                PONTE EN CONTACTO
+              {t("PonteEnContacto.title", { framework: "React" })}
               </span>
               <svg
                 className="w-6 h-6 ml-1 group-hover:stroke-pink-500 transiciones"

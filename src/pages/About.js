@@ -1,13 +1,15 @@
 import React from "react";
+import AWSUrl from "../media/AWSUrl";
 import { motion } from "framer-motion";
-import Columna from "../layouts/Columna";
 import Seccion from "../layouts/Seccion";
+import Columna from "../layouts/Columna";
 import Footer from "../components/Footer";
 import FotoBorde from "../media/FotoBorde";
 import AvisoScroll from "../media/AvisoScroll";
 import { useTranslation } from "react-i18next";
 import FotoSinBorde from "../media/FotoSinBorde";
 import TextoEjemplo from "../media/TextoEjemplo";
+import AvatarJJDinamico from "../media/AvatarJJ";
 import ContInternas from "../layouts/ContInternas";
 import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
@@ -57,7 +59,7 @@ function About() {
         <Columna style={primeraColumna}>
           <LogosFlotantes />
           <FotoSinBorde
-            src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.png'
+            src={AWSUrl.URL + "ejemplo-eliminar.png"}
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
@@ -87,7 +89,7 @@ function About() {
                 damping: 10,
                 mass: 0.75,
                 stiffness: 100,
-                delay: 0.5,
+                delay: 0.3,
               },
             }}
           >
@@ -104,7 +106,7 @@ function About() {
                 damping: 10,
                 mass: 0.75,
                 stiffness: 100,
-                delay: 0.5,
+                delay: 0.3,
               },
             }}
           >
@@ -112,7 +114,7 @@ function About() {
             único título que puede ser largo y de más de un renglón. Esto es,
             porque este puede ser un tipo de título que simplemente reemplace a
             un párrafo, pero con un texto un poco más destacado, o para
-            infiltrar títulos entre el texto.
+            infiltrar títulos entre el texto. Autor: <AvatarJJDinamico />
           </motion.h4>
         </Columna>
       </ContColumnas>
@@ -159,7 +161,7 @@ function About() {
           >
             <FotoBorde
               style={fotoRedonda}
-              src='https://juanjaramillo.s3.amazonaws.com/assets/ejemplo-eliminar.jpg'
+              src={AWSUrl.URL + "ejemplo-eliminar.jpg"}
               title={t("AltFotoInternas.title", { framework: "React" })}
               alt={t("AltFotoInternas.title", { framework: "React" })}
             />

@@ -37,7 +37,9 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
         }}
       >
         <div className="contenedor-logo-y-switcher-selector-idiomas">
-          <h2 className="titulo-importante-reset-formulario-contacto">{t("TituloImportanteConfirmResetForm.title", { framework: "React" })}</h2>
+          <h2 className="titulo-importante-reset-formulario-contacto">
+            {t("TituloImportanteConfirmResetForm.title", { framework: "React" })}
+          </h2>
           <svg
             className="icono-importante-reset-formulario-contacto"
             viewBox="0 0 24 24"

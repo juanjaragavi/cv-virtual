@@ -1,4 +1,5 @@
 import React from "react";
+import AWSUrl from "./AWSUrl";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -47,7 +48,7 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
         <img
           className="icono-language-switcher"
           alt={t("AltEnLang.title", { framework: "React" })}
-          src='https://juanjaramillo.s3.amazonaws.com/assets/uk.png'
+          src={AWSUrl.URL + 'uk.png'}
           title={t("AltEnLang.title", { framework: "React" })}
         />
         <p>{t("English.title", { framework: "React" })}</p>
@@ -74,7 +75,7 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
         <img
           className="icono-language-switcher"
           alt={t("AltEsLang.title", { framework: "React" })}
-          src='https://juanjaramillo.s3.amazonaws.com/assets/spain.png'
+          src={AWSUrl.URL + 'spain.png'}
           title={t("AltEsLang.title", { framework: "React" })}
         />
         <p>{t("Spanish.title", { framework: "React" })}</p>
