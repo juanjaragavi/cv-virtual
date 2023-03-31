@@ -1,19 +1,13 @@
 import React from "react";
+import AWSUrl from "./AWSUrl";
 import { Fragment } from "react";
 import { useTranslation } from "react-i18next";
 import { Popover, Transition } from "@headlessui/react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 import { IconBrandTelegram } from "@tabler/icons-react";
-import AWSUrl from "./AWSUrl";
 
 const solutions = [
-    {
-        name: "LINKEDIN",
-        href: "https://www.linkedin.com/in/juan-jaramillo-tradebog/",
-        icon: IconBrandLinkedin,
-        target: "_blank",
-    },
     {
         name: "WHATSAPP",
         href: "https://wa.link/9emctf/",
@@ -24,6 +18,12 @@ const solutions = [
         name: "TELEGRAM",
         href: "https://t.me/juanjaragavi",
         icon: IconBrandTelegram,
+        target: "_blank",
+    },
+    {
+        name: "LINKEDIN",
+        href: "https://www.linkedin.com/in/juan-jaramillo-tradebog/",
+        icon: IconBrandLinkedin,
         target: "_blank",
     },
 ];
@@ -44,9 +44,9 @@ function AvatarJJDinamico() {
                     src={AWSUrl.URL+'avatar.jpg'}
                     alt={t("AltAvatarJJ.title", { framework: "React" })}
                     title={t("AltAvatarJJ.title", { framework: "React" })}
-                    class="self-center w-5 h-5 rounded-full mx-1 mb-0.5"
+                    className="self-center w-5 h-5 rounded-full mr-1 mb-0.5"
                     />{" "}
-                    <span className="spartan-bold text-pink-800 dark:text-pink-500">
+                    <span className="spartan-bold text-pink-800 dark:text-pink-500 hover:underline hover:underline-offset-2 transiciones">
                     Juan Jaramillo
                     </span>
                 </span>
