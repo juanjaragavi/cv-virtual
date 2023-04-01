@@ -1,9 +1,9 @@
 import React from "react";
 
-function FotoInternas({ style, src, title, alt }) {
+function FotoInternas({ style, src, title, alt, className }) {
     return (
         <img
-        className="img-con-borde-internas transiciones"
+        className={className}
         style={style}
         src={src}
         title={title}

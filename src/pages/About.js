@@ -8,12 +8,11 @@ import FotoBorde from "../media/FotoBorde";
 import AvisoScroll from "../media/AvisoScroll";
 import { useTranslation } from "react-i18next";
 import FotoSinBorde from "../media/FotoSinBorde";
-import TextoEjemplo from "../media/TextoEjemplo";
-import AvatarJJDinamico from "../media/AvatarJJ";
 import ContInternas from "../layouts/ContInternas";
 import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
 import PopoverContacto from "../media/PopoverContacto";
+import { Code, Brush, ChartBar, Speakerphone } from "tabler-icons-react";
 
 const transition = {
   duration: 12,
@@ -31,8 +30,7 @@ const transitionMision = {
 };
 
 function About() {
-  const fotoRedonda = { borderRadius: "9999px" };
-  const sinBordeMarginTop = { border: 0, marginTop: 30 };
+  const sinBordeMarginTop = { border: 0, marginTop: 60 };
   const segundaColumna = { order: 9999, flexBasis: "50%", border: 0 };
   const primeraColumna = { order: -9999, border: 0, flexBasis: "50%" };
   const textoCentrado = {
@@ -41,7 +39,6 @@ function About() {
     paddingRight: 20,
     textAlign: "center",
   };
-  const textoNegrilla = { fontWeight: 700 };
   const paddingLados = {
     marginTop: 80,
     marginBottom: 100,
@@ -65,22 +62,27 @@ function About() {
           />
         </Columna>
         <Columna style={segundaColumna}>
-          <h3 className="titulo-3 mr-1.5">
-            Desde<span className="pl-7"></span>2007,
+          <h3 className="titulo-3 mr-1.5 mt-16">
+            {t("Desde.title", { framework: "React" })}
+            <span className="pl-7"></span>2007,
           </h3>
-          <h1 className="titulo-1 titulo-degradado -mt-7 -mb-3">Obsesionado</h1>
+          <h1 className="titulo-1 titulo-degradado -mt-7 -mb-3">
+            {t("Obsesionado.title", { framework: "React" })}
+          </h1>
           <h3 className="titulo-3 decoracion-titulo-destacado">
-            con la Tecnología y el Marketing.
+            {t("TecMarketing.title", { framework: "React" })}
           </h3>
-          <TextoEjemplo style={textoCentrado} />
+          <p className="parrafo" style={textoCentrado}>
+            {t("ParrafoIntro.title", { framework: "React" })}
+          </p>
           <AvisoScroll />
         </Columna>
       </ContColumnas>
       <ContColumnas>
         <Columna style={sinBordeMarginTop}>
-          <motion.h2
-            className="mt-10 titulo-2 color-texto-primario"
-            initial={{ y: -15, opacity: 0 }}
+          <motion.h3
+            className="titulo-3 color-texto-primario"
+            initial={{ y: 30, opacity: 0 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -93,56 +95,110 @@ function About() {
               },
             }}
           >
-            Título 2
-          </motion.h2>
-          <motion.h4
-            className="titulo-4 color-texto-primario"
-            initial={{ x: -30, opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-              transition: {
-                type: "spring",
-                damping: 10,
-                mass: 0.75,
-                stiffness: 100,
-                delay: 0.3,
-              },
-            }}
-          >
-            <span style={textoNegrilla}>Título 4:</span> Este es, quizás, el
-            único título que puede ser largo y de más de un renglón. Esto es,
-            porque este puede ser un tipo de título que simplemente reemplace a
-            un párrafo, pero con un texto un poco más destacado, o para
-            infiltrar títulos entre el texto. Autor: <AvatarJJDinamico />
-          </motion.h4>
+            {t("ParrafoDos.title", { framework: "React" })}
+          </motion.h3>
         </Columna>
       </ContColumnas>
       <ContColumnas>
         <Columna style={primeraColumna}>
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-              transition: {
-                type: "spring",
-                damping: 10,
-                mass: 0.75,
-                stiffness: 50,
-                delay: 1,
-              },
-            }}
-          >
-            <h3 className="titulo-3">Desde 2007,</h3>
-            <h2 className="titulo-2 titulo-degradado -mt-2 -mb-3">
-              Obsesionado
-            </h2>
-            <h4 className="titulo-4 decoracion-texto-destacado">
-              con la Tecnología y el Marketing
-            </h4>
-            <TextoEjemplo style={textoCentrado} />
-          </motion.div>
+          <div>
+            <motion.ul
+              className="listado-de-tareas"
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  type: "spring",
+                  damping: 10,
+                  mass: 0.75,
+                  stiffness: 50,
+                  delayChildren: 1.5,
+                },
+              }}
+            >
+              <motion.li
+                className="group"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 10,
+                    mass: 0.75,
+                    stiffness: 50,
+                    delay: 1,
+                  },
+                }}
+              >
+                <Brush className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                  {t("Task1.title", { framework: "React" })}
+                </span>
+              </motion.li>
+              <motion.li
+                className="group"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 10,
+                    mass: 0.75,
+                    stiffness: 50,
+                    delay: 1,
+                  },
+                }}
+              >
+                <Code className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                  {t("Task2.title", { framework: "React" })}
+                </span>
+              </motion.li>
+              <motion.li
+                className="group"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 10,
+                    mass: 0.75,
+                    stiffness: 50,
+                    delay: 1,
+                  },
+                }}
+              >
+                <Speakerphone className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                  {t("Task3.title", { framework: "React" })}
+                </span>
+              </motion.li>
+              <motion.li
+                className="group"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 10,
+                    mass: 0.75,
+                    stiffness: 50,
+                    delay: 1,
+                  },
+                }}
+              >
+                <ChartBar className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                  {t("Task4.title", { framework: "React" })}
+                </span>
+              </motion.li>
+            </motion.ul>
+          </div>
         </Columna>
         <Columna style={segundaColumna}>
           <motion.div
@@ -160,7 +216,7 @@ function About() {
             }}
           >
             <FotoBorde
-              style={fotoRedonda}
+              className="img-circular-borde-rosa-internas transiciones"
               src={AWSUrl.URL + "ejemplo-eliminar.jpg"}
               title={t("AltFotoInternas.title", { framework: "React" })}
               alt={t("AltFotoInternas.title", { framework: "React" })}

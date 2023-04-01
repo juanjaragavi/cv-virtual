@@ -33,6 +33,34 @@
         "title": "GET TO KNOW MORE"
     },
 
+    "Desde": {
+        "title": "Since"
+    },
+    "Obsesionado": {
+        "title": "Obsessed"
+    },
+    "TecMarketing": {
+        "title": "with Technology and Marketing."
+    },
+    "ParrafoIntro": {
+        "title": "My history in the world of Marketing and Technology begins in the second half of the first decade of 2000, a time when, believe it or not, the startups and large companies that today dominate the market, also began." 
+    },
+    "ParrafoDos": {
+        "title": "During these 16 years of professional career and continuous training, I have specialized in the following tasks:"
+    },
+    "Task1": {
+        "title": "UX & UI Design Lead"
+    },
+    "Task2": {
+        "title": "Frontend & Backend Developer"
+    },
+    "Task3": {
+        "title": "Specialist in Digital Marketing"
+    },
+    "Task4": {
+        "title": "Tech Startup Co-Founder"
+    },
+
 
     "TituloWhatsApp": {
         "title": "Any Question? Want a Quote?"

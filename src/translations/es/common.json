@@ -34,6 +34,35 @@
     },
 
 
+    "Desde": {
+        "title": "Desde"
+    },
+    "Obsesionado": {
+        "title": "Obsesionado"
+    },
+    "TecMarketing": {
+        "title": "con la Tecnología y el Marketing."
+    },
+    "ParrafoIntro": {
+        "title": "Mi historia en el mundo del Marketing y la Tecnología comienza en la segunda mitad de la primera década del 2000, época en la que, coincidencia o no, las startups y grandes empresas que hoy dominan el mercado, también iniciaron." 
+    },
+    "ParrafoDos": {
+        "title": "Durante estos 16 años de carrera profesional y continua formación, me he especializado en las siguientes tareas:"
+    },
+    "Task1": {
+        "title": "Jefe de Diseño UX & UI"
+    },
+    "Task2": {
+        "title": "Desarrollador Frontend & Backend"
+    },
+    "Task3": {
+        "title": "Especialista en Marketing Digital"
+    },
+    "Task4": {
+        "title": "Co-fundador de Startups"
+    },
+
+
     "TituloWhatsApp": {
         "title": "¿Dudas? ¿Deseas saber más?"
     },

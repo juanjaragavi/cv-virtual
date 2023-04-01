@@ -8,10 +8,7 @@ const variants = {
   active: { x: 0 },
 };
 
-export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
-  const onButtonClick = (mode) => {
-    setMove(mode);
-  };
+export default function LangSwitcherButtons({ animateSwitcher }) {
   const [t, i18n] = useTranslation("common");
 
   return (
@@ -29,7 +26,6 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
       <motion.div
         onClick={() => {
           i18n.changeLanguage("en");
-          onButtonClick("x12");
         }}
         className="transiciones my-2 language-switcher-english"
         initial={{
@@ -48,7 +44,7 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
         <img
           className="icono-language-switcher"
           alt={t("AltEnLang.title", { framework: "React" })}
-          src={AWSUrl.URL + 'uk.png'}
+          src={AWSUrl.URL + "uk.png"}
           title={t("AltEnLang.title", { framework: "React" })}
         />
         <p>{t("English.title", { framework: "React" })}</p>
@@ -56,7 +52,6 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
       <motion.div
         onClick={() => {
           i18n.changeLanguage("es");
-          onButtonClick("x5");
         }}
         className="transiciones language-switcher-spanish"
         initial={{
@@ -75,7 +70,7 @@ export default function LangSwitcherButtons({ setMove, animateSwitcher }) {
         <img
           className="icono-language-switcher"
           alt={t("AltEsLang.title", { framework: "React" })}
-          src={AWSUrl.URL + 'spain.png'}
+          src={AWSUrl.URL + "spain.png"}
           title={t("AltEsLang.title", { framework: "React" })}
         />
         <p>{t("Spanish.title", { framework: "React" })}</p>

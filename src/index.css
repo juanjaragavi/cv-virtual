@@ -305,6 +305,9 @@
     .img-con-borde-internas {
       @apply m-1 ring-1 ring-gray-900 dark:ring-white hover:ring-4 rounded-3xl;
     }
+    .img-circular-borde-rosa-internas {
+      @apply p-1 ring-2 ring-gray-900 dark:ring-white hover:ring-pink-500 dark:hover:ring-pink-500 hover:ring-4 rounded-full;
+    }
     .img-sin-borde-internas {
       @apply m-1 rounded-3xl;
     }
@@ -351,6 +354,15 @@
     }
     .degradado-titulo-interactivo {
       @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500;
+    }
+    ul.listado-de-tareas {
+      @apply spartan text-3xl text-left leading-10 list-item;
+    }
+    ul.listado-de-tareas li {
+      @apply cursor-pointer;
+    }
+    .icono-listado-de-tareas {
+      @apply w-[2.1rem] h-[2.1rem] mr-2 pb-1.5 stroke-2 inline fill-none stroke-pink-500;
     }
 
       /* -----  AVISO "HAZ SCROLL"  ----- */
