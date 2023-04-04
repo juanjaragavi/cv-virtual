@@ -1,9 +1,9 @@
 import { Fragment } from "react";
+import { useTranslation } from "react-i18next";
 import { Popover, Transition } from "@headlessui/react";
 import { IconBrandLinkedin } from "@tabler/icons-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
 import { IconBrandTelegram } from "@tabler/icons-react";
-import { useTranslation } from "react-i18next";
 
 const solutions = [
   {
