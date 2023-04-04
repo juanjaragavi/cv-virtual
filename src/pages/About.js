@@ -226,7 +226,7 @@ function About() {
       </ContColumnas>
       <Seccion style={paddingLados}>
         <h3 className="titulo-3 -mb-0.5 ">
-          Ahora, mi{" "}
+          {t("AhoraMi.title", { framework: "React" })}{" "}
           <motion.span
             className="-ml-[0.3rem] -mr-[0.76rem] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
             animate={{
@@ -234,7 +234,7 @@ function About() {
             }}
             transition={transitionMision}
           >
-            misión
+            {t("Mision.title", { framework: "React" })}
           </motion.span>
           <motion.span
             className="-ml-[5rem] bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-orange-500"
@@ -243,14 +243,18 @@ function About() {
             }}
             transition={transitionMision}
           >
-            visión
+            {t("Vision.title", { framework: "React" })}
           </motion.span>
         </h3>
-        <h3 className="titulo-3">es poner todos mis</h3>
-        <h3 className="titulo-3 decoracion-titulo-destacado">
-          16 años de experiencia
+        <h3 className="titulo-3">
+          {t("EsPonerMis.title", { framework: "React" })}
         </h3>
-        <h2 className="titulo-2">al servicio de tu</h2>
+        <h3 className="titulo-3 decoracion-titulo-destacado">
+          {t("16YrsOfXp.title", { framework: "React" })}
+        </h3>
+        <h2 className="titulo-2">
+          {t("AlServicioDeTu.title", { framework: "React" })}
+        </h2>
         <motion.h2
           className="-mt-[0.2em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
           animate={{
@@ -258,7 +262,7 @@ function About() {
           }}
           transition={transition}
         >
-          Emprendimiento
+          {t("Emprendimiento.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -267,7 +271,7 @@ function About() {
           }}
           transition={transition}
         >
-          Organización
+          {t("Organizacion.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -276,7 +280,7 @@ function About() {
           }}
           transition={transition}
         >
-          Startup
+          {t("Startup.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -285,7 +289,7 @@ function About() {
           }}
           transition={transition}
         >
-          Empresa
+          {t("Empresa.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -294,7 +298,7 @@ function About() {
           }}
           transition={transition}
         >
-          Corporativo
+          {t("Corporativo.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -303,7 +307,7 @@ function About() {
           }}
           transition={transition}
         >
-          Negocio
+          {t("Negocio.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -312,7 +316,7 @@ function About() {
           }}
           transition={transition}
         >
-          Sociedad
+          {t("Sociedad.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
           className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
@@ -321,7 +325,7 @@ function About() {
           }}
           transition={transition}
         >
-          Firma
+          {t("Firma.title", { framework: "React" })}
         </motion.h2>
         <PopoverContacto />
       </Seccion>

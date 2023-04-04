@@ -392,7 +392,7 @@
         @apply -ml-5 -mt-3 w-5/6 max-w-sm;
       }
       .trigger-popover-contacto {
-        @apply mx-4 w-full rounded-full px-20 py-3 inline-flex items-center;
+        @apply mx-4 w-full rounded-full py-3;
       }
       .panel-popover-contacto {
         @apply hover:border-pink-500  absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-3 sm:px-0 lg:max-w-3xl;
