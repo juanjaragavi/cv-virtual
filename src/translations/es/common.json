@@ -27,7 +27,7 @@
         "title": "Juan Jaramillo"
     },
     "Tagline": {
-        "title": "Desarrollador Fullstack · Diseñador UI/UX · Marketing Digital · Social Media · Mobile"
+        "title": "Desarrollador Fullstack · Diseñador UI/UX · Especialista en IA · Prompt Engineer"
     },
     "BotonConoceMas": {
         "title": "CONOCE MÁS"
@@ -41,25 +41,28 @@
         "title": "Obsesionado"
     },
     "TecMarketing": {
-        "title": "con la Tecnología y el Marketing."
+        "title": "con la Tecnología y la IA."
     },
     "ParrafoIntro": {
-        "title": "Mi historia en el mundo del Marketing y la Tecnología comienza en la segunda mitad de la primera década del 2000, época en la que, coincidencia o no, las startups y grandes empresas que hoy dominan el mercado, también iniciaron." 
+        "title": "Mi historia en el mundo de la Tecnología comienza en la segunda mitad de la primera década del 2000, época en la que, coincidencia o no, las startups y grandes empresas que hoy dominan el mercado, también iniciaron." 
     },
     "ParrafoDos": {
         "title": "Durante estos 16 años de carrera profesional y continua formación, me he especializado en las siguientes tareas:"
     },
     "Task1": {
-        "title": "Jefe de Diseño UX & UI"
+        "title": "Diseñador UX & UI"
     },
     "Task2": {
         "title": "Desarrollador Frontend & Backend"
     },
     "Task3": {
-        "title": "Especialista en Marketing Digital"
+        "title": "Especialista en Inteligencia Artificial"
     },
     "Task4": {
-        "title": "Co-fundador de Startups"
+        "title": "Prompt Engineer"
+    },
+    "Task5": {
+        "title": "Cofundador de Startups"
     },
     "AhoraMi": {
         "title": "Ahora, mi"

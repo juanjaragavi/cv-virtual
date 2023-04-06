@@ -12,7 +12,7 @@ import ContInternas from "../layouts/ContInternas";
 import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
 import PopoverContacto from "../media/PopoverContacto";
-import { Code, Brush, ChartBar, Speakerphone } from "tabler-icons-react";
+import { Code, Brush, BrandHipchat, ChartBar, Brain } from "tabler-icons-react";
 
 const transition = {
   duration: 12,
@@ -172,7 +172,7 @@ function About() {
                   },
                 }}
               >
-                <Speakerphone className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <Brain className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
                 <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
                   {t("Task3.title", { framework: "React" })}
                 </span>
@@ -192,9 +192,29 @@ function About() {
                   },
                 }}
               >
-                <ChartBar className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <BrandHipchat className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
                 <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
                   {t("Task4.title", { framework: "React" })}
+                </span>
+              </motion.li>
+              <motion.li
+                className="group"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                  transition: {
+                    type: "spring",
+                    damping: 10,
+                    mass: 0.75,
+                    stiffness: 50,
+                    delay: 1,
+                  },
+                }}
+              >
+                <ChartBar className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
+                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                  {t("Task5.title", { framework: "React" })}
                 </span>
               </motion.li>
             </motion.ul>

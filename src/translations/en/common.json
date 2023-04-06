@@ -18,7 +18,7 @@
     "Item4": {
         "title": "Contact"
     },
-
+        
 
     "Saludo": {
         "title": "Hi, I am"
@@ -27,7 +27,7 @@
         "title": "Juan Jaramillo"
     },
     "Tagline": {
-        "title": "Fullstack Developer · UI/UX Designer · Digital Marketing · Social Media · Mobile"
+        "title": "Fullstack Developer · UI/UX Designer · AI Specialist · Prompt Engineer"
     },
     "BotonConoceMas": {
         "title": "GET TO KNOW MORE"
@@ -40,10 +40,10 @@
         "title": "Obsessed"
     },
     "TecMarketing": {
-        "title": "with Technology and Marketing."
+        "title": "with AI and Technology."
     },
     "ParrafoIntro": {
-        "title": "My history in the world of Marketing and Technology begins in the second half of the first decade of 2000, a time when, believe it or not, the startups and large companies that today dominate the market, also began." 
+        "title": "My history in the world of Technology begins in the second half of the first decade of 2000, a time when, believe it or not, the startups and large companies that today dominate the market, also began." 
     },
     "ParrafoDos": {
         "title": "During these 16 years of professional career and continuous training, I have specialized in the following tasks:"
@@ -55,10 +55,13 @@
         "title": "Frontend & Backend Developer"
     },
     "Task3": {
-        "title": "Specialist in Digital Marketing"
+        "title": "Specialist in Artificial Intelligence"
     },
     "Task4": {
-        "title": "Tech Startup Co-Founder"
+        "title": "Prompt Engineer"
+    },
+    "Task5": {
+        "title": "Startup Co-founder"
     },
     "AhoraMi": {
         "title": "Now, my"
