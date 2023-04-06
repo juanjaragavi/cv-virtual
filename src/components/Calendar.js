@@ -23,7 +23,7 @@ const Calendar = () => {
     return (
         <div className="spartan mt-4 flex flex-col items-center">
         {/* calendar header */}
-        <div className="spartan text-white text-lg mb-4">{currentDate.format("MMMM YYYY")}</div>
+        <div className="spartan-bold text-white text-xl mb-4">{currentDate.format("MMMM YYYY")}</div>
 
         {/* calendar */}
         <div className="spartan grid grid-cols-7 gap-4 text-white">
