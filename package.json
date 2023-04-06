@@ -24,6 +24,7 @@
     "fortawesome": "^0.0.1-security",
     "framer-motion": "^10.2.3",
     "i18next": "^22.4.11",
+    "moment": "^2.29.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.43.7",

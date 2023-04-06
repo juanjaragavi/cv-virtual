@@ -1,50 +1,51 @@
-import React, { useState } from 'react';
-import { format, startOfMonth, endOfMonth, eachDayOfInterval } from 'date-fns';
-import 'tailwindcss/tailwind.css';
+import React from "react";
+import moment from "moment";
+import "moment/locale/en-gb"; // set the calendar to use English (UK) format 
 
 const Calendar = () => {
-    const [currentDate, setCurrentDate] = useState(new Date());
+  // get the current date
+    const currentDate = moment();
 
-    const daysInMonth = eachDayOfInterval({
-        start: startOfMonth(currentDate),
-        end: endOfMonth(currentDate)
-    });
+    // get the first day of the current month
+    const firstDayOfMonth = moment(currentDate).startOf("month");
 
-    const monthName = format(currentDate, 'MMMM yyyy');
+    // get the number of days in the current month
+    const numberOfDaysInMonth = moment(currentDate).daysInMonth();
 
-    const prevMonth = () => {
-        setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, 1));
-    };
+    // create an array of weekdays to use as column headers
+    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-    const nextMonth = () => {
-        setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 1));
-    };
+    // create an array of days in the current month
+    const daysInMonth = Array(numberOfDaysInMonth)
+        .fill(0)
+        .map((_, index) => moment(firstDayOfMonth).add(index, "days"));
 
     return (
-        <div className="group spartan mt-4 rounded-xl border border-white hover:border-pink-500 bg-gray-900 text-white py-6 px-4 transiciones">
-            <div className="flex justify-between mb-6">
-                <button className="text-white hover:text-pink-500 hover:underline hover:underline-offset-2 font-bold transiciones" onClick={prevMonth}>
-                Prev
-                </button>
-                <h2 className="text-white group-hover:text-pink-500 spartan-bold text-lg transiciones">{monthName}</h2>
-                <button className="text-white hover:text-pink-500 hover:underline hover:underline-offset-2 font-bold transiciones" onClick={nextMonth}>
-                Next
-                </button>
+        <div className="spartan mt-4 flex flex-col items-center">
+        {/* calendar header */}
+        <div className="spartan text-white text-lg mb-4">{currentDate.format("MMMM YYYY")}</div>
+
+        {/* calendar */}
+        <div className="spartan grid grid-cols-7 gap-4 text-white">
+            {/* column headers */}
+            {weekdays.map((weekday) => (
+            <div key={weekday} className="spartan border-b-2 border-white">
+                {weekday}
             </div>
-            <div className="grid grid-cols-7 gap-2">
-                <div className="text-center">Sun</div>
-                <div className="text-center">Mon</div>
-                <div className="text-center">Tue</div>
-                <div className="text-center">Wed</div>
-                <div className="text-center">Thu</div>
-                <div className="text-center">Fri</div>
-                <div className="text-center">Sat</div>
-                {daysInMonth.map((day, index) => (
-                <div key={index} className="text-center">
-                    {format(day, 'd')}
-                </div>
-                ))}
+            ))}
+
+            {/* days in month */}
+            {daysInMonth.map((day) => (
+            <div
+                key={day.format("D")}
+                className={`${
+                day.isSame(moment(), "day") ? "bg-pink-500" : ""
+                } border border-white rounded-full flex justify-center items-center h-12 w-12`}
+            >
+                {day.format("D")}
             </div>
+            ))}
+        </div>
         </div>
     );
 };
