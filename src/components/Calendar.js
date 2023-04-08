@@ -1,37 +1,50 @@
 import React from "react";
-import moment from "moment";
-import "moment/locale/en-gb";
+import dayjs from "dayjs";
+import _ from "lodash";
 
 const Calendar = () => {
-    const currentDate = moment();
-    const firstDayOfMonth = moment(currentDate).startOf("month");
-    const numberOfDaysInMonth = moment(currentDate).daysInMonth();
-    const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    const daysInMonth = Array(numberOfDaysInMonth)
-        .fill(0)
-        .map((_, index) => moment(firstDayOfMonth).add(index, "days"));
+    const today = dayjs();
+    const daysInMonth = today.daysInMonth();
+    const firstDayOfMonth = today.startOf("month").day();
+    const monthDays = _.range(-(firstDayOfMonth - 1), daysInMonth + 1);
 
     return (
-        <div className="spartan mt-4 flex flex-col items-center">
-        <div className="spartan-bold text-white text-xl mb-4">{currentDate.format("MMMM YYYY")}</div>
-
-        <div className="spartan grid grid-cols-7 gap-4 text-white">
-            {weekdays.map((weekday) => (
-            <div key={weekday} className="spartan border-b-2 border-white">
-                {weekday}
+        <div className="group spartan mt-4 bg-gray-900 text-white p-4 rounded-xl w-64 border border-white hover:border-pink-500 transiciones">
+        <div className="flex justify-between items-center mb-4">
+            <button className="rounded-xl px-2 pt-1.5 pb-1.5 hover:bg-pink-500 focus:outline-none transiciones">
+            &lt;
+            </button>
+            <div className="text-white group-hover:text-pink-500 text-lg font-bold transiciones">
+            {today.format("MMMM YYYY")}
+            </div>
+            <button className="rounded-xl px-2 pt-1.5 pb-1.5 hover:bg-pink-500 focus:outline-none transiciones">
+            &gt;
+            </button>
+        </div>
+        <div className="grid grid-cols-7 gap-1">
+            {["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"].map((day) => (
+            <div key={day} className="font-bold">
+                {day}
             </div>
             ))}
+            {monthDays.map((day) => {
+            const isToday = today.date() === day;
+            const isDayOfMonth = day > 0 && day <= daysInMonth;
+            const classNames = [
+                "pl-2.5",
+                "pt-1",
+                "rounded-full",
+                "transiciones",
+                isToday ? "bg-pink-500 text-pink-500" : "",
+                isDayOfMonth ? "hover:bg-pink-500 cursor-pointer text-white" : "",
+            ].join(" ");
 
-            {daysInMonth.map((day) => (
-            <div
-                key={day.format("D")}
-                className={`${
-                day.isSame(moment(), "day") ? "bg-pink-500" : ""
-                } border border-white rounded-full flex justify-center items-center h-12 w-12`}
-            >
-                {day.format("D")}
-            </div>
-            ))}
+            return (
+                <div key={day} className={classNames}>
+                {isDayOfMonth ? day : ""}
+                </div>
+            );
+            })}
         </div>
         </div>
     );

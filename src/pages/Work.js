@@ -6,6 +6,7 @@ import Calculator from "../components/Calculator";
 import Clock from "../components/Clock";
 import CurrencyConverter from "../components/CurrencyConverter";
 import Calendar from "../components/Calendar";
+import NewsTicker from "../components/NewsTicker";
 
 function Work() {
   const sinBorde = { border: 0 };
@@ -17,6 +18,7 @@ function Work() {
         <Clock />
         <CurrencyConverter />
         <Calendar />
+        <NewsTicker />
       </Seccion>
       <Footer />
     </ContInternas>

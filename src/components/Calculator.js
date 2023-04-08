@@ -118,7 +118,7 @@ const Calculator = () => {
                 +
                 </button>
                 <button
-                className="spartan-bold col-span-1 rounded-full bg-pink-500 px-3 pb-1 pt-1.5 text-white border border-pink-500 hover:border hover:border-white transiciones"
+                className="spartan-bold col-span-1 rounded-full bg-pink-500 px-2.5 pb-1 pt-1.5 text-white border border-pink-500 hover:border hover:border-white transiciones"
                 onClick={handleCalculate}
                 >
                 =
