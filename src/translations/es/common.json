@@ -52,17 +52,26 @@
     "Task1": {
         "title": "Diseñador UX & UI"
     },
+    "DescriptionTask1": {
+        "title": "Diseño experiencias de usuario únicas e innovadoras para productos basados en inteligencia artificial, teniendo en cuenta las necesidades, expectativas y emociones de los usuarios finales, así como los objetivos y la visión de los clientes."
+    },
     "Task2": {
         "title": "Desarrollador Frontend & Backend"
+    },
+    "DescriptionTask2": {
+        "title": "Desarrollo soluciones integrales con inteligencia artificial que funcionan en cualquier plataforma y dispositivo, utilizando las mejores prácticas y tecnologías para crear interfaces atractivas, intuitivas y accesibles, y sistemas robustos, escalables y seguros."
     },
     "Task3": {
         "title": "Especialista en Inteligencia Artificial"
     },
+    "DescriptionTask3": {
+        "title": "Aplico la inteligencia artificial a cualquier dominio o problema para optimizar procesos, generar insights y crear valor, utilizando técnicas avanzadas de   aprendizaje automático, procesamiento del lenguaje natural, visión por computador y otras áreas relacionadas."
+    },
     "Task4": {
         "title": "Prompt Engineer"
     },
-    "Task5": {
-        "title": "Cofundador de Startups"
+    "DescriptionTask4": {
+        "title": "Creo prompts personalizados y detallados para ChatGPT de OpenAI que cumplen con cualquier objetivo o propósito, utilizando un proceso iterativo y centrado en el usuario para definir, diseñar y evaluar prompts que se ajusten a las necesidades y los requisitos de cada cliente o caso de uso."
     },
     "AhoraMi": {
         "title": "Ahora, mi"

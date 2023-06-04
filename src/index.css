@@ -364,6 +364,12 @@
     .icono-listado-de-tareas {
       @apply w-[2.1rem] h-[2.1rem] mr-2 pb-1.5 stroke-2 inline fill-none stroke-pink-500;
     }
+    .titulo-servicios-perfil-about {
+      @apply group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500;
+    }
+    .descripcion-servicios-perfil-about {
+      @apply text-gray-900 pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗']  hover:font-light hover:text-gray-900 dark:text-white dark:hover:font-light dark:hover:text-white;
+    }
 
       /* -----  AVISO "HAZ SCROLL"  ----- */
 

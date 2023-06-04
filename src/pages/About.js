@@ -148,7 +148,7 @@ function About() {
               >
                 <Brush className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500"
+                  className="titulo-servicios-perfil-about transiciones"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   {t("Task1.title", { framework: "React" })}
@@ -162,14 +162,10 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗']  hover:font-light hover:text-white dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
+                        className="descripcion-servicios-perfil-about transiciones"
                         onClick={() => setIsOpen(!isOpen)}
                       >
-                        Diseño experiencias de usuario únicas e innovadoras para
-                        productos basados en inteligencia artificial, teniendo
-                        en cuenta las necesidades, expectativas y emociones de
-                        los usuarios finales, así como los objetivos y la visión
-                        de los clientes.
+                        {t("DescriptionTask1.title", { framework: "React" })}
                       </p>
                     </motion.div>
                   )}
@@ -192,7 +188,7 @@ function About() {
               >
                 <Code className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500"
+                  className="titulo-servicios-perfil-about transiciones"
                   onClick={() => setIsOpen1(!isOpen1)}
                 >
                   {t("Task2.title", { framework: "React" })}
@@ -206,14 +202,10 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-gray-800 hover:underline dark:hover:underline transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
+                        className="descripcion-servicios-perfil-about transiciones"
                         onClick={() => setIsOpen1(!isOpen1)}
                       >
-                        Desarrollo soluciones integrales con inteligencia
-                        artificial que funcionan en cualquier plataforma y
-                        dispositivo, utilizando las mejores prácticas y
-                        tecnologías para crear interfaces atractivas, intuitivas
-                        y accesibles, y sistemas robustos, escalables y seguros.
+                        {t("DescriptionTask2.title", { framework: "React" })}
                       </p>
                     </motion.div>
                   )}
@@ -236,7 +228,7 @@ function About() {
               >
                 <Brain className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500"
+                  className="titulo-servicios-perfil-about transiciones"
                   onClick={() => setIsOpen2(!isOpen2)}
                 >
                   {t("Task3.title", { framework: "React" })}
@@ -250,15 +242,10 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-pink-800 hover:underline dark:hover:underline transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
+                        className="descripcion-servicios-perfil-about transiciones"
                         onClick={() => setIsOpen2(!isOpen2)}
                       >
-                        Aplico la inteligencia artificial a cualquier dominio o
-                        problema para optimizar procesos, generar insights y
-                        crear valor, utilizando técnicas avanzadas de
-                        aprendizaje automático, procesamiento del lenguaje
-                        natural, visión por computador y otras áreas
-                        relacionadas.
+                        {t("DescriptionTask3.title", { framework: "React" })}
                       </p>
                     </motion.div>
                   )}
@@ -281,7 +268,7 @@ function About() {
               >
                 <BrandHipchat className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500"
+                  className="titulo-servicios-perfil-about transiciones"
                   onClick={() => setIsOpen3(!isOpen3)}
                 >
                   {t("Task4.title", { framework: "React" })}
@@ -295,15 +282,10 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-bold dark:font-light text-gray-800 hover:underline dark:hover:underline transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
+                        className="descripcion-servicios-perfil-about transiciones"
                         onClick={() => setIsOpen3(!isOpen3)}
                       >
-                        Creo prompts personalizados y detallados para ChatGPT de
-                        OpenAI que cumplen con cualquier objetivo o propósito,
-                        utilizando un proceso iterativo y centrado en el usuario
-                        para definir, diseñar y evaluar prompts que se ajusten a
-                        las necesidades y los requisitos de cada cliente o caso
-                        de uso.
+                        {t("DescriptionTask4.title", { framework: "React" })}
                       </p>
                     </motion.div>
                   )}

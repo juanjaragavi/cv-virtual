@@ -51,17 +51,26 @@
     "Task1": {
         "title": "UX & UI Design Lead"
     },
+    "DescriptionTask1": {
+        "title": "I design unique and innovative user experiences for AI-based products, taking into account the needs, expectations, and emotions of end-users, as well as the goals and vision of clients."
+    },
     "Task2": {
         "title": "Frontend & Backend Developer"
+    },
+    "DescriptionTask2": {
+        "title": "I develop comprehensive solutions with artificial intelligence that work on any platform and device, using the best practices and technologies to create attractive, intuitive, and accessible interfaces, as well as robust, scalable, and secure systems."
     },
     "Task3": {
         "title": "Specialist in Artificial Intelligence"
     },
+    "DescriptionTask3": {
+        "title": "I apply artificial intelligence to any domain or problem to optimize processes, generate insights, and create value, using advanced techniques of machine learning, natural language processing, computer vision, and other related areas."
+    },
     "Task4": {
         "title": "Prompt Engineer"
     },
-    "Task5": {
-        "title": "Startup Co-founder"
+    "DescriptionTask4": {
+        "title": "I create personalized and detailed prompts for OpenAI's ChatGPT that meet any goal or purpose, using an iterative and user-centered process to define, design, and evaluate prompts that fit the needs and requirements of each client or use case."
     },
     "AhoraMi": {
         "title": "Now, my"
