@@ -206,7 +206,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-gray-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
+                        className="pl-8 text-lg font-normal dark:font-light text-gray-800 hover:underline transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
                         onClick={() => setIsOpen1(!isOpen1)}
                       >
                         Desarrollo soluciones integrales con inteligencia
@@ -250,7 +250,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-pink-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
+                        className="pl-8 text-lg font-normal dark:font-light text-pink-800 hover:underline transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
                         onClick={() => setIsOpen2(!isOpen2)}
                       >
                         Aplico la inteligencia artificial a cualquier dominio o
@@ -281,7 +281,7 @@ function About() {
               >
                 <BrandHipchat className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500"
                   onClick={() => setIsOpen3(!isOpen3)}
                 >
                   {t("Task4.title", { framework: "React" })}
@@ -295,7 +295,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-bold dark:font-light text-gray-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
+                        className="pl-8 text-lg font-bold dark:font-light text-gray-800 hover:underline transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
                         onClick={() => setIsOpen3(!isOpen3)}
                       >
                         Creo prompts personalizados y detallados para ChatGPT de
