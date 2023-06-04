@@ -207,7 +207,7 @@ function About() {
                     >
                       <p
                         className="pl-8 text-lg font-normal dark:font-light text-gray-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500 hover:underline dark:text-white dark:hover:font-light dark:hover:text-pink-500"
-                        onClick={() => setIsOpen(!isOpen)}
+                        onClick={() => setIsOpen1(!isOpen1)}
                       >
                         Desarrollo soluciones integrales con inteligencia
                         artificial que funcionan en cualquier plataforma y
