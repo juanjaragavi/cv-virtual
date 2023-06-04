@@ -148,7 +148,7 @@ function About() {
               >
                 <Brush className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500 group--offset-4"
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   {t("Task1.title", { framework: "React" })}
@@ -192,7 +192,7 @@ function About() {
               >
                 <Code className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
+                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500"
                   onClick={() => setIsOpen1(!isOpen1)}
                 >
                   {t("Task2.title", { framework: "React" })}
@@ -236,7 +236,7 @@ function About() {
               >
                 <Brain className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
+                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500"
                   onClick={() => setIsOpen2(!isOpen2)}
                 >
                   {t("Task3.title", { framework: "React" })}
