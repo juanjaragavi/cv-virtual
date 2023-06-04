@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AWSUrl from "../media/AWSUrl";
 import { motion } from "framer-motion";
 import Seccion from "../layouts/Seccion";
@@ -7,12 +7,13 @@ import Footer from "../components/Footer";
 import FotoBorde from "../media/FotoBorde";
 import AvisoScroll from "../media/AvisoScroll";
 import { useTranslation } from "react-i18next";
+import { AnimatePresence } from "framer-motion";
 import FotoSinBorde from "../media/FotoSinBorde";
 import ContInternas from "../layouts/ContInternas";
 import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
 import PopoverContacto from "../media/PopoverContacto";
-import { Code, Brush, BrandHipchat, ChartBar, Brain } from "tabler-icons-react";
+import { Code, Brush, BrandHipchat, Brain } from "tabler-icons-react";
 
 const transition = {
   duration: 12,
@@ -50,6 +51,16 @@ function About() {
 
   const { t } = useTranslation("common");
 
+  const [isOpen, setIsOpen] = useState(false);
+  const textVariants = {
+    hidden: { height: 0, opacity: 0 },
+    visible: {
+      height: "auto",
+      opacity: 1,
+      transition: { duration: 0.3 },
+    },
+  };
+
   return (
     <ContInternas>
       <ContColumnas style={marginTop}>
@@ -66,7 +77,7 @@ function About() {
             {t("Desde.title", { framework: "React" })}
             <span className="pl-7"></span>2007,
           </h3>
-          <h1 className="titulo-1 titulo-degradado -mt-7 -mb-3">
+          <h1 className="titulo-1 titulo-degradado -mb-3 -mt-7">
             {t("Obsesionado.title", { framework: "React" })}
           </h1>
           <h3 className="titulo-3 decoracion-titulo-destacado">
@@ -132,10 +143,34 @@ function About() {
                   },
                 }}
               >
-                <Brush className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
-                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                <Brush className="icono-listado-de-tareas transiciones group-hover:scale-125" />
+                <span
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
                   {t("Task1.title", { framework: "React" })}
                 </span>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      variants={textVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="hidden"
+                    >
+                      <p
+                        className="pl-8 text-lg font-light text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        onClick={() => setIsOpen(!isOpen)}
+                      >
+                        Diseño experiencias de usuario únicas e innovadoras para
+                        productos basados en inteligencia artificial, teniendo
+                        en cuenta las necesidades, expectativas y emociones de
+                        los usuarios finales, así como los objetivos y la visión
+                        de los clientes.
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.li>
               <motion.li
                 className="group"
@@ -152,10 +187,34 @@ function About() {
                   },
                 }}
               >
-                <Code className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
-                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                <Code className="icono-listado-de-tareas transiciones group-hover:scale-125" />
+                <span
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
                   {t("Task2.title", { framework: "React" })}
                 </span>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      variants={textVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="hidden"
+                    >
+                      <p
+                        className="pl-8 text-lg font-normal text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        onClick={() => setIsOpen(!isOpen)}
+                      >
+                        Desarrollo soluciones integrales con inteligencia
+                        artificial que funcionan en cualquier plataforma y
+                        dispositivo, utilizando las mejores prácticas y
+                        tecnologías para crear interfaces atractivas, intuitivas
+                        y accesibles, y sistemas robustos, escalables y seguros.
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.li>
               <motion.li
                 className="group"
@@ -172,10 +231,35 @@ function About() {
                   },
                 }}
               >
-                <Brain className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
-                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                <Brain className="icono-listado-de-tareas transiciones group-hover:scale-125" />
+                <span
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
                   {t("Task3.title", { framework: "React" })}
                 </span>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      variants={textVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="hidden"
+                    >
+                      <p
+                        className="pl-8 text-lg font-normal text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        onClick={() => setIsOpen(!isOpen)}
+                      >
+                        Aplico la inteligencia artificial a cualquier dominio o
+                        problema para optimizar procesos, generar insights y
+                        crear valor, utilizando técnicas avanzadas de
+                        aprendizaje automático, procesamiento del lenguaje
+                        natural, visión por computador y otras áreas
+                        relacionadas.
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.li>
               <motion.li
                 className="group"
@@ -192,30 +276,35 @@ function About() {
                   },
                 }}
               >
-                <BrandHipchat className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
-                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
+                <BrandHipchat className="icono-listado-de-tareas transiciones group-hover:scale-125" />
+                <span
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  onClick={() => setIsOpen(!isOpen)}
+                >
                   {t("Task4.title", { framework: "React" })}
                 </span>
-              </motion.li>
-              <motion.li
-                className="group"
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                  transition: {
-                    type: "spring",
-                    damping: 10,
-                    mass: 0.75,
-                    stiffness: 50,
-                    delay: 1,
-                  },
-                }}
-              >
-                <ChartBar className="icono-listado-de-tareas group-hover:scale-125 transiciones" />
-                <span className="group-hover:underline group-hover:decoration-3 group-hover:decoration-pink-500 group-hover:underline-offset-4 transiciones">
-                  {t("Task5.title", { framework: "React" })}
-                </span>
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      variants={textVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="hidden"
+                    >
+                      <p
+                        className="pl-8 text-lg font-bold text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        onClick={() => setIsOpen(!isOpen)}
+                      >
+                        Creo prompts personalizados y detallados para ChatGPT de
+                        OpenAI que cumplen con cualquier objetivo o propósito,
+                        utilizando un proceso iterativo y centrado en el usuario
+                        para definir, diseñar y evaluar prompts que se ajusten a
+                        las necesidades y los requisitos de cada cliente o caso
+                        de uso.
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.li>
             </motion.ul>
           </div>
@@ -248,7 +337,7 @@ function About() {
         <h3 className="titulo-3 -mb-0.5 ">
           {t("AhoraMi.title", { framework: "React" })}{" "}
           <motion.span
-            className="-ml-[0.3rem] -mr-[0.76rem] bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"
+            className="-ml-[0.3rem] -mr-[0.76rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent"
             animate={{
               opacity: [0, 1, 1, 1, 0, 0],
             }}
@@ -257,7 +346,7 @@ function About() {
             {t("Mision.title", { framework: "React" })}
           </motion.span>
           <motion.span
-            className="-ml-[5rem] bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-orange-500"
+            className="-ml-[5rem] bg-gradient-to-r from-violet-500 to-orange-500 bg-clip-text text-transparent"
             animate={{
               opacity: [1, 0, 0, 0, 1, 1],
             }}
@@ -276,7 +365,7 @@ function About() {
           {t("AlServicioDeTu.title", { framework: "React" })}
         </h2>
         <motion.h2
-          className="-mt-[0.2em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[0.2em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [1, 0, 0, 0, 0, 0, 0, 0, 1],
           }}
@@ -285,7 +374,7 @@ function About() {
           {t("Emprendimiento.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 1, 0, 0, 0, 0, 0, 0, 0],
           }}
@@ -294,7 +383,7 @@ function About() {
           {t("Organizacion.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 0, 1, 0, 0, 0, 0, 0, 0],
           }}
@@ -303,7 +392,7 @@ function About() {
           {t("Startup.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 0, 0, 1, 0, 0, 0, 0, 0],
           }}
@@ -312,7 +401,7 @@ function About() {
           {t("Empresa.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 0, 0, 0, 1, 0, 0, 0, 0],
           }}
@@ -321,7 +410,7 @@ function About() {
           {t("Corporativo.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 0, 0, 0, 0, 1, 0, 0, 0],
           }}
@@ -330,7 +419,7 @@ function About() {
           {t("Negocio.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 0, 0, 0, 0, 0, 1, 0, 0],
           }}
@@ -339,7 +428,7 @@ function About() {
           {t("Sociedad.title", { framework: "React" })}
         </motion.h2>
         <motion.h2
-          className="-mt-[1.1em] titulo-2 bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500"
+          className="titulo-2 -mt-[1.1em] bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 bg-clip-text text-transparent"
           animate={{
             opacity: [0, 0, 0, 0, 0, 0, 0, 1, 0],
           }}
