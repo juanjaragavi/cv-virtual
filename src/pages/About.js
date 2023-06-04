@@ -148,7 +148,7 @@ function About() {
               >
                 <Brush className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-2 group-hover:decoration-pink-500 group--offset-4"
+                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500 group--offset-4"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   {t("Task1.title", { framework: "React" })}
