@@ -148,7 +148,7 @@ function About() {
               >
                 <Brush className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
+                  className="group-hover:decoration-3 transiciones hover:text-decoration group-hover:decoration-pink-500 group--offset-4"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   {t("Task1.title", { framework: "React" })}
@@ -162,7 +162,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
+                        className="pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
                         onClick={() => setIsOpen(!isOpen)}
                       >
                         Diseño experiencias de usuario únicas e innovadoras para
