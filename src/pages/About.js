@@ -162,7 +162,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
+                        className="pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
                         onClick={() => setIsOpen(!isOpen)}
                       >
                         Diseño experiencias de usuario únicas e innovadoras para
@@ -206,7 +206,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-gray-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
+                        className="pl-8 text-lg font-normal dark:font-light text-gray-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
                         onClick={() => setIsOpen1(!isOpen1)}
                       >
                         Desarrollo soluciones integrales con inteligencia
@@ -250,7 +250,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-pink-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white"
+                        className="pl-8 text-lg font-normal dark:font-light text-pink-800  transition-all duration-300 ease-in-out hover:after:content-['_↗']  hover:font-light hover:text-white  dark:text-white dark:hover:font-light dark:hover:text-white transiciones"
                         onClick={() => setIsOpen2(!isOpen2)}
                       >
                         Aplico la inteligencia artificial a cualquier dominio o
