@@ -52,6 +52,9 @@ function About() {
   const { t } = useTranslation("common");
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
   const textVariants = {
     hidden: { height: 0, opacity: 0 },
     visible: {
@@ -159,7 +162,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-light text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        className="pl-8 text-lg font-light dark:font-light underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
                         onClick={() => setIsOpen(!isOpen)}
                       >
                         Diseño experiencias de usuario únicas e innovadoras para
@@ -190,12 +193,12 @@ function About() {
                 <Code className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
                   className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
-                  onClick={() => setIsOpen(!isOpen)}
+                  onClick={() => setIsOpen1(!isOpen1)}
                 >
                   {t("Task2.title", { framework: "React" })}
                 </span>
                 <AnimatePresence>
-                  {isOpen && (
+                  {isOpen1 && (
                     <motion.div
                       variants={textVariants}
                       initial="hidden"
@@ -203,7 +206,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        className="pl-8 text-lg font-normal dark:font-light text-gray-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
                         onClick={() => setIsOpen(!isOpen)}
                       >
                         Desarrollo soluciones integrales con inteligencia
@@ -234,12 +237,12 @@ function About() {
                 <Brain className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
                   className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
-                  onClick={() => setIsOpen(!isOpen)}
+                  onClick={() => setIsOpen2(!isOpen2)}
                 >
                   {t("Task3.title", { framework: "React" })}
                 </span>
                 <AnimatePresence>
-                  {isOpen && (
+                  {isOpen2 && (
                     <motion.div
                       variants={textVariants}
                       initial="hidden"
@@ -247,8 +250,8 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
-                        onClick={() => setIsOpen(!isOpen)}
+                        className="pl-8 text-lg font-normal dark:font-light text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        onClick={() => setIsOpen2(!isOpen2)}
                       >
                         Aplico la inteligencia artificial a cualquier dominio o
                         problema para optimizar procesos, generar insights y
@@ -279,12 +282,12 @@ function About() {
                 <BrandHipchat className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
                   className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
-                  onClick={() => setIsOpen(!isOpen)}
+                  onClick={() => setIsOpen3(!isOpen3)}
                 >
                   {t("Task4.title", { framework: "React" })}
                 </span>
                 <AnimatePresence>
-                  {isOpen && (
+                  {isOpen3 && (
                     <motion.div
                       variants={textVariants}
                       initial="hidden"
@@ -292,8 +295,8 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-bold text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:font-bold dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
-                        onClick={() => setIsOpen(!isOpen)}
+                        className="pl-8 text-lg font-bold dark:font-light text-gray-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗'] hover:scale-105 hover:font-bold hover:text-pink-500 hover:underline dark:text-white dark:hover:font-bold dark:hover:text-pink-500"
+                        onClick={() => setIsOpen3(!isOpen3)}
                       >
                         Creo prompts personalizados y detallados para ChatGPT de
                         OpenAI que cumplen con cualquier objetivo o propósito,
