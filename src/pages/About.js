@@ -1,6 +1,6 @@
-import React, { useState } from "react";
 import AWSUrl from "../media/AWSUrl";
 import { motion } from "framer-motion";
+import React, { useState } from "react";
 import Seccion from "../layouts/Seccion";
 import Columna from "../layouts/Columna";
 import Footer from "../components/Footer";
@@ -148,7 +148,7 @@ function About() {
               >
                 <Brush className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
                   onClick={() => setIsOpen(!isOpen)}
                 >
                   {t("Task1.title", { framework: "React" })}
@@ -162,7 +162,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-light dark:font-light underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500 hover:underline dark:text-white dark:hover:font-light dark:hover:text-pink-500"
+                        className="pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500  dark:text-white dark:hover:font-light dark:hover:text-white"
                         onClick={() => setIsOpen(!isOpen)}
                       >
                         Diseño experiencias de usuario únicas e innovadoras para
@@ -192,7 +192,7 @@ function About() {
               >
                 <Code className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
                   onClick={() => setIsOpen1(!isOpen1)}
                 >
                   {t("Task2.title", { framework: "React" })}
@@ -206,7 +206,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-gray-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500 hover:underline dark:text-white dark:hover:font-light dark:hover:text-pink-500"
+                        className="pl-8 text-lg font-normal dark:font-light text-gray-800  transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500  dark:text-white dark:hover:font-light dark:hover:text-white"
                         onClick={() => setIsOpen1(!isOpen1)}
                       >
                         Desarrollo soluciones integrales con inteligencia
@@ -236,7 +236,7 @@ function About() {
               >
                 <Brain className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
                   onClick={() => setIsOpen2(!isOpen2)}
                 >
                   {t("Task3.title", { framework: "React" })}
@@ -250,7 +250,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-normal dark:font-light text-pink-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500 hover:underline dark:text-white dark:hover:font-light dark:hover:text-pink-500"
+                        className="pl-8 text-lg font-normal dark:font-light text-pink-800  transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500  dark:text-white dark:hover:font-light dark:hover:text-white"
                         onClick={() => setIsOpen2(!isOpen2)}
                       >
                         Aplico la inteligencia artificial a cualquier dominio o
@@ -281,7 +281,7 @@ function About() {
               >
                 <BrandHipchat className="icono-listado-de-tareas transiciones group-hover:scale-125" />
                 <span
-                  className="group-hover:decoration-3 transiciones group-hover:underline group-hover:decoration-pink-500 group-hover:underline-offset-4"
+                  className="group-hover:decoration-3 transiciones group- group-hover:decoration-pink-500 group--offset-4"
                   onClick={() => setIsOpen3(!isOpen3)}
                 >
                   {t("Task4.title", { framework: "React" })}
@@ -295,7 +295,7 @@ function About() {
                       exit="hidden"
                     >
                       <p
-                        className="pl-8 text-lg font-bold dark:font-light text-gray-800 underline-offset-2 transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500 hover:underline dark:text-white dark:hover:font-light dark:hover:text-pink-500"
+                        className="pl-8 text-lg font-bold dark:font-light text-gray-800  transition-all duration-300 ease-in-out after:content-['_↗']  hover:font-light hover:text-pink-500  dark:text-white dark:hover:font-light dark:hover:text-pink-500"
                         onClick={() => setIsOpen3(!isOpen3)}
                       >
                         Creo prompts personalizados y detallados para ChatGPT de
