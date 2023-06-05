@@ -78,6 +78,75 @@
     "Experiencia": {
         "title": "Experience"
     },
+    "XpTitulo1" : {
+        "title": "AI Expert & Consultant"
+    },
+    "XpFecha1" : {
+        "title": "February, 2023 - Present"
+    },
+    "XpEmpresa1" : {
+        "title": "Juan Jaramillo"
+    },
+    "XpDescripcion1" : {
+        "title": "Since early 2023, I have been focusing on Artificial Intelligence, providing consultancy services to individuals or companies of any size, who want to adapt to AI, as well as working as a prompt engineer, UX and UI designer, and front-end and back-end developer for AI projects."
+    },
+    "XpTitulo2" : {
+        "title": "Co-Founder, UX/UI Lead"
+    },
+    "XpFecha2" : {
+        "title": "December, 2020 - January, 2023"
+    },
+    "XpEmpresa2" : {
+        "title": "TRADEBOG S.A.S."
+    },
+    "XpDescripcion2" : {
+        "title": "At the end of 2020, I was co-founder and UX/UI design lead at TRADEBOG, a tech startup specialized in Social Shopping marketplace platforms, distributing exclusively beauty and wellness products, both from own brands and third parties."
+    },
+    "XpLink2" : {
+        "title": "Visit TRADEBOG Website"
+    },
+    "XpFecha3" : {
+        "title": "May, 2014 - October, 2020"
+    },
+    "XpTitulo3" : {
+        "title": "Founder, Operative Director"
+    },
+    "XpEmpresa3" : {
+        "title": "FreshWorks, S.A de C.V."
+    },
+    "XpDescripcion3" : {
+        "title": "While living in Mexico City, Madrid and Buenos Aires, I took advantage of the clients and contacts that I had accumulated during the constant travels that I had during that time and created a digital marketing agency, working with companies such as Coca-Cola FEMSA, Grupo Herdez and El Corte Inglés."
+    },
+    "XpLink3" : {
+        "title": "Visit FreshWorks LinkedIn Page"
+    },
+    "XpFecha4" : {
+        "title": "November, 2012 - January, 2014"
+    },
+    "XpTitulo4" : {
+        "title": "Project Manager"
+    },
+    "XpEmpresa4" : {
+        "title": "2W Digital Agency"
+    },
+    "XpDescripcion4" : {
+        "title": "My job was to lead and supervise the digital projects of the key accounts of this digital marketing agency, present in 3 countries."
+    },
+    "XpFecha5" : {
+        "title": "August, 2009 - October, 2012"
+    },
+    "XpTitulo5" : {
+        "title": "Co-Founder, Creative Director"
+    },
+    "XpEmpresa5" : {
+        "title": "LaQuintaP Digital Marketing Agency"
+    },
+    "XpDescripcion5" : {
+        "title": "After graduating from university and taking a couple of courses in technology and digital marketing, I co-founded a digital marketing and advertising agency, specializing in SMEs and startups. Despite this, we came to have as clients companies like G4S and Coca-Cola FEMSA Colombia."
+    },
+    "XpLink5" : {
+        "title": "Visit LaQuintaP's LinkedIn Page"
+    },
     "AhoraMi": {
         "title": "Now, my"
     },

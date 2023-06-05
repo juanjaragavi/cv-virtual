@@ -79,6 +79,75 @@
     "Experiencia": {
         "title": "Experiencia"
     },
+    "XpFecha1" : {
+        "title": "Febrero, 2023 - Actualidad"
+    },
+    "XpTitulo1" : {
+        "title": "Experto y Consultor en IA"
+    },
+    "XpEmpresa1" : {
+        "title": "Juan Jaramillo"
+    },
+    "XpDescripcion1" : {
+        "title": "Desde principios de 2023, me he centrado en la Inteligencia Artificial, proporcionando servicios de consultoría a particulares o empresas de cualquier tamaño, que quieren adaptarse a la IA, así como trabajando como ingeniero de pronta, diseñador de UX y UI, y desarrollador front-end y back-end para proyectos de IA."
+    },
+    "XpFecha2" : {
+        "title": "Diciembre, 2020 - Enero, 2023"
+    },
+    "XpTitulo2" : {
+        "title": "Cofundador, Responsable de UX/UI"
+    },
+    "XpEmpresa2" : {
+        "title": "TRADEBOG S.A.S."
+    },
+    "XpDescripcion2" : {
+        "title": "A finales de 2020, fui cofundador y UX/UI design lead en TRADEBOG, una startup tech especializada en plataformas de Social Shopping marketplace, distribuyendo exclusivamente productos de belleza y bienestar, tanto de marcas propias como de terceros."
+    },
+    "XpLink2" : {
+        "title": "Visite el sitio web de TRADEBOG"
+    },
+    "XpFecha3" : {
+        "title": "Mayo, 2014 - Octubre, 2020"
+    },
+    "XpTitulo3" : {
+        "title": "Fundador, Director Operativo"
+    },
+    "XpEmpresa3" : {
+        "title": "FreshWorks, S.A de C.V."
+    },
+    "XpDescripcion3" : {
+        "title": "Mientras vivía en Ciudad de México, Madrid y Buenos Aires, aproveché los clientes y contactos que había acumulado durante los constantes viajes que tuve durante ese tiempo y creé una agencia de marketing digital, trabajando con empresas como Coca-Cola FEMSA, Grupo Herdez y El Corte Inglés."
+    },
+    "XpLink3" : {
+        "title": "Visite la página LinkedIn de FreshWorks"
+    },
+    "XpFecha4" : {
+        "title": "Noviembre, 2012 - Enero, 2014"
+    },
+    "XpTitulo4" : {
+        "title": "Jefe de Proyectos"
+    },
+    "XpEmpresa4" : {
+        "title": "2W Digital Agency"
+    },
+    "XpDescripcion4" : {
+        "title": "Mi trabajo consistía en liderar y supervisar los proyectos digitales de las cuentas clave de esta agencia de marketing digital, presente en 3 países."
+    },
+    "XpFecha5" : {
+        "title": "Agosto, 2009 - Octubre, 2012"
+    },
+    "XpTitulo5" : {
+        "title": "Cofundador, Director Creativo"
+    },
+    "XpEmpresa5" : {
+        "title": "LaQuintaP Digital Marketing Agency"
+    },
+    "XpDescripcion5" : {
+        "title": "Después de graduarme de la universidad y tomar un par de cursos en tecnología y marketing digital, co-fundé una agencia de marketing digital y publicidad, especializada en PYMES y startups. A pesar de esto, llegamos a tener como clientes a empresas como G4S y Coca-Cola FEMSA Colombia."
+    },
+    "XpLink5" : {
+        "title": "Visita la página LinkedIn de LaQuintaP"
+    },
     "AhoraMi": {
         "title": "Ahora, mi"
     },

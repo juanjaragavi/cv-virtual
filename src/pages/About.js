@@ -350,81 +350,81 @@ function About() {
             className="spartan text-lg vertical-timeline-element--work"
             contentStyle={{ background: "#ec4899", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #ec4899" }}
-            date="February, 2023 - Present"
+            date={t("XpFecha1.title", { framework: "React" })}
             iconStyle={{ background: "#ec4899", color: "#fff" }}
             icon={<Brain />}
           >
             <h3 className="titulo-3 vertical-timeline-element-title">
-              AI Consultant
+            {t("XpTitulo1.title", { framework: "React" })}
             </h3>
-            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">Juan Jaramillo</h4>
+            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpEmpresa1.title", { framework: "React" })}</h4>
             <p className="spartan">
-            Since early 2023, I have been focusing on Artificial Intelligence, providing consultancy services to individuals or companies of any size, who want to adapt to AI, as well as working as a prompt engineer, UX and UI designer, and front-end and back-end developer for AI projects.
+            {t("XpDescripcion1.title", { framework: "React" })}
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="spartan text-lg vertical-timeline-element--work"
             contentStyle={{ background: "#ec4899", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #ec4899" }}
-            date="December, 2020 - January, 2023"
+            date={t("XpFecha2.title", { framework: "React" })}
             iconStyle={{ background: "#ec4899", color: "#fff" }}
             icon={<Brush />}
           >
             <h3 className="titulo-3 vertical-timeline-element-title">
-              Co-Founder, UX/UI Lead
+            {t("XpTitulo2.title", { framework: "React" })}
             </h3>
-            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">TRADEBOG S.A.S.</h4>
+            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpEmpresa2.title", { framework: "React" })}</h4>
             <p className="spartan">
-            At the end of 2020, I was co-founder and UX/UI design lead at TRADEBOG, a tech startup specialized in Social Shopping marketplace platforms, distributing exclusively beauty and wellness products, both from own brands and third parties. 
+            {t("XpDescripcion2.title", { framework: "React" })}
             </p>
             <p></p>
-            <h4 onClick={Tradebog} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">Visit TRADEBOG Website</h4>
+            <h4 onClick={Tradebog} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpLink2.title", { framework: "React" })}</h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="spartan text-lg vertical-timeline-element--work"
             contentStyle={{ background: "#a855f7", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #a855f7" }}
-            date="May, 2014 - October, 2020"
+            date={t("XpFecha3.title", { framework: "React" })}
             iconStyle={{ background: "#a855f7", color: "#fff" }}
             icon={<BuildingCommunity />}
           >
-            <h3 className="titulo-3 vertical-timeline-element-title">Founder, Operative Director</h3>
-            <h4 className="titulo-4 text-center vertical-timeline-element-subtitle">FreshWorks, S.A de C.V.</h4>
-            <p>While living in Mexico City, Madrid and Buenos Aires, I took advantage of the clients and contacts that I had accumulated during the constant travels that I had during that time and created a digital marketing agency, working with companies such as Coca-Cola FEMSA, Grupo Herdez and El Corte Inglés.</p>
+            <h3 className="titulo-3 vertical-timeline-element-title">{t("XpTitulo3.title", { framework: "React" })}</h3>
+            <h4 className="titulo-4 text-center vertical-timeline-element-subtitle">{t("XpEmpresa3.title", { framework: "React" })}</h4>
+            <p>{t("XpDescripcion3.title", { framework: "React" })}</p>
             <p></p>
-            <h4 onClick={FreshWorks} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">Visit FreshWorks LinkedIn Page</h4>
+            <h4 onClick={FreshWorks} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpLink3.title", { framework: "React" })}</h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="spartan text-lg vertical-timeline-element--work"
             contentStyle={{ background: "#8b5cf6", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #8b5cf6" }}
-            date="November, 2012 - January, 2014"
+            date={t("XpFecha4.title", { framework: "React" })}
             iconStyle={{ background: "#8b5cf6", color: "#fff" }}
             icon={<ChartInfographic />}
           >
-            <h3 className="titulo-3 vertical-timeline-element-title">Project Manager</h3>
+            <h3 className="titulo-3 vertical-timeline-element-title">{t("XpTitulo4.title", { framework: "React" })}</h3>
             <h4 className="titulo-4 vertical-timeline-element-subtitle">
-              2W Digital Agency
+            {t("XpEmpresa4.title", { framework: "React" })}
             </h4>
-            <p>My job was to lead and supervise the digital projects of the key accounts of this digital marketing agency, present in 3 countries.  </p>
+            <p>{t("XpDescripcion4.title", { framework: "React" })}</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="spartan text-lg vertical-timeline-element--work"
             contentStyle={{ background: "#6366f1", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #6366f1" }}
-            date="August, 2009 - October, 2012"
+            date={t("XpFecha5.title", { framework: "React" })}
             iconStyle={{ background: "#6366f1", color: "#fff" }}
             icon={<BuildingCommunity />}
           >
             <h3 className="titulo-3 vertical-timeline-element-title">
-              Co-Founder, Creative Director
+            {t("XpTitulo5.title", { framework: "React" })}
             </h3>
             <h4 className="titulo-4 vertical-timeline-element-subtitle">
-              LaQuintaP Digital Marketing Agency
+            {t("XpEmpresa5.title", { framework: "React" })}
             </h4>
-            <p>After graduating from university and taking a couple of courses in technology and digital marketing, I co-founded a digital marketing and advertising agency, specializing in SMEs and startups. Despite this, we came to have as clients companies like G4S and Coca-Cola FEMSA Colombia.</p>
+            <p>{t("XpDescripcion5.title", { framework: "React" })}</p>
             <p></p>
-            <h4 onClick={LaQuintaP} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">Visit LaQuintaP's LinkedIn Page</h4>
+            <h4 onClick={LaQuintaP} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpLink5.title", { framework: "React" })}</h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </Seccion>
