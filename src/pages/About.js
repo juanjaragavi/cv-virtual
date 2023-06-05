@@ -14,7 +14,14 @@ import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
 import PopoverContacto from "../media/PopoverContacto";
 import "react-vertical-timeline-component/style.min.css";
-import { Code, ChartInfographic, BuildingCommunity, Brush, BrandHipchat, Brain } from "tabler-icons-react";
+import {
+  Code,
+  ChartInfographic,
+  BuildingCommunity,
+  Brush,
+  BrandHipchat,
+  Brain,
+} from "tabler-icons-react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -57,6 +64,13 @@ function About() {
     marginBottom: 60,
     border: 0,
   };
+  const borderTop = {
+    marginTop: -74,
+    paddingTop: 60,
+    paddingBottom: 60,
+    borderWidth: 4,
+    borderColor: "rgba(255, 255, 255,",
+  };
   const marginTop = { marginTop: 40 };
 
   const { t } = useTranslation("common");
@@ -75,9 +89,12 @@ function About() {
   };
   const Tradebog = () => {
     window.open("https://tradebog.com", "_blank");
-  };  
+  };
   const FreshWorks = () => {
-    window.open("https://www.linkedin.com/company/5317002/admin/?feedType=following", "_blank");
+    window.open(
+      "https://www.linkedin.com/company/5317002/admin/?feedType=following",
+      "_blank"
+    );
   };
   const LaQuintaP = () => {
     window.open("https://www.linkedin.com/company/la-quinta-p/", "_blank");
@@ -341,13 +358,13 @@ function About() {
       <Seccion style={menosPaddingLados}>
         <h2 className="titulo-2 -mb-1.5">
           {t("ConoceMi.title", { framework: "React" })}{" "}
-          <span className="-ml-[0.3rem] -mr-[0.76rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-4 decoration-white underline-offset-8">
+          <span className="-ml-[0.3rem] -mr-[0.76rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
             {t("Experiencia.title", { framework: "React" })}
           </span>
         </h2>
         <VerticalTimeline>
           <VerticalTimelineElement
-            className="spartan text-lg vertical-timeline-element--work"
+            className="spartan vertical-timeline-element--work text-lg"
             contentStyle={{ background: "#ec4899", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #ec4899" }}
             date={t("XpFecha1.title", { framework: "React" })}
@@ -355,15 +372,17 @@ function About() {
             icon={<Brain />}
           >
             <h3 className="titulo-3 vertical-timeline-element-title">
-            {t("XpTitulo1.title", { framework: "React" })}
+              {t("XpTitulo1.title", { framework: "React" })}
             </h3>
-            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpEmpresa1.title", { framework: "React" })}</h4>
+            <h4 className="titulo-4 spartan vertical-timeline-element-subtitle text-center">
+              {t("XpEmpresa1.title", { framework: "React" })}
+            </h4>
             <p className="spartan">
-            {t("XpDescripcion1.title", { framework: "React" })}
+              {t("XpDescripcion1.title", { framework: "React" })}
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="spartan text-lg vertical-timeline-element--work"
+            className="spartan vertical-timeline-element--work text-lg"
             contentStyle={{ background: "#ec4899", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #ec4899" }}
             date={t("XpFecha2.title", { framework: "React" })}
@@ -371,45 +390,63 @@ function About() {
             icon={<Brush />}
           >
             <h3 className="titulo-3 vertical-timeline-element-title">
-            {t("XpTitulo2.title", { framework: "React" })}
+              {t("XpTitulo2.title", { framework: "React" })}
             </h3>
-            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpEmpresa2.title", { framework: "React" })}</h4>
+            <h4 className="titulo-4 spartan vertical-timeline-element-subtitle text-center">
+              {t("XpEmpresa2.title", { framework: "React" })}
+            </h4>
             <p className="spartan">
-            {t("XpDescripcion2.title", { framework: "React" })}
+              {t("XpDescripcion2.title", { framework: "React" })}
             </p>
             <p></p>
-            <h4 onClick={Tradebog} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpLink2.title", { framework: "React" })}</h4>
+            <h4
+              onClick={Tradebog}
+              className="transiciones titulo-4 spartan vertical-timeline-element-subtitle cursor-pointer text-center hover:underline"
+            >
+              {t("XpLink2.title", { framework: "React" })}
+            </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="spartan text-lg vertical-timeline-element--work"
+            className="spartan vertical-timeline-element--work text-lg"
             contentStyle={{ background: "#a855f7", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #a855f7" }}
             date={t("XpFecha3.title", { framework: "React" })}
             iconStyle={{ background: "#a855f7", color: "#fff" }}
             icon={<BuildingCommunity />}
           >
-            <h3 className="titulo-3 vertical-timeline-element-title">{t("XpTitulo3.title", { framework: "React" })}</h3>
-            <h4 className="titulo-4 text-center vertical-timeline-element-subtitle">{t("XpEmpresa3.title", { framework: "React" })}</h4>
+            <h3 className="titulo-3 vertical-timeline-element-title">
+              {t("XpTitulo3.title", { framework: "React" })}
+            </h3>
+            <h4 className="titulo-4 vertical-timeline-element-subtitle text-center">
+              {t("XpEmpresa3.title", { framework: "React" })}
+            </h4>
             <p>{t("XpDescripcion3.title", { framework: "React" })}</p>
             <p></p>
-            <h4 onClick={FreshWorks} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpLink3.title", { framework: "React" })}</h4>
+            <h4
+              onClick={FreshWorks}
+              className="transiciones titulo-4 spartan vertical-timeline-element-subtitle cursor-pointer text-center hover:underline"
+            >
+              {t("XpLink3.title", { framework: "React" })}
+            </h4>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="spartan text-lg vertical-timeline-element--work"
+            className="spartan vertical-timeline-element--work text-lg"
             contentStyle={{ background: "#8b5cf6", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #8b5cf6" }}
             date={t("XpFecha4.title", { framework: "React" })}
             iconStyle={{ background: "#8b5cf6", color: "#fff" }}
             icon={<ChartInfographic />}
           >
-            <h3 className="titulo-3 vertical-timeline-element-title">{t("XpTitulo4.title", { framework: "React" })}</h3>
+            <h3 className="titulo-3 vertical-timeline-element-title">
+              {t("XpTitulo4.title", { framework: "React" })}
+            </h3>
             <h4 className="titulo-4 vertical-timeline-element-subtitle">
-            {t("XpEmpresa4.title", { framework: "React" })}
+              {t("XpEmpresa4.title", { framework: "React" })}
             </h4>
             <p>{t("XpDescripcion4.title", { framework: "React" })}</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="spartan text-lg vertical-timeline-element--work"
+            className="spartan vertical-timeline-element--work text-lg"
             contentStyle={{ background: "#6366f1", color: "#fff" }}
             contentArrowStyle={{ borderRight: "7px solid  #6366f1" }}
             date={t("XpFecha5.title", { framework: "React" })}
@@ -417,16 +454,26 @@ function About() {
             icon={<BuildingCommunity />}
           >
             <h3 className="titulo-3 vertical-timeline-element-title">
-            {t("XpTitulo5.title", { framework: "React" })}
+              {t("XpTitulo5.title", { framework: "React" })}
             </h3>
             <h4 className="titulo-4 vertical-timeline-element-subtitle">
-            {t("XpEmpresa5.title", { framework: "React" })}
+              {t("XpEmpresa5.title", { framework: "React" })}
             </h4>
             <p>{t("XpDescripcion5.title", { framework: "React" })}</p>
             <p></p>
-            <h4 onClick={LaQuintaP} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">{t("XpLink5.title", { framework: "React" })}</h4>
+            <h4
+              onClick={LaQuintaP}
+              className="transiciones titulo-4 spartan vertical-timeline-element-subtitle cursor-pointer text-center hover:underline"
+            >
+              {t("XpLink5.title", { framework: "React" })}
+            </h4>
           </VerticalTimelineElement>
         </VerticalTimeline>
+      </Seccion>
+      <Seccion style={borderTop}>
+        <div className="spartan">
+          Hola
+        </div>
       </Seccion>
       <Seccion style={paddingLados}>
         <h3 className="titulo-3 -mb-0.5 ">
