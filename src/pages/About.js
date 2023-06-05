@@ -348,7 +348,7 @@ function About() {
           >
             <FotoBorde
               className="img-circular-borde-rosa-internas transiciones"
-              src={AWSUrl.URL + "ejemplo-eliminar.jpg"}
+              src={AWSUrl.URL + "servicios-landing-tech.jpg"}
               title={t("AltFotoInternas.title", { framework: "React" })}
               alt={t("AltFotoInternas.title", { framework: "React" })}
             />
@@ -472,8 +472,20 @@ function About() {
       </Seccion>
       <Seccion style={borderTop}>
         <div className="spartan">
-          Hola
+          <h2 className="titulo-2 -mb-1.5">
+            {t("Clientes.title", { framework: "React" })}{" "}
+            <span className="-ml-[0.3rem] -mr-[0.76rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
+              {t("Destacados.title", { framework: "React" })}
+            </span>
+          </h2>
         </div>
+        <Seccion>
+          <div className="spartan">
+            <div className="spartan bg-red-500 w-fit h-fit">
+
+            </div>
+          </div>
+        </Seccion>
       </Seccion>
       <Seccion style={paddingLados}>
         <h3 className="titulo-3 -mb-0.5 ">
