@@ -77,7 +77,7 @@ function Header({ animateHeader }) {
         }}
       >
         <LogoJJ
-          className="logo-jj transiciones"
+          className="logo-jj"
           onClick={() => onButtonClick("home")}
         />
         <Nav setMoveItems={setMoveItems} />
