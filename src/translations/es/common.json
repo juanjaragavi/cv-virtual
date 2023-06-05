@@ -73,6 +73,12 @@
     "DescriptionTask4": {
         "title": "Creo prompts personalizados y detallados para ChatGPT de OpenAI que cumplen con cualquier objetivo o propósito, utilizando un proceso iterativo y centrado en el usuario para definir, diseñar y evaluar prompts que se ajusten a las necesidades y los requisitos de cada cliente o caso de uso."
     },
+    "ConoceMi": {
+        "title": "Conoce mi"
+    },
+    "Experiencia": {
+        "title": "Experiencia"
+    },
     "AhoraMi": {
         "title": "Ahora, mi"
     },

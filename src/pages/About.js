@@ -13,7 +13,12 @@ import ContInternas from "../layouts/ContInternas";
 import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
 import PopoverContacto from "../media/PopoverContacto";
-import { Code, Brush, BrandHipchat, Brain } from "tabler-icons-react";
+import "react-vertical-timeline-component/style.min.css";
+import { Code, ChartInfographic, BuildingCommunity, Brush, BrandHipchat, Brain } from "tabler-icons-react";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 
 const transition = {
   duration: 12,
@@ -47,6 +52,11 @@ function About() {
     paddingRight: "10%",
     border: 0,
   };
+  const menosPaddingLados = {
+    marginTop: 60,
+    marginBottom: 60,
+    border: 0,
+  };
   const marginTop = { marginTop: 40 };
 
   const { t } = useTranslation("common");
@@ -62,6 +72,15 @@ function About() {
       opacity: 1,
       transition: { duration: 0.3 },
     },
+  };
+  const Tradebog = () => {
+    window.open("https://tradebog.com", "_blank");
+  };  
+  const FreshWorks = () => {
+    window.open("https://www.linkedin.com/company/5317002/admin/?feedType=following", "_blank");
+  };
+  const LaQuintaP = () => {
+    window.open("https://www.linkedin.com/company/la-quinta-p/", "_blank");
   };
 
   return (
@@ -95,7 +114,7 @@ function About() {
       <ContColumnas>
         <Columna style={sinBordeMarginTop}>
           <motion.h3
-            className="titulo-3 color-texto-primario"
+            className="titulo-3 color-texto-primario px-24"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -117,7 +136,7 @@ function About() {
         <Columna style={primeraColumna}>
           <div>
             <motion.ul
-              className="listado-de-tareas"
+              className="listado-de-tareas mt-32"
               initial={{ x: -50, opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -292,6 +311,7 @@ function About() {
                 </AnimatePresence>
               </motion.li>
             </motion.ul>
+            <AvisoScroll />
           </div>
         </Columna>
         <Columna style={segundaColumna}>
@@ -318,6 +338,96 @@ function About() {
           </motion.div>
         </Columna>
       </ContColumnas>
+      <Seccion style={menosPaddingLados}>
+        <h2 className="titulo-2 -mb-1.5">
+          {t("ConoceMi.title", { framework: "React" })}{" "}
+          <span className="-ml-[0.3rem] -mr-[0.76rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-4 decoration-white underline-offset-8">
+            {t("Experiencia.title", { framework: "React" })}
+          </span>
+        </h2>
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="spartan text-lg vertical-timeline-element--work"
+            contentStyle={{ background: "#ec4899", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #ec4899" }}
+            date="February, 2023 - Present"
+            iconStyle={{ background: "#ec4899", color: "#fff" }}
+            icon={<Brain />}
+          >
+            <h3 className="titulo-3 vertical-timeline-element-title">
+              AI Consultant
+            </h3>
+            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">Juan Jaramillo</h4>
+            <p className="spartan">
+            Since early 2023, I have been focusing on Artificial Intelligence, providing consultancy services to individuals or companies of any size, who want to adapt to AI, as well as working as a prompt engineer, UX and UI designer, and front-end and back-end developer for AI projects.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="spartan text-lg vertical-timeline-element--work"
+            contentStyle={{ background: "#ec4899", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #ec4899" }}
+            date="December, 2020 - January, 2023"
+            iconStyle={{ background: "#ec4899", color: "#fff" }}
+            icon={<Brush />}
+          >
+            <h3 className="titulo-3 vertical-timeline-element-title">
+              Co-Founder, UX/UI Lead
+            </h3>
+            <h4 className="titulo-4 text-center spartan vertical-timeline-element-subtitle">TRADEBOG S.A.S.</h4>
+            <p className="spartan">
+            At the end of 2020, I was co-founder and UX/UI design lead at TRADEBOG, a tech startup specialized in Social Shopping marketplace platforms, distributing exclusively beauty and wellness products, both from own brands and third parties. 
+            </p>
+            <p></p>
+            <h4 onClick={Tradebog} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">Visit TRADEBOG Website</h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="spartan text-lg vertical-timeline-element--work"
+            contentStyle={{ background: "#a855f7", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #a855f7" }}
+            date="May, 2014 - October, 2020"
+            iconStyle={{ background: "#a855f7", color: "#fff" }}
+            icon={<BuildingCommunity />}
+          >
+            <h3 className="titulo-3 vertical-timeline-element-title">Founder, Operative Director</h3>
+            <h4 className="titulo-4 text-center vertical-timeline-element-subtitle">FreshWorks, S.A de C.V.</h4>
+            <p>While living in Mexico City, Madrid and Buenos Aires, I took advantage of the clients and contacts that I had accumulated during the constant travels that I had during that time and created a digital marketing agency, working with companies such as Coca-Cola FEMSA, Grupo Herdez and El Corte Inglés.</p>
+            <p></p>
+            <h4 onClick={FreshWorks} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">Visit FreshWorks LinkedIn Page</h4>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="spartan text-lg vertical-timeline-element--work"
+            contentStyle={{ background: "#8b5cf6", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #8b5cf6" }}
+            date="November, 2012 - January, 2014"
+            iconStyle={{ background: "#8b5cf6", color: "#fff" }}
+            icon={<ChartInfographic />}
+          >
+            <h3 className="titulo-3 vertical-timeline-element-title">Project Manager</h3>
+            <h4 className="titulo-4 vertical-timeline-element-subtitle">
+              2W Digital Agency
+            </h4>
+            <p>My job was to lead and supervise the digital projects of the key accounts of this digital marketing agency, present in 3 countries.  </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="spartan text-lg vertical-timeline-element--work"
+            contentStyle={{ background: "#6366f1", color: "#fff" }}
+            contentArrowStyle={{ borderRight: "7px solid  #6366f1" }}
+            date="August, 2009 - October, 2012"
+            iconStyle={{ background: "#6366f1", color: "#fff" }}
+            icon={<BuildingCommunity />}
+          >
+            <h3 className="titulo-3 vertical-timeline-element-title">
+              Co-Founder, Creative Director
+            </h3>
+            <h4 className="titulo-4 vertical-timeline-element-subtitle">
+              LaQuintaP Digital Marketing Agency
+            </h4>
+            <p>After graduating from university and taking a couple of courses in technology and digital marketing, I co-founded a digital marketing and advertising agency, specializing in SMEs and startups. Despite this, we came to have as clients companies like G4S and Coca-Cola FEMSA Colombia.</p>
+            <p></p>
+            <h4 onClick={LaQuintaP} className="transiciones hover:underline cursor-pointer titulo-4 text-center spartan vertical-timeline-element-subtitle">Visit LaQuintaP's LinkedIn Page</h4>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+      </Seccion>
       <Seccion style={paddingLados}>
         <h3 className="titulo-3 -mb-0.5 ">
           {t("AhoraMi.title", { framework: "React" })}{" "}

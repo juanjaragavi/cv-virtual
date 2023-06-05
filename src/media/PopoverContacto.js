@@ -8,7 +8,7 @@ import { IconBrandTelegram } from "@tabler/icons-react";
 const solutions = [
   {
     name: "LINKEDIN",
-    href: "https://www.linkedin.com/in/juan-jaramillo-tradebog/",
+    href: "https://www.linkedin.com/in/juan-jaramillo-ai/",
     icon: IconBrandLinkedin,
     target: "_blank",
   },

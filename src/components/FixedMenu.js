@@ -22,7 +22,7 @@ function FixedMenu({ animateFixedMenu }) {
 
   const LinkLinkedIn = () => {
     window.open(
-      "https://www.linkedin.com/in/juan-jaramillo-tradebog/",
+      "https://www.linkedin.com/in/juan-jaramillo-ai/",
       "_blank"
     );
   };
