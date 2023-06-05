@@ -64,6 +64,11 @@ function About() {
     marginBottom: 60,
     border: 0,
   };
+  const menosPaddingLogos = {
+    marginTop: 30,
+    marginBottom: 30,
+    border: 0,
+  };
   const borderTop = {
     marginTop: -74,
     paddingTop: 60,
@@ -479,10 +484,15 @@ function About() {
             </span>
           </h2>
         </div>
-        <Seccion>
+        <Seccion style={menosPaddingLogos}>
           <div className="spartan">
-            <div className="spartan bg-red-500 w-fit h-fit">
-
+            <div className="spartan max-h-48 w-fit">
+              <FotoBorde
+                className="max-h-44 transiciones"
+                src={AWSUrl.URL + "logo-coca-cola-femsa-destacados.png"}
+                title={t("AltFotoInternas.title", { framework: "React" })}
+                alt={t("AltFotoInternas.title", { framework: "React" })}
+              />
             </div>
           </div>
         </Seccion>
