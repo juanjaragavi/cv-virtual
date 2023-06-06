@@ -187,7 +187,7 @@ function About() {
                     damping: 10,
                     mass: 0.75,
                     stiffness: 50,
-                    delay: 1,
+                    delay: 0.5,
                   },
                 }}
               >
