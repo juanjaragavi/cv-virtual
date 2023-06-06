@@ -153,6 +153,15 @@
     "Destacados" : {
         "title": "Clients"
     },
+    "TituloClienteDestacado1" : {
+        "title": "Coca-Cola Femsa"
+    },
+    "DescripcionClienteDestacado1" : {
+        "title": "Designed digital marketing campaign and created social profiles for Subway and Pizza 1969 brands."
+    },
+    "FechaClienteDestacado1" : {
+        "title": "Bogota, Colombia. June / November de 2012"
+    },
     "AhoraMi": {
         "title": "Now, my"
     },

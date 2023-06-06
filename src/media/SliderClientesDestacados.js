@@ -6,9 +6,9 @@ import { motion, AnimatePresence } from "framer-motion";
 const items = [
     {
         id: 1,
-        title: "Coca-Cola Femsa",
+        title: "Coca-Cola FEMSA",
         description:
-        "Creación de la campaña de marketing digital y creación de perfiles sociales, para las marcas Subway y Pizza 1969.",
+        "Diseño de campaña de marketing digital y creación de perfiles sociales para las marcas Subway y Pizza 1969.",
         date: "Bogotá, Colombia. Junio / Noviembre de 2012",
         img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-coca-cola-femsa-destacados.png",
     },
@@ -78,7 +78,7 @@ const items = [
                     title={t("AltFotoInternas.title", { framework: "React" })}
                     alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h3 className="spartan titulo-3">{item.title}</h3>
+                <h3 className="spartan titulo-3">{t(item.title)}</h3>
                 <h4 className="spartan text-center text-[1.2rem] mt-1 font-light">
                     {item.description}
                 </h4>
