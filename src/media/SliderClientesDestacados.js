@@ -1,3 +1,4 @@
+import AWSUrl from "../media/AWSUrl";
 import FotoBorde from "../media/FotoBorde";
 import { useTranslation } from "react-i18next";
 import React, { useState, useEffect } from "react";
@@ -10,7 +11,7 @@ const items = [
             description:
             "DescripcionClienteDestacado1.title",
             date: "FechaClienteDestacado1.title",
-            img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-coca-cola-femsa-destacados.png",
+            img: "logo-coca-cola-femsa-destacados.png",
         },
         {
             id: 2,
@@ -18,7 +19,7 @@ const items = [
             description:
             "DescripcionClienteDestacado2.title",
             date: "FechaClienteDestacado2.title",
-            img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-g4s-destacados.png",
+            img: "logo-g4s-destacados.png",
         },
         {
             id: 3,
@@ -26,7 +27,7 @@ const items = [
             description:
             "DescripcionClienteDestacado3.title",
             date: "FechaClienteDestacado3.title",
-            img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-subway-destacados.png",
+            img: "logo-subway-destacados.png",
         },
         {
             id: 4,
@@ -34,7 +35,7 @@ const items = [
             description:
             "DescripcionClienteDestacado4.title",
             date: "FechaClienteDestacado4.title",
-            img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-herdez-destacados.png",
+            img: "logo-herdez-destacados.png",
         },
         {
             id: 5,
@@ -42,7 +43,7 @@ const items = [
             description:
             "DescripcionClienteDestacado5.title",
             date: "FechaClienteDestacado5.title",
-            img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-el-corte-ingles-destacados.png",
+            img: "logo-el-corte-ingles-destacados.png",
         },
     ];
     
@@ -73,7 +74,7 @@ const items = [
                 >
                 <FotoBorde
                     className="transiciones max-h-24"
-                    src={item.img}
+                    src={AWSUrl.URL + item.img}
                     title={t("AltFotoInternas.title", { framework: "React" })}
                     alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
