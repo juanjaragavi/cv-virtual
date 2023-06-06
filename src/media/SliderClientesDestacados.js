@@ -6,42 +6,42 @@ import { motion, AnimatePresence } from "framer-motion";
 const items = [
         {
             id: 1,
-            title: "Coca-Cola FEMSA",
+            title: "TituloClienteDestacado1.title",
             description:
-            "Diseño de campaña de marketing digital y creación de perfiles sociales para las marcas Subway y Pizza 1969.",
-            date: "Bogotá, Colombia. Junio / Noviembre de 2012",
+            "DescripcionClienteDestacado1.title",
+            date: "FechaClienteDestacado1.title",
             img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-coca-cola-femsa-destacados.png",
         },
         {
             id: 2,
-            title: "G4S Colombia S.A.",
+            title: "TituloClienteDestacado2.title",
             description:
-            "Diseño de UI y UX, desarrollo de frontend y administración mensual de sitio web informativo de sistemas de seguridad para el hogar, para Colombia.",
-            date: "Bogotá, Colombia. Marzo de 2010 / Noviembre de 2011",
+            "DescripcionClienteDestacado2.title",
+            date: "FechaClienteDestacado2.title",
             img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-g4s-destacados.png",
         },
         {
             id: 3,
-            title: "Subway",
+            title: "TituloClienteDestacado3.title",
             description:
-            "Creación de la página de fans (fanpage) oficial de Subway Colombia. Community Management y seguimiento. Se logró llegar a los primeros 3.000 likes.",
-            date: "Bogotá, Colombia. Junio / Noviembre de 2012",
+            "DescripcionClienteDestacado3.title",
+            date: "FechaClienteDestacado3.title",
             img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-subway-destacados.png",
         },
         {
             id: 4,
-            title: "Grupo Herdez",
+            title: "TituloClienteDestacado4.title",
             description:
-            "Consultoría digital de 360 grados para la Herdez Food Services, una de las divisiones de este corporativo mexicano. Desarrollo de app y webapp de el área de Food Services de Grupo Herdez",
-            date: "Ciudad de México, México. Enero / Noviembre de 2019",
+            "DescripcionClienteDestacado4.title",
+            date: "FechaClienteDestacado4.title",
             img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-herdez-destacados.png",
         },
         {
             id: 5,
-            title: "El Corte Inglés",
+            title: "TituloClienteDestacado5.title",
             description:
-            "Project Manager de el equipo digital a cargo de el desarrollo de la sección navideña de app de oficial de El Corte Inglés. Mantenimiento y entrega de analíticas mensuales de la sección.",
-            date: "Madrid, España. Agosto / Octubre de 2017 y 2018",
+            "DescripcionClienteDestacado5.title",
+            date: "FechaClienteDestacado5.title",
             img: "https://juanjaramillo.s3.amazonaws.com/assets/logo-el-corte-ingles-destacados.png",
         },
     ];
@@ -77,12 +77,14 @@ const items = [
                     title={t("AltFotoInternas.title", { framework: "React" })}
                     alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                    <h3 className="spartan titulo-3">{item.title}</h3>
+                    <h3 className="spartan titulo-3">
+                        {t(item.title, { framework: "React" })}
+                    </h3>
                     <h4 className="spartan mt-1 text-center text-[1.2rem] font-light">
-                        {item.description}
+                        {t(item.description, { framework: "React" })}
                     </h4>
                     <h4 className="spartan mt-2 text-center text-sm font-normal">
-                        {item.date}
+                        {t(item.date, { framework: "React" })}
                     </h4>
                 </motion.div>
             ))}
