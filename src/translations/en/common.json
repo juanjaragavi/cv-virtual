@@ -154,13 +154,49 @@
         "title": "Clients"
     },
     "TituloClienteDestacado1" : {
-        "title": "Coca-Cola Femsa"
+        "title": "Coca-Cola FEMSA"
     },
     "DescripcionClienteDestacado1" : {
         "title": "Designed digital marketing campaign and created social profiles for Subway and Pizza 1969 brands."
     },
     "FechaClienteDestacado1" : {
-        "title": "Bogota, Colombia. June / November de 2012"
+        "title": "Bogota, Colombia. June / November, 2012"
+    },
+    "TituloClienteDestacado2" : {
+        "title": "G4S Colombia S.A."
+    },
+    "DescripcionClienteDestacado2" : {
+        "title": "UI and UX design, frontend development and monthly administration of a home security systems informative website for Colombia."
+    },
+    "FechaClienteDestacado2" : {
+        "title": "Bogota, Colombia. March, 2010 / November, 2011"
+    },
+    "TituloClienteDestacado3" : {
+        "title": "Subway"
+    },
+    "DescripcionClienteDestacado3" : {
+        "title": "Creation of the official fanpage of Subway Colombia. Community Management and follow-up. Reached the first 3,000 likes."
+    },
+    "FechaClienteDestacado3" : {
+        "title": "Bogota, Colombia. June / November, 2012"
+    },
+    "TituloClienteDestacado4" : {
+        "title": "Grupo Herdez"
+    },
+    "DescripcionClienteDestacado4" : {
+        "title": "360-degree digital consulting for Herdez Food Services, one of the divisions of this Mexican corporation. Development of app and webapp for the Food Services area of Grupo Herdez."
+    },
+    "FechaClienteDestacado4" : {
+        "title": "Mexico City, Mexico. January / November, 2019"
+    },
+    "TituloClienteDestacado5" : {
+        "title": "El Corte Inglés"
+    },
+    "DescripcionClienteDestacado5" : {
+        "title": "Project Manager of the digital team in charge of the development of the Christmas section of the official app of El Corte Inglés. Maintenance and delivery of monthly analytics of the section."
+    },
+    "FechaClienteDestacado5" : {
+        "title": "Madrid, Spain. August / October, 2017 and 2018"
     },
     "AhoraMi": {
         "title": "Now, my"

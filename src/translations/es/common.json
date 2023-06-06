@@ -155,13 +155,49 @@
         "title": "Destacados"
     },
     "TituloClienteDestacado1" : {
-        "title": "Coca-Cola Femsa"
+        "title": "Coca-Cola FEMSA"
     },
     "DescripcionClienteDestacado1" : {
         "title": "Diseño de campaña de marketing digital y creación de perfiles sociales para las marcas Subway y Pizza 1969."
     },
     "FechaClienteDestacado1" : {
         "title": "Bogotá, Colombia. Junio / Noviembre de 2012"
+    },
+    "TituloClienteDestacado2" : {
+        "title": "G4S Colombia S.A."
+    },
+    "DescripcionClienteDestacado2" : {
+        "title": "Diseño de UI y UX, desarrollo de frontend y administración mensual de sitio web informativo de sistemas de seguridad para el hogar, para Colombia."
+    },
+    "FechaClienteDestacado2" : {
+        "title": "Bogotá, Colombia. Marzo de 2010 / Noviembre de 2011"
+    },
+    "TituloClienteDestacado3" : {
+        "title": "Subway"
+    },
+    "DescripcionClienteDestacado3" : {
+        "title": "Creación de la página de fans (fanpage) oficial de Subway Colombia. Community Management y seguimiento. Se logró llegar a los primeros 3.000 likes."
+    },
+    "FechaClienteDestacado3" : {
+        "title": "Bogotá, Colombia. Junio / Noviembre de 2012"
+    },
+    "TituloClienteDestacado4" : {
+        "title": "Grupo Herdez"
+    },
+    "DescripcionClienteDestacado4" : {
+        "title": "Consultoría digital de 360 grados para la Herdez Food Services, una de las divisiones de este corporativo mexicano. Desarrollo de app y webapp de el área de Food Services de Grupo Herdez."
+    },
+    "FechaClienteDestacado4" : {
+        "title": "Ciudad de México, México. Enero / Noviembre de 2019"
+    },
+    "TituloClienteDestacado5" : {
+        "title": "El Corte Inglés"
+    },
+    "DescripcionClienteDestacado5" : {
+        "title": "Project Manager de el equipo digital a cargo de el desarrollo de la sección navideña de app de oficial de El Corte Inglés. Mantenimiento y entrega de analíticas mensuales de la sección."
+    },
+    "FechaClienteDestacado5" : {
+        "title": "Madrid, España. Agosto / Octubre de 2017 y 2018"
     },
     "AhoraMi": {
         "title": "Ahora, mi"
