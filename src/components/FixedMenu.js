@@ -48,7 +48,7 @@ function FixedMenu({ animateFixedMenu }) {
     >
       <nav className="contenedor-menu-sociales">
         <ul className="menu-sociales transiciones hover:scale-105">
-          <li onClick={LinkLinkedIn} className="svg-sociales transiciones ml-2">
+          <li onClick={LinkLinkedIn} className="svg-sociales transiciones ml-2.5">
             <LinkedIn />
           </li>
           <li onClick={LinkGitHub} className="svg-sociales transiciones">
@@ -62,7 +62,7 @@ function FixedMenu({ animateFixedMenu }) {
           </li>
           <li
             onClick={LinkInstagram}
-            className="svg-sociales transiciones mr-2.5"
+            className="svg-sociales transiciones -ml-1 mr-3"
           >
             <Instagram />
           </li>

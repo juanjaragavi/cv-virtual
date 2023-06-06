@@ -78,7 +78,7 @@ const items = [
                     title={t("AltFotoInternas.title", { framework: "React" })}
                     alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h3 className="spartan titulo-3">{t(item.title)}</h3>
+                <h3 className="spartan titulo-3">{item.title}</h3>
                 <h4 className="spartan text-center text-[1.2rem] mt-1 font-light">
                     {item.description}
                 </h4>
