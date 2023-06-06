@@ -242,7 +242,21 @@
         "title": "Firma"
     },
     
-
+    "InteligenciaArtificial": {
+        "title": "Inteligencia Artificial"
+    },
+    "IAPromptEngineering": {
+        "title": "Inteligencia Artificial / Prompt Engineering"
+    },
+    "DescIAPromptEngineering": {
+        "title": "ChatGPT 4 se utilizó para construir los siguientes componentes ReactJS desde cero. Cada componente es totalmente funcional y sirve como un widget. El modelo cognitivo recibió instrucciones sobre cómo utilizar los widgets, conectarse a servicios API, utilizar bibliotecas y generar código CSS. El programador solo tuvo que corregir errores menores en las dependencias."
+    },
+    "IAGeneracionDeImagenes": {
+        "title": "Inteligencia Artificial / Generación de Imágenes"
+    },
+    "DescIAGeneracionDeImagenes": {
+        "title": "Creación, retoque y mejora de todo tipo de imágenes para uso artístico, creativo, publicitario o comercial. Mediante indicaciones curadas y detalladas, podemos crear desde fotografía de producto con calidad de estudio profesional hasta retratos, ilustraciones, composiciones vectoriales y mucho más."
+    },
 
     "TituloWhatsApp": {
         "title": "¿Dudas? ¿Deseas saber más?"

@@ -40,7 +40,7 @@ const CurrencyConverter = () => {
     };
 
     return (
-        <div className="group mt-4 border border-white hover:border-pink-500 w-80 rounded-xl bg-gray-900 p-6 text-white transiciones">
+        <div className="group w-full border border-white hover:border-pink-500 rounded-xl bg-gray-900 p-6 text-white transiciones">
             <h2 className="text-white group-hover:text-pink-500 spartan mb-4 text-center text-2xl font-bold transiciones">
                 Currency Converter
             </h2>

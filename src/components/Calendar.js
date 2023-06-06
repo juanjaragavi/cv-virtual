@@ -9,7 +9,7 @@ const Calendar = () => {
     const monthDays = _.range(-(firstDayOfMonth - 1), daysInMonth + 1);
 
     return (
-        <div className="group spartan mt-4 bg-gray-900 text-white p-4 rounded-xl w-64 border border-white hover:border-pink-500 transiciones">
+        <div className="w-full group spartan bg-gray-900 text-white p-4 rounded-xl border border-white hover:border-pink-500 transiciones">
         <div className="flex justify-between items-center mb-4">
             <button className="rounded-xl px-2 pt-1.5 pb-1.5 hover:bg-pink-500 focus:outline-none transiciones">
             &lt;
