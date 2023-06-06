@@ -26,12 +26,21 @@ function Work() {
   const sinBorde = {
     border: 0,
   };
+  const fotosRedondeadas = {
+    borderRadius: "9999px",
+    borderWidth: "2px",
+    borderColor: "#FFFFFF",
+    marginLeft: "33px",
+    marginRight: "33px",
+    marginTop: "40px",
+    marginBottom: "40px",
+  };
 
   return (
     <ContInternas>
       <Seccion>
         <motion.div
-          className="group mt-5 mb-5"
+          className="group mb-5 mt-5"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -68,7 +77,7 @@ function Work() {
           </Columna>
         </ContColumnas>
         <motion.div
-          className="group mt-5 mb-5"
+          className="group mb-5 mt-5"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -94,7 +103,7 @@ function Work() {
         </motion.div>
         <ContColumnas>
           <div className="flex flex-col">
-            <section className="flex flex-row mt-2">
+            <section className="mt-2 flex flex-row">
               <FotoSinBorde
                 src={AWSUrl.URL + "1-generated-images.jpg"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
@@ -116,7 +125,7 @@ function Work() {
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
             </section>
-            <section className="flex flex-row mb-2">
+            <section className="mb-2 flex flex-row">
               <FotoSinBorde
                 src={AWSUrl.URL + "5-generated-images.jpg"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
@@ -141,7 +150,7 @@ function Work() {
           </div>
         </ContColumnas>
         <motion.div
-          className="group mt-5 mb-5"
+          className="group mb-5 mt-5"
           initial={{ y: -20, opacity: 0 }}
           whileInView={{
             opacity: 1,
@@ -158,58 +167,49 @@ function Work() {
           <div className="flex w-full flex-row pb-2 pt-5">
             <Brain className="icono-listado-de-tareas transiciones mt-0.5 group-hover:scale-125" />
             <h2 className="spartan transiciones text-center text-4xl font-bold">
-              {t("IAGeneracionDeImagenes.title", { framework: "React" })}
+              {t("IAConsultoriaImp.title", { framework: "React" })}
             </h2>
           </div>
           <p className="spartan ml-10 mr-10 text-justify text-2xl font-light">
-            {t("DescIAGeneracionDeImagenes.title", { framework: "React" })}
+            {t("DescIAConsultoriaImp.title", { framework: "React" })}
           </p>
         </motion.div>
         <ContColumnas>
           <div className="flex flex-col">
-            <section className="flex flex-row mt-2">
-              <FotoSinBorde
-                src={AWSUrl.URL + "1-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-              <FotoSinBorde
-                src={AWSUrl.URL + "2-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-              <FotoSinBorde
-                src={AWSUrl.URL + "3-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-              <FotoSinBorde
-                src={AWSUrl.URL + "4-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-            </section>
-            <section className="flex flex-row mb-2">
-              <FotoSinBorde
-                src={AWSUrl.URL + "5-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-              <FotoSinBorde
-                src={AWSUrl.URL + "6-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-              <FotoSinBorde
-                src={AWSUrl.URL + "7-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-              <FotoSinBorde
-                src={AWSUrl.URL + "8-generated-images.jpg"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
+            <section className="mb-5 flex flex-row">
+              <div className="flex flex-col">
+                <FotoSinBorde
+                  style={fotosRedondeadas}
+                  src={AWSUrl.URL + "iAConsultoria-1.jpg"}
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                  {t("IAConsultoria1.title", { framework: "React" })}
+                </h3>
+              </div>
+              <div className="flex flex-col">
+                <FotoSinBorde
+                  style={fotosRedondeadas}
+                  src={AWSUrl.URL + "iAConsultoria-2.jpg"}
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                  {t("IAConsultoria2.title", { framework: "React" })}
+                </h3>
+              </div>
+              <div className="flex flex-col">
+                <FotoSinBorde
+                  style={fotosRedondeadas}
+                  src={AWSUrl.URL + "iAConsultoria-3.jpg"}
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                  {t("IAConsultoria3.title", { framework: "React" })}
+                </h3>
+              </div>
             </section>
           </div>
         </ContColumnas>

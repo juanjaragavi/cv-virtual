@@ -257,6 +257,21 @@
     "DescIAGeneracionDeImagenes": {
         "title": "Creación, retoque y mejora de todo tipo de imágenes para uso artístico, creativo, publicitario o comercial. Mediante indicaciones curadas y detalladas, podemos crear desde fotografía de producto con calidad de estudio profesional hasta retratos, ilustraciones, composiciones vectoriales y mucho más."
     },
+    "IAConsultoriaImp": {
+        "title": "Inteligencia Artificial / Consultoría e Implementación"
+    },
+    "DescIAConsultoriaImp": {
+        "title": "Asesoro proyectos personales, emprendimientos, startups, corporaciones, empresas y básicamente a cualquier persona que necesite implementar Inteligencia Artificial en su modelo operativo o de negocio, o que quiera ahorrar tiempo y dinero en tareas repetitivas diarias asignándolas a un modelo cognitivo."
+    },
+    "IAConsultoria1": {
+        "title": "Consultoría"
+    },
+    "IAConsultoria2": {
+        "title": "Entrenamiento"
+    },
+    "IAConsultoria3": {
+        "title": "Automatización"
+    },
 
     "TituloWhatsApp": {
         "title": "¿Dudas? ¿Deseas saber más?"

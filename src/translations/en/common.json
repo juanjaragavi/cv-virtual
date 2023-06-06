@@ -256,6 +256,21 @@
     "DescIAGeneracionDeImagenes": {
         "title": "Creation, retouching and enhancing all types of images for artistic, creative, advertising or commercial use. Through curated and detailed prompts, we can create anything from professional studio-quality product photography to portraits, illustrations, vector compositions, and more."
     },
+    "IAConsultoriaImp": {
+        "title": "Artificial Intelligence / Consulting and Implementation"
+    },
+    "DescIAConsultoriaImp": {
+        "title": "I advise personal projects, ventures, startups, corporations, companies and basically anyone who needs to implement Artificial Intelligence in their operational or business model, or who wants to save time and money on daily repetitive tasks by assigning them to a cognitive model."
+    },
+    "IAConsultoria1": {
+        "title": "Consulting"
+    },
+    "IAConsultoria2": {
+        "title": "Training"
+    },
+    "IAConsultoria3": {
+        "title": "Automatization"
+    },
 
     "TituloWhatsApp": {
         "title": "Any Question? Want a Quote?"
