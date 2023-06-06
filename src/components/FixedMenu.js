@@ -4,6 +4,7 @@ import GitHub from "../socialIcons/GitHub";
 import Telegram from "../socialIcons/Telegram";
 import LinkedIn from "../socialIcons/LinkedIn";
 import WhatsApp from "../socialIcons/WhatsApp";
+import Instagram from "../socialIcons/Instagram";
 
 const variants = {
   active: { y: 0, opacity: 1 },
@@ -23,6 +24,12 @@ function FixedMenu({ animateFixedMenu }) {
   const LinkLinkedIn = () => {
     window.open(
       "https://www.linkedin.com/in/juan-jaramillo-ai/",
+      "_blank"
+    );
+  };
+  const LinkInstagram = () => {
+    window.open(
+      "https://www.instagram.com/juanjaragavi/",
       "_blank"
     );
   };
@@ -52,6 +59,12 @@ function FixedMenu({ animateFixedMenu }) {
             className="svg-sociales transiciones mr-2.5"
           >
             <Telegram />
+          </li>
+          <li
+            onClick={LinkInstagram}
+            className="svg-sociales transiciones mr-2.5"
+          >
+            <Instagram />
           </li>
         </ul>
       </nav>
