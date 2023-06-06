@@ -14,6 +14,7 @@ import ContColumnas from "../layouts/ContColumnas";
 import LogosFlotantes from "../media/LogosFlotantes";
 import PopoverContacto from "../media/PopoverContacto";
 import "react-vertical-timeline-component/style.min.css";
+import SliderClientesDestacados from "../media/SliderClientesDestacados";
 import {
   Code,
   ChartInfographic,
@@ -65,6 +66,9 @@ function About() {
     border: 0,
   };
   const menosPaddingLogos = {
+    width: "100%",
+    paddingLeft: 30,
+    paddingRight: 30,
     marginTop: 30,
     marginBottom: 30,
     border: 0,
@@ -97,7 +101,7 @@ function About() {
   };
   const FreshWorks = () => {
     window.open(
-      "https://www.linkedin.com/company/5317002/admin/?feedType=following",
+      "https://www.linkedin.com/company/5317002/",
       "_blank"
     );
   };
@@ -485,16 +489,7 @@ function About() {
           </h2>
         </div>
         <Seccion style={menosPaddingLogos}>
-          <div className="spartan">
-            <div className="spartan max-h-48 w-fit">
-              <FotoBorde
-                className="max-h-44 transiciones"
-                src={AWSUrl.URL + "logo-coca-cola-femsa-destacados.png"}
-                title={t("AltFotoInternas.title", { framework: "React" })}
-                alt={t("AltFotoInternas.title", { framework: "React" })}
-              />
-            </div>
-          </div>
+          <SliderClientesDestacados />
         </Seccion>
       </Seccion>
       <Seccion style={paddingLados}>

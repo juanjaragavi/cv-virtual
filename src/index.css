@@ -370,6 +370,12 @@
     .descripcion-servicios-perfil-about {
       @apply text-gray-900 pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗'] hover:font-light hover:text-gray-900 dark:text-white dark:hover:font-light dark:hover:text-white;
     }
+    .container-clients-slider {
+      @apply spartan max-h-48;
+    }
+    .container-logo-slider {
+      @apply transiciones max-h-44 ml-[38%];
+    }
 
       /* -----  AVISO "HAZ SCROLL"  ----- */
 
@@ -415,6 +421,13 @@
       .texto-boton-popover-contacto {
         @apply text-lg text-gray-900 dark:text-white;
       }
+    .slider-container {
+      @apply relative w-full h-72 max-w-md mx-auto overflow-hidden;
+    }
+    
+    .item {
+      @apply flex-col absolute top-0 left-0 w-full h-full flex items-center justify-center text-2xl font-semibold text-gray-800 dark:text-white;
+    }
 
     /* -----  FIN PÁGINA ABOUT  ----- */
 
