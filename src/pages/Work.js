@@ -351,6 +351,7 @@ function Work() {
                   {t("UXUIDesignDescription1.title", { framework: "React" })}
                 </h5>
                 <button
+                  className="hover:scale-105 transiciones"
                   onClick={ZioneShopApp}
                 >
                   <FotoSinBorde
