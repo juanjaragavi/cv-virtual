@@ -5,14 +5,14 @@ import Clock from "../components/Clock";
 import Seccion from "../layouts/Seccion";
 import Columna from "../layouts/Columna";
 import Footer from "../components/Footer";
-import FotoSinBorde from "../media/FotoSinBorde";
 import Calendar from "../components/Calendar";
 import { useTranslation } from "react-i18next";
+import FotoSinBorde from "../media/FotoSinBorde";
+import { Brush, Brain } from "tabler-icons-react";
 import Calculator from "../components/Calculator";
 import ContColumnas from "../layouts/ContColumnas";
 import ContInternas from "../layouts/ContInternas";
 import CurrencyConverter from "../components/CurrencyConverter";
-import { Brush, Brain } from "tabler-icons-react";
 
 function Work() {
   const { t } = useTranslation("common");
