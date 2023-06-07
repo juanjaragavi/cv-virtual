@@ -1,29 +1,17 @@
-import axios from 'axios';
+import { number } from "yup";
 import React, { useState } from "react";
+import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import ConfirmResetForm from "../media/ConfirmResetForm";
 
 function FormularioContacto() {
-        const handleSubmit = (event) => {
-            event.preventDefault();
-        
-            const myForm = event.target;
-            const formData = new FormData(myForm);
-            
-            fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
-            })
-            .then(() => console.log("Form successfully submitted"))
-            .catch((error) => alert(error));
-        };
-        
-        document
-        .querySelector("form")
-        .addEventListener("submit", handleSubmit);
-    const { t } = useTranslation("common");    
+    const { t } = useTranslation("common");
+    const {
+        register,
+        formState: { errors },
+        handleSubmit,
+    } = useForm();
     const [confirmarReset, setConfirmarReset] = useState(false);
     const handleResetClick = () => {
         setConfirmarReset(true);
@@ -37,32 +25,7 @@ function FormularioContacto() {
     const handleCancelClick = () => {
         setConfirmarReset(false);
     };
-
-    const onSubmit = async (formData) => {
-            const apiKey = 'd15f46c462659821c2e404e86b9898530beb5d68';
-            const sheetId = '1evOX0vet6DQsIxPC64wAwvWaC5jAYs0QJGyAtOc7fIA';
-            const sheetName = 'Sheet1';
-            const range = `${sheetName}!A1:D1`; // Adjust the range according to your data
-        
-            const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}:append?valueInputOption=RAW&key=${apiKey}`;
-        
-            const values = [
-            [
-                formData.nombres,
-                formData.apellidos,
-                formData.email,
-                formData.telefono
-            ]
-            ];
-        
-            const response = await axios.post(url, {
-            range,
-            majorDimension: 'ROWS',
-            values
-            });
-        
-            console.log(response);
-        };
+    const onSubmit = (data) => console.log(data);
 
     return (
         <div className="contenedor-formulario-contacto">
@@ -87,19 +50,29 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true" name="contact" netlify>
+        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)}>
             <div className="contenedor-campo-formulario-contacto">
-            <input type="hidden" name="Formulario-Contacto-Landing-Page" value="contact"></input>    
             <input
+                {...register("nombres", {
+                required: true,
+                })}
                 className="spartan-medium peer campo-formulario-contacto transiciones"
                 type="text"
                 name="nombres"
                 id="nombres"
                 placeholder={t("NombresFormContacto.title", { framework: "React" })}
             />
+            {errors.apellidos?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
             </div>
             <div className="contenedor-campo-formulario-contacto">
             <input
+                {...register("apellidos", {
+                required: true,
+                })}
                 className="spartan-medium peer campo-formulario-contacto transiciones"
                 type="text"
                 name="apellidos"
@@ -108,18 +81,43 @@ function FormularioContacto() {
                 framework: "React",
                 })}
             />
+            {errors.apellidos?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
             </div>
             <div className="contenedor-campo-formulario-contacto">
             <input
+                {...register("email", {
+                required: true,
+                pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
+                })}
                 className="spartan-medium peer campo-formulario-contacto transiciones"
                 type="email"
                 name="email"
                 id="email"
                 placeholder={t("EmailFormContacto.title", { framework: "React" })}
             />
+            {errors.email?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            {errors.email?.type === "pattern" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
             </div>
             <div className="contenedor-campo-formulario-contacto">
             <input
+                {...register("telefono", {
+                maxLength: 10,
+                minLength: 10,
+                required: true,
+                type: number,
+                })}
                 className="spartan-medium peer campo-formulario-contacto transiciones"
                 type="number"
                 name="telefono"
@@ -128,6 +126,21 @@ function FormularioContacto() {
                 framework: "React",
                 })}
             />
+            {errors.telefono?.type === "required" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("CampoReqFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            {errors.telefono?.type === "minLength" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("MinCharFormContacto.title", { framework: "React" })}
+                </p>
+            )}
+            {errors.telefono?.type === "maxLength" && (
+                <p className="spartan-medium texto-error-formulario-contacto">
+                {t("MaxCharFormContacto.title", { framework: "React" })}
+                </p>
+            )}
             </div>
             <div className="contenedor-botones-formulario-contacto">
             <button
