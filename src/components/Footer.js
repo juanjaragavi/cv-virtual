@@ -1,7 +1,9 @@
 import React from "react";
-import ContColumnas from "../layouts/ContColumnas";
+import AWSUrl from "../media/AWSUrl";
 import Columna from "../layouts/Columna";
 import { useTranslation } from "react-i18next";
+import FotoSinBorde from "../media/FotoSinBorde";
+import ContColumnas from "../layouts/ContColumnas";
 
 function Footer() {
   const { t } = useTranslation("common");
@@ -27,6 +29,12 @@ function Footer() {
   };
   return (
     <footer className="footer-general">
+      <img
+            className="logo-footer-movil"   
+            src={AWSUrl.URL + "logo-juan-jaramillo.png"}
+            title={t("AltFotoInternas.title", { framework: "React" })}
+            alt={t("AltFotoInternas.title", { framework: "React" })}
+          />
       <ContColumnas>
         <Columna style={estiloPrimeraColumna}>
           <h4 className="font-medium text-xl">

@@ -136,7 +136,7 @@
       @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-50;
     }
     .header-movil {
-      @apply absolute pt-2 grid w-screen h-5 place-items-center visible sm:invisible md:invisible lg:invisible xl:invisible top-0 bg-transparent z-50;
+      @apply absolute pt-2 grid w-screen h-5 place-items-center visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible top-0 bg-transparent z-50;
     }
 
     /* -----  FIN HEADER  ----- */
@@ -276,6 +276,9 @@
     }
     .icono-email-footer {
       @apply fill-none w-[24px] h-[24px] stroke-2 stroke-pink-900 dark:stroke-pink-500 inline pb-0.5 mr-1;
+    }
+    .logo-footer-movil {
+      @apply place-items-center px-[25%] py-[5%] sm:px-0 md:py-0 lg:px-0 xl:px-0 2xl:px-0 h-auto sm:h-0 md:h-0 lg:h-0 xl:h-0 2xl:h-0 visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible;
     }
 
     /* -----  FIN FOOTER  ----- */
