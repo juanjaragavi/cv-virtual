@@ -12,10 +12,7 @@ import Calculator from "../components/Calculator";
 import ContColumnas from "../layouts/ContColumnas";
 import ContInternas from "../layouts/ContInternas";
 import CurrencyConverter from "../components/CurrencyConverter";
-import {
-  Brush,
-  Brain,
-} from "tabler-icons-react";
+import { Brush, Brain } from "tabler-icons-react";
 
 function Work() {
   const { t } = useTranslation("common");
@@ -37,9 +34,19 @@ function Work() {
     marginTop: "10px",
     marginBottom: "10px",
   };
+  const fotoLogoGooglePlay = {
+    paddingLeft: "5.3rem",
+    paddingRight: "5.3rem",    
+  };
   const marginTop5 = {
     marginTop: "20px",
     marginBottom: "20px",
+  };
+  const ZioneCosmetics = () => {
+    window.open("https://zionecosmetics.com", "_blank");
+  };
+  const ElCorteIngles = () => {
+    window.open("https://elcorteingles.es", "_blank");
   };
 
   return (
@@ -277,7 +284,9 @@ function Work() {
           </div>
         </ContColumnas>
       </Seccion>
+
       {/* Diseñador UI & UX */}
+
       <Seccion style={marginTop5}>
         <motion.div
           className="group mb-5 mt-5"
@@ -336,9 +345,15 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal">
+                <h5 className="spartan transiciones text-center text-xl font-normal w-96">
                   {t("UXUIDesignDescription1.title", { framework: "React" })}
                 </h5>
+                <FotoSinBorde
+                  style={fotoLogoGooglePlay}
+                  src={AWSUrl.URL + "google-play-logo.svg"}
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
               </div>
               <div className="flex flex-col">
                 <h3 className="spartan transiciones text-center text-3xl font-bold">
@@ -349,15 +364,20 @@ function Work() {
                 </h4>
                 <FotoSinBorde
                   style={fotosInterfaces}
-                  src={
-                    AWSUrl.URL + "Montajes Dispositivos UI-UX-3.png"
-                  }
+                  src={AWSUrl.URL + "Montajes Dispositivos UI-UX-3.png"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal">
+                <h5 className="spartan transiciones text-center text-xl font-normal w-96">
                   {t("UXUIDesignDescription3.title", { framework: "React" })}
                 </h5>
+                <button
+                  className="mr-10 ml-5 spartan-medium boton-visitar-sitio-web-work transiciones estilos-interactivos-botones borde-redondeado"
+                  type="button"
+                  onClick={ElCorteIngles}
+                >
+                  {t("VisitaElSitioWeb.title", { framework: "React" })}
+                </button>
               </div>
               <div className="flex flex-col">
                 <h3 className="spartan transiciones text-center text-3xl font-bold">
@@ -372,9 +392,16 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal">
+                <h5 className="spartan transiciones text-center text-xl font-normal w-96">
                   {t("UXUIDesignDescription2.title", { framework: "React" })}
                 </h5>
+                <button
+                  className="mr-10 ml-5 spartan-medium boton-visitar-sitio-web-work transiciones estilos-interactivos-botones borde-redondeado"
+                  type="button"
+                  onClick={ZioneCosmetics}
+                >
+                  {t("VisitaElSitioWeb.title", { framework: "React" })}
+                </button>
               </div>
             </motion.section>
           </div>
