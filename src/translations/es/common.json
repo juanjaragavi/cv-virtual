@@ -249,7 +249,7 @@
         "title": "Inteligencia Artificial / Prompt Engineering"
     },
     "DescIAPromptEngineering": {
-        "title": "ChatGPT 4 se utilizó para construir los siguientes componentes ReactJS desde cero. Cada componente es totalmente funcional y sirve como un widget. El modelo cognitivo recibió instrucciones sobre cómo utilizar los widgets, conectarse a servicios API, utilizar bibliotecas y generar código CSS. El programador solo tuvo que corregir errores menores en las dependencias."
+        "title": "ChatGPT 4 se utilizó para construir los siguientes componentes de ReactJS desde cero. Cada componente es totalmente funcional y sirve como un widget. El modelo cognitivo recibió instrucciones sobre cómo utilizar los widgets, conectarse a servicios API, utilizar bibliotecas y generar código CSS. El programador solo tuvo que corregir errores menores en las dependencias."
     },
     "IAGeneracionDeImagenes": {
         "title": "Inteligencia Artificial / Generación de Imágenes"

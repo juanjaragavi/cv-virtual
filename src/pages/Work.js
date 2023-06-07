@@ -36,7 +36,7 @@ function Work() {
   };
   const fotoLogoGooglePlay = {
     paddingLeft: "5.3rem",
-    paddingRight: "5.3rem",    
+    paddingRight: "5.3rem",
   };
   const marginTop5 = {
     marginTop: "20px",
@@ -345,15 +345,20 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal w-96">
+                <h5 className="spartan transiciones w-96 text-center text-xl font-normal">
                   {t("UXUIDesignDescription1.title", { framework: "React" })}
                 </h5>
-                <FotoSinBorde
-                  style={fotoLogoGooglePlay}
-                  src={AWSUrl.URL + "google-play-logo.svg"}
-                  title={t("AltFotoInternas.title", { framework: "React" })}
-                  alt={t("AltFotoInternas.title", { framework: "React" })}
-                />
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.zione"
+                  rel="noopener"
+                >
+                  <FotoSinBorde
+                    style={fotoLogoGooglePlay}
+                    src={AWSUrl.URL + "google-play-logo.svg"}
+                    title={t("AltFotoInternas.title", { framework: "React" })}
+                    alt={t("AltFotoInternas.title", { framework: "React" })}
+                  />
+                </a>
               </div>
               <div className="flex flex-col">
                 <h3 className="spartan transiciones text-center text-3xl font-bold">
@@ -368,11 +373,11 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal w-96">
+                <h5 className="spartan transiciones w-96 text-center text-xl font-normal">
                   {t("UXUIDesignDescription3.title", { framework: "React" })}
                 </h5>
                 <button
-                  className="mr-10 ml-5 spartan-medium boton-visitar-sitio-web-work transiciones estilos-interactivos-botones borde-redondeado"
+                  className="spartan-medium boton-visitar-sitio-web-work transiciones estilos-interactivos-botones borde-redondeado ml-5 mr-10"
                   type="button"
                   onClick={ElCorteIngles}
                 >
@@ -392,11 +397,11 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal w-11/12 2xl:w-11/12 3xl:w-96">
+                <h5 className="spartan transiciones 3xl:w-96 w-11/12 text-center text-xl font-normal 2xl:w-11/12">
                   {t("UXUIDesignDescription2.title", { framework: "React" })}
                 </h5>
                 <button
-                  className="mr-10 ml-5 spartan-medium boton-visitar-sitio-web-work transiciones estilos-interactivos-botones borde-redondeado"
+                  className="spartan-medium boton-visitar-sitio-web-work transiciones estilos-interactivos-botones borde-redondeado ml-5 mr-10"
                   type="button"
                   onClick={ZioneCosmetics}
                 >
