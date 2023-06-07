@@ -1,5 +1,4 @@
 import React from "react";
-import LogoJJ from "./LogoJJ";
 import NavMovil from "./NavMovil";
 import { motion } from "framer-motion";
 
@@ -21,7 +20,6 @@ function HeaderMovil({ animateHeaderMovil }) {
         delay: 1.5,
       }}
     >
-      <LogoJJ className="logo-jj" />
       <NavMovil />
     </motion.header>
   );

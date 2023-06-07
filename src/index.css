@@ -156,7 +156,7 @@
       @apply border-2 border-gray-800 dark:border-white rounded-full bg-[#FF00A1] w-28 h-10 -mt-10;
     }
     .boton-menu-movil {
-      @apply mt-44 bg-transparent font-league-spartan font-bold text-xl flex flex-row border border-gray-900 dark:border-white rounded-full py-2;
+      @apply mt-5 bg-transparent font-league-spartan font-bold text-xl flex flex-row border border-gray-900 dark:border-white rounded-full py-2;
     }
     .texto-boton-menu-movil {
       @apply text-xl pt-0.5 pl-5 text-gray-900 dark:text-white text-left w-64;
