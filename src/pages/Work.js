@@ -350,6 +350,7 @@ function Work() {
                 </h5>
                 <a
                   href="https://play.google.com/store/apps/details?id=com.zione"
+                  target="_blank"
                   rel="noopener"
                 >
                   <FotoSinBorde
