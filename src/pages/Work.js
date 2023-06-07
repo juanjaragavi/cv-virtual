@@ -49,7 +49,7 @@ function Work() {
     window.open("https://elcorteingles.es", "_blank");
   };
   const ZioneShopApp = () => {
-    window.open("https://elcorteingles.es", "_blank");
+    window.open("https://play.google.com/store/apps/details?id=com.zione", "_blank");
   };
   return (
     <ContInternas>
