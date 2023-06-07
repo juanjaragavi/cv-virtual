@@ -50,8 +50,9 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)} name="contact" netlify>
+        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true" name="contact" netlify>
             <div className="contenedor-campo-formulario-contacto">
+            <input type="hidden" name="Formulario-Contacto-Landing-Page" value="contact"></input>    
             <input
                 {...register("nombres", {
                 required: true,
