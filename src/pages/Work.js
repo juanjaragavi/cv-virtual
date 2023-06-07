@@ -48,7 +48,9 @@ function Work() {
   const ElCorteIngles = () => {
     window.open("https://elcorteingles.es", "_blank");
   };
-
+  const ZioneShopApp = () => {
+    window.open("https://elcorteingles.es", "_blank");
+  };
   return (
     <ContInternas>
       <Seccion>
@@ -348,10 +350,8 @@ function Work() {
                 <h5 className="spartan transiciones w-96 text-center text-xl font-normal">
                   {t("UXUIDesignDescription1.title", { framework: "React" })}
                 </h5>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.zione"
-                  target="_blank"
-                  rel="noopener"
+                <button
+                  onClick={ZioneShopApp}
                 >
                   <FotoSinBorde
                     style={fotoLogoGooglePlay}
@@ -359,7 +359,7 @@ function Work() {
                     title={t("AltFotoInternas.title", { framework: "React" })}
                     alt={t("AltFotoInternas.title", { framework: "React" })}
                   />
-                </a>
+                </button>
               </div>
               <div className="flex flex-col">
                 <h3 className="spartan transiciones text-center text-3xl font-bold">
