@@ -272,6 +272,39 @@
     "IAConsultoria3": {
         "title": "Automatización"
     },
+    "UXUIDesign": {
+        "title": "Diseño y Programación UX & UI"
+    },
+    "DescUXUIDesign": {
+        "title": "Utilizando tecnologías como ReactJS, Flutter, TailwindCSS y otras, diseño experiencias de usuario únicas e innovadoras para productos basados en inteligencia artificial, teniendo en cuenta las necesidades, expectativas y emociones de los usuarios finales, así como los objetivos y la visión de los clientes."
+    },
+    "UXUIDesignClient1": {
+        "title": "TRADEBOG S.A.S."
+    },
+    "UXUIDesignProject1": {
+        "title": "ZIONE Shop Android App"
+    },
+    "UXUIDesignDescription1": {
+        "title": "Diseño de interfaces gráficas, desarrollo de interfaces de usuario y desarrollo de código front-end."
+    },
+    "UXUIDesignClient2": {
+        "title": "ZIONE Cosmetics"
+    },
+    "UXUIDesignProject2": {
+        "title": "ZIONE Ecommerce Shop"
+    },
+    "UXUIDesignDescription2": {
+        "title": "Diseño de interfaces gráficas, desarrollo de interfaces de usuario y desarrollo de el código front-end y el back-end."
+    },
+    "UXUIDesignClient3": {
+        "title": "El Corte Inglés"
+    },
+    "UXUIDesignProject3": {
+        "title": "Separata Navideña Juguetes 2018"
+    },
+    "UXUIDesignDescription3": {
+        "title": "Coordinar los proyectos de desarrollo y la plataforma web y de aplicaciones, así como el análisis de datos y las métricas."
+    },
 
     "TituloWhatsApp": {
         "title": "¿Dudas? ¿Deseas saber más?"

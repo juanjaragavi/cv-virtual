@@ -13,11 +13,7 @@ import ContColumnas from "../layouts/ContColumnas";
 import ContInternas from "../layouts/ContInternas";
 import CurrencyConverter from "../components/CurrencyConverter";
 import {
-  Code,
-  ChartInfographic,
-  BuildingCommunity,
   Brush,
-  BrandHipchat,
   Brain,
 } from "tabler-icons-react";
 
@@ -34,6 +30,16 @@ function Work() {
     marginRight: "33px",
     marginTop: "40px",
     marginBottom: "40px",
+  };
+  const fotosInterfaces = {
+    marginLeft: "33px",
+    marginRight: "33px",
+    marginTop: "10px",
+    marginBottom: "10px",
+  };
+  const marginTop5 = {
+    marginTop: "20px",
+    marginBottom: "20px",
   };
 
   return (
@@ -64,18 +70,33 @@ function Work() {
             {t("DescIAPromptEngineering.title", { framework: "React" })}
           </p>
         </motion.div>
-        <ContColumnas>
-          <Columna style={sinBorde}>
-            <Calculator />
-          </Columna>
-          <Columna style={sinBorde}>
-            <Calendar />
-          </Columna>
-          <Columna style={sinBorde}>
-            <CurrencyConverter />
-            <Clock />
-          </Columna>
-        </ContColumnas>
+        <motion.div
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              damping: 10,
+              mass: 0.75,
+              stiffness: 50,
+              delay: 0.5,
+            },
+          }}
+        >
+          <ContColumnas>
+            <Columna style={sinBorde}>
+              <Calculator />
+            </Columna>
+            <Columna style={sinBorde}>
+              <Calendar />
+            </Columna>
+            <Columna style={sinBorde}>
+              <CurrencyConverter />
+              <Clock />
+            </Columna>
+          </ContColumnas>
+        </motion.div>
         <motion.div
           className="group mb-5 mt-5"
           initial={{ y: -20, opacity: 0 }}
@@ -103,7 +124,21 @@ function Work() {
         </motion.div>
         <ContColumnas>
           <div className="flex flex-col">
-            <section className="mt-2 flex flex-row">
+            <motion.section
+              className="mt-2 flex flex-row"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 10,
+                  mass: 0.75,
+                  stiffness: 50,
+                  delay: 0.5,
+                },
+              }}
+            >
               <FotoSinBorde
                 src={AWSUrl.URL + "1-generated-images.jpg"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
@@ -124,8 +159,22 @@ function Work() {
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
-            </section>
-            <section className="mb-2 flex flex-row">
+            </motion.section>
+            <motion.section
+              className="mb-2 mt-2 flex flex-row"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 10,
+                  mass: 0.75,
+                  stiffness: 50,
+                  delay: 0.5,
+                },
+              }}
+            >
               <FotoSinBorde
                 src={AWSUrl.URL + "5-generated-images.jpg"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
@@ -146,7 +195,7 @@ function Work() {
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
-            </section>
+            </motion.section>
           </div>
         </ContColumnas>
         <motion.div
@@ -176,7 +225,21 @@ function Work() {
         </motion.div>
         <ContColumnas>
           <div className="flex flex-col">
-            <section className="mb-5 flex flex-row">
+            <motion.section
+              className="mb-5 flex flex-row"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 10,
+                  mass: 0.75,
+                  stiffness: 50,
+                  delay: 0.5,
+                },
+              }}
+            >
               <div className="flex flex-col">
                 <FotoSinBorde
                   style={fotosRedondeadas}
@@ -210,11 +273,113 @@ function Work() {
                   {t("IAConsultoria3.title", { framework: "React" })}
                 </h3>
               </div>
-            </section>
+            </motion.section>
           </div>
         </ContColumnas>
       </Seccion>
-      * Diseñador UI & UX *
+      {/* Diseñador UI & UX */}
+      <Seccion style={marginTop5}>
+        <motion.div
+          className="group mb-5 mt-5"
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              type: "spring",
+              damping: 10,
+              mass: 0.75,
+              stiffness: 50,
+              delay: 0.5,
+            },
+          }}
+        >
+          <div className="flex w-full flex-row pb-2 pt-5">
+            <Brush className="icono-listado-de-tareas transiciones mt-0.5 group-hover:scale-125" />
+            <h2 className="spartan transiciones text-center text-4xl font-bold">
+              {t("UXUIDesign.title", { framework: "React" })}
+            </h2>
+          </div>
+          <p className="spartan ml-10 mr-10 text-justify text-2xl font-light">
+            {t("DescUXUIDesign.title", { framework: "React" })}
+          </p>
+        </motion.div>
+        <ContColumnas>
+          <div className="flex flex-col">
+            <motion.section
+              className="mb-5 flex flex-row"
+              initial={{ y: -20, opacity: 0 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  type: "spring",
+                  damping: 10,
+                  mass: 0.75,
+                  stiffness: 50,
+                  delay: 0.5,
+                },
+              }}
+            >
+              <div className="flex flex-col">
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                  {t("UXUIDesignClient1.title", { framework: "React" })}
+                </h3>
+                <h4 className="spartan transiciones text-center text-2xl font-bold">
+                  {t("UXUIDesignProject1.title", { framework: "React" })}
+                </h4>
+                <FotoSinBorde
+                  style={fotosInterfaces}
+                  src={
+                    AWSUrl.URL + "Montajes-Dispositivos-UI-UX-ZIONE-Shop.png"
+                  }
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <h5 className="spartan transiciones text-center text-xl font-normal">
+                  {t("UXUIDesignDescription1.title", { framework: "React" })}
+                </h5>
+              </div>
+              <div className="flex flex-col">
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                  {t("UXUIDesignClient3.title", { framework: "React" })}
+                </h3>
+                <h4 className="spartan transiciones text-center text-2xl font-bold">
+                  {t("UXUIDesignProject3.title", { framework: "React" })}
+                </h4>
+                <FotoSinBorde
+                  style={fotosInterfaces}
+                  src={
+                    AWSUrl.URL + "Montajes Dispositivos UI-UX-3.png"
+                  }
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <h5 className="spartan transiciones text-center text-xl font-normal">
+                  {t("UXUIDesignDescription3.title", { framework: "React" })}
+                </h5>
+              </div>
+              <div className="flex flex-col">
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                  {t("UXUIDesignClient2.title", { framework: "React" })}
+                </h3>
+                <h4 className="spartan transiciones text-center text-2xl font-bold">
+                  {t("UXUIDesignProject2.title", { framework: "React" })}
+                </h4>
+                <FotoSinBorde
+                  style={fotosInterfaces}
+                  src={AWSUrl.URL + "Montajes Dispositivos UI-UX-2.png"}
+                  title={t("AltFotoInternas.title", { framework: "React" })}
+                  alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <h5 className="spartan transiciones text-center text-xl font-normal">
+                  {t("UXUIDesignDescription2.title", { framework: "React" })}
+                </h5>
+              </div>
+            </motion.section>
+          </div>
+        </ContColumnas>
+      </Seccion>
       <Footer />
     </ContInternas>
   );
