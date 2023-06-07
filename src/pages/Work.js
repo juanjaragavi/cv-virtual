@@ -392,7 +392,7 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones text-center text-xl font-normal w-11/12">
+                <h5 className="spartan transiciones text-center text-xl font-normal w-11/12 2xl:w-11/12 3xl:w-96">
                   {t("UXUIDesignDescription2.title", { framework: "React" })}
                 </h5>
                 <button
