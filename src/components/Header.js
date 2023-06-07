@@ -60,9 +60,6 @@ const variantsInternas = {
 
 function Header({ animateHeader }) {
   const [moveItems, setMoveItems] = useState("home");
-  const onButtonClick = (mode) => {
-    setMoveItems(mode);
-  };
   return (
     <header className="contenedor-header">
       <motion.div
