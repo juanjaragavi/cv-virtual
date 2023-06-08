@@ -21,6 +21,15 @@ function NavMovil() {
   const whatsAppWeb = () => {
     window.open("https://wa.link/9emctf/", "_blank");
   };
+  const Home = () => {
+    window.open("/", "_self");
+  };
+  const About = () => {
+    window.open("/", "_self");
+  };
+  const Work = () => {
+    window.open("/", "_self");
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -97,7 +106,7 @@ function NavMovil() {
           whileHover={{ scale: 1.05, textDecoration: "underline" }}
           variants={itemVariants}
           style={{ cursor: "pointer" }}
-          onTap={whatsAppWeb}
+          onTap={Home}
           onClick={() => setIsOpen(!isOpen)}
         >
           {t("Item1.title", { framework: "React" })}{" "}
@@ -108,7 +117,7 @@ function NavMovil() {
           whileHover={{ scale: 1.05, textDecoration: "underline" }}
           variants={itemVariants}
           style={{ cursor: "pointer" }}
-          onTap={whatsAppWeb}
+          onTap={About}
           onClick={() => setIsOpen(!isOpen)}
         >
           {t("Item2.title", { framework: "React" })}{" "}
@@ -119,7 +128,7 @@ function NavMovil() {
           whileHover={{ scale: 1.05, textDecoration: "underline" }}
           variants={itemVariants}
           style={{ cursor: "pointer" }}
-          onTap={whatsAppWeb}
+          onTap={Work}
           onClick={() => setIsOpen(!isOpen)}
         >
           {t("Item3.title", { framework: "React" })}{" "}
