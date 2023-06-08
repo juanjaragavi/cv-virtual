@@ -39,11 +39,11 @@ function PopoverContacto() {
                                 group grid justify-center trigger-popover-contacto boton-conoce-mas boton-idioma transiciones estilos-interactivos-botones`}
             >
               <div className="flex">
-                <span className="group-hover:text-pink-500 pt-1 spartan-medium transiciones">
+                <span className="text-sm sm:text-xl group-hover:text-pink-500 pt-1.5 spartan-medium transiciones">
                   {t("PonteEnContacto.title", { framework: "React" })}
                 </span>
                 <svg
-                  className="mt-1 w-6 h-6 ml-1 group-hover:stroke-pink-500 transiciones"
+                  className="mt-1 w-6 h-6 ml-2 group-hover:stroke-pink-500 transiciones"
                   fill="none"
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
@@ -66,7 +66,7 @@ function PopoverContacto() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-              <Popover.Panel className="borde-redondeado transiciones panel-popover-contacto">
+              <Popover.Panel className="ml-4 borde-redondeado transiciones panel-popover-contacto">
                 <div className="overflow-hidden">
                   <div className="contenedor-botones-popover-contacto">
                     {solutions.map((item) => (

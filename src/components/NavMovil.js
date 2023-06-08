@@ -28,7 +28,7 @@ function NavMovil() {
     <motion.nav
       initial={false}
       animate={isOpen ? "open" : "closed"}
-      className="spartan-bold"
+      className="top-0 absolute spartan-bold"
     >
       <motion.button
         className="boton-menu-movil"

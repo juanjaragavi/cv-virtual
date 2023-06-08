@@ -81,7 +81,7 @@ const items = [
                     <h3 className="spartan titulo-3">
                         {t(item.title, { framework: "React" })}
                     </h3>
-                    <h4 className="spartan mt-1 text-center text-[1.2rem] font-light">
+                    <h4 className="spartan mt-1 text-center text-sm sm:text-lg leading-4 md:text-lg lg:text-lg xl:text-lg 2xl:text-lg font-light">
                         {t(item.description, { framework: "React" })}
                     </h4>
                     <h4 className="spartan mt-2 text-center text-sm font-normal">

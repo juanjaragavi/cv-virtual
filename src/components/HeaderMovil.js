@@ -1,5 +1,6 @@
 import React from "react";
 import NavMovil from "./NavMovil";
+import About from "../pages/About";
 import { motion } from "framer-motion";
 
 const variants = {
@@ -21,6 +22,9 @@ function HeaderMovil({ animateHeaderMovil }) {
       }}
     >
       <NavMovil />
+      <div className="z-50 h-screen max-h-[42rem] overflow-y-hidden overflow-x-auto absolute top-20 grid place-items-center">
+        <About />
+      </div>
     </motion.header>
   );
 }

@@ -12,7 +12,7 @@
       @apply font-league-spartan text-gray-900 dark:text-white;
     }
     .App {
-      @apply fixed top-0 left-0 w-screen h-screen bg-fondomovillight dark:bg-dark sm:bg-light sm:dark:bg-dark sm:bg-cover sm:bg-center;
+      @apply fixed top-0 left-0 w-screen h-screen dark:bg-dark sm:bg-light sm:dark:bg-dark sm:bg-cover sm:bg-center;
     }
     a {
       @apply text-pink-800 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
@@ -21,25 +21,25 @@
       @apply text-pink-800 dark:text-pink-500 hover:text-pink-500 dark:hover:text-pink-500 hover:scale-105 after:content-['_↗'] underline-offset-2 hover:underline font-bold dark:font-bold hover:font-bold dark:hover:font-bold transition-all duration-300 ease-in-out;
     }
     p.parrafo {
-      @apply pl-2 pb-0.5 leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal text-xl text-left text-gray-900 dark:text-white;
+      @apply px-4 pb-0.5 leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal sm:text-xl text-left text-gray-900 dark:text-white;
     }
     h1.titulo-1 {
-      @apply spartan-bold text-8xl text-center leading-[5.5rem];
+      @apply spartan-bold text-4xl sm:text-8xl text-center sm:leading-[5.5rem];
     }
     h2.titulo-2 {
-      @apply spartan-bold text-6xl text-center leading-[4rem];
+      @apply spartan-bold text-3xl sm:text-6xl text-center sm:text-center leading-[1.6rem] sm:leading-[3.5rem];
     }
     h3.titulo-3 {
-      @apply spartan-bold text-4xl text-center leading-9;
+      @apply spartan-bold text-xl sm:text-4xl text-center leading-6 sm:leading-8;
     }
     h4.titulo-4 {
-      @apply spartan text-2xl text-center leading-6;
+      @apply spartan font-bold text-sm sm:text-2xl text-center leading-4;
     }
     .color-texto-primario {
       @apply dark:text-white text-gray-900; 
     }
     .logo-jj {
-      @apply z-50 mt-5 bg-cover bg-logolight dark:bg-logodark relative w-44 h-[2.3rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24;
+      @apply mt-5 bg-cover bg-logolight dark:bg-logodark relative w-44 h-[2.3rem] sm:w-[12rem] sm:h-[2.5rem] 2xl:mr-24;
     }
     .dark-svg {
       @apply dark:fill-white fill-gray-900;
@@ -136,7 +136,7 @@
       @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-50;
     }
     .header-movil {
-      @apply grid place-items-center absolute pt-2 w-screen h-5 visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible top-0 bg-transparent z-50;
+      @apply z-50 grid place-items-center absolute pt-2 w-screen h-5 visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible top-0 bg-transparent;
     }
 
     /* -----  FIN HEADER  ----- */
@@ -144,7 +144,7 @@
     /* -----  NAV PRINCIPAL  ----- */
 
     .nav-principal {
-      @apply invisible sm:visible md:visible lg:visible xl:visible 2xl:visible z-50 opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
+      @apply invisible sm:visible md:visible lg:visible xl:visible 2xl:visible opacity-95 dark:opacity-80 bg-gray-900 dark:bg-white my-5 rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#6B42BE] dark:ring-offset-[#2B2665];
     }
     .contenedor-menu {
       @apply flex text-lg font-bold font-league-spartan px-5 space-x-4 align-middle py-1.5;
@@ -272,7 +272,7 @@
     /* -----  FOOTER  ----- */
 
     .footer-general {
-      @apply grid place-items-center font-league-spartan text-center text-lg border border-gray-900 dark:border-white rounded-3xl m-2 p-3;
+      @apply grid place-items-center font-league-spartan text-center text-lg border border-gray-900 dark:border-white rounded-3xl m-2 p-1 sm:p-3;
     }
     .icono-email-footer {
       @apply fill-none w-[24px] h-[24px] stroke-2 stroke-pink-900 dark:stroke-pink-500 inline pb-0.5 mr-1;
@@ -294,25 +294,25 @@
       @apply flex items-center justify-center w-[300%];
     }
     .contenedor-internas {
-      @apply mx-[3.5%] p-2.5 static w-[80%] 2xl:w-[80rem] 2xl:mx-[5%] h-72 max-h-72 sm:h-[37rem] sm:max-h-[44rem] 2xl:h-[80%] 2xl:mt-[1.5%] overflow-auto text-gray-900 dark:text-white;
+      @apply flex flex-col sm:flex-col md:flex-col p-0 m-0 lg:flex-col xl:flex-col 2xl:flex-col static sm:p-2.5 md:p-2.5 lg:p-2.5 xl:p-2.5 2xl:p-2.5 w-[90%] 2xl:w-[80rem] sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 sm:mx-[3.5%] 2xl:mx-[5%] h-[100%] sm:h-[37rem] sm:max-h-[44rem] 2xl:h-[80%] 2xl:mt-[1.5%] overflow-auto text-gray-900 dark:text-white;
     }
     .una-columna-interna {
       @apply grid place-items-center m-1 p-3;
     }
     .contenedor-columnas {
-      @apply flex w-full justify-center items-center;
+      @apply flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center;
     }
     .columna {
-      @apply w-full pl-3 pr-5 pb-2 pt-3 m-1; 
+      @apply px-3 sm:w-full sm:px-3 pb-2 sm:pt-3; 
     } 
     .img-con-borde-internas {
       @apply m-1 ring-1 ring-gray-900 dark:ring-white hover:ring-4 rounded-3xl;
     }
     .img-circular-borde-rosa-internas {
-      @apply p-1 ring-2 ring-gray-900 dark:ring-white hover:ring-pink-500 dark:hover:ring-pink-500 hover:ring-4 rounded-full;
+      @apply mt-0 sm:mt-28 ring-2 ring-gray-900 dark:ring-white hover:ring-pink-500 dark:hover:ring-pink-500 hover:ring-4 rounded-full;
     }
     .img-sin-borde-internas {
-      @apply m-1 rounded-3xl;
+      @apply -mt-4 sm:m-1 rounded-3xl;
     }
 
     /* -----  FIN ESTILOS GENERALES INTERNAS  ----- */
@@ -320,7 +320,7 @@
     /* -----  PÁGINA ABOUT  ----- */
     
     .contenedor-logos-flotantes {
-      @apply flex flex-row absolute w-[30%] mt-[4%] ml-[26%] scale-105;
+      @apply flex flex-row relative sm:absolute h-[2rem] w-[30%] pt-3 sm:mt-[4%] ml-[53%] sm:ml-[25%] scale-75 sm:scale-105;
     }
     .subcontenedor-logos-flotantes {
       @apply basis-1/3;
@@ -359,7 +359,7 @@
       @apply bg-clip-text text-transparent bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500;
     }
     ul.listado-de-tareas {
-      @apply spartan text-3xl text-left leading-10 list-item;
+      @apply spartan text-lg sm:text-3xl text-center sm:text-left leading-3 sm:leading-10 list-item;
     }
     ul.listado-de-tareas li {
       @apply cursor-pointer;
@@ -371,7 +371,7 @@
       @apply group-hover:underline group-hover:underline-offset-8 group-hover:decoration-pink-500;
     }
     .descripcion-servicios-perfil-about {
-      @apply text-gray-900 pl-8 text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗'] hover:font-light hover:text-gray-900 dark:text-white dark:hover:font-light dark:hover:text-white;
+      @apply text-gray-900 sm:pl-10 py-2 sm:py-2 text-sm sm:text-lg font-light dark:font-light transition-all duration-300 ease-in-out hover:underline hover:after:content-['_↗'] hover:font-light hover:text-gray-900 dark:text-white dark:hover:font-light dark:hover:text-white;
     }
     .container-clients-slider {
       @apply spartan max-h-48;
@@ -404,19 +404,19 @@
       /* -----  POPOVER CONTACTO  ----- */
 
       .contenedor-popover-contacto {
-        @apply -ml-5 -mt-3 w-5/6 max-w-sm;
+        @apply mr-8 w-5/6 max-w-sm;
       }
       .trigger-popover-contacto {
         @apply mx-4 w-full rounded-full py-3;
       }
       .panel-popover-contacto {
-        @apply hover:border-pink-500  absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-3 sm:px-0 lg:max-w-3xl;
+        @apply backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-60 sm:bg-opacity-20 bg-opacity-90 hover:border-pink-500 absolute left-1/2  z-10 mt-3 w-[100%] sm:w-screen max-w-sm -translate-x-1/2 transform sm:px-0 lg:max-w-3xl;
       }
       .contenedor-botones-popover-contacto {
-        @apply relative grid gap-8 p-7 lg:grid-cols-3;
+        @apply relative sm:grid gap-8 sm:p-7 lg:grid-cols-3;
       }
       .boton-popover-contacto {
-        @apply flex -my-3 items-center justify-center rounded-full px-3 py-1 hover:border hover:border-pink-500 hover:no-underline;
+        @apply flex sm:-my-3 items-center justify-center rounded-full px-3 py-1 hover:border hover:border-pink-500 hover:no-underline;
       }
       .icono-boton-popover-contacto {
         @apply flex h-16 w-16 shrink-0 items-center justify-center text-gray-900 dark:text-white sm:h-8 sm:w-8;

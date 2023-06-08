@@ -2,8 +2,6 @@ import React from "react";
 import AWSUrl from "../media/AWSUrl";
 import Columna from "../layouts/Columna";
 import { useTranslation } from "react-i18next";
-import FotoSinBorde from "../media/FotoSinBorde";
-import ContColumnas from "../layouts/ContColumnas";
 
 function Footer() {
   const { t } = useTranslation("common");
@@ -17,16 +15,7 @@ function Footer() {
     flexBasis: "50%;",
     margin: 0,
   };
-  const estilosColumnas = {
-    borderLeftWidth: 1,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
-    borderRightWidth: 0,
-    borderColor: "white",
-    borderRadius: 0,
-    flexBasis: "33.3333333%;",
-    margin: 0,
-  };
+
   return (
     <footer className="footer-general">
       <img
@@ -35,23 +24,23 @@ function Footer() {
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
-      <ContColumnas>
+      <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center">
         <Columna style={estiloPrimeraColumna}>
-          <h4 className="font-medium text-xl">
+          <h4 className="leading-[1rem] text-gray-900 text-sm sm:text-[1rem] 2xl:text-xl dark:text-white font-medium">
             © 2023{" "}
             <span className="titulo-degradado font-bold">
               {t("Nombre.title", { framework: "React" })}
             </span>
           </h4>
-          <p className="font-light text-[1rem] -mt-2.5">
+          <p className="leading-[1rem] dark:text-white font-light text-sm sm:text-[1rem] sm:mt-0.5 2xl:mt-0.5 w-full">
             {t("DerechosReservados.title", { framework: "React" })}
           </p>
         </Columna>
-        <Columna style={estilosColumnas}>
+        <div className="flex flex-row columna borde-redondeado border-l-1 border-0 sm:border-l-2 sm:border-r-0 border-white rounded-none">
           <a
             href={EmailJJ}
             onClick={EmailJJ}
-            className="group hover:cursor-pointer text-xl transiciones"
+            className="ml-0 sm:ml-[33%] group hover:cursor-pointer text-sm sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl transiciones"
           >
             <svg
               className="icono-email-footer group-hover:scale-110 group-hover:stroke-pink-500 transiciones"
@@ -65,8 +54,8 @@ function Footer() {
             </svg>
             info@juanjaramillo.tech
           </a>
-        </Columna>
-      </ContColumnas>
+        </div>
+      </div>
     </footer>
   );
 }
