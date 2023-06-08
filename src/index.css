@@ -410,13 +410,13 @@
         @apply w-full rounded-full py-2;
       }
       .panel-popover-contacto {
-        @apply backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-60 sm:bg-opacity-20 bg-opacity-90 hover:border-pink-500 absolute left-1/2  z-10 mt-3 w-[100%] sm:w-screen max-w-sm -translate-x-1/2 transform sm:px-0 lg:max-w-3xl;
+        @apply backdrop-blur-lg bg-white dark:bg-black dark:bg-opacity-60 sm:bg-opacity-20 bg-opacity-90 hover:border-pink-500 absolute left-[42%] sm:left-1/2 z-10 mt-3 w-[100%] sm:w-screen max-w-sm -translate-x-1/2 transform sm:px-0 lg:max-w-3xl;
       }
       .contenedor-botones-popover-contacto {
         @apply relative sm:grid gap-8 sm:p-7 lg:grid-cols-3;
       }
       .boton-popover-contacto {
-        @apply flex sm:-my-3 items-center justify-center rounded-full px-3 py-1 hover:border hover:border-pink-500 hover:no-underline;
+        @apply flex sm:-my-3 items-center justify-center rounded-full hover:border hover:border-pink-500 hover:no-underline;
       }
       .icono-boton-popover-contacto {
         @apply flex h-16 w-16 shrink-0 items-center justify-center text-gray-900 dark:text-white sm:h-8 sm:w-8;
