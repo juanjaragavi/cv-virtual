@@ -312,7 +312,7 @@
       @apply mt-0 sm:mt-28 ring-2 ring-gray-900 dark:ring-white hover:ring-pink-500 dark:hover:ring-pink-500 hover:ring-4 rounded-full;
     }
     .img-sin-borde-internas {
-      @apply -mt-4 sm:m-1 rounded-3xl;
+      @apply mt-4 sm:m-2 rounded-3xl;
     }
 
     /* -----  FIN ESTILOS GENERALES INTERNAS  ----- */

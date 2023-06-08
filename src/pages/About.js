@@ -355,7 +355,7 @@ function About() {
       <Seccion style={menosPaddingLados}>
         <h2 className="titulo-2 sm:-mb-1.5">
           {t("ConoceMi.title", { framework: "React" })}{" "}
-          <span className="-mr-[1rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
+          <span className="sm:-ml-1.1 sm:-mr-[1rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
             {t("Experiencia.title", { framework: "React" })}
           </span>
         </h2>
@@ -469,9 +469,9 @@ function About() {
       </Seccion>
       <div className="grid place-items-center -mt-[4.5rem] pt-20 mx-3 sm:mx-1 border-2 sm:border-4 borde-redondeado">
         <div className="spartan">
-          <h2 className="text-center titulo-2 -mb-1.5 px-2">
+          <h2 className="text-center titulo-2">
             {t("Clientes.title", { framework: "React" })}{" "}
-            <span className="bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
+            <span className="-ml-0.5 bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
               {t("Destacados.title", { framework: "React" })}
             </span>
           </h2>

@@ -133,7 +133,7 @@ function Work() {
         <ContColumnas>
           <div className="flex flex-col">
             <motion.section
-              className="mt-2 flex flex-row"
+              className="mt-2 flex flex-col sm:flex-row"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -169,7 +169,7 @@ function Work() {
               />
             </motion.section>
             <motion.section
-              className="mb-2 mt-2 flex flex-row"
+              className="mb-2 mt-2 flex flex-col sm:flex-row"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{
                 opacity: 1,
