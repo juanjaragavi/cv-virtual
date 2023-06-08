@@ -112,7 +112,7 @@ function About() {
             {t("Desde.title", { framework: "React" })}
             <span className="ml-3 pl-2 sm:pl-7"></span>2007,
           </h3>
-          <h1 className="titulo-1 titulo-degradado -mb-3 -mt-4 sm:-mt-7">
+          <h1 className="titulo-1 titulo-degradado -mb-2 -mt-4 sm:-mt-7">
             {t("Obsesionado.title", { framework: "React" })}
           </h1>
           <h3 className="titulo-3 decoracion-titulo-destacado">

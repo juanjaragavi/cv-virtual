@@ -24,7 +24,7 @@
       @apply px-4 pb-0.5 leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal sm:text-xl text-left text-gray-900 dark:text-white;
     }
     h1.titulo-1 {
-      @apply spartan-bold text-4xl sm:text-8xl text-center sm:leading-[5.5rem];
+      @apply spartan-bold text-5xl sm:text-8xl text-center sm:leading-[5.5rem];
     }
     h2.titulo-2 {
       @apply spartan-bold text-3xl sm:text-6xl text-center sm:text-center leading-[1.6rem] sm:leading-[3.5rem];
