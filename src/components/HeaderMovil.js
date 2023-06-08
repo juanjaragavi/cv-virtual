@@ -1,4 +1,5 @@
 import React from "react";
+import Work from "../pages/Work";
 import NavMovil from "./NavMovil";
 import About from "../pages/About";
 import { motion } from "framer-motion";
@@ -24,6 +25,7 @@ function HeaderMovil({ animateHeaderMovil }) {
       <NavMovil />
       <div className="h-screen max-h-[40rem] overflow-x-scroll absolute top-20 grid place-items-center">
         <About />
+        <Work />
       </div>
     </motion.header>
   );
