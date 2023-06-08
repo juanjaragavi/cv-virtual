@@ -162,7 +162,7 @@ function HeaderMovil({ animateHeaderMovil }) {
           <ThemeSwitcher className="switch-menu-movil transiciones" />
         </motion.ul>
       </motion.nav>
-      <div className="h-screen max-h-[37rem] mb-20 absolute top-20 left-5">
+      <div className="h-screen max-h-[39rem] mb-20 absolute top-20 left-5">
         <About/>
       </div> 
     </motion.div>
