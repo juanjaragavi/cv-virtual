@@ -1,7 +1,6 @@
 import About from "../pages/About";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import Seccion from "../layouts/Seccion";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useTranslation } from "react-i18next";
 
