@@ -27,7 +27,7 @@
       @apply spartan-bold text-5xl sm:text-8xl text-center sm:leading-[5.5rem];
     }
     h2.titulo-2 {
-      @apply spartan-bold text-3xl sm:text-6xl text-center sm:text-center leading-[2rem] sm:leading-[4rem];
+      @apply spartan-bold text-[1.66rem] sm:text-6xl text-center sm:text-center leading-[2rem] sm:leading-[4rem];
     }
     h3.titulo-3 {
       @apply spartan-bold text-xl sm:text-4xl text-center leading-6 sm:leading-8;
@@ -136,7 +136,7 @@
       @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent;
     }
     .header-movil {
-      @apply z-40 grid place-items-center absolute top-0 pt-2 w-screen visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible bg-transparent;
+      @apply z-40 grid place-items-center absolute top-0 pt-2 w-full visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible bg-transparent;
     }
 
     /* -----  FIN HEADER  ----- */
