@@ -32,7 +32,6 @@ function Work() {
     paddingRight: "5.3rem",
   };
   const marginTop5 = {
-    marginTop: "20px",
     marginBottom: "20px",
   };
   const ZioneCosmetics = () => {
@@ -353,7 +352,7 @@ function Work() {
                 </button>
               </div>
               <div className="flex flex-col">
-                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                <h3 className="mt-5 sm:mt-0 spartan transiciones text-center text-3xl font-bold">
                   {t("UXUIDesignClient3.title", { framework: "React" })}
                 </h3>
                 <h4 className="spartan transiciones text-center text-2xl font-bold">
@@ -376,7 +375,7 @@ function Work() {
                 </button>
               </div>
               <div className="flex flex-col">
-                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                <h3 className="mt-5 sm:mt-0 spartan transiciones text-center text-3xl font-bold">
                   {t("UXUIDesignClient2.title", { framework: "React" })}
                 </h3>
                 <h4 className="spartan transiciones text-center text-2xl font-bold">
