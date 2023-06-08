@@ -163,13 +163,18 @@ function HeaderMovil({ animateHeaderMovil }) {
           <ThemeSwitcher className="switch-menu-movil transiciones" />
         </motion.ul>
       </motion.nav>
-      <div className="components-container">
+      <div className="overflow-auto overflow-y-scroll h-screen max-h-[39rem] mb-20 absolute top-20 left-5">
         <AnimatePresence>
           {activeComponent === "About" && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              transition={{
+                type: "tween",
+                duration: 0.2,
+                delay: 0.5,
+              }}
             >
               <About />
             </motion.div>
@@ -179,6 +184,11 @@ function HeaderMovil({ animateHeaderMovil }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
+              transition={{
+                type: "tween",
+                duration: 0.2,
+                delay: 0.5,
+              }}
             >
               <Work />
             </motion.div>
