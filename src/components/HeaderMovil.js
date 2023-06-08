@@ -1,8 +1,9 @@
+import Work from "../pages/Work";
 import About from "../pages/About";
-import { motion } from "framer-motion";
 import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 const variants = {
   initial: { y: -50, opacity: 0 },
@@ -20,22 +21,22 @@ const itemVariants = {
     transition: { duration: 0.2 },
   },
 };
-const whatsAppWeb = () => {
+const whatsAppWeb = (callback) => {
   window.open("https://wa.link/9emctf/", "_blank");
-};
-const Home = () => {
-  window.open("/", "_self");
-};
-const AboutPage = () => {
-  window.open("/", "_self");
-};
-const Work = () => {
-  window.open("/", "_self");
+  if (callback) {
+    callback();
+  }
 };
 
 function HeaderMovil({ animateHeaderMovil }) {
   const { t } = useTranslation("common");
   const [isOpen, setIsOpen] = useState(false);
+  const [activeComponent, setActiveComponent] = useState(null);
+  const handleWhatsAppClick = () => {
+    setActiveComponent(null);
+    whatsAppWeb(() => setIsOpen(!isOpen));
+  };
+
   return (
     <motion.div
       className="header-movil"
@@ -120,7 +121,7 @@ function HeaderMovil({ animateHeaderMovil }) {
             whileHover={{ scale: 1.05, textDecoration: "underline" }}
             variants={itemVariants}
             style={{ cursor: "pointer" }}
-            onTap={Home}
+            onTap={() => setActiveComponent(null)}
             onClick={() => setIsOpen(!isOpen)}
           >
             {t("Item1.title", { framework: "React" })}{" "}
@@ -131,8 +132,8 @@ function HeaderMovil({ animateHeaderMovil }) {
             whileHover={{ scale: 1.05, textDecoration: "underline" }}
             variants={itemVariants}
             style={{ cursor: "pointer" }}
-            onTap={AboutPage}
             onClick={() => setIsOpen(!isOpen)}
+            onTap={() => setActiveComponent("About")}
           >
             {t("Item2.title", { framework: "React" })}{" "}
           </motion.li>
@@ -142,8 +143,8 @@ function HeaderMovil({ animateHeaderMovil }) {
             whileHover={{ scale: 1.05, textDecoration: "underline" }}
             variants={itemVariants}
             style={{ cursor: "pointer" }}
-            onTap={Work}
             onClick={() => setIsOpen(!isOpen)}
+            onTap={() => setActiveComponent("Work")}
           >
             {t("Item3.title", { framework: "React" })}{" "}
           </motion.li>
@@ -153,8 +154,8 @@ function HeaderMovil({ animateHeaderMovil }) {
             whileHover={{ scale: 1.05, textDecoration: "underline" }}
             variants={itemVariants}
             style={{ cursor: "pointer" }}
-            onTap={whatsAppWeb}
-            onClick={() => setIsOpen(!isOpen)}
+            onTap={() => setActiveComponent(null)}
+            onClick={handleWhatsAppClick}
           >
             {t("Item4.title", { framework: "React" })}{" "}
           </motion.li>
@@ -162,9 +163,28 @@ function HeaderMovil({ animateHeaderMovil }) {
           <ThemeSwitcher className="switch-menu-movil transiciones" />
         </motion.ul>
       </motion.nav>
-      <div className="h-screen max-h-[39rem] mb-20 absolute top-20 left-5">
-        <About/>
-      </div> 
+      <div className="components-container">
+        <AnimatePresence>
+          {activeComponent === "About" && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <About />
+            </motion.div>
+          )}
+          {activeComponent === "Work" && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              <Work />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </motion.div>
   );
 }

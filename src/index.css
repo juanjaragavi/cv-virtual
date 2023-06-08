@@ -138,6 +138,9 @@
     .header-movil {
       @apply z-40 grid place-items-center absolute top-0 pt-2 w-full visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible bg-transparent;
     }
+    .components-container {
+      @apply h-screen max-h-[39rem] mb-20 absolute top-20 left-5;
+    }
 
     /* -----  FIN HEADER  ----- */
 
