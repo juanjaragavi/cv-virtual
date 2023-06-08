@@ -127,7 +127,7 @@ function About() {
       <ContColumnas>
         <Columna style={sinBordeMarginTop}>
           <motion.h3
-            className="titulo-3 color-texto-primario mt-10 px-6 sm:mt-20 sm:px-24"
+            className="titulo-3 px-4 sm:mt-20 sm:px-24"
             initial={{ y: 30, opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -148,7 +148,7 @@ function About() {
       <ContColumnas>
         <Columna style={sinBorde}>
           <motion.ul
-            className="listado-de-tareas mb-0 sm:mt-32"
+            className="listado-de-tareas mb-0 mt-0 sm:mt-32"
             initial={{ x: -50, opacity: 0 }}
             whileInView={{
               opacity: 1,
@@ -353,9 +353,9 @@ function About() {
         </Columna>
       </ContColumnas>
       <Seccion style={menosPaddingLados}>
-        <h2 className="titulo-2 sm:-mb-0.5">
+        <h2 className="titulo-2 sm:-mb-1.5">
           {t("ConoceMi.title", { framework: "React" })}{" "}
-          <span className="-ml-[0.3rem] -mr-[0.76rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
+          <span className="-mr-[1rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
             {t("Experiencia.title", { framework: "React" })}
           </span>
         </h2>

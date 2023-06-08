@@ -2,7 +2,6 @@ import React from "react";
 import AWSUrl from "../media/AWSUrl";
 import { motion } from "framer-motion";
 import Clock from "../components/Clock";
-import Seccion from "../layouts/Seccion";
 import Columna from "../layouts/Columna";
 import Footer from "../components/Footer";
 import Calendar from "../components/Calendar";
@@ -53,7 +52,7 @@ function Work() {
   };
   return (
     <ContInternas>
-      <Seccion>
+      <div className="una-columna-interna">
         <motion.div
           className="group mb-5 mt-5"
           initial={{ y: -20, opacity: 0 }}
@@ -69,13 +68,13 @@ function Work() {
             },
           }}
         >
-          <div className="flex w-full flex-row pb-2 pt-5">
+          <div className="flex sm:w-full flex-row pb-2 pt-5">
             <Brain className="icono-listado-de-tareas transiciones mt-0.5 group-hover:scale-125" />
-            <h2 className="spartan transiciones text-center text-4xl font-bold">
+            <h2 className="spartan transiciones sm:text-center text-xl sm:text-4xl font-bold">
               {t("IAPromptEngineering.title", { framework: "React" })}
             </h2>
           </div>
-          <p className="spartan ml-10 mr-10 text-justify text-2xl font-light">
+          <p className="spartan mx-3 sm:ml-10 sm:mr-10 text-justify sm:text-2xl font-light">
             {t("DescIAPromptEngineering.title", { framework: "React" })}
           </p>
         </motion.div>
@@ -121,13 +120,13 @@ function Work() {
             },
           }}
         >
-          <div className="flex w-full flex-row pb-2 pt-5">
+          <div className="flex sm:w-full flex-row pb-2 pt-5">
             <Brain className="icono-listado-de-tareas transiciones mt-0.5 group-hover:scale-125" />
-            <h2 className="spartan transiciones text-center text-4xl font-bold">
+            <h2 className="spartan transiciones sm:text-center text-xl sm:text-4xl font-bold">
               {t("IAGeneracionDeImagenes.title", { framework: "React" })}
             </h2>
           </div>
-          <p className="spartan ml-10 mr-10 text-justify text-2xl font-light">
+          <p className="spartan mx-3 sm:ml-10 sm:mr-10 text-justify sm:text-2xl font-light">
             {t("DescIAGeneracionDeImagenes.title", { framework: "React" })}
           </p>
         </motion.div>
@@ -222,13 +221,13 @@ function Work() {
             },
           }}
         >
-          <div className="flex w-full flex-row pb-2 pt-5">
+          <div className="flex sm:w-full flex-row pb-2 pt-5">
             <Brain className="icono-listado-de-tareas transiciones mt-0.5 group-hover:scale-125" />
-            <h2 className="spartan transiciones text-center text-4xl font-bold">
+            <h2 className="spartan transiciones sm:text-center text-xl sm:text-4xl font-bold">
               {t("IAConsultoriaImp.title", { framework: "React" })}
             </h2>
           </div>
-          <p className="spartan ml-10 mr-10 text-justify text-2xl font-light">
+          <p className="spartan mx-3 sm:ml-10 sm:mr-10 text-justify sm:text-2xl font-light">
             {t("DescIAConsultoriaImp.title", { framework: "React" })}
           </p>
         </motion.div>
@@ -285,11 +284,11 @@ function Work() {
             </motion.section>
           </div>
         </ContColumnas>
-      </Seccion>
+      </div>
 
       {/* Diseñador UI & UX */}
 
-      <Seccion style={marginTop5}>
+      <div className="una-columna-interna" style={marginTop5}>
         <motion.div
           className="group mb-5 mt-5"
           initial={{ y: -20, opacity: 0 }}
@@ -305,13 +304,13 @@ function Work() {
             },
           }}
         >
-          <div className="flex w-full flex-row pb-2 pt-5">
+          <div className="flex sm:w-full flex-row pb-2 pt-5">
             <Brush className="icono-listado-de-tareas transiciones mt-0.5 group-hover:scale-125" />
-            <h2 className="spartan transiciones text-center text-4xl font-bold">
+            <h2 className="spartan transiciones sm:text-center text-xl sm:text-4xl font-bold">
               {t("UXUIDesign.title", { framework: "React" })}
             </h2>
           </div>
-          <p className="spartan ml-10 mr-10 text-justify text-2xl font-light">
+          <p className="spartan mx-3 sm:ml-10 sm:mr-10 text-justify sm:text-2xl font-light">
             {t("DescUXUIDesign.title", { framework: "React" })}
           </p>
         </motion.div>
@@ -413,7 +412,7 @@ function Work() {
             </motion.section>
           </div>
         </ContColumnas>
-      </Seccion>
+      </div>
       <Footer />
     </ContInternas>
   );

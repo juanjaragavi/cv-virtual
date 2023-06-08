@@ -44,7 +44,7 @@ const CurrencyConverter = () => {
             <h2 className="text-white group-hover:text-pink-500 spartan mb-4 text-center text-2xl font-bold transiciones">
                 Currency Converter
             </h2>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col sm:flex-row gap-2 items-center justify-between">
                 <div>
                 <input
                     type="text"

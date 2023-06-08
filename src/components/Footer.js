@@ -36,11 +36,11 @@ function Footer() {
             {t("DerechosReservados.title", { framework: "React" })}
           </p>
         </Columna>
-        <div className="flex flex-row columna borde-redondeado border-l-1 border-0 sm:border-l-2 sm:border-r-0 border-white rounded-none">
+        <div className="flex columna borde-redondeado border-l-1 border-0 sm:border-l-2 sm:border-r-0 border-white rounded-none">
           <a
             href={EmailJJ}
             onClick={EmailJJ}
-            className="ml-0 sm:ml-[33%] group hover:cursor-pointer text-sm sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl transiciones"
+            className="ml-0 group hover:cursor-pointer text-sm sm:text-xl md:text-xl lg:text-xl xl:text-xl 2xl:text-xl transiciones"
           >
             <svg
               className="icono-email-footer group-hover:scale-110 group-hover:stroke-pink-500 transiciones"

@@ -18,7 +18,7 @@ const Calculator = () => {
     };
 
     return (
-        <div className="w-full group border border-white hover:border-pink-500 rounded-xl bg-gray-900 p-4 mx-5 transiciones">
+        <div className="w-full group border border-white hover:border-pink-500 rounded-xl bg-gray-900 p-4 transiciones">
             <div className="spartan mb-3 text-4xl text-white group-hover:text-pink-500 transiciones">{result || 0}</div>
             <div className="grid grid-cols-4 gap-2">
                 <button
