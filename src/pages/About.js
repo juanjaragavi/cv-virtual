@@ -353,9 +353,9 @@ function About() {
         </Columna>
       </ContColumnas>
       <Seccion style={menosPaddingLados}>
-        <h2 className="titulo-2 sm:-mb-1.5">
+        <h2 className="titulo-2 ml-2 sm:-mb-1.5 underline decoration-white decoration-4 underline-offset-8">
           {t("ConoceMi.title", { framework: "React" })}{" "}
-          <span className="sm:-ml-1.1 sm:-mr-[1rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent underline decoration-white decoration-4 underline-offset-8">
+          <span className="sm:-ml-1.1 sm:-mr-[1rem] bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
             {t("Experiencia.title", { framework: "React" })}
           </span>
         </h2>

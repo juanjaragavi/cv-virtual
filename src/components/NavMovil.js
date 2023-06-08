@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { useTranslation } from "react-i18next";
 
 const itemVariants = {
   open: {
