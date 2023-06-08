@@ -27,12 +27,6 @@ function Work() {
     marginTop: "40px",
     marginBottom: "40px",
   };
-  const fotosInterfaces = {
-    marginLeft: "33px",
-    marginRight: "33px",
-    marginTop: "10px",
-    marginBottom: "10px",
-  };
   const fotoLogoGooglePlay = {
     paddingLeft: "5.3rem",
     paddingRight: "5.3rem",
@@ -337,7 +331,6 @@ function Work() {
                   {t("UXUIDesignProject1.title", { framework: "React" })}
                 </h4>
                 <FotoSinBorde
-                  style={fotosInterfaces}
                   src={
                     AWSUrl.URL + "Montajes-Dispositivos-UI-UX-ZIONE-Shop.png"
                   }
@@ -360,14 +353,13 @@ function Work() {
                 </button>
               </div>
               <div className="flex flex-col">
-                <h3 className="mt-5 spartan transiciones text-center text-3xl font-bold">
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
                   {t("UXUIDesignClient3.title", { framework: "React" })}
                 </h3>
                 <h4 className="spartan transiciones text-center text-2xl font-bold">
                   {t("UXUIDesignProject3.title", { framework: "React" })}
                 </h4>
                 <FotoSinBorde
-                  style={fotosInterfaces}
                   src={AWSUrl.URL + "Montajes Dispositivos UI-UX-3.png"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
@@ -384,14 +376,13 @@ function Work() {
                 </button>
               </div>
               <div className="flex flex-col">
-                <h3 className="mt-5 spartan transiciones text-center text-3xl font-bold">
+                <h3 className="spartan transiciones text-center text-3xl font-bold">
                   {t("UXUIDesignClient2.title", { framework: "React" })}
                 </h3>
                 <h4 className="spartan transiciones text-center text-2xl font-bold">
                   {t("UXUIDesignProject2.title", { framework: "React" })}
                 </h4>
                 <FotoSinBorde
-                  style={fotosInterfaces}
                   src={AWSUrl.URL + "Montajes Dispositivos UI-UX-2.png"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
