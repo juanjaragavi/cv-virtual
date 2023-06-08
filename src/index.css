@@ -136,7 +136,7 @@
       @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-50;
     }
     .header-movil {
-      @apply z-50 grid place-items-center absolute pt-2 w-screen h-5 visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible top-0 bg-transparent;
+      @apply z-50 grid place-items-center absolute pt-2 w-screen visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible top-0 bg-transparent;
     }
 
     /* -----  FIN HEADER  ----- */
