@@ -344,7 +344,7 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones w-96 text-center text-xl font-normal">
+                <h5 className="spartan transiciones text-center text-xl font-normal">
                   {t("UXUIDesignDescription1.title", { framework: "React" })}
                 </h5>
                 <button
@@ -372,7 +372,7 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones w-96 text-center text-xl font-normal">
+                <h5 className="spartan transiciones text-center text-xl font-normal">
                   {t("UXUIDesignDescription3.title", { framework: "React" })}
                 </h5>
                 <button
@@ -396,7 +396,7 @@ function Work() {
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
-                <h5 className="spartan transiciones 3xl:w-96 w-11/12 text-center text-xl font-normal 2xl:w-11/12">
+                <h5 className="spartan transiciones text-center text-xl font-normal">
                   {t("UXUIDesignDescription2.title", { framework: "React" })}
                 </h5>
                 <button
