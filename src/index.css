@@ -133,10 +133,10 @@
       @apply relative w-screen h-auto z-20; 
     }
     .header {
-      @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent z-50;
+      @apply hidden sm:visible sticky top-0 left-0 sm:flex justify-items-center justify-between px-8 bg-transparent;
     }
     .header-movil {
-      @apply z-50 grid place-items-center absolute pt-2 w-screen visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible top-0 bg-transparent;
+      @apply z-40 grid place-items-center absolute top-0 pt-2 w-screen visible sm:invisible md:invisible lg:invisible xl:invisible 2xl:invisible bg-transparent;
     }
 
     /* -----  FIN HEADER  ----- */
