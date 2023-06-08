@@ -22,7 +22,7 @@ function HeaderMovil({ animateHeaderMovil }) {
       }}
     >
       <NavMovil />
-      <div className="z-50 h-screen max-h-[42rem] overflow-y-hidden overflow-x-auto absolute top-20 grid place-items-center">
+      <div className="z-50 h-screen max-h-[38rem] overflow-y-hidden overflow-x-auto absolute top-20 grid place-items-center">
         <About />
       </div>
     </motion.header>
