@@ -232,9 +232,8 @@ function Work() {
           </p>
         </motion.div>
         <ContColumnas>
-          <div className="flex flex-col">
             <motion.section
-              className="mb-5 flex flex-row"
+              className="sm:mb-5 flex flex-col sm:flex-row"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -282,7 +281,6 @@ function Work() {
                 </h3>
               </div>
             </motion.section>
-          </div>
         </ContColumnas>
       </div>
 
@@ -317,7 +315,7 @@ function Work() {
         <ContColumnas>
           <div className="flex flex-col">
             <motion.section
-              className="mb-5 flex flex-row"
+              className="mb-5 flex flex-col sm:flex-row"
               initial={{ y: -20, opacity: 0 }}
               whileInView={{
                 opacity: 1,
@@ -362,7 +360,7 @@ function Work() {
                 </button>
               </div>
               <div className="flex flex-col">
-                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                <h3 className="mt-5 spartan transiciones text-center text-3xl font-bold">
                   {t("UXUIDesignClient3.title", { framework: "React" })}
                 </h3>
                 <h4 className="spartan transiciones text-center text-2xl font-bold">
@@ -386,7 +384,7 @@ function Work() {
                 </button>
               </div>
               <div className="flex flex-col">
-                <h3 className="spartan transiciones text-center text-3xl font-bold">
+                <h3 className="mt-5 spartan transiciones text-center text-3xl font-bold">
                   {t("UXUIDesignClient2.title", { framework: "React" })}
                 </h3>
                 <h4 className="spartan transiciones text-center text-2xl font-bold">
