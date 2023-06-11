@@ -24,13 +24,13 @@
       @apply px-4 pb-0.5 leading-6 flow-root whitespace-normal font-league-spartan dark:font-light font-normal sm:text-xl text-left text-gray-900 dark:text-white;
     }
     h1.titulo-1 {
-      @apply spartan-bold text-5xl sm:text-8xl text-center sm:leading-[5.5rem];
+      @apply font-league-spartan font-bold text-5xl sm:text-8xl text-center sm:leading-[5.5rem];
     }
     h2.titulo-2 {
-      @apply spartan-bold text-[1.66rem] sm:text-6xl text-center sm:text-center leading-[2rem] sm:leading-[4rem];
+      @apply font-league-spartan font-bold text-[1.66rem] sm:text-6xl text-center sm:text-center leading-[2rem] sm:leading-[4rem];
     }
     h3.titulo-3 {
-      @apply spartan-bold text-xl sm:text-4xl text-center leading-6 sm:leading-8;
+      @apply font-league-spartan font-bold text-xl sm:text-4xl text-center leading-6 sm:leading-8;
     }
     h4.titulo-4 {
       @apply spartan font-bold text-sm sm:text-2xl text-center leading-4;
@@ -491,7 +491,7 @@
         @apply grid place-items-center z-[999] w-[70%] h-screen absolute -mt-[4rem] top-0 left-[15%] bg-transparent dark:bg-transparent;
       }
       .titulo-importante-reset-formulario-contacto {
-        @apply spartan-bold text-6xl text-center leading-[4rem] ml-5 -mt-1 dark:text-yellow-500 text-red-500;
+        @apply font-league-spartan font-bold text-6xl text-center leading-[4rem] ml-5 -mt-1 dark:text-yellow-500 text-red-500;
       }
       .icono-importante-reset-formulario-contacto {
         @apply w-[55px] h-[55px] stroke-2 fill-none dark:stroke-yellow-500 stroke-red-500;
