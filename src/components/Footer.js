@@ -36,7 +36,7 @@ function Footer() {
             {t("DerechosReservados.title", { framework: "React" })}
           </p>
         </Columna>
-        <div className="flex columna borde-redondeado border-l-1 border-0 sm:border-l-2 sm:border-r-0 border-white rounded-none">
+        <div className="columna borde-redondeado border-l-1 border-0 sm:border-l-2 sm:border-r-0 border:gray-800 dark:border-white rounded-none">
           <a
             href={EmailJJ}
             onClick={EmailJJ}
