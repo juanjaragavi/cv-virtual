@@ -179,7 +179,7 @@
     /* -----  SWITCH  ----- */
 
     .switch {
-      @apply rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#8F57CD] dark:ring-offset-[#2B195B];
+      @apply invisible sm:visible md:visible rounded-full hover:ring-1 hover:ring-pink-500 hover:ring-offset-4 ring-offset-[#8F57CD] dark:ring-offset-[#2B195B];
     }
 
     /* -----  FIN SWITCH  ----- */
