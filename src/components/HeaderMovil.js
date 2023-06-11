@@ -21,20 +21,23 @@ const itemVariants = {
     transition: { duration: 0.2 },
   },
 };
-const whatsAppWeb = (callback) => {
-  window.open("https://wa.link/9emctf/", "_blank");
-  if (callback) {
-    callback();
-  }
-};
 
 function HeaderMovil({ animateHeaderMovil }) {
   const { t } = useTranslation("common");
   const [isOpen, setIsOpen] = useState(false);
   const [activeComponent, setActiveComponent] = useState(null);
+  const whatsAppWeb = (callback) => {
+    window.open("https://wa.link/9emctf/", "_blank");
+    if (callback) {
+      callback();
+    }
+  };
   const handleWhatsAppClick = () => {
     setActiveComponent(null);
     whatsAppWeb(() => setIsOpen(!isOpen));
+  };
+  const linkBlog = () => {
+    window.open("https://blog.juanjaramillo.tech/", "_self");
   };
 
   return (
@@ -155,9 +158,20 @@ function HeaderMovil({ animateHeaderMovil }) {
             variants={itemVariants}
             style={{ cursor: "pointer" }}
             onTap={() => setActiveComponent(null)}
-            onClick={handleWhatsAppClick}
+            onClick={linkBlog}
           >
             {t("Item4.title", { framework: "React" })}{" "}
+          </motion.li>
+          <motion.li
+            className="py-2"
+            whileTap={{ scale: 0.9 }}
+            whileHover={{ scale: 1.05, textDecoration: "underline" }}
+            variants={itemVariants}
+            style={{ cursor: "pointer" }}
+            onTap={() => setActiveComponent(null)}
+            onClick={handleWhatsAppClick}
+          >
+            {t("Item5.title", { framework: "React" })}{" "}
           </motion.li>
           <div className="linea-divisoria-menu-movil"></div>
           <ThemeSwitcher className="switch-menu-movil transiciones" />

@@ -9,6 +9,9 @@ function Nav({ setMoveItems }) {
   const onButtonClick = (mode) => {
     setMoveItems(mode);
   };
+  const linkBlog = () => {
+    window.open("https://blog.juanjaramillo.tech/", "_self");
+  };
 
   return (
     <div>
@@ -72,7 +75,7 @@ function Nav({ setMoveItems }) {
             {t("Item3.title", { framework: "React" })}
           </motion.li>
           <motion.li
-            onClick={() => onButtonClick("contact")}
+            onClick={linkBlog}
             className="botones-menu transiciones"
             whileHover={() => {
               controls.start({
@@ -89,6 +92,25 @@ function Nav({ setMoveItems }) {
             }}
           >
             {t("Item4.title", { framework: "React" })}
+          </motion.li>
+          <motion.li
+            onClick={() => onButtonClick("contact")}
+            className="botones-menu transiciones"
+            whileHover={() => {
+              controls.start({
+                x: 462,
+                opacity: 1,
+                transition: { duration: 0.3 },
+              });
+            }}
+            onHoverEnd={() => {
+              controls.start({
+                opacity: 0,
+                transition: { duration: 0.3 },
+              });
+            }}
+          >
+            {t("Item5.title", { framework: "React" })}
           </motion.li>
         </ul>
         <motion.div

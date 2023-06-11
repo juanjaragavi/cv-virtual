@@ -32,6 +32,9 @@ function NavMovil() {
   };
 
   const [isOpen, setIsOpen] = useState(false);
+  const linkBlog = () => {
+    window.open("https://blog.juanjaramillo.tech/", "_self");
+  };
 
   return (
     <motion.nav
@@ -139,10 +142,21 @@ function NavMovil() {
           whileHover={{ scale: 1.05, textDecoration: "underline" }}
           variants={itemVariants}
           style={{ cursor: "pointer" }}
-          onTap={whatsAppWeb}
+          onTap={linkBlog}
           onClick={() => setIsOpen(!isOpen)}
         >
           {t("Item4.title", { framework: "React" })}{" "}
+        </motion.li>
+        <motion.li
+          className="py-2"
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.05, textDecoration: "underline" }}
+          variants={itemVariants}
+          style={{ cursor: "pointer" }}
+          onTap={whatsAppWeb}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {t("Item5.title", { framework: "React" })}{" "}
         </motion.li>
         <div className="linea-divisoria-menu-movil"></div>
         <ThemeSwitcher className="switch-menu-movil transiciones" />
