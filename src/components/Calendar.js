@@ -9,12 +9,12 @@ const Calendar = () => {
     const monthDays = _.range(-(firstDayOfMonth - 1), daysInMonth + 1);
 
     return (
-        <div className="w-full group spartan bg-gray-900 text-white p-4 rounded-xl border border-white hover:border-pink-500 transiciones">
+        <div className="w-full group spartan bg-white dark:bg-gray-900 text-gray-900 dark:text-white p-4 rounded-xl border border-gray-900 dark:border-white hover:border-pink-500 transiciones">
         <div className="flex justify-between items-center mb-4">
             <button className="rounded-xl px-2 pt-1.5 pb-1.5 hover:bg-pink-500 focus:outline-none transiciones">
             &lt;
             </button>
-            <div className="text-white group-hover:text-pink-500 text-lg font-bold transiciones">
+            <div className="text-gray-900 dark:text-white group-hover:text-pink-500 text-lg font-bold transiciones">
             {today.format("MMMM YYYY")}
             </div>
             <button className="rounded-xl px-2 pt-1.5 pb-1.5 hover:bg-pink-500 focus:outline-none transiciones">
@@ -35,8 +35,8 @@ const Calendar = () => {
                 "pt-1",
                 "rounded-full",
                 "transiciones",
-                isToday ? "bg-pink-500 text-pink-500" : "",
-                isDayOfMonth ? "hover:bg-pink-500 cursor-pointer text-white" : "",
+                isToday ? "bg-pink-500 text-white dark:text-white" : "",
+                isDayOfMonth ? "hover:bg-pink-500 hover:text-white cursor-pointer dark:text-white text-gray-900" : "",
             ].join(" ");
 
             return (

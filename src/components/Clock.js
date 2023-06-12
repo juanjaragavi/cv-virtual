@@ -19,8 +19,8 @@ const Clock = () => {
     const second = time.getSeconds().toString().padStart(2, "0");
 
     return (
-        <div className="group mt-4 rounded-xl border border-white bg-gray-900 px-6 pb-2 pt-3 hover:border-pink-500 transiciones">
-        <div className="spartan clock-text text-4xl font-bold text-white group-hover:text-pink-500 transiciones">
+        <div className="group mt-4 rounded-xl border border-gray-900 dark:border-white bg-white dark:bg-gray-900 px-6 pb-2 pt-3 hover:border-pink-500 transiciones">
+        <div className="spartan clock-text text-4xl font-bold text-gray-900 dark:text-white group-hover:text-pink-500 transiciones">
             {hour}:{minute}:<span>{second}</span>
         </div>
         </div>
