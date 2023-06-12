@@ -1,4 +1,5 @@
 import React from "react";
+import LogoJJ from "./LogoJJ";
 import AWSUrl from "../media/AWSUrl";
 import Columna from "../layouts/Columna";
 import { useTranslation } from "react-i18next";
@@ -18,12 +19,7 @@ function Footer() {
 
   return (
     <footer className="footer-general">
-      <img
-            className="logo-footer-movil"   
-            src={AWSUrl.URL + "logo-juan-jaramillo.png"}
-            title={t("AltFotoInternas.title", { framework: "React" })}
-            alt={t("AltFotoInternas.title", { framework: "React" })}
-          />
+      <LogoJJ />
       <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center">
         <Columna style={estiloPrimeraColumna}>
           <h4 className="leading-[1rem] text-gray-900 text-sm sm:text-[1rem] 2xl:text-xl dark:text-white font-medium">

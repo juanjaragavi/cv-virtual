@@ -73,9 +73,7 @@ function Header({ animateHeader }) {
           delay: 0.3,
         }}
       >
-        <LogoJJ
-          className="logo-jj"
-        />
+        <LogoJJ />
         <Nav setMoveItems={setMoveItems} />
         <ThemeSwitcher className="switch transiciones" />
       </motion.div>
