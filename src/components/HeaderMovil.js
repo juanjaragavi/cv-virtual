@@ -177,7 +177,7 @@ function HeaderMovil({ animateHeaderMovil }) {
           <ThemeSwitcher className="switch-menu-movil transiciones" />
         </motion.ul>
       </motion.nav>
-      <div className="overflow-auto overflow-y-scroll h-screen max-h-[39rem] mb-20 absolute top-20 left-5">
+      <div className="overflow-auto overflow-y-scroll h-screen max-h-screen mb-20 absolute top-20 left-5">
         <AnimatePresence>
           {activeComponent === "About" && (
             <motion.div
