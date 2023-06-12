@@ -1,6 +1,5 @@
 import React from "react";
 import LogoJJ from "./LogoJJ";
-import AWSUrl from "../media/AWSUrl";
 import Columna from "../layouts/Columna";
 import { useTranslation } from "react-i18next";
 
