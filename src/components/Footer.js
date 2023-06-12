@@ -18,7 +18,9 @@ function Footer() {
 
   return (
     <footer className="footer-general">
-      <LogoJJ />
+      <div className="m-0 sm:ml-20">
+        <LogoJJ />
+      </div>
       <div className="flex flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row w-full justify-center items-center">
         <Columna style={estiloPrimeraColumna}>
           <h4 className="leading-[1rem] text-gray-900 text-sm sm:text-[1rem] 2xl:text-xl dark:text-white font-medium">
