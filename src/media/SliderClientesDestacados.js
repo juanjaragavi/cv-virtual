@@ -12,6 +12,7 @@ const items = [
             "DescripcionClienteDestacado1.title",
             date: "FechaClienteDestacado1.title",
             img: "logo-coca-cola-femsa-destacados.png",
+            imgDark: "logo-coca-cola-femsa-destacados-dark.png",
         },
         {
             id: 2,
@@ -20,6 +21,7 @@ const items = [
             "DescripcionClienteDestacado2.title",
             date: "FechaClienteDestacado2.title",
             img: "logo-g4s-destacados.png",
+            imgDark: "logo-g4s-destacados-dark.png",
         },
         {
             id: 3,
@@ -28,6 +30,7 @@ const items = [
             "DescripcionClienteDestacado3.title",
             date: "FechaClienteDestacado3.title",
             img: "logo-subway-destacados.png",
+            imgDark: "logo-g4s-destacados-dark.png",
         },
         {
             id: 4,
@@ -36,6 +39,7 @@ const items = [
             "DescripcionClienteDestacado4.title",
             date: "FechaClienteDestacado4.title",
             img: "logo-herdez-destacados.png",
+            imgDark: "logo-g4s-destacados-dark.png",
         },
         {
             id: 5,
@@ -44,6 +48,7 @@ const items = [
             "DescripcionClienteDestacado5.title",
             date: "FechaClienteDestacado5.title",
             img: "logo-el-corte-ingles-destacados.png",
+            imgDark: "logo-g4s-destacados-dark.png",
         },
     ];
     
@@ -73,8 +78,14 @@ const items = [
                 className="item"
                 >
                 <FotoBorde
-                    className="transiciones max-h-24"
+                    className="invisible dark:visible h-0 dark:h-24"
                     src={AWSUrl.URL + item.img}
+                    title={t("AltFotoInternas.title", { framework: "React" })}
+                    alt={t("AltFotoInternas.title", { framework: "React" })}
+                />
+                <FotoBorde
+                    className="dark:invisible visible h-24 dark:h-0"
+                    src={AWSUrl.URL + item.imgDark}
                     title={t("AltFotoInternas.title", { framework: "React" })}
                     alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
