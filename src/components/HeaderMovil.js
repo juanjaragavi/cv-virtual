@@ -39,6 +39,10 @@ function HeaderMovil({ animateHeaderMovil }) {
   const linkBlog = () => {
     window.open("https://blog.juanjaramillo.tech/", "_self");
   };
+  const [navZIndex, setNavZIndex] = useState(0);
+  const toggleNavZIndex = () => {
+    setNavZIndex(navZIndex === 0 ? 50 : 0);
+  };
 
   return (
     <motion.div
@@ -55,13 +59,16 @@ function HeaderMovil({ animateHeaderMovil }) {
       <motion.nav
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className="spartan-bold relative z-50"
+        className={`spartan-bold z-${navZIndex}`}
       >
         <motion.button
           className="boton-menu-movil"
           whileTap={{ scale: 0.98 }}
           whileHover={{ scale: 1.02 }}
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => {
+            setIsOpen(!isOpen);
+            toggleNavZIndex();
+          }}
         >
           <p className="texto-boton-menu-movil">
             {t("Menu.title", { framework: "React" })}
@@ -135,8 +142,11 @@ function HeaderMovil({ animateHeaderMovil }) {
             whileHover={{ scale: 1.05, textDecoration: "underline" }}
             variants={itemVariants}
             style={{ cursor: "pointer" }}
-            onClick={() => setIsOpen(!isOpen)}
-            onTap={() => setActiveComponent("About")}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              setActiveComponent("About");
+              toggleNavZIndex();
+            }}
           >
             {t("Item2.title", { framework: "React" })}{" "}
           </motion.li>
@@ -146,8 +156,11 @@ function HeaderMovil({ animateHeaderMovil }) {
             whileHover={{ scale: 1.05, textDecoration: "underline" }}
             variants={itemVariants}
             style={{ cursor: "pointer" }}
-            onClick={() => setIsOpen(!isOpen)}
-            onTap={() => setActiveComponent("Work")}
+            onClick={() => {
+              setIsOpen(!isOpen);
+              setActiveComponent("Work");
+              toggleNavZIndex();
+            }}
           >
             {t("Item3.title", { framework: "React" })}{" "}
           </motion.li>
