@@ -297,7 +297,7 @@
       @apply flex items-center justify-center w-[300%];
     }
     .contenedor-internas {
-      @apply mb-28 sm:pb-0 flex flex-col p-0 m-0 sm:flex-col md:flex-col lg:flex-col xl:flex-col 2xl:flex-col static sm:p-2.5 md:p-2.5 lg:p-2.5 xl:p-2.5 2xl:p-2.5 my-2 w-[90%] 2xl:w-[80rem] sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 mx-[1%] sm:mx-[3.5%] 2xl:mx-[5%] h-full sm:h-[37rem] sm:max-h-[44rem] 2xl:h-[80%] 2xl:mt-[1.5%] overflow-y-auto overflow-x-hidden text-gray-900 dark:text-white;
+      @apply mb-40 sm:pb-0 flex flex-col p-0 m-0 sm:flex-col md:flex-col lg:flex-col xl:flex-col 2xl:flex-col static sm:p-2.5 md:p-2.5 lg:p-2.5 xl:p-2.5 2xl:p-2.5 my-2 w-[90%] 2xl:w-[80rem] sm:mb-0 md:mb-0 lg:mb-0 xl:mb-0 2xl:mb-0 mx-[1%] sm:mx-[3.5%] 2xl:mx-[5%] h-full sm:h-[37rem] sm:max-h-[44rem] 2xl:h-[80%] 2xl:mt-[1.5%] overflow-y-auto overflow-x-hidden text-gray-900 dark:text-white;
     }
     .una-columna-interna {
       @apply flex flex-col m-1 p-3;
