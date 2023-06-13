@@ -86,8 +86,8 @@ function ThemeSwitcher(props) {
             animate="visible"
             exit="hidden"
           >
-            <div className="absolute left-0 top-0 h-full w-full bg-black opacity-60"></div>
-            <div className="mt-10 relative rounded bg-white p-4 shadow">
+            <div className="rounded-3xl absolute left-0 top-0 h-full w-full bg-black opacity-60"></div>
+            <div className="my-[11%] relative rounded bg-white p-4 shadow">
               <QRCode value="https://qrco.de/be4hQ1" size={150} />
               <button
                 onClick={toggleLightbox}
