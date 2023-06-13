@@ -57,7 +57,7 @@ function LangSplash({
       >
         <div className="contenedor-logo-y-switcher-selector-idiomas">
           <LogoJJ className="logo-jj-lang-selector transiciones" />
-          <ThemeSwitcher className="switch-selector-tema transiciones" />
+          <ThemeSwitcher />
         </div>
         <div>
           <h2 className="titulo-selecciona-idioma">

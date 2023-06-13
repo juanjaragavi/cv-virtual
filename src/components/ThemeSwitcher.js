@@ -6,7 +6,6 @@ import QRCode from "react-qr-code";
 import { useState } from "react";
 
 function ThemeSwitcher(props) {
-  const { className } = props;
   const changeDarkMode = () => {
     document.documentElement.classList.toggle("dark");
   };
@@ -70,7 +69,6 @@ function ThemeSwitcher(props) {
         </button>
         <Switch
           onChange={changeDarkMode}
-          className={className}
           size="xl"
           color="bright-pink"
           onLabel={<SunLow size={28} />}

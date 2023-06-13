@@ -187,10 +187,12 @@ function HeaderMovil({ animateHeaderMovil }) {
             {t("Item5.title", { framework: "React" })}{" "}
           </motion.li>
           <div className="linea-divisoria-menu-movil"></div>
-          <ThemeSwitcher className="switch-menu-movil transiciones" />
+          <div className="m-0 mb-5 h-auto w-auto p-0">
+            <ThemeSwitcher />
+          </div>
         </motion.ul>
       </motion.nav>
-      <div className="overflow-auto overflow-y-scroll h-screen max-h-screen absolute top-20">
+      <div className="absolute top-20 h-screen max-h-screen overflow-auto overflow-y-scroll">
         <AnimatePresence>
           {activeComponent === "About" && (
             <motion.div
