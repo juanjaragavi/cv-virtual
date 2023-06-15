@@ -29,7 +29,7 @@ function FixedMenu({ animateFixedMenu }) {
   };
   const LinkInstagram = () => {
     window.open(
-      "https://www.instagram.com/juanjaragavi/",
+      "https://www.instagram.com/juanjaramilloai/",
       "_blank"
     );
   };
