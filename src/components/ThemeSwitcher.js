@@ -1,9 +1,10 @@
-import { MantineProvider, Switch, Group } from "@mantine/core";
-import { AnimatePresence } from "framer-motion";
-import { motion } from "framer-motion";
-import { SunLow, Moon } from "tabler-icons-react";
-import QRCode from "react-qr-code";
 import { useState } from "react";
+import AWSUrl from "../media/AWSUrl";
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
+import { AnimatePresence } from "framer-motion";
+import { SunLow, Moon } from "tabler-icons-react";
+import { MantineProvider, Switch, Group } from "@mantine/core";
 
 function ThemeSwitcher(props) {
   const changeDarkMode = () => {
@@ -21,6 +22,7 @@ function ThemeSwitcher(props) {
       transition: { duration: 0.3 },
     },
   };
+  const { t } = useTranslation("common");
 
   return (
     <MantineProvider
@@ -84,12 +86,19 @@ function ThemeSwitcher(props) {
             animate="visible"
             exit="hidden"
           >
-            <div className="rounded-3xl absolute left-0 top-0 h-full w-full bg-black opacity-60"></div>
-            <div className="my-[11%] relative rounded bg-white p-4 shadow">
-              <QRCode value="https://qrco.de/be4hQ1" size={150} />
+            <div className="absolute left-0 top-0 h-full w-full rounded-3xl bg-black opacity-60"></div>
+            <div className="relative my-[11%] bg-transparent shadow">
+              <img
+                className="rounded-xl border-solid border-2 border-pink-500 transiciones"
+                width="200"
+                height="200"
+                src={AWSUrl.URL + "qr-code.png"}
+                title={t("AltFotoInternas.title", { framework: "React" })}
+                alt={t("AltFotoInternas.title", { framework: "React" })}
+              />
               <button
                 onClick={toggleLightbox}
-                className="absolute right-0 top-0 -mr-5 -mt-5 rounded-full bg-pink-500 p-1 px-3 text-xl text-white"
+                className="absolute right-0 top-0 -mr-5 -mt-5 rounded-full bg-pink-500 hover:bg-white p-1 px-3 text-xl text-white hover:text-pink-500 transiciones"
               >
                 X
               </button>
