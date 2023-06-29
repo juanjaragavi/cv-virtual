@@ -17,18 +17,25 @@ function FormularioContacto() {
     };
 
     const handleSubmit = async (data) => {
-        const response = await fetch('https://hooks.zapier.com/hooks/catch/15793138/3drgfd7/', {
-            method: 'POST',
+        const response = await fetch(
+        "https://hooks.zapier.com/hooks/catch/15793138/3drgfd7/",
+        {
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json',
+            "Content-Type": "application/json",
+            nombres: data.nombres,
+            apellidos: data.apellidos,
+            email: data.email,
+            telefono: data.telefono.toString(),
             },
             body: JSON.stringify(data),
-            });
-        
-            if (!response.ok) {
-            console.error('Failed to send data to Zapier');
-            }
         }
+        );
+
+        if (!response.ok) {
+        console.error("Failed to send data to Zapier");
+        }
+    };
 
     const handleConfirmClick = () => {
         document.querySelector("form").reset();
