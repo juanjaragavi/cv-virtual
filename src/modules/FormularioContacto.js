@@ -74,7 +74,7 @@ function FormularioContacto() {
                 {...register("nombres", {
                 required: true,
                 })}
-                
+                value="nombres"
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="text"
                 name="nombres"
@@ -92,7 +92,7 @@ function FormularioContacto() {
                 {...register("apellidos", {
                 required: true,
                 })}
-                
+                value="apellidos"
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="text"
                 name="apellidos"
@@ -113,7 +113,7 @@ function FormularioContacto() {
                 required: true,
                 pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
                 })}
-                
+                value="email"
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="email"
                 name="email"
@@ -139,7 +139,7 @@ function FormularioContacto() {
                 required: true,
                 type: number,
                 })}
-                
+                value="telefono"
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="number"
                 name="telefono"
