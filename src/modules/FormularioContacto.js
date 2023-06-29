@@ -18,7 +18,7 @@ function FormularioContacto() {
 
     const handleSubmit = async (data) => {
         const response = await fetch(
-        "https://hooks.zapier.com/hooks/catch/15793138/3drgfd7/",
+        "https://hooks.zapier.com/hooks/catch/15793138/3drl8mg/",
         {
             method: "POST",
             headers: {
