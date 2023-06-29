@@ -22,7 +22,10 @@ function FormularioContacto() {
         {
             method: "POST",
             headers: {
-            "Content-Type": "application/json",
+                'nombres': data.nombres,
+                'apellidos': data.apellidos,
+                'email': data.email,
+                'telefono': data.telefono.toString()
             },
             body: JSON.stringify(data),
         }
