@@ -1,3 +1,4 @@
+import axios from "axios";
 import { number } from "yup";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -9,6 +10,7 @@ function FormularioContacto() {
     const { t } = useTranslation("common");
     const {
         register,
+        handleSubmit,
         formState: { errors },
     } = useForm();
     const [confirmarReset, setConfirmarReset] = useState(false);
@@ -25,25 +27,14 @@ function FormularioContacto() {
         setConfirmarReset(false);
     };
 
-    function handleSubmit(e){
-        e.preventDefault();
-
-        const data = { 
-            nombres: e.target.nombres.value,
-            apellidos: e.target.apellidos.value,
-            email: e.target.email.value,
-            telefono: e.target.telefono.value
-        };
-
-        fetch('https://hooks.zapier.com/hooks/catch/15793138/3drnxcr/', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
+const onSubmit = async (data) => {
+    try {
+        const response = await axios.post('https://hooks.zapier.com/hooks/catch/15793138/3drnxcr/', data);
+        console.log(response);
+    } catch (error) {
+        console.error(error);
     }
-
+};
 
     return (
         <div className="contenedor-formulario-contacto">
@@ -68,7 +59,7 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onSubmit={handleSubmit} onReset={handleResetClick}>
+        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)}>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
