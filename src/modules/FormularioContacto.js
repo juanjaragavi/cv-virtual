@@ -74,7 +74,7 @@ function FormularioContacto() {
                 id="nombres"
                 placeholder={t("NombresFormContacto.title", { framework: "React" })}
             />
-            {errors.apellidos?.type === "required" && (
+            {errors.nombres?.type === "required" && (
                 <p className="spartan-medium texto-error-formulario-contacto">
                 {t("CampoReqFormContacto.title", { framework: "React" })}
                 </p>
