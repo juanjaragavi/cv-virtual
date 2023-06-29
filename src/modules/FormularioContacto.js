@@ -10,12 +10,25 @@ function FormularioContacto() {
     const {
         register,
         formState: { errors },
-        handleSubmit,
     } = useForm();
     const [confirmarReset, setConfirmarReset] = useState(false);
     const handleResetClick = () => {
         setConfirmarReset(true);
     };
+
+    const handleSubmit = async (data) => {
+        const response = await fetch('https://hooks.zapier.com/hooks/catch/15793138/3drgfd7/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+            });
+        
+            if (!response.ok) {
+            console.error('Failed to send data to Zapier');
+            }
+        }
 
     const handleConfirmClick = () => {
         document.querySelector("form").reset();
@@ -25,7 +38,6 @@ function FormularioContacto() {
     const handleCancelClick = () => {
         setConfirmarReset(false);
     };
-    const onSubmit = (data) => console.log(data);
 
     return (
         <div className="contenedor-formulario-contacto">
@@ -50,13 +62,13 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onReset={handleResetClick} onSubmit={handleSubmit(onSubmit)}>
+        <form onReset={handleResetClick} onSubmit={handleSubmit}>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
                 required: true,
                 })}
-                className="spartan-medium peer campo-formulario-contacto transiciones"
+                className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="text"
                 name="nombres"
                 id="nombres"
@@ -73,7 +85,7 @@ function FormularioContacto() {
                 {...register("apellidos", {
                 required: true,
                 })}
-                className="spartan-medium peer campo-formulario-contacto transiciones"
+                className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="text"
                 name="apellidos"
                 id="apellidos"
@@ -93,7 +105,7 @@ function FormularioContacto() {
                 required: true,
                 pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
                 })}
-                className="spartan-medium peer campo-formulario-contacto transiciones"
+                className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="email"
                 name="email"
                 id="email"
@@ -118,7 +130,7 @@ function FormularioContacto() {
                 required: true,
                 type: number,
                 })}
-                className="spartan-medium peer campo-formulario-contacto transiciones"
+                className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="number"
                 name="telefono"
                 id="telefono"
