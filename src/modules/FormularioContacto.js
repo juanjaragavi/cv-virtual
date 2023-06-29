@@ -1,4 +1,3 @@
-import axios from "axios";
 import { number } from "yup";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -26,17 +25,6 @@ function FormularioContacto() {
         setConfirmarReset(false);
     };
 
-    const handleSubmit = async (data) => {
-        try {
-        await axios.post('https://hooks.zapier.com/hooks/catch/15793138/3drnxcr/', data);
-        // Reset the form after successful submission
-        document.querySelector('form').reset();
-        } catch (error) {
-        console.error('Error submitting form:', error);
-        // Handle the error or display an error message to the user
-        }
-    };
-
     return (
         <div className="contenedor-formulario-contacto">
         <AnimatePresence>
@@ -60,7 +48,7 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onReset={handleResetClick} onSubmit={handleSubmit}>
+        <form name="contact" onReset={handleResetClick} netlify>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
