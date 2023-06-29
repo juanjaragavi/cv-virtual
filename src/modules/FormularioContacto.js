@@ -25,6 +25,26 @@ function FormularioContacto() {
         setConfirmarReset(false);
     };
 
+    function handleSubmit(event){
+        event.preventDefault();
+
+        const data = { 
+            nombres: event.target.nombres.value,
+            apellidos: event.target.apellidos.value,
+            email: event.target.email.value,
+            telefono: event.target.telefono.value
+        };
+
+        fetch('https://hooks.zapier.com/hooks/catch/15793138/3drnxcr/', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        });
+    }
+
+
     return (
         <div className="contenedor-formulario-contacto">
         <AnimatePresence>
@@ -48,7 +68,7 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onReset={handleResetClick}>
+        <form onSubmit={handleSubmit} onReset={handleResetClick}>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
