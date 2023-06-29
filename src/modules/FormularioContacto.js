@@ -25,14 +25,14 @@ function FormularioContacto() {
         setConfirmarReset(false);
     };
 
-    function handleSubmit(event){
-        event.preventDefault();
+    function handleSubmit(e){
+        e.preventDefault();
 
         const data = { 
-            nombres: event.target.nombres.value,
-            apellidos: event.target.apellidos.value,
-            email: event.target.email.value,
-            telefono: event.target.telefono.value
+            nombres: e.target.nombres.value,
+            apellidos: e.target.apellidos.value,
+            email: e.target.email.value,
+            telefono: e.target.telefono.value
         };
 
         fetch('https://hooks.zapier.com/hooks/catch/15793138/3drnxcr/', {
