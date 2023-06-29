@@ -25,6 +25,29 @@ function FormularioContacto() {
         setConfirmarReset(false);
     };
 
+    const [form, setForm] = useState({
+        nombres: "",
+        apellidos: "",
+        email: "",
+        telefono: "",
+    });
+
+    const handleChange = (e) => {
+        setForm({ ...form, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        fetch('https://hooks.zapier.com/hooks/catch/15793138/3dimzst/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(form)
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch((error) => console.error('Error:', error));
+    };
+
     return (
         <div className="contenedor-formulario-contacto">
         <AnimatePresence>
@@ -48,13 +71,15 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form name="contact" onReset={handleResetClick} netlify>
+        <form name="contact" onSubmit={handleSubmit} onReset={handleResetClick}>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
                 required: true,
                 })}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.nombres}
+                onChange={handleChange}
                 type="text"
                 name="nombres"
                 id="nombres"
@@ -72,6 +97,8 @@ function FormularioContacto() {
                 required: true,
                 })}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.apellidos} 
+                onChange={handleChange}
                 type="text"
                 name="apellidos"
                 id="apellidos"
@@ -92,6 +119,8 @@ function FormularioContacto() {
                 pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
                 })}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.email} 
+                onChange={handleChange}
                 type="email"
                 name="email"
                 id="email"
@@ -117,6 +146,8 @@ function FormularioContacto() {
                 type: number,
                 })}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
+                value={form.telefono} 
+                onChange={handleChange}
                 type="number"
                 name="telefono"
                 id="telefono"
