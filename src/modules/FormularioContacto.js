@@ -1,3 +1,4 @@
+import axios from "axios";
 import { number } from "yup";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
@@ -16,25 +17,18 @@ function FormularioContacto() {
         setConfirmarReset(true);
     };
 
-    const handleSubmit = async (data) => {
-        const response = await fetch(
-        "https://hooks.zapier.com/hooks/catch/15793138/3drl8mg/",
-        {
-            method: "POST",
-            headers: {
-                'nombres': data.nombres,
-                'apellidos': data.apellidos,
-                'email': data.email,
-                'telefono': data.telefono.toString()
-            },
-            body: JSON.stringify(data),
-        }
-        );
+    const [formData, setFormData] = useState({ nombres: 'Juan', apellidos: 'Jaramillo', email: 'info@juanjaramillo.tech', telefono: '3218856199' });
 
-        if (!response.ok) {
-        console.error("Failed to send data to Zapier");
-        }
-    };
+    const handleChange = e => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
+
+    const handleSubmit = e => {
+        e.preventDefault();
+        axios.post('https://hooks.zapier.com/hooks/catch/15793138/3drl8mg/', formData)
+            .then(response => console.log(response))
+            .catch(error => console.log(error));
+    }
 
     const handleConfirmClick = () => {
         document.querySelector("form").reset();
@@ -74,6 +68,8 @@ function FormularioContacto() {
                 {...register("nombres", {
                 required: true,
                 })}
+                value={formData.nombres}
+                onChange={handleChange}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="text"
                 name="nombres"
@@ -91,6 +87,8 @@ function FormularioContacto() {
                 {...register("apellidos", {
                 required: true,
                 })}
+                value={formData.apellidos}
+                onChange={handleChange}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="text"
                 name="apellidos"
@@ -111,6 +109,8 @@ function FormularioContacto() {
                 required: true,
                 pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i,
                 })}
+                value={formData.email}
+                onChange={handleChange}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="email"
                 name="email"
@@ -136,6 +136,8 @@ function FormularioContacto() {
                 required: true,
                 type: number,
                 })}
+                value={formData.telefono}
+                onChange={handleChange}
                 className="spartan-medium campo-formulario-contacto transiciones peer"
                 type="number"
                 name="telefono"
