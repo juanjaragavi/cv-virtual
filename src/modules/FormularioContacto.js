@@ -52,7 +52,7 @@ function FormularioContacto() {
             .then(response => response.json())
             .then(data => console.log(data))
             .catch((error) => console.error('Error:', error));
-        };
+    };
 
     return (
         <div className="contenedor-formulario-contacto">
