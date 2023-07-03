@@ -102,7 +102,7 @@ function About() {
         <Columna style={sinBorde}>
           <LogosFlotantes />
           <FotoSinBorde
-            src={AWSUrl.URL + "ejemplo-eliminar.png"}
+            src={AWSUrl.URL + "ejemplo-eliminar.webp"}
             title={t("AltFotoInternas.title", { framework: "React" })}
             alt={t("AltFotoInternas.title", { framework: "React" })}
           />
@@ -345,7 +345,7 @@ function About() {
           >
             <FotoBorde
               className="img-circular-borde-rosa-internas transiciones"
-              src={AWSUrl.URL + "servicios-landing-tech.jpg"}
+              src={AWSUrl.URL + "servicios-landing-tech.webp"}
               title={t("AltFotoInternas.title", { framework: "React" })}
               alt={t("AltFotoInternas.title", { framework: "React" })}
             />

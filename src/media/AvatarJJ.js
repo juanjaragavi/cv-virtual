@@ -41,7 +41,7 @@ function AvatarJJDinamico() {
                 >
                 <span className="inline-flex items-baseline">
                     <img
-                    src={AWSUrl.URL+'avatar.jpg'}
+                    src={AWSUrl.URL+'avatar.webp'}
                     alt={t("AltAvatarJJ.title", { framework: "React" })}
                     title={t("AltAvatarJJ.title", { framework: "React" })}
                     className="self-center w-5 h-5 rounded-full mr-1 mb-0.5"

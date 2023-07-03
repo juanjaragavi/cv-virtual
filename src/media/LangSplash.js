@@ -71,7 +71,7 @@ function LangSplash({
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
                 alt={t("AltEnLang.title", { framework: "React" })}
-                src={AWSUrl.URL + "uk.png"}
+                src={AWSUrl.URL + "uk.webp"}
                 title={t("AltEnLang.title", { framework: "React" })}
               />
             }
@@ -90,7 +90,7 @@ function LangSplash({
               <img
                 className="icono-language-switcher mb-1.5 ml-0"
                 alt={t("AltEsLang.title", { framework: "React" })}
-                src={AWSUrl.URL + "spain.png"}
+                src={AWSUrl.URL + "spain.webp"}
                 title={t("AltEsLang.title", { framework: "React" })}
               />
             }

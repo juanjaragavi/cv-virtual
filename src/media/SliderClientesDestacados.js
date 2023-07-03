@@ -11,8 +11,8 @@ const items = [
             description:
             "DescripcionClienteDestacado1.title",
             date: "FechaClienteDestacado1.title",
-            img: "logo-coca-cola-femsa-destacados.png",
-            imgDark: "logo-coca-cola-femsa-destacados-dark.png",
+            img: "logo-coca-cola-femsa-destacados.webp",
+            imgDark: "logo-coca-cola-femsa-destacados-dark.webp",
         },
         {
             id: 2,
@@ -20,8 +20,8 @@ const items = [
             description:
             "DescripcionClienteDestacado2.title",
             date: "FechaClienteDestacado2.title",
-            img: "logo-g4s-destacados.png",
-            imgDark: "logo-g4s-destacados-dark.png",
+            img: "logo-g4s-destacados.webp",
+            imgDark: "logo-g4s-destacados-dark.webp",
         },
         {
             id: 3,
@@ -29,8 +29,8 @@ const items = [
             description:
             "DescripcionClienteDestacado3.title",
             date: "FechaClienteDestacado3.title",
-            img: "logo-subway-destacados.png",
-            imgDark: "logo-g4s-destacados-dark.png",
+            img: "logo-subway-destacados.webp",
+            imgDark: "logo-subway-destacados-dark.webp",
         },
         {
             id: 4,
@@ -38,8 +38,8 @@ const items = [
             description:
             "DescripcionClienteDestacado4.title",
             date: "FechaClienteDestacado4.title",
-            img: "logo-herdez-destacados.png",
-            imgDark: "logo-g4s-destacados-dark.png",
+            img: "logo-herdez-destacados.webp",
+            imgDark: "logo-herdez-destacados-dark.webp",
         },
         {
             id: 5,
@@ -47,8 +47,8 @@ const items = [
             description:
             "DescripcionClienteDestacado5.title",
             date: "FechaClienteDestacado5.title",
-            img: "logo-el-corte-ingles-destacados.png",
-            imgDark: "logo-g4s-destacados-dark.png",
+            img: "logo-el-corte-ingles-destacados.webp",
+            imgDark: "logo-herdez-destacados-dark.webp",
         },
     ];
     

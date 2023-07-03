@@ -141,22 +141,22 @@ function Work() {
               }}
             >
               <FotoSinBorde
-                src={AWSUrl.URL + "1-generated-images.jpg"}
+                src={AWSUrl.URL + "1-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
               <FotoSinBorde
-                src={AWSUrl.URL + "2-generated-images.jpg"}
+                src={AWSUrl.URL + "2-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
               <FotoSinBorde
-                src={AWSUrl.URL + "3-generated-images.jpg"}
+                src={AWSUrl.URL + "3-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
               <FotoSinBorde
-                src={AWSUrl.URL + "4-generated-images.jpg"}
+                src={AWSUrl.URL + "4-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
@@ -177,22 +177,22 @@ function Work() {
               }}
             >
               <FotoSinBorde
-                src={AWSUrl.URL + "5-generated-images.jpg"}
+                src={AWSUrl.URL + "5-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
               <FotoSinBorde
-                src={AWSUrl.URL + "6-generated-images.jpg"}
+                src={AWSUrl.URL + "6-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
               <FotoSinBorde
-                src={AWSUrl.URL + "7-generated-images.jpg"}
+                src={AWSUrl.URL + "7-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
               <FotoSinBorde
-                src={AWSUrl.URL + "8-generated-images.jpg"}
+                src={AWSUrl.URL + "8-generated-images.webp"}
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
@@ -243,7 +243,7 @@ function Work() {
               <div className="flex flex-col">
                 <FotoSinBorde
                   style={fotosRedondeadas}
-                  src={AWSUrl.URL + "iAConsultoria-1.jpg"}
+                  src={AWSUrl.URL + "iAConsultoria-1.webp"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
@@ -254,7 +254,7 @@ function Work() {
               <div className="flex flex-col">
                 <FotoSinBorde
                   style={fotosRedondeadas}
-                  src={AWSUrl.URL + "iAConsultoria-2.jpg"}
+                  src={AWSUrl.URL + "iAConsultoria-2.webp"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
@@ -265,7 +265,7 @@ function Work() {
               <div className="flex flex-col">
                 <FotoSinBorde
                   style={fotosRedondeadas}
-                  src={AWSUrl.URL + "iAConsultoria-3.jpg"}
+                  src={AWSUrl.URL + "iAConsultoria-3.webp"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
@@ -331,7 +331,7 @@ function Work() {
                 </h4>
                 <FotoSinBorde
                   src={
-                    AWSUrl.URL + "Montajes-Dispositivos-UI-UX-ZIONE-Shop.png"
+                    AWSUrl.URL + "Montajes-Dispositivos-UI-UX-ZIONE-Shop.webp"
                   }
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
@@ -359,7 +359,7 @@ function Work() {
                   {t("UXUIDesignProject3.title", { framework: "React" })}
                 </h4>
                 <FotoSinBorde
-                  src={AWSUrl.URL + "Montajes Dispositivos UI-UX-3.png"}
+                  src={AWSUrl.URL + "Montajes Dispositivos UI-UX-3.webp"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />
@@ -382,7 +382,7 @@ function Work() {
                   {t("UXUIDesignProject2.title", { framework: "React" })}
                 </h4>
                 <FotoSinBorde
-                  src={AWSUrl.URL + "Montajes Dispositivos UI-UX-2.png"}
+                  src={AWSUrl.URL + "Montajes Dispositivos UI-UX-2.webp"}
                   title={t("AltFotoInternas.title", { framework: "React" })}
                   alt={t("AltFotoInternas.title", { framework: "React" })}
                 />

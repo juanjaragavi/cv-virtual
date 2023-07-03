@@ -44,7 +44,7 @@ export default function LangSwitcherButtons({ animateSwitcher }) {
         <img
           className="icono-language-switcher"
           alt={t("AltEnLang.title", { framework: "React" })}
-          src={AWSUrl.URL + "uk.png"}
+          src={AWSUrl.URL + "uk.webp"}
           title={t("AltEnLang.title", { framework: "React" })}
         />
         <p>{t("English.title", { framework: "React" })}</p>
@@ -70,7 +70,7 @@ export default function LangSwitcherButtons({ animateSwitcher }) {
         <img
           className="icono-language-switcher"
           alt={t("AltEsLang.title", { framework: "React" })}
-          src={AWSUrl.URL + "spain.png"}
+          src={AWSUrl.URL + "spain.webp"}
           title={t("AltEsLang.title", { framework: "React" })}
         />
         <p>{t("Spanish.title", { framework: "React" })}</p>
