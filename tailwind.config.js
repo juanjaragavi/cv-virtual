@@ -9,9 +9,9 @@ module.exports = {
         "league-spartan": ['"League Spartan"', "sans-serif"],
       },
       backgroundImage: {
-        dark: "url('https://storage.googleapis.com/juanjaramillo/fondo-hero-dark-1440.webp')",
+        dark: "url('https://storage.googleapis.com/files.juanjaramillo.tech/fondo-hero-dark-1440.webp')",
         light:
-          "url('https://storage.googleapis.com/juanjaramillo/fondo-hero-light-1440.webp')",
+          "url('https://storage.googleapis.com/files.juanjaramillo.tech/fondo-hero-light-1440.webp')",
         logodark:
           "url('https://juanjaramillo.s3.amazonaws.com/assets/logo-juan-jaramillo.png')",
         logolight:
