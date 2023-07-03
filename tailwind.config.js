@@ -13,11 +13,11 @@ module.exports = {
         light:
           "url('https://storage.googleapis.com/files.juanjaramillo.tech/fondo-hero-light-1440.webp')",
         logodark:
-          "url('https://juanjaramillo.s3.amazonaws.com/assets/logo-juan-jaramillo.png')",
+          "url('https://storage.googleapis.com/files.juanjaramillo.tech/logo-juan-jaramillo.webp')",
         logolight:
-          "url('https://juanjaramillo.s3.amazonaws.com/assets/logo-juan-jaramillo-light.png')",
+          "url('https://storage.googleapis.com/files.juanjaramillo.tech/logo-juan-jaramillo-light.webp')",
         fondomovillight:
-          "url('https://juanjaramillo.s3.amazonaws.com/assets/fondo-hero-light-1440.jpg')",
+          "url('https://storage.googleapis.com/files.juanjaramillo.tech/fondo-hero-light-1440.webp')",
       },
     },
   },
