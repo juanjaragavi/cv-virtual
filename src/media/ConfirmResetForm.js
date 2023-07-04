@@ -38,31 +38,28 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
       >
         <div className="contenedor-logo-y-switcher-selector-idiomas">
           <h2 className="titulo-importante-reset-formulario-contacto">
-            {t("TituloImportanteConfirmResetForm.title", { framework: "React" })}
+            {t("TituloImportanteConfirmResetForm.title", {
+              framework: "React",
+            })}
           </h2>
           <svg
             className="icono-importante-reset-formulario-contacto"
-            viewBox="0 0 24 24"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            viewBox="0 0 38 38"
           >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-            <path d="M12 8v4"></path>
-            <path d="M12 16h.01"></path>
+            <path d="M16 0c-8.836 0-16 7.163-16 16s7.163 16 16 16c8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 30.032c-7.72 0-14-6.312-14-14.032s6.28-14 14-14 14 6.28 14 14-6.28 14.032-14 14.032zM22.386 10.146l-9.388 9.446-4.228-4.227c-0.39-0.39-1.024-0.39-1.415 0s-0.391 1.023 0 1.414l4.95 4.95c0.39 0.39 1.024 0.39 1.415 0 0.045-0.045 0.084-0.094 0.119-0.145l9.962-10.024c0.39-0.39 0.39-1.024 0-1.415s-1.024-0.39-1.415 0z"></path>
           </svg>
         </div>
         <div>
           <h2 className="titulo-selecciona-idioma">
             {t("TitleConfirmResetForm.title", { framework: "React" })}
           </h2>
-          <h4 className="-mt-0.5 spartan-light text-xl text-center leading-6">
+          <h4 className="spartan-light -mt-0.5 text-center text-xl leading-6">
             {t("SubTitleConfirmResetForm.title", { framework: "React" })}
           </h4>
         </div>
         <div className="contenedor-botones-idioma">
           <ConfResetBtn
-            className="group btn-aceptar-reset-formulario-contacto transiciones spartan-medium estilos-interactivos-botones"
+            className="btn-aceptar-reset-formulario-contacto transiciones spartan-medium estilos-interactivos-botones group"
             leftIcon={
               <svg
                 className="icono-aceptar-reset-formulario-contacto transiciones icono-language-switcher"
@@ -84,7 +81,7 @@ function ConfirmResetForm({ onClickAccept, onClickCancel, className }) {
             }}
           />
           <ConfResetBtn
-            className="group spartan-medium btn-cancelar-reset-formulario-contacto transiciones estilos-interactivos-botones"
+            className="spartan-medium btn-cancelar-reset-formulario-contacto transiciones estilos-interactivos-botones group"
             leftIcon={
               <svg
                 className="icono-cancelar-reset-formulario-contacto transiciones icono-language-switcher"

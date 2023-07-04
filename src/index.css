@@ -472,10 +472,10 @@
         @apply text-red-500 mt-3 -mb-3 text-center;
       }
       .contenedor-botones-formulario-contacto {
-        @apply flex space-x-1 px-2;
+        @apply grid justify-center align-middle px-2;
       }
       .boton-enviar-formulario-contacto {
-        @apply my-3 pt-3 pb-2 hover:text-green-500 hover:border-green-500 cursor-pointer;
+        @apply w-auto min-w-[15vw] my-3 pt-3 pb-2 hover:text-green-500 hover:border-green-500 cursor-pointer;
       }
       .boton-restablecer-formulario-contacto {
         @apply my-3 pt-3 pb-2 hover:text-red-500 hover:border-red-500 cursor-pointer;
@@ -488,13 +488,13 @@
       }
 
       .contenedor-conf-reset-formulario-contacto {
-        @apply grid place-items-center z-[999] w-[70%] h-screen absolute -mt-[4rem] top-0 left-[15%] bg-transparent dark:bg-transparent;
+        @apply grid place-items-center z-[999] w-[70%] h-screen absolute -mt-[20vh] top-0 left-[15%] bg-transparent dark:bg-transparent;
       }
       .titulo-importante-reset-formulario-contacto {
-        @apply font-league-spartan font-bold text-6xl text-center leading-[4rem] ml-5 -mt-1 dark:text-yellow-500 text-red-500;
+        @apply font-league-spartan font-bold text-6xl text-center leading-[4rem] ml-5 -mt-1 dark:text-green-500 text-green-500;
       }
       .icono-importante-reset-formulario-contacto {
-        @apply w-[55px] h-[55px] stroke-2 fill-none dark:stroke-yellow-500 stroke-red-500;
+        @apply w-[50px] h-[50px] stroke-2 fill-none dark:stroke-green-500 text-green-500;
       }
       .btn-aceptar-reset-formulario-contacto {
         @apply text-gray-900 dark:text-white hover:text-green-500 dark:hover:text-green-500 dark:border-white border-gray-900 hover:border-green-500 dark:hover:border-green-500 mt-4 basis-1/2 mr-2;

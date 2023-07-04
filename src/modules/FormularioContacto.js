@@ -12,13 +12,9 @@ function FormularioContacto() {
         formState: { errors },
     } = useForm();
     const [confirmarReset, setConfirmarReset] = useState(false);
-    const handleResetClick = () => {
-        setConfirmarReset(true);
-    };
-
     const handleConfirmClick = () => {
         document.querySelector("form").reset();
-        setConfirmarReset(false);
+        setConfirmarReset(true);
     };
 
     const handleCancelClick = () => {
@@ -50,8 +46,10 @@ function FormularioContacto() {
             body: formData.toString()
             })
             .then(response => response.json())
+            .then(setConfirmarReset(true))
             .then(data => console.log(data))
-            .catch((error) => console.error('Error:', error));
+            .then(console.log('✅ Formulario enviado a Zapier a para el flujo ✅'))
+            .catch((error) => console.error('❌ Error: Por alguna razón, el formulario no se envió. ❌', error));
     };
 
     return (
@@ -77,7 +75,7 @@ function FormularioContacto() {
             </motion.div>
             )}
         </AnimatePresence>
-        <form onSubmit={handleSubmit} onReset={handleResetClick} netlify>
+        <form onSubmit={handleSubmit}>
             <div className="contenedor-campo-formulario-contacto">
             <input
                 {...register("nombres", {
@@ -183,13 +181,6 @@ function FormularioContacto() {
                 type="submit"
             >
                 {t("BtnEnviarFormContacto.title", { framework: "React" })}
-            </button>
-            <button
-                className="spartan-medium boton-restablecer-formulario-contacto boton-idioma transiciones estilos-interactivos-botones borde-redondeado"
-                type="button"
-                onClick={handleResetClick}
-            >
-                {t("BtnResetFormContacto.title", { framework: "React" })}
             </button>
             </div>
         </form>

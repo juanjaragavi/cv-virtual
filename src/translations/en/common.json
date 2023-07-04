@@ -333,13 +333,13 @@
         "title": "CANCEL"
     },
     "TitleConfirmResetForm": {
-        "title": "Are you sure to reset this Form?"
+        "title": "Your Form has been successfully submitted."
     },
     "SubTitleConfirmResetForm": {
-        "title": "This action cannot be undone."
+        "title": "We will contact you very soon, thank you!"
     },
     "TituloImportanteConfirmResetForm": {
-        "title": "Heads Up"
+        "title": "Success!"
     },
     
 
