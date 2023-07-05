@@ -14,7 +14,7 @@ const solutions = [
   },
   {
     name: "WHATSAPP",
-    href: "https://wa.link/9emctf/",
+    href: "https://wa.link/5twaug/",
     icon: IconBrandWhatsapp,
     target: "_blank",
   },

@@ -19,7 +19,7 @@ const itemVariants = {
 function NavMovil() {
   const { t } = useTranslation("common");
   const whatsAppWeb = () => {
-    window.open("https://wa.link/9emctf/", "_blank");
+    window.open("https://wa.link/5twaug/", "_blank");
   };
   const Home = () => {
     window.open("/", "_self");

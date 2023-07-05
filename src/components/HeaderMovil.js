@@ -27,7 +27,7 @@ function HeaderMovil({ animateHeaderMovil }) {
   const [isOpen, setIsOpen] = useState(false);
   const [activeComponent, setActiveComponent] = useState(null);
   const whatsAppWeb = (callback) => {
-    window.open("https://wa.link/9emctf/", "_blank");
+    window.open("https://wa.link/5twaug/", "_blank");
     if (callback) {
       callback();
     }

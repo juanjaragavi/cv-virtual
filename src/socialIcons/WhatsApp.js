@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 const whatsAppWeb = () => {
-  window.open("https://wa.link/9emctf/", "_blank");
+  window.open("https://wa.link/5twaug/", "_blank");
 };
 
 function WhatsApp() {
