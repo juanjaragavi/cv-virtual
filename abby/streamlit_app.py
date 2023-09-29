@@ -31,7 +31,7 @@ with st.sidebar:
     top_p = st.sidebar.slider('top_p', min_value=0.01,
             max_value=1.0, value=0.9, step=0.01)
     max_length = st.sidebar.slider(
-        'max_length', min_value=32, max_value=128, value=120, step=8)
+        'max_length', min_value=32, max_value=1024, value=120, step=8)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
