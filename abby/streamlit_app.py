@@ -1,6 +1,9 @@
 import streamlit as st
 import replicate
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # App title
 st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello, dear! I'm Abby")
@@ -8,9 +11,9 @@ st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello, dear! I'm Abby")
 # Replicate Credentials
 with st.sidebar:
     st.title("🙋🏻‍♀️ 💬 Hello, dear! I'm Abby")
-    if 'REPLICATE_API_TOKEN' in st.secrets:
+    replicate_api = os.environ.get('REPLICATE_API_TOKEN')  # Get the API token from environment variable
+    if replicate_api:
         st.success('API key already provided!', icon='✅')
-        replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
         replicate_api = st.text_input(
             'Enter Replicate API token:', type='password')
@@ -30,7 +33,7 @@ with st.sidebar:
     temperature = st.sidebar.slider(
         'temperature', min_value=0.01, max_value=5.0, value=0.1, step=0.01)
     top_p = st.sidebar.slider('top_p', min_value=0.01,
-                              max_value=1.0, value=0.9, step=0.01)
+            max_value=1.0, value=0.9, step=0.01)
     max_length = st.sidebar.slider(
         'max_length', min_value=32, max_value=128, value=120, step=8)
 
