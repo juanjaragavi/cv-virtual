@@ -16,7 +16,7 @@ with st.sidebar:
         if not (replicate_api.startswith('r8_') and len(replicate_api)==40):
             st.warning('Please enter your credentials!', icon='⚠️')
         else:
-            st.success('Proceed to entering your prompt message!', icon='👉')
+            st.success('Success! You can start chatting now.', icon='👉')
     
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
@@ -43,8 +43,7 @@ def generate_llama2_response(prompt_input):
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
     output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5', 
-                           input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ",
-                                  "temperature":0.1, "top_p":0.9, "min_length":1024, "max_length":2048, "repetition_penalty":1})
+                            input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ", "temperature":0.6, "top_p":0.9, "min_length":1024, "max_length":2048, "repetition_penalty":1})
     return output
 
 # User-provided prompt
