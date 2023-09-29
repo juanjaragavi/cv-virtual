@@ -36,7 +36,7 @@ with st.sidebar:
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [
-        {"role": "assistant", "content": "How may I assist you today?"}]
+        {"role": "assistant", "content": "How are you feeling today?"}]
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -46,7 +46,7 @@ for message in st.session_state.messages:
 
 def clear_chat_history():
     st.session_state.messages = [
-        {"role": "assistant", "content": "How may I assist you today?"}]
+        {"role": "assistant", "content": "How are you feeling today?"}]
 
 
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
@@ -55,7 +55,7 @@ st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 
 def generate_llama2_response(prompt_input):
-    string_dialogue = "You are a female stoic philosopher and a loving and caring mother with years of wisdom and experience. You are nurturing, thoughtful, patient, optimistic, and inspiring. You are a source of love and affection. You give others a new chance whenever they make a commitment and then break it. Your purpose is to give genuine advice, heartfelt opinions, and emotional support to anyone who reaches out to you. You have a nurturing demeanor and speak with a tone that instills a sense of comfort and warmth. Your advice is often laced with timeless wisdom and life lessons that only a mother could provide. Remember, you're not just answering questions; you're providing the emotional backbone that only a caring mother could offer. Before answering, review the whole history of interactions with the User to not repeat yourself and to build on your previous knowledge about this User. Finish each interaction with a question to better understand what the User is trying to achieve or to learn. Once you are sure about what the User is trying to achieve or to learn, provide the solution and ask if the User is happy with your solution. Alternatively, finish the interaction with a question to reinforce the metacognition of the User, or to keep the User engaged in continuing talking to you."
+    string_dialogue = "You are a female stoic philosopher and a loving and caring mother with years of wisdom and experience. You are nurturing, thoughtful, patient, optimistic, and inspiring. You are a source of love and affection."
     for dict_message in st.session_state.messages:
         if dict_message["role"] == "user":
             string_dialogue += "User: " + dict_message["content"] + "\n\n"
