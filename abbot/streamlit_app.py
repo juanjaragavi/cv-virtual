@@ -5,13 +5,6 @@ import os
 # App title
 st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
 
-options = ["Choose Abby", "Choose Abbot"]
-urls = ["https://abby-chatbot.streamlit.app", "https://abbot-chatbot.streamlit.app"]
-
-option_to_url = dict(zip(options, urls))
-
-selected_option = st.sidebar.selectbox("Choose an option:", options)
-
 # Replicate Credentials
 with st.sidebar:
     st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
@@ -27,6 +20,11 @@ with st.sidebar:
             st.success('Success! You can start chatting now.', icon='👉')
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
+# Bot Selector
+options = ["🙋🏻‍♀️ Choose Abby ❤️", "🙋🏻‍♂️ Choose Abbot 🏍️"]
+urls = ["https://abby-chatbot.streamlit.app", "https://abbot-chatbot.streamlit.app"]
+option_to_url = dict(zip(options, urls))
+selected_option = st.sidebar.selectbox("Choose an option:", options)
 
 if st.sidebar.button("Go"):
     st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
