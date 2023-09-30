@@ -48,7 +48,7 @@ def clear_chat_history():
 empty1 = st.sidebar.empty()
 empty2 = st.sidebar.empty()
 empty3 = st.sidebar.empty()
-clear_button = empty1.button('Clear Chat History', on_click=clear_chat_history)
+clear_button = empty3.button('Clear Chat History', on_click=clear_chat_history)
 # st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # Function for generating LLaMA2 response
