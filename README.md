@@ -1,10 +1,10 @@
 # Hi! I'm Juan Jaramillo
 
-I am a Frontend & Backend Developer who is currently based in Bogotá, Colombia. I am ready to turn your Moblile App Project into Reality!.
+I am a Prompt Engineer, AI Expert and Full-Stack Developer who is currently based in Bogotá, Colombia. I am ready to turn your Artificial Intelligence project into Reality!.
 
 ## 👨🏻‍💻 About Me:
 
-UX & UI Design Lead • Backend & Frontend Developer • Web & App Developer • Specialist in Digital Marketing • 16 Years of Experience in Digital & Tech.
+I am Juan Jaramillo, an Artificial Intelligence expert with more than 16 years of experience in digital and technology projects. I have worked as a front-end and back-end developer, consultant and digital marketing specialist, collaborating with companies such as Coca-Cola FEMSA, Grupo Herdez and El Corte Inglés. I have also co-founded technology startups and coordinated development teams for web projects and applications.
 
 [![virtual-cv-eng](https://files.juanjaramillo.tech/og-image.webp)](https://juanjaramillo.tech)
 
