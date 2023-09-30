@@ -24,7 +24,7 @@ os.environ['REPLICATE_API_TOKEN'] = replicate_api
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [
-        {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
+        {"role": "assistant", "content": "Just say the word. I'm here to help."}]
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -34,7 +34,7 @@ for message in st.session_state.messages:
 
 def clear_chat_history():
     st.session_state.messages = [
-        {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
+        {"role": "assistant", "content": "Just say the word. I'm here to help."}]
 
 
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
@@ -64,7 +64,7 @@ if prompt := st.chat_input(disabled=not replicate_api):
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
-        with st.spinner("Just one second, dear..."):
+        with st.spinner("Hold on, man..."):
             response = generate_llama2_response(prompt)
             placeholder = st.empty()
             full_response = ''
