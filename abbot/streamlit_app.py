@@ -1,7 +1,6 @@
 import streamlit as st
 import replicate
 import os
-import webbrowser
 
 # App title
 st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
@@ -15,8 +14,8 @@ selected_option = st.sidebar.selectbox("Choose an option:", options)
 
 # Replicate Credentials
 if st.sidebar.button("Go"):
-    webbrowser.open_new_tab(option_to_url[selected_option])
-    
+    st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to go to {selected_option}</a>', unsafe_allow_html=True)
+
 with st.sidebar:
     st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
     if 'REPLICATE_API_TOKEN' in st.secrets:
