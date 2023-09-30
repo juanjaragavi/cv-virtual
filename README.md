@@ -6,7 +6,7 @@ I am a Frontend & Backend Developer who is currently based in Bogotá, Colombia.
 
 UX & UI Design Lead • Backend & Frontend Developer • Web & App Developer • Specialist in Digital Marketing • 16 Years of Experience in Digital & Tech.
 
-[![virtual-cv-eng](https://files.juanjaramillo.tech/og-image.webp)](https://juanjaramillo.tech)
+[![virtual-cv-eng](https://user-images.githubusercontent.com/125833402/224641661-cfcadcb6-4fdc-4936-b265-e32e064f1c91.webp)](https://linkedin.com/in/juan-jaramillo-tradebog)
 
 ## 👀 Want to learn more?
 
