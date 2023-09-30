@@ -27,6 +27,9 @@ urls = ["https://abbot-chatbot.streamlit.app"]
 option_to_url = dict(zip(options, urls))
 selected_option = st.sidebar.selectbox("Choose an option:", options)
 
+if st.sidebar.button("Go"):
+    st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
+
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [
