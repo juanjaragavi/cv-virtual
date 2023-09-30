@@ -25,7 +25,7 @@ os.environ['REPLICATE_API_TOKEN'] = replicate_api
 options = ["🙋🏻‍♀️ Choose Abby ❤️"]
 urls = ["https://abby-chatbot.streamlit.app"]
 option_to_url = dict(zip(options, urls))
-selected_option = st.sidebar.selectbox("Choose an option:", options)
+selected_option = st.sidebar.selectbox("Who do you want to talk to?", options)
 
 if st.sidebar.button("Go"):
     st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
