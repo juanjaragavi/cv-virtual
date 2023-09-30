@@ -45,11 +45,7 @@ def clear_chat_history():
     st.session_state.messages = [
         {"role": "assistant", "content": "Just say the word. I'm here to help."}]
     
-empty1 = st.sidebar.empty()
-empty2 = st.sidebar.empty()
-empty3 = st.sidebar.empty()
-clear_button = empty3.button('Clear Chat History', on_click=clear_chat_history)
-# st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
+st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # Function for generating LLaMA2 response
 # Refactored from https://github.com/a16z-infra/llama2-chatbot
