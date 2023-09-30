@@ -22,8 +22,8 @@ with st.sidebar:
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
-options = ["🙋🏻‍♀️ Choose Abby ❤️", "🙋🏻‍♂️ Choose Abbot 🏍️"]
-urls = ["https://abby-chatbot.streamlit.app", "https://abbot-chatbot.streamlit.app"]
+options = ["🙋🏻‍♀️ Choose Abby ❤️"]
+urls = ["https://abby-chatbot.streamlit.app"]
 option_to_url = dict(zip(options, urls))
 selected_option = st.sidebar.selectbox("Choose an option:", options)
 
