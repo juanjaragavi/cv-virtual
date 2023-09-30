@@ -13,9 +13,6 @@ option_to_url = dict(zip(options, urls))
 selected_option = st.sidebar.selectbox("Choose an option:", options)
 
 # Replicate Credentials
-if st.sidebar.button("Go"):
-    st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
-
 with st.sidebar:
     st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
     if 'REPLICATE_API_TOKEN' in st.secrets:
@@ -30,6 +27,9 @@ with st.sidebar:
             st.success('Success! You can start chatting now.', icon='👉')
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
+
+if st.sidebar.button("Go"):
+    st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
