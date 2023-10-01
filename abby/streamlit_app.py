@@ -20,7 +20,7 @@ with st.sidebar:
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
-# Bot Selector
+# Bot Selector DESKTOP
 url = "https://abbot-chatbot.streamlit.app"
 st.sidebar.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♂️ Chat with Abbot 🏍️</button></a>', unsafe_allow_html=True)
 
@@ -28,6 +28,24 @@ st.sidebar.markdown(f'<a href="{url}" target="_blank"><button style="color: whit
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [
         {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
+
+
+# Bot Selector MOBILE
+hide_sidebar_style = """
+<style>
+@media (max-width: 800px) {
+    .sidebar .sidebar-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+</style>
+"""
+
+st.markdown(hide_sidebar_style, f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♂️ Chat with Abbot 🏍️</button></a>', unsafe_allow_html=True)
+
 
 # Display or clear chat messages
 for message in st.session_state.messages:
@@ -58,7 +76,7 @@ def generate_llama2_response(prompt_input):
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
     output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5',
-                        input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ", "temperature": 0.6, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
+                           input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ", "temperature": 0.6, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
     return output
 
 
