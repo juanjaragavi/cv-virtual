@@ -2,9 +2,6 @@ import streamlit as st
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import os
 
-tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
-model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
-
 # App title
 st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
 
@@ -15,21 +12,6 @@ st.title("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
 with st.header("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️"):
     url = "https://abbot-chatbot.streamlit.app"
     st.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♂️ Chat with Abbot 🏍️</button></a>', unsafe_allow_html=True)
-
-# Replicate Credentials
-with st.sidebar:
-    st.title("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
-    if 'REPLICATE_API_TOKEN' in st.secrets:
-        replicate_api = st.secrets['REPLICATE_API_TOKEN']
-    else:
-        replicate_api = st.text_input(
-            'Enter Replicate API token:', type='password')
-        if not (replicate_api.startswith('r8_') and len(replicate_api) == 40):
-            st.warning('Please enter your credentials!', icon='⚠️')
-        else:
-            st.success('Success! You can start chatting now.', icon='👉')
-
-os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
 url = "https://abbot-chatbot.streamlit.app"
@@ -68,6 +50,9 @@ def generate_llama2_response(prompt_input):
             string_dialogue += "User: " + dict_message["content"] + "\n\n"
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
+
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
+    model = AutoModelForCausalLM.from_pretrained("meta-llama/Llama-2-7b-chat-hf")
 
     # Tokenize the prompt
     inputs = tokenizer.encode(string_dialogue + prompt_input + "Assistant: ", return_tensors='pt')
