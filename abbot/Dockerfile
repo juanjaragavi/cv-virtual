@@ -13,14 +13,14 @@ RUN apt-get update && apt-get install -y \
 
 RUN git clone https://github.com/juanjaragavi/cv-virtual.git .
 
-RUN cd abby
+RUN cd abbot
 
 COPY . .
 
 RUN pip3 install -r requirements.txt
 
-EXPOSE 8505
+EXPOSE 8506
 
-HEALTHCHECK CMD curl --fail http://localhost:8505/_stcore/health
+HEALTHCHECK CMD curl --fail http://localhost:8506/_stcore/health
 
-ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8505", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8506", "--server.address=0.0.0.0"]
