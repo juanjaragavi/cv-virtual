@@ -6,10 +6,13 @@ import os
 st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
 
 # Add a header
-st.header('🙋🏻‍♀️ 💬 Hello! I\'m Abby ❤️')
+with st.header:
+    st.title('🙋🏻‍♀️ 💬 Hello! I\'m Abby ❤️')
+    def clear_chat_history():
+        st.session_state.messages = [
+            {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
 
-# Add a title
-st.title('🙋🏻‍♀️ 💬 Hello! I\'m Abby ❤️')
+st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # Replicate Credentials
 with st.sidebar:
