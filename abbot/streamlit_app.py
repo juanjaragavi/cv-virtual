@@ -38,8 +38,7 @@ for message in st.session_state.messages:
 def clear_chat_history():
     st.session_state.messages = [
         {"role": "assistant", "content": "Just say the word. I'm here to help."}]
-
-
+    
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # Function for generating LLaMA2 response
@@ -59,14 +58,7 @@ def generate_llama2_response(prompt_input):
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
     output = replicate.run('a16z-infra/llama13b-v2-chat:df7690f1994d94e96ad9d568eac121aecf50684a0b0963b25a41cc40061269e5',
-                        input={
-                            "prompt": f"{string_dialogue} {prompt_input} Assistant: ",
-                            "temperature": 0.7,  # Default: 0.7
-                            "top_p": 0.8,         # Default: 0.8
-                            "min_length": 50,     # Default: 50
-                            "max_length": 200,    # Default: 200
-                            "repetition_penalty": 1.2  # Default: 1.2
-                        })
+                        input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ", "temperature": 0.6, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
     return output
 
 
