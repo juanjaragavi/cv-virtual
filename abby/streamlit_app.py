@@ -71,6 +71,7 @@ if prompt := st.chat_input(disabled=not replicate_api):
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
+        st.title("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
         with st.spinner("Just one second, dear..."):
             response = generate_llama2_response(prompt)
             placeholder = st.empty()
