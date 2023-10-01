@@ -5,6 +5,9 @@ import os
 # App title
 st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
 
+# Add a header
+st.header('🙋🏻‍♂️ 💬 Sup, man! I\'m Abbot 🏍️')
+
 # Replicate Credentials
 with st.sidebar:
     st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
