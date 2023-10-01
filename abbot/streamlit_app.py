@@ -23,7 +23,7 @@ os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
 url = "https://abby-chatbot.streamlit.app"
-st.sidebar.markdown(f'<a href="{url}" target="_blank"><button>🙋🏻‍♀️ CHat with Abby ❤️</button></a>', unsafe_allow_html=True)
+st.sidebar.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: #FF0000; border: none; cursor: pointer; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♀️ Chat with Abby ❤️</button></a>', unsafe_allow_html=True)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
