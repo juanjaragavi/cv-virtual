@@ -3,11 +3,11 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello, dear! I'm Abby ❤️")
+st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
 
 # Replicate Credentials
 with st.sidebar:
-    st.title("🙋🏻‍♀️ 💬 Hello, dear! I'm Abby ❤️")
+    st.title("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
     if 'REPLICATE_API_TOKEN' in st.secrets:
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
