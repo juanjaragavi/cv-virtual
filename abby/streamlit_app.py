@@ -2,17 +2,17 @@ import streamlit as st
 import replicate
 import os
 
+def clear_chat_history():
+    st.session_state.messages = [
+        {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
+
 # App title
 st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
 
 # Add a header
-with st.header:
-    st.title('🙋🏻‍♀️ 💬 Hello! I\'m Abby ❤️')
-    def clear_chat_history():
-        st.session_state.messages = [
-            {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
+st.header('🙋🏻‍♀️ 💬 Hello! I\'m Abby ❤️'):
+st.button('Clear Chat History', on_click=clear_chat_history)
 
-st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
 
 # Replicate Credentials
 with st.sidebar:
@@ -42,11 +42,6 @@ if "messages" not in st.session_state.keys():
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
-
-
-def clear_chat_history():
-    st.session_state.messages = [
-        {"role": "assistant", "content": "Is something bothering you? I'm here to help."}]
 
 
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
