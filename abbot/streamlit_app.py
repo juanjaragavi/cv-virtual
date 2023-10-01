@@ -1,7 +1,6 @@
 import streamlit as st
 import replicate
 import os
-import webbrowser
 
 # App title
 st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
@@ -24,8 +23,7 @@ os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
 url = "https://abby-chatbot.streamlit.app"
-if st.sidebar.button("🙋🏻‍♀️ Chat with Abby ❤️"):
-    webbrowser.open_new_tab(url)
+st.sidebar.markdown(f'<a href="{url}" target="_blank"><button>🙋🏻‍♀️ CHat with Abby ❤️</button></a>', unsafe_allow_html=True)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
