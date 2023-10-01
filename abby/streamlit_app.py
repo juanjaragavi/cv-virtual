@@ -9,7 +9,6 @@ st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello, dear! I'm Abby ❤�
 with st.sidebar:
     st.title("🙋🏻‍♀️ 💬 Hello, dear! I'm Abby ❤️")
     if 'REPLICATE_API_TOKEN' in st.secrets:
-        st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
         replicate_api = st.text_input(
@@ -22,13 +21,8 @@ with st.sidebar:
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
-options = ["🙋🏻‍♂️ Choose Abbot 🏍️"]
-urls = ["https://abbot-chatbot.streamlit.app"]
-option_to_url = dict(zip(options, urls))
-selected_option = st.sidebar.selectbox("Who do you want to talk to?", options)
-
-if st.sidebar.button("Go"):
-    st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
+url = "https://abbot-chatbot.streamlit.app"
+st.sidebar.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♂️ Chat with Abbot 🏍️</button></a>', unsafe_allow_html=True)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
