@@ -9,7 +9,6 @@ st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍�
 with st.sidebar:
     st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
     if 'REPLICATE_API_TOKEN' in st.secrets:
-        st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']
     else:
         replicate_api = st.text_input(
