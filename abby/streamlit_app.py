@@ -20,23 +20,9 @@ with st.sidebar:
 
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
-# Bot Selector MOBILE
-hide_sidebar_style = """
-<style>
-@media (max-width: 800px) {
-    .sidebar .sidebar-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-</style>
-"""
-
-# Bot Selector DESKTOP
+# Bot Selector
 url = "https://abbot-chatbot.streamlit.app"
-st.sidebar.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♂️ Chat with Abbot 🏍️</button></a>', hide_sidebar_style, unsafe_allow_html=True)
+st.sidebar.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♂️ Chat with Abbot 🏍️</button></a>', unsafe_allow_html=True)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
