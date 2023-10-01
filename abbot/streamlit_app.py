@@ -24,11 +24,8 @@ os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
 url = "https://abby-chatbot.streamlit.app"
-if st.sidebar.button("🙋🏻‍♀️ Choose Abby ❤️"):
+if st.sidebar.button("🙋🏻‍♀️ Chat with Abby ❤️"):
     webbrowser.open_new_tab(url)
-
-if st.sidebar.button("Go"):
-    st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
 
 # Store LLM generated responses
 if "messages" not in st.session_state.keys():
