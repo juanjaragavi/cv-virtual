@@ -6,7 +6,7 @@ import os
 st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
 
 # Header title
-st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
+st.title("🙋🏻‍♂️ 💬 Sup! I'm Abbot 🏍️")
 
 # Add a header
 with st.header("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️"):
