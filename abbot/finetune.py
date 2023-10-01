@@ -6,7 +6,7 @@ training = replicate.trainings.create(
         "train_data": "https://gist.githubusercontent.com/nateraw/055c55b000e4c37d43ce8eb142ccc0a2/raw/d13853512fc83e8c656a3e8b6e1270dd3c398e77/samsum.jsonl",
         "num_train_epochs": 1
     },
-    destination="juanjaragavi/abby-llama-2-7b-chat"
+    destination="juanjaragavi/abbot-llama-2-7b-chat"
 )
 
 print(training)
