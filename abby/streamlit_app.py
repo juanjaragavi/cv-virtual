@@ -41,7 +41,6 @@ def clear_chat_history():
 
 
 st.sidebar.button('Clear Chat History', on_click=clear_chat_history)
-st.sidebar.markdown(f'<a href="{url}" target="_blank"><button>Clear Chat History</button></a>', unsafe_allow_html=True)
 
 # Function for generating LLaMA2 response
 # Refactored from https://github.com/a16z-infra/llama2-chatbot
