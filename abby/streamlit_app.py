@@ -33,7 +33,7 @@ if "messages" not in st.session_state.keys():
 # Bot Selector MOBILE
 hide_sidebar_style = """
 <style>
-@media (max-width: 800px) {
+@media (min-width: 800px) {
     .sidebar .sidebar-content {
         display: flex;
         flex-direction: column;
