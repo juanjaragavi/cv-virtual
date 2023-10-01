@@ -1,6 +1,7 @@
 import streamlit as st
 import replicate
 import os
+import webbrowser
 
 # App title
 st.set_page_config(page_title="🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
@@ -22,10 +23,9 @@ with st.sidebar:
 os.environ['REPLICATE_API_TOKEN'] = replicate_api
 
 # Bot Selector
-options = ["🙋🏻‍♀️ Choose Abby ❤️"]
-urls = ["https://abby-chatbot.streamlit.app"]
-option_to_url = dict(zip(options, urls))
-selected_option = st.sidebar.selectbox("Who do you want to talk to?", options)
+url = "https://abby-chatbot.streamlit.app"
+if st.sidebar.button("🙋🏻‍♀️ Choose Abby ❤️"):
+    webbrowser.open_new_tab(url)
 
 if st.sidebar.button("Go"):
     st.sidebar.markdown(f'<a href="{option_to_url[selected_option]}" target="_blank">Click here to  {selected_option}</a>', unsafe_allow_html=True)
