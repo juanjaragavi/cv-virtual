@@ -5,6 +5,9 @@ import os
 # App title
 st.set_page_config(page_title="🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
 
+# Header title
+st.title("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️")
+
 # Add a header
 with st.header("🙋🏻‍♀️ 💬 Hello! I'm Abby ❤️"):
     url = "https://abbot-chatbot.streamlit.app"
