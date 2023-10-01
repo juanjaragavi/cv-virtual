@@ -11,7 +11,7 @@ st.title("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️")
 # Add a header
 with st.header("🙋🏻‍♂️ 💬 Sup, man! I'm Abbot 🏍️"):
     url = "https://abby-chatbot.streamlit.app"
-    st.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♀️ 💬 Hello! I\'m Abby ❤️</button></a>', unsafe_allow_html=True)
+    st.markdown(f'<a href="{url}" target="_blank"><button style="color: white; background-color: transparent; border: 0.5px solid rgba(255, 255, 255, 0.5); border-radius: 10px; cursor: pointer; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px;">🙋🏻‍♀️ Chat with Abby ❤️</button></a>', unsafe_allow_html=True)
 
 # Replicate Credentials
 with st.sidebar:
