@@ -89,7 +89,7 @@ def generate_llama2_response(prompt_input):
             string_dialogue += "User: " + dict_message["content"] + "\n\n"
         else:
             string_dialogue += "Abbot: " + dict_message["content"] + "\n\n"
-    output = replicate.run('juanjaragavi/abbot-llama-2-7b-chat:202842e98e4f8cb8e2b36d40244b551fd6f16be072489ede81e304d3379b68c4',
+    output = replicate.run('juanjaragavi/abbot-llama-2-7b-chat:ecbc5ec8af6aa4270fcde680fbd7a8491f49397d54a9feed3872efb897b34a29',
                         input={"prompt": f"{string_dialogue} {prompt_input} Abbot: ", "temperature": 0.7, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
     return output
 
