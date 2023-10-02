@@ -62,11 +62,11 @@ def generate_llama2_response(prompt_input):
     """
     for dict_message in st.session_state.messages:
         if dict_message["role"] == "user":
-            string_dialogue += dict_message["content"] + "\n\n"
+            string_dialogue += "User:", dict_message["content"] + "\n\n"
         else:
             string_dialogue += dict_message["content"] + "\n\n"
     output = replicate.run('juanjaragavi/abby-llama-2-7b-chat:202842e98e4f8cb8e2b36d40244b551fd6f16be072489ede81e304d3379b68c4',
-                        input={"prompt": f"{string_dialogue} {prompt_input}", "temperature": 0.6, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
+                        input={"prompt": f"{string_dialogue} {prompt_input}, 'Abby: '", "temperature": 0.6, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
     return output
 
 
