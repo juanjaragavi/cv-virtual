@@ -1,4 +1,5 @@
 
+
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #                                                                 #
 #  Juan Jaramillo | Prompt Engineer / Machine Learning Engineer   #
@@ -7,6 +8,12 @@
 #                      +(57) 305 420 6139                         #
 #                                                                 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                                 #
+#        A · B · B · Y   |  Advanced llama-2-7b-chat Chatbot      #
+#                        by ActibJoy                              #
+#                                                                 #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
 
 import streamlit as st
 import replicate
