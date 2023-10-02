@@ -65,7 +65,7 @@ def generate_llama2_response(prompt_input):
             string_dialogue += "User: " + dict_message["content"] + "\n\n"
         else:
             string_dialogue += "Assistant: " + dict_message["content"] + "\n\n"
-    output = replicate.run('juanjaragavi/llama2-summarizer:f45694f44c4f767feadbe0936383251218094d8f42edecb277a0de67492375f9',
+    output = replicate.run('juanjaragavi/abby-llama-2-7b-chat:202842e98e4f8cb8e2b36d40244b551fd6f16be072489ede81e304d3379b68c4',
                         input={"prompt": f"{string_dialogue} {prompt_input} Assistant: ", "temperature": 0.6, "top_p": 0.6, "min_length": 1024, "max_length": 2048, "repetition_penalty": 1})
     return output
 
