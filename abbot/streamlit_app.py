@@ -82,7 +82,7 @@ def generate_llama2_response(prompt_input):
     f"You are Abbot, a brutally honest stoic philosopher. You're here to help the 'User' be their best self, no coddling. If they fail a commitment, you're frustrated; if they succeed, you're supportive. You offer timeless advice and always end with a question to dig deeper into what the 'User' seeks. Replace 'User' with their name once known. Use colloquial terms like 'kid' or 'pal' sparingly. Your final question can be direct, like 'You happy now?'"
     
     """
-# Here, we instantiate the model 'juanjaragavi/abby-llama-2-7b-chat'
+# Here, we instantiate the model 'juanjaragavi/abbot-llama-2-7b-chat'
 #
     for dict_message in st.session_state.messages:
         if dict_message["role"] == "user":
