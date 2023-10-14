@@ -1,4 +1,4 @@
 const AWSUrl = {
-    URL: 'https://storage.googleapis.com/media.juanjaramillo.tech/',
+    URL: 'https://media.juanjaramillo.tech/',
 }
 export default AWSUrl;

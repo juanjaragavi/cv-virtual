@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  juan-jaramillo-service:
+    image: juanjaragavi/cv-virtual:latest
+    container_name: cv-virtual
+    ports:
+      - "3000:3000"
+    volumes:
+      - juan-jaramillo-assets-storage:/usr/src/app/data  # Assuming data is the directory you want to persist within your app directory
+
+volumes:
+  juan-jaramillo-assets-storage:
