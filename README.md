@@ -6,7 +6,7 @@ I am a Prompt Engineer, AI Expert and Full-Stack Developer who is currently base
 
 I am Juan Jaramillo, an Artificial Intelligence expert with more than 16 years of experience in digital and technology projects. I have worked as a front-end and back-end developer, consultant and digital marketing specialist, collaborating with companies such as Coca-Cola FEMSA, Grupo Herdez and El Corte Inglés. I have also co-founded technology startups and coordinated development teams for web projects and applications.
 
-[![virtual-cv-eng](https://static.files.juanjaramillo.tech/og-image.webp)](https://juanjaramillo.tech)
+[![virtual-cv-eng](https://static.files.juanjaramillo.tech/jjcontainer/og-image.webp)](https://juanjaramillo.tech)
 
 ## 👀 Want to learn more?
 
