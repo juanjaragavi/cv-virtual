@@ -4,7 +4,7 @@ import Work from "../pages/Work";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 const variants = {
@@ -59,6 +59,19 @@ const variantsInternas = {
 };
 
 function Header({ animateHeader }) {
+  const [activeComponent, setActiveComponent] = useState("about");
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === "#work") {
+      setActiveComponent("work");
+    } else if (hash === "#contact") {
+      setActiveComponent("contact");
+    } else {
+      setActiveComponent("about");
+    }
+  }, [window.location.hash]);
+
   const [moveItems, setMoveItems] = useState("home");
   return (
     <header className="contenedor-header">
@@ -84,9 +97,9 @@ function Header({ animateHeader }) {
         animate={moveItems}
         variants={variantsInternas}
       >
-        <About />
-        <Work />
-        <Contact />
+        {activeComponent === "about" && <About />}
+        {activeComponent === "work" && <Work />}
+        {activeComponent === "contact" && <Contact />}
       </motion.div>
     </header>
   );
