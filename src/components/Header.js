@@ -4,8 +4,8 @@ import Work from "../pages/Work";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import { motion } from "framer-motion";
-import React, { useState } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
+import React, { useState, useEffect } from "react";
 
 const variants = {
   active: { y: 0, opacity: 1 },
@@ -59,6 +59,30 @@ const variantsInternas = {
 };
 
 function Header({ animateHeader }) {
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (hash === 'work') {
+        setMoveItems('work');
+      } else if (hash === 'about') {
+        setMoveItems('about');
+      } else if (hash === 'contact') {
+        setMoveItems('contact');
+      } else {
+        setMoveItems('home');
+      }
+    };
+  
+    // Call handleHashChange on mount and add the event listener for hash changes
+    handleHashChange();
+    window.addEventListener('hashchange', handleHashChange);
+  
+    // Clean up the event listener when the component unmounts
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+  ;
+
   const [moveItems, setMoveItems] = useState("home");
   return (
     <header className="contenedor-header">
