@@ -1,4 +1,4 @@
 const AWSUrl = {
-    URL: 'https://static.files.juanjaramillo.tech/jjcontainer/',
+    URL: 'https://juan-jaramillo-ai-assets.s3.amazonaws.com/',
 }
 export default AWSUrl;

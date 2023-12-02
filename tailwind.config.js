@@ -9,15 +9,15 @@ module.exports = {
         "league-spartan": ['"League Spartan"', "sans-serif"],
       },
       backgroundImage: {
-        dark: "url('https://static.files.juanjaramillo.tech/jjcontainer/fondo-hero-dark-1440.webp')",
+        dark: "url('https://juan-jaramillo-ai-assets.s3.amazonaws.com/fondo-hero-dark-1440.webp')",
         light:
-          "url('https://static.files.juanjaramillo.tech/jjcontainer/fondo-hero-light-1440.webp')",
+          "url('https://juan-jaramillo-ai-assets.s3.amazonaws.com/fondo-hero-light-1440.webp')",
         logodark:
-          "url('https://static.files.juanjaramillo.tech/jjcontainer/logo-juan-jaramillo.webp')",
+          "url('https://juan-jaramillo-ai-assets.s3.amazonaws.com/logo-juan-jaramillo.webp')",
         logolight:
-          "url('https://static.files.juanjaramillo.tech/jjcontainer/logo-juan-jaramillo-light.webp')",
+          "url('https://juan-jaramillo-ai-assets.s3.amazonaws.com/logo-juan-jaramillo-light.webp')",
         fondomovillight:
-          "url('https://static.files.juanjaramillo.tech/jjcontainer/fondo-hero-light-1440.webp')",
+          "url('https://juan-jaramillo-ai-assets.s3.amazonaws.com/fondo-hero-light-1440.webp')",
       },
     },
   },
