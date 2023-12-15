@@ -92,7 +92,7 @@ function ThemeSwitcher(props) {
                 className="rounded-xl border-solid border-2 border-pink-500 transiciones"
                 width="200"
                 height="200"
-                src={AWSUrl.URL + "qr-code-nuevo.svg"}
+                src="https://storage.googleapis.com/media.juanjaramillo.tech/qr-code-nuevo.svg"
                 title={t("AltFotoInternas.title", { framework: "React" })}
                 alt={t("AltFotoInternas.title", { framework: "React" })}
               />
