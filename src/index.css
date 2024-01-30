@@ -199,7 +199,7 @@
       @apply p-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 -mt-3.5 lg:-mt-1.5 xl:-mt-1 2xl:-mt-1 w-full font-league-spartan font-bold text-5xl sm:text-7xl md:text-6xl lg:text-8xl xl:text-8xl 2xl:text-9xl cursor-none;
     }
     .roles {
-      @apply px-4 sm:px-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 max-w-2xl 2xl:max-w-4xl font-league-spartan dark:text-white font-light text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl;
+      @apply px-4 sm:px-0 md:pl-20 lg:pl-20 xl:pl-20 2xl:pl-20 max-w-2xl 2xl:max-w-4xl font-league-spartan dark:text-white font-light text-xl sm:text-2xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-left;
     }
     .foto-juan-jaramillo {
       @apply md:relative fixed bottom-0 m-0 p-0 sm:ml-0 md:-ml-20 lg:-ml-24 xl:-ml-28 2xl:-ml-28 sm:h-screen md:h-screen lg:h-screen xl:h-screen 2xl:h-screen h-auto w-auto ;
