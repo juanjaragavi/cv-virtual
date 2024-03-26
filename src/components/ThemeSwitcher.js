@@ -1,5 +1,4 @@
 import { useState } from "react";
-import AWSUrl from "../media/AWSUrl";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence } from "framer-motion";
