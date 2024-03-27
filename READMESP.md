@@ -6,7 +6,7 @@ Soy un Prompt Engineer, Machine Learning Engineer, Experto en IA y Desarrollador
 
 Soy Juan Jaramillo, un experto en Inteligencia Artificial con más de 16 años de experiencia en proyectos digitales y tecnológicos. He trabajado como desarrollador front-end y back-end, consultor y especialista en marketing digital, colaborando con empresas como Coca-Cola FEMSA, Grupo Herdez y El Corte Inglés. También he co-fundado startups tecnológicas y coordinado equipos de desarrollo para proyectos y aplicaciones web.
 
-[![cv-virtual-eng](https://juan-jaramillo-ai-assets.s3.amazonaws.com/jjcontainer/og-image.webp)](https://juanjaramillo.tech)
+[![cv-virtual-eng](https://media.juanjaramillo.tech/og-image.webp)](https://juanjaramillo.tech)
 
 ## 👀 ¿Quieres saber más?
 
