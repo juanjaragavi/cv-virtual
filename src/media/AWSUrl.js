@@ -1,4 +1,4 @@
 const AWSUrl = {
-    URL: 'https://media.juanjaramillo.tech/',
+    URL: 'https://media.myparcero.com/',
 }
 export default AWSUrl;
