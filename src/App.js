@@ -6,6 +6,7 @@ import FixedMenu from "./components/FixedMenu";
 import { MantineProvider } from "@mantine/core";
 import SpeechBubble from "./media/SpeechBubble";
 import HeaderMovil from "./components/HeaderMovil";
+import ScrollRestoration from "./components/ScrollRestoration";
 import LangSwitcherButtons from "./media/LangSwitcherButtons";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
   return (
     <main className="App">
       <MantineProvider withGlobalStyles withNormalizeCSS>
+        <ScrollRestoration />
         <Header animateHeader={animateHeader} />
         <HeaderMovil animateHeaderMovil={animateHeaderMovil} />
         <LangSplash

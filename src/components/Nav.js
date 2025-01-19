@@ -8,6 +8,8 @@ function Nav({ setMoveItems }) {
 
   const onButtonClick = (mode) => {
     setMoveItems(mode);
+    // Scroll to top when navigating to a new section
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const linkBlog = () => {
     window.open("https://blog.juanjaramillo.tech/", "_self");
